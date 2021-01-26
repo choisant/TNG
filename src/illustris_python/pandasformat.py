@@ -64,14 +64,6 @@ def dict_to_pandas(data):
                 temp = masses[:, particle_types[particle]]
                 data[particle] = list(temp)
             data.pop(key)
-        if key == "Coordinates":
-            directions = {"X": 0,
-                          "Y": 1,
-                          "Z": 2}
-            positions = np.array(data[key])
-            for xyz in directions:
-                temp = positions[:, directions[xyz]]
-                data[xyz] = list(temp)
         
     df = pd.DataFrame(data, dtype=object)
     return df

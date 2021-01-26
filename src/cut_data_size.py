@@ -91,9 +91,6 @@ def create_data_subset(subhalo_fields, halo_fields, min_mass):
     subhalos = il.groupcat.loadSubhalos(BASE_PATH, SNAPSHOT, subhalo_fields)
     df_subhalos = il.pandasformat.dict_to_pandas(subhalos)
     df_subhalos["id"] = df_subhalos.index
-    print("Changing the masses to stellar masses.")
-    df_subhalos = il.pandasformat.stellar_masses(df_subhalos)
-    print("Changed the masses to stellar masses.")
     df_subhalos = il.pandasformat.ssfr(df_subhalos)
     print("added ssfr")
     
@@ -102,7 +99,7 @@ def create_data_subset(subhalo_fields, halo_fields, min_mass):
     print("Done converting to pandas DataFrame")
 
     centrals = central_galaxies(df_halos, df_subhalos)
-    centrals_min_mass = min_ymass(centrals, minMass=10**min_mass, Y="Stellar", haloType="Subhalo")
+    centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
     #save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_SM", tngFolder="tng100-1")
 
     lates = late_type_gas(centrals_min_mass)
@@ -110,7 +107,7 @@ def create_data_subset(subhalo_fields, halo_fields, min_mass):
 
     earlies = early_type_gas(centrals_min_mass)
     #save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_SM_earlyType_Gas", tngFolder="tng100-1")
-    return list(centrals_min_mass["id"]), list(earlies["id"]), list(lates["id"])
+    return list(centrals_min_mass["id"])
 #
 #read in data
 
@@ -122,8 +119,7 @@ subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", 
 
 haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
 
-centrals_id, earlies_id, lates_id = create_data_subset(subhaloFields, haloFields, 9)
-
-centrals_id_df, earlies_id_df, lates_id_df = pd.DataFrame({"All": centrals_id}), pd.DataFrame({"EarlyType": earlies_id}), pd.DataFrame({"LateType": lates_id})
-id_df = pd.concat([centrals_id_df, earlies_id_df, lates_id_df], axis=1)
-save_data_CSV(id_df, "indices", "data_subset_ids", "tng-100-3")
+centrals_id = create_data_subset(subhaloFields, haloFields, 9.5)
+with open('./data/tng-100-3/cutdata/central_ids.txt', 'w') as file:
+    for index in centrals_id:
+        file.write("%i\n" % index)
