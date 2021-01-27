@@ -111,7 +111,7 @@ def create_data_subset(subhalo_fields, halo_fields, min_mass):
 #
 #read in data
 
-BASE_PATH = "./data/tng-100-3/output"
+BASE_PATH = "./data/tng-100-1/output"
 SNAPSHOT = 99
 subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", "SubhaloSFR",
                 "SubhaloVel", "SubhaloVelDisp", "SubhaloHalfmassRadType", "SubhaloMassInHalfRadType",
@@ -120,6 +120,6 @@ subhaloFields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen", 
 haloFields = ["GroupMass", "GroupMassType", "GroupNsubs", "GroupFirstSub"]
 
 centrals_id = create_data_subset(subhaloFields, haloFields, 9.5)
-with open('./data/tng-100-3/cutdata/central_ids.txt', 'w') as file:
+with open('./data/tng-100-1/cutdata/central_ids.txt', 'w') as file:
     for index in centrals_id:
         file.write("%i\n" % index)

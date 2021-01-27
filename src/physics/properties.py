@@ -1,4 +1,5 @@
 import numpy as np
+import numpy.linalg as lg
 
 def relative_pos_radius(particles, N, catalogue):
     """
@@ -129,3 +130,20 @@ def half_mass_radius(particle, N, catalogue, particle_type="Stellar"):
                 break  #stop loop
     catalogue[rad_key] = halfmass_rad #save to catalogue
     return particle, catalogue
+
+def max_ang_momentum(particle, N, catalogue):
+    j_dir = np.zeros([N, 3])
+    for i in range(N):
+        r_max = 5*catalogue["SubhaloHalfmassRadStellar"][i]
+        temp = particle[i][particle[i]["r"] < r_max].copy(deep=True)
+        m = np.array(temp["Masses"])
+        p = np.array([np.array(temp["Vx"]*m), np.array(temp["Vy"]*m), np.array(temp["Vz"]*m)])
+        r = np.array([np.array(temp["x"]), np.array(temp["y"]), np.array(temp["z"])])
+        l = np.cross(np.transpose(r), np.transpose(p))
+        J = np.sum(l, axis= 0)/np.sum(m)
+        j_dir[i] = J/lg.norm(J)
+
+    catalogue["RotationAxisX"] = [item[0] for item in j_dir]
+    catalogue["RotationAxisY"] = [item[1] for item in j_dir]
+    catalogue["RotationAxisZ"] = [item[2] for item in j_dir]
+    return catalogue
