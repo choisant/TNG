@@ -11,7 +11,7 @@ fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
         "gas": ["Coordinates", "Potential", "Masses", "Velocities"],
         "dm": ["Coordinates", "Potential", "Velocities"]
         }
-indices = [544, 953, 1285, 1662]
+indices = [17185, 31342, 41582, 52618, 60731]
 
 
 DM_PARTICLE_MASS = 0.000505574296436975 #found in header of snapshot
