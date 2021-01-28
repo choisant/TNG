@@ -11,7 +11,7 @@ fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
         "gas": ["Coordinates", "Potential", "Masses", "Velocities"],
         "dm": ["Coordinates", "Potential", "Velocities"]
         }
-indices = [17185, 31342, 41582, 52618, 60731]
+indices = [371259]
 
 
 DM_PARTICLE_MASS = 0.000505574296436975 #found in header of snapshot
@@ -56,9 +56,9 @@ end = timer()
 
 #Save all fields for particles in one subhalo for later inspection
 g = 0
-stars[g].to_pickle("../data/tng-100-1/subhalos/subhalo" + str(indices[g]) +"_stars.pkl")
+stars[g].to_pickle("./data/tng-100-1/subhalos/subhalo" + str(indices[g]) +"_stars.pkl")
 #Save group catalogue
-group_cat.to_pickle("../data/tng-100-1/catalogues/test_cat_01.pkl")
+group_cat.to_pickle("./data/tng-100-1/catalogues/test_cat_01.pkl")
 
 print("Time to process " + str(N) + " Subhalos: ")
 print(int(end - start), "Seconds")
