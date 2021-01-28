@@ -11,8 +11,8 @@ fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
         "gas": ["Coordinates", "Potential", "Masses", "Velocities"],
         "dm": ["Coordinates", "Potential", "Velocities"]
         }
-indices = [371259]
-
+indices = np.genfromtxt("./data/tng-100-1/cutdata/central_ids.txt")
+indices = indices[0:50]
 
 DM_PARTICLE_MASS = 0.000505574296436975 #found in header of snapshot
 N = len(indices)
@@ -54,11 +54,14 @@ particle_lists = physics.geometry.rotate_coordinates(particle_lists, N, group_ca
 #End timer
 end = timer()
 
+""" #About 30MB for a 9.5 10^10 M_o galaxy
 #Save all fields for particles in one subhalo for later inspection
 g = 0
 stars[g].to_pickle("./data/tng-100-1/subhalos/subhalo" + str(indices[g]) +"_stars.pkl")
+"""
+
 #Save group catalogue
-group_cat.to_pickle("./data/tng-100-1/catalogues/test_cat_01.pkl")
+group_cat.to_pickle("./data/tng-100-1/catalogues/test_cat_02.pkl")
 
 print("Time to process " + str(N) + " Subhalos: ")
 print(int(end - start), "Seconds")
