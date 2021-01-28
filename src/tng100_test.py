@@ -12,7 +12,7 @@ fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
         "dm": ["Coordinates", "Potential", "Velocities"]
         }
 indices = np.genfromtxt("./data/tng-100-1/cutdata/central_ids.txt")
-indices = indices[0:50]
+indices = indices[3:8]
 
 DM_PARTICLE_MASS = 0.000505574296436975 #found in header of snapshot
 N = len(indices)
