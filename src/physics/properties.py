@@ -82,9 +82,9 @@ def subhalo_velocity(particles, N, catalogue):
         M_tot = masses.sum() #total mass of subhalo
         subhalo_velocities[i] = np.sum(v_m_sum, axis=0)/M_tot #Mass weighted average velocity
     #save to group catalogue
-    catalogue["SubhaloVelocityX"] = subhalo_velocities[:, 0]
-    catalogue["SubhaloVelocityY"] = subhalo_velocities[:, 1]
-    catalogue["SubhaloVelocityZ"] = subhalo_velocities[:, 2]
+    catalogue["SubhaloVelX"] = subhalo_velocities[:, 0]
+    catalogue["SubhaloVelY"] = subhalo_velocities[:, 1]
+    catalogue["SubhaloVelZ"] = subhalo_velocities[:, 2]
     return particles, catalogue
 
 def relative_velocities(particle, N, catalogue):
@@ -93,7 +93,7 @@ def relative_velocities(particle, N, catalogue):
     """
     central_vel = np.zeros([N,3]) #empty list
     for i in range (N):
-        vel_av = [catalogue["SubhaloVelocityX"][i], catalogue["SubhaloVelocityY"][i], catalogue["SubhaloVelocityZ"][i]]
+        vel_av = [catalogue["SubhaloVelX"][i], catalogue["SubhaloVelY"][i], catalogue["SubhaloVelZ"][i]]
         velocities = np.array(list(particle[i]["Velocities"].values))
         vx = velocities[:, 0]
         vy = velocities[:, 1]
@@ -113,7 +113,8 @@ def half_mass_radius(particle, N, catalogue, particle_type="Stellar"):
     rad_key = "SubhaloHalfmassRad" + particle_type
     for i in range(N):
         temp = particle[i].copy(deep=True)
-        temp = temp.sort_values(by="r") #sort particles by radius
+        temp.sort_values(by="r", inplace = True) #sort particles by radius
+        temp = temp.reset_index(drop=True)
         temp_mass = 0
         #Start adding the masses of all particles starting with smallest radius
         for j in range(len(temp["r"])):
