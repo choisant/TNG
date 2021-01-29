@@ -34,10 +34,6 @@ def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
         dm[i] = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(basePath, snapshot, indices[i], 'dm', fields["dm"]))
         dm[i]["Masses"] = [dm_particle_mass]*len(dm[i]["Potential"]) #Add dm masses
 
-    subhaloFields = ["SubhaloMass", 'SubhaloMassType', "SubhaloMassInHalfRadType", "SubhaloHalfmassRadType", "SubhaloPos", "SubhaloVel", "SubhaloSpin"]
-    subhalos = il.groupcat.loadSubhalos(basePath, snapshot, fields=subhaloFields)
-    df_subhalos = il.pandasformat.dict_to_pandas(subhalos)
-
     print("Calculating relative positions and radius")
     particle_lists, group_cat = physics.properties.relative_pos_radius(particle_lists, N, group_cat)
     print("Calculating particle masses")
