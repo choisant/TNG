@@ -88,7 +88,7 @@ def save_data_pickle(df, haloType, filename, tngFolder):
     df.to_pickle(path)
 
 def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mass):
-    print("Lading halos")
+    print("Loading halos")
     subhalos = il.groupcat.loadSubhalos(base_path, snapshot, subhalo_fields)
     df_subhalos = il.pandasformat.dict_to_pandas(subhalos)
     df_subhalos["id"] = df_subhalos.index
@@ -105,7 +105,7 @@ def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mas
 
     earlies = early_type_gas(centrals_min_mass)
     #save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_SM_earlyType_Gas", tngFolder="tng100-1")
-    return list(centrals_min_mass["id"], lates["id", earlies["id"]])
+    return (list(centrals_min_mass["id"]), list(lates["id"]), list(earlies["id"]))
 #
 #read in data
 def make_central_id_file(tng_run, snapshot):
@@ -121,10 +121,12 @@ def make_central_id_file(tng_run, snapshot):
         for index in centrals_id:
             file.write("%i\n" % index)
 
-    with open('./data/' + tng_run + 'cutdata/lates_id.txt', 'w') as file:
+    with open('./data/' + tng_run + '/cutdata/lates_id.txt', 'w') as file:
         for index in lates_id:
             file.write("%i\n" % index)
 
-    with open('./data/' + tng_run + 'cutdata/earlies_id.txt', 'w') as file:
+    with open('./data/' + tng_run + '/cutdata/earlies_id.txt', 'w') as file:
         for index in earlies_id:
             file.write("%i\n" % index)
+
+make_central_id_file("tng-100-3", 99)
