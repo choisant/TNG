@@ -39,7 +39,31 @@ def relative_pos_radius(particles, N, catalogue):
     catalogue["SubhaloPosX"] = center_of_halo[:, 0]
     catalogue["SubhaloPosY"] = center_of_halo[:, 1]
     catalogue["SubhaloPosZ"] = center_of_halo[:, 2]
+
+
     return particles, catalogue
+
+def galaxy_radius(stellar_particles, N, catalogue):
+
+    #Decide on galaxy radius. 10% of total halo radius.
+    max_rad = np.zeros(N)
+    gal_rad = np.zeros(N)
+    for i in range(N):
+        max_rad[i] = np.array(stellar_particles[i]["r"].max())
+    gal_rad = 0.1*max_rad
+    catalogue["SubhaloGalaxyRad"] = gal_rad
+    catalogue["SubhaloRad"] = max_rad
+
+    return catalogue
+
+def galaxy_stellar_mass(stellar_particles, N, catalogue):
+    stellar_masses = np.zeros(N)
+    for i in range(N):
+        max_rad = catalogue["SubhaloGalaxyRad"][i]
+        temp = stellar_particles[i][stellar_particles[i]["r"] < max_rad]
+        stellar_masses[i] = temp["Masses"].sum()
+    catalogue["SubhaloGalaxyMassStellar"] = stellar_masses
+    return catalogue
 
 def total_mass(particles, N, catalogue):
     """

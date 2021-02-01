@@ -4,13 +4,17 @@
 
 Logg inn på ntnu sine sider:
 ```
-ssh -X login.stud.ntnu.no -l username
+ssh -X login.stud.ntnu.no -l aurorasg
 ``` 
  Logg så inn på clusteren:
 
 ```
 ssh -X  hpc-2.phys.ntnu.no
-``` 
+```
+Eller for Idun:
+```
+ssh -X  idun-login1.hpc.ntnu.no
+```
 Dette er en Linux-cluster og du kommuniserer til den via kommandolinjen.
 Naviger til arbeidsområdet:
 ```
@@ -30,9 +34,14 @@ nano file/path.txt
 ```
 Programmer lastes inn ved å velge en modul. Det er mange forskjellige moduler. For å bruke den nyeste versjonen av Python med en del innstallerte pakker last inn Anaconda modulen:
 
+Fysikk:
 ```
 module load eb
 module load Anaconda3    
+``` 
+Idun
+```
+ module load Anaconda3/2018.12
 ``` 
 
 Da kan du også installere nye pakker ved å bruke pip:

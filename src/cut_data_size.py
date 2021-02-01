@@ -29,7 +29,7 @@ def min_particles(df, minPart):
     return df_copy
 
 def min_ymass(df, minMass, Y, haloType):
-    print("Removing galaxies below the minimum mass.")
+    print("Removing galaxies below ", Y,  " mass ", minMass)
     df_copy = df.copy(deep=True)
     particle_type = (haloType+"Mass"+Y)
     if haloType == "Subhalo":
@@ -88,6 +88,7 @@ def save_data_pickle(df, haloType, filename, tngFolder):
     df.to_pickle(path)
 
 def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mass):
+    print("Lading halos")
     subhalos = il.groupcat.loadSubhalos(base_path, snapshot, subhalo_fields)
     df_subhalos = il.pandasformat.dict_to_pandas(subhalos)
     df_subhalos["id"] = df_subhalos.index
@@ -96,7 +97,6 @@ def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mas
     df_halos = il.pandasformat.dict_to_pandas(halos)
     print("Choosing only central galaxies")
     centrals = central_galaxies(df_halos, df_subhalos)
-    print("Removing galaxies below stellar mass ", min_mass)
     centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
     #save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_SM", tngFolder="tng100-1")
 
@@ -110,7 +110,7 @@ def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mas
 #read in data
 def make_central_id_file(tng_run, snapshot):
     base_path = "./data/"+ tng_run + "/output"
-    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloFlag', "SubhaloLen"]
+    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
     halo_fields = ["GroupNsubs", "GroupFirstSub"]
     min_mass = 9.5 #minimum stellar mass
     snapshot = 99
