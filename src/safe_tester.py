@@ -86,6 +86,6 @@ def simple_test_all(tng_run="tng-100-1", snapshot=99, test_name="simple"):
     print("Time to process:")
     print(datetime.timedelta(seconds = int(end - start)), "h:m:s")
 
-
-#simple_test_last_ten("tng-100-1", 99, "01")
-simple_test_all("tng-100-1", 99)
+find_centrals()
+#simple_test_last_ten("tng-100-1", 99, "idun-01")
+#simple_test_all("tng-100-1", 99, "idun-simple")

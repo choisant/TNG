@@ -129,4 +129,3 @@ def make_central_id_file(tng_run, snapshot):
         for index in earlies_id:
             file.write("%i\n" % index)
 
-make_central_id_file("tng-100-3", 99)
