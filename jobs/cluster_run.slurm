@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=12000
 #SBATCH --job-name="test_run"
-#SBATCH --output=tng-test-srun.out
+#SBATCH --output=./jobs/tng-test-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
 #SBATCH --mail-type=ALL
  
@@ -26,6 +26,6 @@ module load Anaconda3/2018.12
 
 uname -a
 
-python ../src/cluster_run.py -tng "tng-100-1" -n "idun" -id  $SLURM_JOB_ID
+python ./src/cluster_run.py -tng "tng-100-1" -n "idun" -id  $SLURM_JOB_ID
 
 

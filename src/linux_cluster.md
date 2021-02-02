@@ -51,3 +51,12 @@ pip install --user package_name
 ``` 
 
 Fildeling mellom din laptop hjemme og NTNU cluster kan være litt komplisert og ta lang tid, men en grei måte å gjøre det på er ved å bruke et `github` repository som du laster opp til og laster ned filene fra. Pass på å legge til en `.gitignore` fil i hovedmappen som forteller hvilke filer som IKKE skal deles. Det er lurt dersom du har store datafiler du ikke trenger å dele. Det er også en maksgrense for filstørrelser på GitHub.
+
+## Running jobs
+
+Create slurm job file.
+
+chmod u+x filename
+
+Run it:
+sbatch filename
