@@ -25,4 +25,4 @@ module purge
 module load foss/2018b
 mpirun hostname
 
-uname -a.
+uname -a

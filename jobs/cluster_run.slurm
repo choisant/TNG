@@ -24,7 +24,7 @@ echo "Total of $SLURM_NTASKS cores"
 module purge
 module load Anaconda3/2018.12
 
-uname -a.
+uname -a
 
 python ../src/cluster_run.py -tng "tng-100-1" -n "idun" -id  $SLURM_JOB_ID
 

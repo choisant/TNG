@@ -1,10 +1,10 @@
-we are running from this directory: /lustre1/work/aurorasg/TNG/jobs
- the name of the job is: hello_test
-Th job ID is 3278873
+we are running from this directory: /lustre1/work/aurorasg/TNG
+ the name of the job is: test_run
+Th job ID is 3278875
 The job was run on these nodes: compute-2-0-26
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
-compute-2-0-26.foreman.hpc.ntnu.no
 Linux compute-2-0-26.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+python: can't open file '../src/cluster_run.py': [Errno 2] No such file or directory
