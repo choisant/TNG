@@ -58,8 +58,8 @@ def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
     stars = physics.properties.relative_velocities(stars, N, group_cat)
     print("Calculating half mass radius")
     group_cat = physics.properties.half_mass_radius(stars, N, group_cat, "Stellar")
-    print("Calculating maximum angular momentum")
-    group_cat = physics.properties.max_ang_momentum(stars, N, group_cat)
+    #print("Calculating maximum angular momentum")
+    #group_cat = physics.properties.max_ang_momentum(stars, N, group_cat)
     #End timer
     end = timer()
     print("Time to process " + str(N) + " Subhalos: ")
