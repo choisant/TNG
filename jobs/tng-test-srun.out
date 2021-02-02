@@ -1,37 +1,11 @@
-we are running from this directory: /lustre1/work/aurorasg/TNG/jobs
+we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: test_run
-Th job ID is 3278874
+Th job ID is 3278877
 The job was run on these nodes: compute-2-0-26
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
 Linux compute-2-0-26.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-tng-100-1
-idun_3278874
-Getting indices
-No list of central galaxy indices exists. Trying to create file ...
-Loading halos
-Traceback (most recent call last):
-  File "../src/cluster_run.py", line 22, in <module>
-    safe_tester.simple_test_last_ten(args.tng, test_name, 99)
-  File "/lustre1/work/aurorasg/TNG/src/safe_tester.py", line 45, in simple_test_last_ten
-    find_centrals(tng_run, snapshot)
-  File "/lustre1/work/aurorasg/TNG/src/safe_tester.py", line 31, in find_centrals
-    cut_data_size.make_central_id_file(tng_run, snapshot)
-  File "/lustre1/work/aurorasg/TNG/src/cut_data_size.py", line 118, in make_central_id_file
-    centrals_id, lates_id, earlies_id = create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mass)
-  File "/lustre1/work/aurorasg/TNG/src/cut_data_size.py", line 92, in create_data_subset
-    subhalos = il.groupcat.loadSubhalos(base_path, snapshot, subhalo_fields)
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/groupcat.py", line 100, in loadSubhalos
-    return loadObjects(basePath, snapNum, "Subhalo", "subgroups", fields)
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/groupcat.py", line 38, in loadObjects
-    with h5py.File(gcPath(basePath, snapNum), 'r') as f:
-  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/h5py/_hl/files.py", line 312, in __init__
-    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
-  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/h5py/_hl/files.py", line 142, in make_fid
-    fid = h5f.open(name, flags, fapl=fapl)
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
-  File "h5py/h5f.pyx", line 78, in h5py.h5f.open
-OSError: Unable to open file (unable to open file: name = './data/tng-100-1/output/groups_099/fof_subhalo_tab_099.0.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+/var/spool/slurmd/job3278877/slurm_script: line 30: syntax error near unexpected token `"test"'
+/var/spool/slurmd/job3278877/slurm_script: line 30: `print("test")'
