@@ -5,6 +5,7 @@ The data is then run through the desired filter, and saved as a .pkl file in the
 cutdata folder of the relevant simulation.
 """
 import pandas as pd
+import numpy as np
 import illustris_python as il
 pd.options.mode.chained_assignment = None  # default='warn'
 
@@ -43,8 +44,7 @@ def min_ymass(df, minMass, Y, haloType):
 def central_galaxies(df_halos, df_subhalos):
     #dfHalos must have the key-value pair GroupFirstSub
     print("Starting the central galaxies sorting")
-    central_indices = df_halos["GroupFirstSub"]
-    central_indices = central_indices[central_indices > 0]
+    central_indices = df_halos[df_halos["GroupFirstSub"] > 0]["GroupFirstSub"]
     central_halos = df_subhalos.iloc[central_indices]
     return central_halos
 
@@ -111,7 +111,7 @@ def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mas
 def make_central_id_file(tng_run, snapshot):
     base_path = "./data/"+ tng_run + "/output"
     subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
-    halo_fields = ["GroupNsubs", "GroupFirstSub"]
+    halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 9.5 #minimum stellar mass
     snapshot = 99
 

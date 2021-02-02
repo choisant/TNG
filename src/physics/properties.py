@@ -1,7 +1,22 @@
 import numpy as np
 import numpy.linalg as lg
+import illustris_python as il
 
-def relative_pos_radius(particles, N, catalogue):
+def center_halo(particle, N, catalogue):
+    center_of_halo = np.zeros([N,3]) #list for saving the central positions for all subhalos
+    for i in range(N):
+        #find center of halo
+        #Find particle with lowest potential
+        min_pot_value = particle[i]["Potential"].min()
+        center_of_halo[i] = particle[i][particle[i]["Potential"] == min_pot_value]["Coordinates"].values[0]
+
+    #Save to group catalogue
+    catalogue["SubhaloPosX"] = center_of_halo[:, 0]
+    catalogue["SubhaloPosY"] = center_of_halo[:, 1]
+    catalogue["SubhaloPosZ"] = center_of_halo[:, 2]
+    return catalogue
+
+def relative_pos_radius(particle, N, catalogue):
     """
     Finds the center of the subhalo by locating  the particle with the lowest gravitational potential.
     Saves this to group catalogue.
@@ -15,54 +30,33 @@ def relative_pos_radius(particles, N, catalogue):
         r = (x**2 + y**2 + z**2)**(1/2)
         return r
 
-    center_of_halo = np.zeros([N,3]) #list for saving the central positions for all subhalos
     for i in range(N):
-        #find center of halo
-        min_pot = 0 #all grav pot is <0
-        for particle in particles: #look through all particle types for lowest potential
-            #Find particle with lowest potential
-            min_pot_value = particle[i]["Potential"].min()
-            if min_pot_value < min_pot:
-                min_pot = min_pot_value
-                #Get particle position and assign as center of galaxy
-                min_pot_pos = particle[i][particle[i]["Potential"] == min_pot_value]["Coordinates"].values[0]
-        
-        center_of_halo[i] = min_pot_pos
         #Calculate new coordinates
-        for particle in particles:
-            positions = np.array(list(particle[i]["Coordinates"].values))
-            particle[i]["x"] = positions[:, 0] - min_pot_pos[0]
-            particle[i]["y"] = positions[:, 1] - min_pot_pos[1]
-            particle[i]["z"] = positions[:, 2] - min_pot_pos[2]
-            particle[i]["r"] = radius(particle[i])
-    #Save to group catalogue
-    catalogue["SubhaloPosX"] = center_of_halo[:, 0]
-    catalogue["SubhaloPosY"] = center_of_halo[:, 1]
-    catalogue["SubhaloPosZ"] = center_of_halo[:, 2]
+        positions = np.array(list(particle[i]["Coordinates"].values))
+        particle[i]["x"] = positions[:, 0] - catalogue["SubhaloPosX"][i]
+        particle[i]["y"] = positions[:, 1] - catalogue["SubhaloPosY"][i]
+        particle[i]["z"] = positions[:, 2] - catalogue["SubhaloPosZ"][i]
+        particle[i]["r"] = radius(particle[i])
 
+    return particle
 
-    return particles, catalogue
-
-def galaxy_radius(stellar_particles, N, catalogue):
+def galaxy_radius(catalogue, base_path):
 
     #Decide on galaxy radius. 10% of total halo radius.
-    max_rad = np.zeros(N)
-    gal_rad = np.zeros(N)
-    for i in range(N):
-        max_rad[i] = np.array(stellar_particles[i]["r"].max())
-    gal_rad = 0.1*max_rad
-    catalogue["SubhaloGalaxyRad"] = gal_rad
-    catalogue["SubhaloRad"] = max_rad
+    subhalo_indices = np.array(catalogue["id"])
+    halo_fields = ["Group_R_Crit200"]
+    subhalo_fields = ["SubhaloGrNr"]
+    df_halos = il.pandasformat.dict_to_pandas(il.groupcat.loadHalos(base_path, 99, halo_fields))
+    df_subhalos = il.pandasformat.dict_to_pandas(il.groupcat.loadSubhalos(base_path, 99, subhalo_fields))
 
-    return catalogue
+    df_central_subhalos = df_subhalos.iloc[subhalo_indices]
+    halo_indices = df_central_subhalos["SubhaloGrNr"]
+    df_central_halos = df_halos.iloc[halo_indices]
+    radius_200 = np.array(df_central_halos["Group_R_Crit200"])
 
-def galaxy_stellar_mass(stellar_particles, N, catalogue):
-    stellar_masses = np.zeros(N)
-    for i in range(N):
-        max_rad = catalogue["SubhaloGalaxyRad"][i]
-        temp = stellar_particles[i][stellar_particles[i]["r"] < max_rad]
-        stellar_masses[i] = temp["Masses"].sum()
-    catalogue["SubhaloGalaxyMassStellar"] = stellar_masses
+    catalogue["SubhaloGalaxyRad"] = 0.1*radius_200
+    catalogue["SubhaloRad"] = radius_200
+
     return catalogue
 
 def total_mass(particles, N, catalogue):
@@ -84,7 +78,7 @@ def total_mass(particles, N, catalogue):
     catalogue["SubhaloMass"] = mass_total
     return particles, catalogue
 
-def subhalo_velocity(particles, N, catalogue):
+def subhalo_velocity_old(particles, N, catalogue):
     """
     Calculates the mass weighted average velocity of the particles in a subhalo and save them to the group catalogue.
     """
@@ -110,6 +104,26 @@ def subhalo_velocity(particles, N, catalogue):
     catalogue["SubhaloVelY"] = subhalo_velocities[:, 1]
     catalogue["SubhaloVelZ"] = subhalo_velocities[:, 2]
     return particles, catalogue
+
+def subhalo_velocity(particle, N, catalogue):
+    """
+    Calculates the mass weighted average velocity of the particles in a subhalo and save them to the group catalogue.
+    """
+    subhalo_velocities = np.zeros([N, 3]) #Empty list
+    for i in range(N):
+        m = np.array(particle[i]["Masses"]) 
+        M = np.sum(m)
+        velocities = np.array(list(particle[i]["Velocities"].values))
+        #Velocity times mass for each particle
+        vx_m = velocities[:, 0]*m
+        vy_m = velocities[:, 1]*m
+        vz_m = velocities[:, 2]*m
+        subhalo_velocities[i] = (vx_m.sum(), vy_m.sum(), vz_m.sum())/M #Mass weighted average velocity
+    #save to group catalogue
+    catalogue["SubhaloVelX"] = subhalo_velocities[:, 0]
+    catalogue["SubhaloVelY"] = subhalo_velocities[:, 1]
+    catalogue["SubhaloVelZ"] = subhalo_velocities[:, 2]
+    return particle, catalogue
 
 def relative_velocities(particle, N, catalogue):
     """
@@ -154,7 +168,7 @@ def half_mass_radius(particle, N, catalogue, particle_type="Stellar"):
                 halfmass_rad[i] = (m1*temp["r"][j-1] + m2*temp["r"][j])/M
                 break  #stop loop
     catalogue[rad_key] = halfmass_rad #save to catalogue
-    return particle, catalogue
+    return catalogue
 
 def max_ang_momentum(particle, N, catalogue):
     j_dir = np.zeros([N, 3])

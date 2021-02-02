@@ -11,13 +11,12 @@ parser.add_argument('-n', '--name', type=str, default = "test", help="Test name.
 
 args = parser.parse_args()
 ##Variables
-print(args.tng)
 if args.id != "none":
     test_name = args.name + "_" + args.id
 else:
     test_name = args.name
 
-print(test_name)
 ##Processes to run, uncomment those that should be run.
-safe_tester.simple_test_last_ten(args.tng, test_name, 99)
-#safe_tester.simple_test_all(args.tng, 99, test_name, 99)
+#safe_tester.find_centrals(args.tng)
+#safe_tester.simple_test_last_ten(args.tng, test_name, 99)
+safe_tester.simple_test_all(args.tng, test_name, 99)

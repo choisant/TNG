@@ -5,8 +5,6 @@ from timeit import default_timer as timer
 import illustris_python as il
 import physics
 
-def test_func():
-    print("yup")
 
 def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
     #intitial setup
@@ -34,21 +32,29 @@ def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
         dm[i] = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(basePath, snapshot, indices[i], 'dm', fields["dm"]))
         dm[i]["Masses"] = [dm_particle_mass]*len(dm[i]["Potential"]) #Add dm masses
 
-    print("Calculating relative positions and radius")
-    particle_lists, group_cat = physics.properties.relative_pos_radius(particle_lists, N, group_cat)
+    print("Finding galaxy radius")
+    group_cat = physics.properties.galaxy_radius(group_cat, basePath)
+    print("Finding center of galaxy")
+    group_cat = physics.properties.center_halo(stars, N, group_cat)
+    print("Calculating new coordinates and radius")
+    for particle in particle_lists:
+        particle = physics.properties.relative_pos_radius(particle, N, group_cat)
+    print("Deleting particles outside galaxy radius")
+    for i in range(N):
+        max_rad = group_cat["SubhaloGalaxyRad"][i]
+        for particle in particle_lists:
+            particle[i] = particle[i][particle[i]["r"] < max_rad]
+
     print("Calculating particle masses")
     particle_lists, group_cat = physics.properties.total_mass(particle_lists, N, group_cat)
     print("Calculating subhalo velocity")
-    particle_lists, group_cat = physics.properties.subhalo_velocity(particle_lists, N, group_cat)
+    stars, group_cat = physics.properties.subhalo_velocity(stars, N, group_cat)
     print("Calculating relative velocities")
-    for particle in particle_lists:
-        particle = physics.properties.relative_velocities(particle, N, group_cat)
+    stars = physics.properties.relative_velocities(stars, N, group_cat)
     print("Calculating half mass radius")
-    stars, group_cat = physics.properties.half_mass_radius(stars, N, group_cat, "Stellar")
+    group_cat = physics.properties.half_mass_radius(stars, N, group_cat, "Stellar")
     print("Calculating maximum angular momentum")
     group_cat = physics.properties.max_ang_momentum(stars, N, group_cat)
-    rot_vector = np.transpose(np.array([group_cat["RotationAxisX"], group_cat["RotationAxisY"], group_cat["RotationAxisZ"]]))
-
     #End timer
     end = timer()
     print("Time to process " + str(N) + " Subhalos: ")
