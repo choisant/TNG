@@ -1,5 +1,6 @@
 """
 Testing script
+Different functions perfomrm different tests.
 """
 
 import os
@@ -11,7 +12,7 @@ import cut_data_size
 from timeit import default_timer as timer
 import datetime
 
-def set_params(tng_run="tng-100-1"):
+def set_params(tng_run):
     """
     Sets the parameters needed to rund the tests.
     """
@@ -23,13 +24,13 @@ def set_params(tng_run="tng-100-1"):
         print("Not an available run.")
     return dm_part_mass
 
-def find_centrals(tng_run="tng-100-1", snapshot=99):
+def find_centrals(tng_run, snapshot=99):
     """
     Finds the central galaxies in the snapshot and saves their indices in a file.
     """
     cut_data_size.make_central_id_file(tng_run, snapshot)
 
-def simple_test_last_ten(tng_run="tng-100-1", snapshot=99, test_name="01"):
+def simple_test_last_ten(tng_run, test_name, snapshot=99):
     """
     Creates and saves group catalogue for the last ten galaxies in the central galaxies sample.
     """
@@ -48,14 +49,15 @@ def simple_test_last_ten(tng_run="tng-100-1", snapshot=99, test_name="01"):
     print("Starting test")
     temp_cat = test.basic_properties(tng_run, snapshot, index_list, dm_part_mass)
     print("Saving results")
-    temp_cat.to_pickle("./data/" + tng_run + "/catalogues/test_cat" + test_name + ".pkl")
+    temp_cat.to_pickle("./data/" + tng_run + "/catalogues/last_ten_" + test_name + ".pkl")
     #End timer
     end = timer()
     print("Time to process ")
     print(datetime.timedelta(seconds =int(end - start)), "h:m:s")
 
 
-def simple_test_all(tng_run="tng-100-1", snapshot=99, test_name="simple"):
+
+def simple_test_all(tng_run, test_name, snapshot=99):
     """
     Creates and saves group catalogues for all central galaxies.
     If process is aborted, data is still saved up until that point.
@@ -81,11 +83,9 @@ def simple_test_all(tng_run="tng-100-1", snapshot=99, test_name="simple"):
             os.makedirs(folder_path)
         temp_cat.to_pickle(folder_path + file_path)
         percent = percent + 4*100/(len(indices))
-    #End timer   
+    #End timer
     end = timer()
     print("Time to process:")
-    print(datetime.timedelta(seconds = int(end - start)), "h:m:s")
+    print(datetime.timedelta(seconds=int(end - start)), "h:m:s")
 
-find_centrals()
-#simple_test_last_ten("tng-100-1", 99, "idun-01")
-#simple_test_all("tng-100-1", 99, "idun-simple")
+#def rotation_test_(tng_run, snapshot=99, test_name="rotate"):
