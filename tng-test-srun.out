@@ -1,6 +1,6 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: test_run
-Th job ID is 3279064
+Th job ID is 3279476
 The job was run on these nodes: compute-2-0-25
 Number of nodes: 1
 We are using 1 cores
@@ -14,171 +14,171 @@ Subhalo  31342
 Subhalo  41582
 Subhalo  52618
 Subhalo  60731
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 5 Subhalos: 
-153 Seconds
+201 Seconds
 1  percent of data processed
 Loading all particles
 Subhalo  69507
 Subhalo  76086
 Subhalo  83280
 Subhalo  88663
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-183 Seconds
+171 Seconds
 2  percent of data processed
 Loading all particles
 Subhalo  96500
 Subhalo  102683
 Subhalo  108012
 Subhalo  114388
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-91 Seconds
+106 Seconds
 3  percent of data processed
 Loading all particles
 Subhalo  118679
 Subhalo  121863
 Subhalo  125027
 Subhalo  128393
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-98 Seconds
+87 Seconds
 4  percent of data processed
 Loading all particles
 Subhalo  131047
 Subhalo  134847
 Subhalo  137885
 Subhalo  140721
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-57 Seconds
+56 Seconds
 6  percent of data processed
 Loading all particles
 Subhalo  143884
 Subhalo  146176
 Subhalo  149169
 Subhalo  152031
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-73 Seconds
+80 Seconds
 7  percent of data processed
 Loading all particles
 Subhalo  154493
 Subhalo  156809
 Subhalo  158847
 Subhalo  161162
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-57 Seconds
+58 Seconds
 8  percent of data processed
 Loading all particles
 Subhalo  163675
 Subhalo  165727
 Subhalo  168390
 Subhalo  170540
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-65 Seconds
+63 Seconds
 9  percent of data processed
 Loading all particles
 Subhalo  172649
 Subhalo  175238
 Subhalo  177719
 Subhalo  179886
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-58 Seconds
+63 Seconds
 11  percent of data processed
 Loading all particles
 Subhalo  181983
 Subhalo  184828
 Subhalo  186927
 Subhalo  188859
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-68 Seconds
+54 Seconds
 12  percent of data processed
 Loading all particles
 Subhalo  191079
 Subhalo  192898
 Subhalo  194946
 Subhalo  197108
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -190,59 +190,59 @@ Subhalo  199321
 Subhalo  200803
 Subhalo  202634
 Subhalo  204234
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-49 Seconds
+43 Seconds
 14  percent of data processed
 Loading all particles
 Subhalo  206226
 Subhalo  207473
 Subhalo  208781
 Subhalo  210763
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-30 Seconds
+46 Seconds
 16  percent of data processed
 Loading all particles
 Subhalo  212836
 Subhalo  214452
 Subhalo  216016
 Subhalo  217485
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-37 Seconds
+40 Seconds
 17  percent of data processed
 Loading all particles
 Subhalo  219032
 Subhalo  220557
 Subhalo  222267
 Subhalo  223896
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -254,107 +254,107 @@ Subhalo  225155
 Subhalo  226194
 Subhalo  227574
 Subhalo  228680
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-45 Seconds
+53 Seconds
 19  percent of data processed
 Loading all particles
 Subhalo  230235
 Subhalo  231706
 Subhalo  233214
 Subhalo  234514
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-42 Seconds
+37 Seconds
 21  percent of data processed
 Loading all particles
 Subhalo  235692
 Subhalo  236756
 Subhalo  237941
 Subhalo  239245
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-40 Seconds
+36 Seconds
 22  percent of data processed
 Loading all particles
 Subhalo  239993
 Subhalo  241153
 Subhalo  242214
 Subhalo  243186
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-25 Seconds
+28 Seconds
 23  percent of data processed
 Loading all particles
 Subhalo  244318
 Subhalo  245134
 Subhalo  246232
 Subhalo  247348
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-39 Seconds
+33 Seconds
 24  percent of data processed
 Loading all particles
 Subhalo  248157
 Subhalo  249164
 Subhalo  250390
 Subhalo  251299
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-31 Seconds
+27 Seconds
 26  percent of data processed
 Loading all particles
 Subhalo  252245
 Subhalo  254112
 Subhalo  254925
 Subhalo  255614
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -366,107 +366,107 @@ Subhalo  256507
 Subhalo  257302
 Subhalo  258263
 Subhalo  259114
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-21 Seconds
+27 Seconds
 28  percent of data processed
 Loading all particles
 Subhalo  260014
 Subhalo  260862
 Subhalo  261959
 Subhalo  262659
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-20 Seconds
+24 Seconds
 29  percent of data processed
 Loading all particles
 Subhalo  264412
 Subhalo  265267
 Subhalo  265926
 Subhalo  266559
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-24 Seconds
+27 Seconds
 31  percent of data processed
 Loading all particles
 Subhalo  267323
 Subhalo  268295
 Subhalo  268908
 Subhalo  269440
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-35 Seconds
+36 Seconds
 32  percent of data processed
 Loading all particles
 Subhalo  270079
 Subhalo  270963
 Subhalo  271729
 Subhalo  272322
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-23 Seconds
+25 Seconds
 33  percent of data processed
 Loading all particles
 Subhalo  273141
 Subhalo  273994
 Subhalo  274790
 Subhalo  275531
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-22 Seconds
+25 Seconds
 34  percent of data processed
 Loading all particles
 Subhalo  276219
 Subhalo  277020
 Subhalo  277687
 Subhalo  278302
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -478,43 +478,43 @@ Subhalo  278854
 Subhalo  279707
 Subhalo  280454
 Subhalo  281072
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-32 Seconds
+27 Seconds
 37  percent of data processed
 Loading all particles
 Subhalo  281700
 Subhalo  282377
 Subhalo  283011
 Subhalo  283637
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-32 Seconds
+28 Seconds
 38  percent of data processed
 Loading all particles
 Subhalo  284316
 Subhalo  284948
 Subhalo  285479
 Subhalo  286066
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -526,75 +526,75 @@ Subhalo  286695
 Subhalo  287335
 Subhalo  288743
 Subhalo  289426
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-25 Seconds
+22 Seconds
 41  percent of data processed
 Loading all particles
 Subhalo  289945
 Subhalo  290643
 Subhalo  291888
 Subhalo  292355
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-23 Seconds
+24 Seconds
 42  percent of data processed
 Loading all particles
 Subhalo  292921
 Subhalo  293439
 Subhalo  294047
 Subhalo  294510
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-22 Seconds
+20 Seconds
 43  percent of data processed
 Loading all particles
 Subhalo  295077
 Subhalo  296302
 Subhalo  296787
 Subhalo  297210
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-24 Seconds
+26 Seconds
 44  percent of data processed
 Loading all particles
 Subhalo  297712
 Subhalo  298206
 Subhalo  298892
 Subhalo  299429
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -606,155 +606,155 @@ Subhalo  299935
 Subhalo  301746
 Subhalo  302773
 Subhalo  303362
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-28 Seconds
+24 Seconds
 47  percent of data processed
 Loading all particles
 Subhalo  303710
 Subhalo  304201
 Subhalo  304726
 Subhalo  305083
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-22 Seconds
+25 Seconds
 48  percent of data processed
 Loading all particles
 Subhalo  305653
 Subhalo  306058
 Subhalo  306516
 Subhalo  306945
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-23 Seconds
+24 Seconds
 49  percent of data processed
 Loading all particles
 Subhalo  307438
 Subhalo  308598
 Subhalo  309045
 Subhalo  309951
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+19 Seconds
 51  percent of data processed
 Loading all particles
 Subhalo  310509
 Subhalo  310985
 Subhalo  311302
 Subhalo  311882
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-15 Seconds
+17 Seconds
 52  percent of data processed
 Loading all particles
 Subhalo  312412
 Subhalo  312891
 Subhalo  313402
 Subhalo  313954
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+17 Seconds
 53  percent of data processed
 Loading all particles
 Subhalo  314365
 Subhalo  314770
 Subhalo  315140
 Subhalo  316029
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-21 Seconds
+22 Seconds
 54  percent of data processed
 Loading all particles
 Subhalo  316354
 Subhalo  316855
 Subhalo  317311
 Subhalo  317711
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+18 Seconds
 56  percent of data processed
 Loading all particles
 Subhalo  318210
 Subhalo  318633
 Subhalo  319643
 Subhalo  320012
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+18 Seconds
 57  percent of data processed
 Loading all particles
 Subhalo  320433
 Subhalo  321204
 Subhalo  321674
 Subhalo  322160
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -766,11 +766,11 @@ Subhalo  322979
 Subhalo  323455
 Subhalo  323851
 Subhalo  324127
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -782,219 +782,219 @@ Subhalo  324572
 Subhalo  324997
 Subhalo  325808
 Subhalo  326652
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+16 Seconds
 61  percent of data processed
 Loading all particles
 Subhalo  327112
 Subhalo  327405
 Subhalo  329105
 Subhalo  329515
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+21 Seconds
 62  percent of data processed
 Loading all particles
 Subhalo  329849
 Subhalo  330208
 Subhalo  330553
 Subhalo  330955
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-21 Seconds
+18 Seconds
 63  percent of data processed
 Loading all particles
 Subhalo  331293
 Subhalo  331701
 Subhalo  332389
 Subhalo  334028
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+17 Seconds
 64  percent of data processed
 Loading all particles
 Subhalo  334350
 Subhalo  334727
 Subhalo  335078
 Subhalo  335927
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-23 Seconds
+21 Seconds
 66  percent of data processed
 Loading all particles
 Subhalo  336276
 Subhalo  336516
 Subhalo  336796
 Subhalo  337048
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-17 Seconds
+19 Seconds
 67  percent of data processed
 Loading all particles
 Subhalo  338148
 Subhalo  338458
 Subhalo  339181
 Subhalo  339547
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+19 Seconds
 68  percent of data processed
 Loading all particles
 Subhalo  339862
 Subhalo  340106
 Subhalo  340355
 Subhalo  341356
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+19 Seconds
 69  percent of data processed
 Loading all particles
 Subhalo  342047
 Subhalo  342343
 Subhalo  342689
 Subhalo  343039
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-15 Seconds
+16 Seconds
 71  percent of data processed
 Loading all particles
 Subhalo  343429
 Subhalo  344300
 Subhalo  344987
 Subhalo  345250
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+19 Seconds
 72  percent of data processed
 Loading all particles
 Subhalo  346075
 Subhalo  346420
 Subhalo  346748
 Subhalo  346976
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+16 Seconds
 73  percent of data processed
 Loading all particles
 Subhalo  347237
 Subhalo  347508
 Subhalo  347785
 Subhalo  348038
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-16 Seconds
+15 Seconds
 74  percent of data processed
 Loading all particles
 Subhalo  348334
 Subhalo  348894
 Subhalo  349414
 Subhalo  349897
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+19 Seconds
 76  percent of data processed
 Loading all particles
 Subhalo  350486
 Subhalo  350843
 Subhalo  352359
 Subhalo  352816
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -1006,11 +1006,11 @@ Subhalo  353423
 Subhalo  353729
 Subhalo  353973
 Subhalo  354727
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -1022,123 +1022,123 @@ Subhalo  356176
 Subhalo  356678
 Subhalo  357235
 Subhalo  357765
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-21 Seconds
+19 Seconds
 79  percent of data processed
 Loading all particles
 Subhalo  358016
 Subhalo  358582
 Subhalo  358886
 Subhalo  359334
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-16 Seconds
+17 Seconds
 80  percent of data processed
 Loading all particles
 Subhalo  359639
 Subhalo  360087
 Subhalo  360294
 Subhalo  360509
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+18 Seconds
 82  percent of data processed
 Loading all particles
 Subhalo  360750
 Subhalo  362042
 Subhalo  362370
 Subhalo  362780
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-17 Seconds
+19 Seconds
 83  percent of data processed
 Loading all particles
 Subhalo  363104
 Subhalo  363315
 Subhalo  363524
 Subhalo  363981
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-21 Seconds
+19 Seconds
 84  percent of data processed
 Loading all particles
 Subhalo  364263
 Subhalo  364807
 Subhalo  365263
 Subhalo  368436
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+18 Seconds
 85  percent of data processed
 Loading all particles
 Subhalo  368697
 Subhalo  369545
 Subhalo  369789
 Subhalo  371259
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-17 Seconds
+16 Seconds
 87  percent of data processed
 Loading all particles
 Subhalo  371704
 Subhalo  372175
 Subhalo  372568
 Subhalo  373050
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -1150,43 +1150,43 @@ Subhalo  373510
 Subhalo  374228
 Subhalo  374593
 Subhalo  375020
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-17 Seconds
+16 Seconds
 89  percent of data processed
 Loading all particles
 Subhalo  376356
 Subhalo  376963
 Subhalo  377212
 Subhalo  377398
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+16 Seconds
 90  percent of data processed
 Loading all particles
 Subhalo  380119
 Subhalo  380276
 Subhalo  381392
 Subhalo  381608
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -1198,43 +1198,43 @@ Subhalo  382059
 Subhalo  384705
 Subhalo  387236
 Subhalo  389056
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-19 Seconds
+17 Seconds
 93  percent of data processed
 Loading all particles
 Subhalo  390305
 Subhalo  392253
 Subhalo  392725
 Subhalo  392961
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-18 Seconds
+17 Seconds
 94  percent of data processed
 Loading all particles
 Subhalo  393731
 Subhalo  394600
 Subhalo  394719
 Subhalo  394850
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -1246,11 +1246,11 @@ Subhalo  396073
 Subhalo  397418
 Subhalo  398110
 Subhalo  398282
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
@@ -1262,31 +1262,31 @@ Subhalo  398549
 Subhalo  399101
 Subhalo  402979
 Subhalo  405460
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-15 Seconds
+14 Seconds
 98  percent of data processed
 Loading all particles
 Subhalo  409358
 Subhalo  413091
 Subhalo  414050
 Subhalo  424986
-Finding galaxy radius
-Finding center of galaxy
-Calculating new coordinates and radius
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
 Deleting particles outside galaxy radius
-Calculating particle masses
+Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
 Time to process 4 Subhalos: 
-14 Seconds
+15 Seconds
 Time to process:
-0:43:01 h:m:s
+0:43:38 h:m:s
