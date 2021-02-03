@@ -54,31 +54,26 @@ def galaxy_radius(catalogue, base_path):
     df_central_halos = df_halos.iloc[halo_indices]
     radius_200 = np.array(df_central_halos["Group_R_Crit200"])
 
-    catalogue["SubhaloGalaxyRad"] = 0.1*radius_200
+    catalogue["SubhaloGalaxyRad"] = 0.15*radius_200
     catalogue["SubhaloRad"] = radius_200
 
     return catalogue
 
-def total_mass(particles, N, catalogue):
+def total_mass(particle, N, catalogue, particle_type="Stellar"):
     """
-    Calculate total mass for each particle type and saves it to the group catalogue
+    Calculate total mass for a particle type and saves it to the group catalogue
     """
-    particle_mass = np.zeros([len(particles), N])
-    p = 0
-    for particle in particles:
-        for i in range(N):
-            particle_mass[p][i] = particle[i]["Masses"].sum() #or load from snapshot to save time
-        p = p + 1
-    mass_total = particle_mass.sum()
+    particle_mass = np.zeros(N)
+    catalogue_key = "SubhaloMass" + particle_type
 
+    for i in range(N):
+        particle_mass[i] = particle[i]["Masses"].sum() #or load from snapshot to save time
+    
     #save value to catalogue
-    catalogue["SubhaloMassGas"] = particle_mass[0]
-    catalogue["SubhaloMassDM"] = particle_mass[1]
-    catalogue["SubhaloMassStellar"] = particle_mass[2]
-    catalogue["SubhaloMass"] = mass_total
-    return particles, catalogue
+    catalogue[catalogue_key] = particle_mass
+    return catalogue
 
-def subhalo_velocity_old(particles, N, catalogue):
+def subhalo_velocity_all(particles, N, catalogue):
     """
     Calculates the mass weighted average velocity of the particles in a subhalo and save them to the group catalogue.
     """

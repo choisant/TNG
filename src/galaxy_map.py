@@ -4,8 +4,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import illustris_python as il
 
-basePath = "./data/tng-100-1/subhalos/subhalo"
-subhalo_id = "371259"
+basePath = "./data/tng-100-3/subhalos/subhalo"
+subhalo_id = "4408"
 
 stars = pd.read_pickle(basePath + subhalo_id + "_stars.pkl")
 

@@ -66,7 +66,7 @@ def simple_test_all(tng_run, test_name, snapshot=99):
     start = timer()
     percent = 0
     dm_part_mass = set_params(tng_run)
-    if path.exists("./data/" + tng_run + "/cutdata/central_ids.txt"):
+    if path.exists("./data/" + tng_run + "/cutdata/central_id.txt"):
         indices = np.genfromtxt("./data/" + tng_run + "/cutdata/central_ids.txt", int)
     else:
         print("No list of central galaxy indices exists. Trying to create file ...")
