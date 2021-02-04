@@ -8,7 +8,7 @@ TEXTSIZE = 20
 def log_formater(df):
     df_log = df.copy(deep=True)
     for key in df.keys():
-        if key != "cataid":
+        if (key != "cataid") and (key != "id"):
             df_log[key] = np.log10(list(df[key]))
     return df_log
 

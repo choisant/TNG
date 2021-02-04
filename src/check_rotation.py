@@ -37,15 +37,15 @@ def create_projections(subhalo, index, test_name):
 
     fig1, axs1 = plt.subplots(nrows = 1, ncols = 3, figsize=(28,8))
 
-    subhalo.plot.scatter("x_rot", "y_rot", color = "orange", s=3, alpha = 1, ax = axs1[0])
+    subhalo.plot.scatter("x_rot", "y_rot", color="orange", s=3, alpha=0.5, ax=axs1[0])
     axs1[0].set_xlabel('x_rot [ckpc/h]')
     axs1[0].set_ylabel('y_rot [ckpc/h]')
     
-    subhalo.plot.scatter("x_rot", "z_rot", color = "orange", s=3, alpha = 1, ax = axs1[1])
+    subhalo.plot.scatter("x_rot", "z_rot", color="orange", s=3, alpha = 0.5, ax=axs1[1])
     axs1[1].set_xlabel('x_rot [ckpc/h]')
     axs1[1].set_ylabel('z_rot [ckpc/h]')
 
-    subhalo.plot.scatter("y_rot", "z_rot", color = "orange", s=3, alpha = 1, ax = axs1[2])
+    subhalo.plot.scatter("y_rot", "z_rot", color="orange", s=3, alpha=0.5, ax=axs1[2])
     axs1[2].set_xlabel('y_rot [ckpc/h]')
     axs1[2].set_ylabel('z_rot [ckpc/h]')
 
@@ -53,17 +53,17 @@ def create_projections(subhalo, index, test_name):
    
     fig2, axs2 = plt.subplots(nrows = 1, ncols = 3, figsize=(28,8))
 
-    subhalo.plot.scatter("x", "y", color = "orange", s=3, alpha = 1, ax = axs2[0])
-    axs2[0].set_xlabel('x_rot [ckpc/h]')
-    axs2[0].set_ylabel('y_rot [ckpc/h]')
+    subhalo.plot.scatter("x", "y", color = "orange", s=3, alpha=0.5, ax=axs2[0])
+    axs2[0].set_xlabel('x [ckpc/h]')
+    axs2[0].set_ylabel('y [ckpc/h]')
     
-    subhalo.plot.scatter("x", "z", color = "orange", s=3, alpha = 1, ax = axs2[1])
-    axs2[1].set_xlabel('x_rot [ckpc/h]')
-    axs2[1].set_ylabel('z_rot [ckpc/h]')
+    subhalo.plot.scatter("x", "z", color = "orange", s=3, alpha=0.5, ax=axs2[1])
+    axs2[1].set_xlabel('x [ckpc/h]')
+    axs2[1].set_ylabel('z [ckpc/h]')
 
-    subhalo.plot.scatter("y", "z", color = "orange", s=3, alpha = 1, ax = axs2[2])
-    axs2[2].set_xlabel('y_rot [ckpc/h]')
-    axs2[2].set_ylabel('z_rot [ckpc/h]')
+    subhalo.plot.scatter("y", "z", color = "orange", s=3, alpha = 0.5, ax = axs2[2])
+    axs2[2].set_xlabel('y [ckpc/h]')
+    axs2[2].set_ylabel('z [ckpc/h]')
 
     plt.savefig("./fig/projections/" + test_name + "_subhalo_" + str(index) + "_xy.png")
 

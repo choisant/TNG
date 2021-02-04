@@ -112,7 +112,7 @@ def make_central_id_file(tng_run, snapshot):
     base_path = "./data/"+ tng_run + "/output"
     subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
-    min_mass = 9.5 #minimum stellar mass
+    min_mass = 9.0 #minimum stellar mass
     snapshot = 99
 
     centrals_id, lates_id, earlies_id = create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mass)
