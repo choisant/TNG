@@ -2,7 +2,7 @@ import numpy as np
 import numpy.linalg as lg
 from scipy.spatial.transform import Rotation as R
 
-def rotate_coordinates(particle, N, catalogue, rot_vector):
+def rotate_coordinates(particle, N, rot_vector):
     """
     Rotates the coordinates of the particles such that the z-sxis aligns with rot_vector.
     """

@@ -6,19 +6,13 @@ import illustris_python as il
 import physics
 
 
-def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
+def basic_properties_stars(tng_run, snapshot, indices, stars_out=False):
     #intitial setup
-    basePath = "./data/" + str(tng_run) + "/output"
+    base_path = "./data/" + str(tng_run) + "/output"
     fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
-            "gas": ["Coordinates", "Potential", "Masses", "Velocities"],
-            "dm": ["Coordinates", "Potential", "Velocities"]
             }
-
     N = len(indices)
     stars = [0]*N
-    gas = [0]*N
-    dm = [0]*N
-    particle_lists = [gas, dm, stars]
     group_cat = pd.DataFrame({"id": indices})
     #Start timer
     start = timer()
@@ -27,9 +21,11 @@ def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
     print("Loading all particles")
     for i in range(N):
         print("Subhalo ", indices[i])
-        stars[i] = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(basePath, snapshot, indices[i], 'stars', fields["stars"]))
+        stars[i] = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, indices[i], 'stars', fields["stars"]))
+        if indices[i] < 152031:
+            stars[i].info(verbose=False)
     print("Calculating galaxy radius")
-    group_cat = physics.properties.galaxy_radius(group_cat, basePath)
+    group_cat = physics.properties.galaxy_radius(group_cat, base_path)
     print("Calculating center of galaxy")
     group_cat = physics.properties.center_halo(stars, N, group_cat)
     print("Calculating stellar position and radius")
@@ -46,17 +42,52 @@ def basic_properties(tng_run, snapshot, indices, dm_particle_mass):
     stars = physics.properties.relative_velocities(stars, N, group_cat)
     print("Calculating half mass radius")
     group_cat = physics.properties.half_mass_radius(stars, N, group_cat, "Stellar")
+    print("Calculating maximum angular momentum")
+    group_cat = physics.properties.max_ang_momentum(stars, N, group_cat)
     
     #End timer
     end = timer()
     print("Time to process " + str(N) + " Subhalos: ")
     print(int(end - start), "Seconds")
+
+    if stars_out:
+        return stars
     
     return group_cat
 
-def rotate(particle_lists, N, group_cat, rot_vector):
-    print("Rotating subhalos")
-    particle_lists = physics.geometry.rotate_coordinates(particle_lists, N, group_cat, rot_vector)
+def masses(tng_run, snapshot, dm_mass, indices, catalogue):
+    #intitial setup
+    base_path = "./data/" + str(tng_run) + "/output"
+    fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
+        "gas": ["Coordinates", "Masses"],
+        "dm": ["Coordinates", "Potential"]
+        }
+    N = len(indices)
+    #Load all particles
+    gas_masses = np.zeros(N)
+    dm_masses = np.zeros(N)
+    for i in range(N):
+        df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, indices[i], 'gas', fields["gas"]))
+        df = physics.properties.relative_pos_radius([df], 1, catalogue)[0]
+        print("Deleting particles outside galaxy radius")
+        max_rad = catalogue["SubhaloGalaxyRad"][i]
+        df = df[df["r"] < max_rad]
+        gas_masses[i] = df["Masses"].sum()
+
+        df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, indices[i], 'dm', fields["dm"]))
+        df["Masses"] = dm_mass
+        df = physics.properties.relative_pos_radius([df], 1, catalogue)[0]
+        print("Deleting particles outside galaxy radius")
+        max_rad = catalogue["SubhaloGalaxyRad"][i]
+        df = df[df["r"] < max_rad]
+        dm_masses[i] = df["Masses"].sum()
+    
+    catalogue["SubhaloMassGas"] = gas_masses.sum()
+    catalogue["SubhaloMassDm"] = dm_masses.sum()
+    catalogue["SubhaloMassTotal"] = catalogue["SubhaloMassDm"] + catalogue["SubhaloMassGas"] + catalogue["SubhaloMassStellar"]
+        
+    return catalogue
+
 
 def save_particle_fields(particle, indices):
     #About 30MB for a 9.5 10^10 M_o galaxy

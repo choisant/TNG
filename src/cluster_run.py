@@ -20,3 +20,4 @@ else:
 #safe_tester.find_centrals(args.tng)
 #safe_tester.simple_test_last_ten(args.tng, test_name, 99)
 safe_tester.simple_test_all(args.tng, test_name, 99)
+safe_tester.rotation_test(args.tng, test_name, 99)
