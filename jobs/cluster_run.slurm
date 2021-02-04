@@ -1,7 +1,7 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
-#SBATCH --time=01:15:00
+#SBATCH --time=02:15:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=100000

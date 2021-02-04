@@ -1,19 +1,49 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: test_run
-Th job ID is 3279476
-The job was run on these nodes: compute-2-0-25
+Th job ID is 3281800
+The job was run on these nodes: compute-2-0-22
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
-Linux compute-2-0-25.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux compute-2-0-22.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+slurmstepd: error: *** JOB 3281797 ON compute-2-0-21 CANCELLED AT 2021-02-04T13:59:41 ***
+/lustre1/work/aurorasg/TNG/src/check_rotation.py:24: FutureWarning: 'argmin' is deprecated, use 'idxmin' instead. The behavior of 'argmin'
+will be corrected to return the positional minimum in the future.
+Use 'series.values.argmin' to get the position of the minimum now.
+  latest_index = group_cat["SubhaloGasFrac"].argmin()
 0  percent of data processed
 Loading all particles
 Subhalo  17185
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2422056 entries, 0 to 2422055
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 92.4+ MB
 Subhalo  31342
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3015291 entries, 0 to 3015290
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 115.0+ MB
 Subhalo  41582
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1486164 entries, 0 to 1486163
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 56.7+ MB
 Subhalo  52618
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1255043 entries, 0 to 1255042
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 47.9+ MB
 Subhalo  60731
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1420884 entries, 0 to 1420883
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 54.2+ MB
 Calculating galaxy radius
 Calculating center of galaxy
 Calculating stellar position and radius
@@ -22,14 +52,45 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 5 Subhalos: 
-201 Seconds
+257 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 1  percent of data processed
 Loading all particles
 Subhalo  69507
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2378279 entries, 0 to 2378278
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 90.7+ MB
 Subhalo  76086
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1013954 entries, 0 to 1013953
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 38.7+ MB
 Subhalo  83280
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2226171 entries, 0 to 2226170
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 84.9+ MB
 Subhalo  88663
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2204429 entries, 0 to 2204428
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 84.1+ MB
 Calculating galaxy radius
 Calculating center of galaxy
 Calculating stellar position and radius
@@ -38,14 +99,43 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-171 Seconds
+217 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 2  percent of data processed
 Loading all particles
 Subhalo  96500
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1868553 entries, 0 to 1868552
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 71.3+ MB
 Subhalo  102683
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1701405 entries, 0 to 1701404
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 64.9+ MB
 Subhalo  108012
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 624635 entries, 0 to 624634
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 23.8+ MB
 Subhalo  114388
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 813485 entries, 0 to 813484
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 31.0+ MB
 Calculating galaxy radius
 Calculating center of galaxy
 Calculating stellar position and radius
@@ -54,14 +144,43 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-106 Seconds
+138 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 3  percent of data processed
 Loading all particles
 Subhalo  118679
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1256729 entries, 0 to 1256728
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 47.9+ MB
 Subhalo  121863
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1004383 entries, 0 to 1004382
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 38.3+ MB
 Subhalo  125027
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 921023 entries, 0 to 921022
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 35.1+ MB
 Subhalo  128393
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1410385 entries, 0 to 1410384
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 53.8+ MB
 Calculating galaxy radius
 Calculating center of galaxy
 Calculating stellar position and radius
@@ -70,14 +189,43 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-87 Seconds
+118 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 4  percent of data processed
 Loading all particles
 Subhalo  131047
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 865287 entries, 0 to 865286
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 33.0+ MB
 Subhalo  134847
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 847447 entries, 0 to 847446
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 32.3+ MB
 Subhalo  137885
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 900195 entries, 0 to 900194
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 34.3+ MB
 Subhalo  140721
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 796063 entries, 0 to 796062
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 30.4+ MB
 Calculating galaxy radius
 Calculating center of galaxy
 Calculating stellar position and radius
@@ -86,13 +234,37 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-56 Seconds
+79 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 6  percent of data processed
 Loading all particles
 Subhalo  143884
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1657485 entries, 0 to 1657484
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 63.2+ MB
 Subhalo  146176
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 792235 entries, 0 to 792234
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 30.2+ MB
 Subhalo  149169
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 798609 entries, 0 to 798608
+Columns: 5 entries, count to Velocities
+dtypes: object(5)
+memory usage: 30.5+ MB
 Subhalo  152031
 Calculating galaxy radius
 Calculating center of galaxy
@@ -102,8 +274,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-80 Seconds
+104 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 7  percent of data processed
 Loading all particles
 Subhalo  154493
@@ -118,8 +299,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-58 Seconds
+77 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 8  percent of data processed
 Loading all particles
 Subhalo  163675
@@ -134,8 +324,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-63 Seconds
+81 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 9  percent of data processed
 Loading all particles
 Subhalo  172649
@@ -150,8 +349,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-63 Seconds
+80 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 11  percent of data processed
 Loading all particles
 Subhalo  181983
@@ -166,8 +374,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-54 Seconds
+70 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 12  percent of data processed
 Loading all particles
 Subhalo  191079
@@ -182,8 +399,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-33 Seconds
+42 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 13  percent of data processed
 Loading all particles
 Subhalo  199321
@@ -198,8 +424,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-43 Seconds
+55 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 14  percent of data processed
 Loading all particles
 Subhalo  206226
@@ -214,8 +449,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-46 Seconds
+59 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 16  percent of data processed
 Loading all particles
 Subhalo  212836
@@ -230,8 +474,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-40 Seconds
+55 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 17  percent of data processed
 Loading all particles
 Subhalo  219032
@@ -246,8 +499,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-32 Seconds
+44 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 18  percent of data processed
 Loading all particles
 Subhalo  225155
@@ -262,8 +524,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-53 Seconds
+68 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 19  percent of data processed
 Loading all particles
 Subhalo  230235
@@ -278,8 +549,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-37 Seconds
+51 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 21  percent of data processed
 Loading all particles
 Subhalo  235692
@@ -294,8 +574,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-36 Seconds
+47 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 22  percent of data processed
 Loading all particles
 Subhalo  239993
@@ -310,8 +599,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-28 Seconds
+37 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 23  percent of data processed
 Loading all particles
 Subhalo  244318
@@ -326,8 +624,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-33 Seconds
+42 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 24  percent of data processed
 Loading all particles
 Subhalo  248157
@@ -342,8 +649,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-27 Seconds
+37 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 26  percent of data processed
 Loading all particles
 Subhalo  252245
@@ -358,8 +674,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-34 Seconds
+44 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 27  percent of data processed
 Loading all particles
 Subhalo  256507
@@ -374,8 +699,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-27 Seconds
+35 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 28  percent of data processed
 Loading all particles
 Subhalo  260014
@@ -390,8 +724,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-24 Seconds
+31 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 29  percent of data processed
 Loading all particles
 Subhalo  264412
@@ -406,8 +749,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-27 Seconds
+35 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 31  percent of data processed
 Loading all particles
 Subhalo  267323
@@ -422,8 +774,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-36 Seconds
+47 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 32  percent of data processed
 Loading all particles
 Subhalo  270079
@@ -438,8 +799,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-25 Seconds
+33 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 33  percent of data processed
 Loading all particles
 Subhalo  273141
@@ -454,8 +824,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-25 Seconds
+31 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 34  percent of data processed
 Loading all particles
 Subhalo  276219
@@ -470,8 +849,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-26 Seconds
+33 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 36  percent of data processed
 Loading all particles
 Subhalo  278854
@@ -486,8 +874,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-27 Seconds
+34 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 37  percent of data processed
 Loading all particles
 Subhalo  281700
@@ -502,8 +899,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-28 Seconds
+36 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 38  percent of data processed
 Loading all particles
 Subhalo  284316
@@ -518,8 +924,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-25 Seconds
+37 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 39  percent of data processed
 Loading all particles
 Subhalo  286695
@@ -534,8 +949,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-22 Seconds
+29 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 41  percent of data processed
 Loading all particles
 Subhalo  289945
@@ -550,8 +974,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-24 Seconds
+31 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 42  percent of data processed
 Loading all particles
 Subhalo  292921
@@ -566,8 +999,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-20 Seconds
+25 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 43  percent of data processed
 Loading all particles
 Subhalo  295077
@@ -582,8 +1024,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-26 Seconds
+34 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 44  percent of data processed
 Loading all particles
 Subhalo  297712
@@ -598,8 +1049,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-20 Seconds
+27 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 46  percent of data processed
 Loading all particles
 Subhalo  299935
@@ -614,8 +1074,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-24 Seconds
+38 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 47  percent of data processed
 Loading all particles
 Subhalo  303710
@@ -630,8 +1099,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-25 Seconds
+39 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 48  percent of data processed
 Loading all particles
 Subhalo  305653
@@ -646,8 +1124,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-24 Seconds
+43 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 49  percent of data processed
 Loading all particles
 Subhalo  307438
@@ -662,8 +1149,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+24 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 51  percent of data processed
 Loading all particles
 Subhalo  310509
@@ -678,8 +1174,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+21 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 52  percent of data processed
 Loading all particles
 Subhalo  312412
@@ -694,8 +1199,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 53  percent of data processed
 Loading all particles
 Subhalo  314365
@@ -710,8 +1224,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-22 Seconds
+30 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 54  percent of data processed
 Loading all particles
 Subhalo  316354
@@ -726,8 +1249,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+24 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 56  percent of data processed
 Loading all particles
 Subhalo  318210
@@ -742,8 +1274,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+23 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 57  percent of data processed
 Loading all particles
 Subhalo  320433
@@ -758,8 +1299,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-22 Seconds
+28 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 58  percent of data processed
 Loading all particles
 Subhalo  322979
@@ -774,8 +1324,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+32 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 59  percent of data processed
 Loading all particles
 Subhalo  324572
@@ -790,8 +1349,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+20 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 61  percent of data processed
 Loading all particles
 Subhalo  327112
@@ -806,8 +1374,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-21 Seconds
+27 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 62  percent of data processed
 Loading all particles
 Subhalo  329849
@@ -822,8 +1399,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+23 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 63  percent of data processed
 Loading all particles
 Subhalo  331293
@@ -838,8 +1424,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 64  percent of data processed
 Loading all particles
 Subhalo  334350
@@ -854,8 +1449,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-21 Seconds
+27 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 66  percent of data processed
 Loading all particles
 Subhalo  336276
@@ -870,8 +1474,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+24 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 67  percent of data processed
 Loading all particles
 Subhalo  338148
@@ -886,8 +1499,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+25 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 68  percent of data processed
 Loading all particles
 Subhalo  339862
@@ -902,8 +1524,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+25 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 69  percent of data processed
 Loading all particles
 Subhalo  342047
@@ -918,8 +1549,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+20 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 71  percent of data processed
 Loading all particles
 Subhalo  343429
@@ -934,8 +1574,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+25 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 72  percent of data processed
 Loading all particles
 Subhalo  346075
@@ -950,8 +1599,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+20 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 73  percent of data processed
 Loading all particles
 Subhalo  347237
@@ -966,8 +1624,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-15 Seconds
+20 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 74  percent of data processed
 Loading all particles
 Subhalo  348334
@@ -982,8 +1649,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+25 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 76  percent of data processed
 Loading all particles
 Subhalo  350486
@@ -998,8 +1674,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 77  percent of data processed
 Loading all particles
 Subhalo  353423
@@ -1014,8 +1699,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+21 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 78  percent of data processed
 Loading all particles
 Subhalo  356176
@@ -1030,8 +1724,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+24 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 79  percent of data processed
 Loading all particles
 Subhalo  358016
@@ -1046,8 +1749,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 80  percent of data processed
 Loading all particles
 Subhalo  359639
@@ -1062,8 +1774,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+23 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 82  percent of data processed
 Loading all particles
 Subhalo  360750
@@ -1078,8 +1799,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+25 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 83  percent of data processed
 Loading all particles
 Subhalo  363104
@@ -1094,8 +1824,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-19 Seconds
+24 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 84  percent of data processed
 Loading all particles
 Subhalo  364263
@@ -1110,8 +1849,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-18 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 85  percent of data processed
 Loading all particles
 Subhalo  368697
@@ -1126,8 +1874,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+21 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 87  percent of data processed
 Loading all particles
 Subhalo  371704
@@ -1142,8 +1899,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 88  percent of data processed
 Loading all particles
 Subhalo  373510
@@ -1158,8 +1924,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 89  percent of data processed
 Loading all particles
 Subhalo  376356
@@ -1174,8 +1949,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+21 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 90  percent of data processed
 Loading all particles
 Subhalo  380119
@@ -1190,8 +1974,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-16 Seconds
+20 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 92  percent of data processed
 Loading all particles
 Subhalo  382059
@@ -1206,8 +1999,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 93  percent of data processed
 Loading all particles
 Subhalo  390305
@@ -1222,8 +2024,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-17 Seconds
+22 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 94  percent of data processed
 Loading all particles
 Subhalo  393731
@@ -1238,8 +2049,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-15 Seconds
+19 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 95  percent of data processed
 Loading all particles
 Subhalo  396073
@@ -1254,8 +2074,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-15 Seconds
+19 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 97  percent of data processed
 Loading all particles
 Subhalo  398549
@@ -1270,8 +2099,17 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-14 Seconds
+18 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 98  percent of data processed
 Loading all particles
 Subhalo  409358
@@ -1286,7 +2124,30 @@ Calculating stellar masses
 Calculating subhalo velocity
 Calculating relative velocities
 Calculating half mass radius
+Calculating maximum angular momentum
 Time to process 4 Subhalos: 
-15 Seconds
+19 Seconds
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
+Deleting particles outside galaxy radius
 Time to process:
-0:43:38 h:m:s
+1:29:52 h:m:s
+[0.04359815 0.95363095 0.29780398]
+Loading all particles
+Subhalo  372568
+Calculating galaxy radius
+Calculating center of galaxy
+Calculating stellar position and radius
+Deleting particles outside galaxy radius
+Calculating stellar masses
+Calculating subhalo velocity
+Calculating relative velocities
+Calculating half mass radius
+Calculating maximum angular momentum
+Time to process 1 Subhalos: 
+8 Seconds
