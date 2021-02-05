@@ -21,7 +21,7 @@ def find_most_late(tng_run, test_name):
     new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     group_cat = create_cat(new_cat_path)
     group_cat["SubhaloGasFrac"] = group_cat["SubhaloMassGas"]/group_cat["SubhaloMassTotal"]
-    latest_index = group_cat["SubhaloGasFrac"].argmin()
+    latest_index = group_cat["SubhaloGasFrac"].values.argmin()
     latest_id = group_cat["id"][latest_index]
     rot_vector = np.transpose(np.array([group_cat["RotationAxisX"][latest_index],
         group_cat["RotationAxisY"][latest_index],

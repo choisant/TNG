@@ -18,31 +18,22 @@ def basic_properties_stars(tng_run, snapshot, indices, stars_out=False):
     start = timer()
 
     #Load all particles
-    print("Loading all particles")
+    print("Loading stellar particles")
     for i in range(N):
         print("Subhalo ", indices[i])
         stars[i] = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, indices[i], 'stars', fields["stars"]))
         if indices[i] < 152031:
             stars[i].info(verbose=False)
-    print("Calculating galaxy radius")
     group_cat = physics.properties.galaxy_radius(group_cat, base_path)
-    print("Calculating center of galaxy")
     group_cat = physics.properties.center_halo(stars, N, group_cat)
-    print("Calculating stellar position and radius")
     stars = physics.properties.relative_pos_radius(stars, N, group_cat)
-    print("Deleting particles outside galaxy radius")
     for i in range(N):
         max_rad = group_cat["SubhaloGalaxyRad"][i]
         stars[i] = stars[i][stars[i]["r"] < max_rad]
-    print("Calculating stellar masses")
     group_cat = physics.properties.total_mass(stars, N, group_cat)
-    print("Calculating subhalo velocity")
     stars, group_cat = physics.properties.subhalo_velocity(stars, N, group_cat)
-    print("Calculating relative velocities")
     stars = physics.properties.relative_velocities(stars, N, group_cat)
-    print("Calculating half mass radius")
     group_cat = physics.properties.half_mass_radius(stars, N, group_cat, "Stellar")
-    print("Calculating maximum angular momentum")
     group_cat = physics.properties.max_ang_momentum(stars, N, group_cat)
     
     #End timer
@@ -69,7 +60,6 @@ def masses(tng_run, snapshot, dm_mass, indices, catalogue):
     for i in range(N):
         df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, indices[i], 'gas', fields["gas"]))
         df = physics.properties.relative_pos_radius([df], 1, catalogue)[0]
-        print("Deleting particles outside galaxy radius")
         max_rad = catalogue["SubhaloGalaxyRad"][i]
         df = df[df["r"] < max_rad]
         gas_masses[i] = df["Masses"].sum()

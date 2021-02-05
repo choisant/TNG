@@ -49,14 +49,13 @@ def simple_test_last_ten(tng_run, test_name, snapshot=99):
     index_list = indices[-10:] #Get last ten subhalos
     print("Starting test")
     temp_cat = test.basic_properties_stars(tng_run, snapshot, indices = index_list, stars_out = False)
-    print(temp_cat[0])
+    temp_cat = test.masses(tng_run, snapshot, dm_part_mass, index_list, temp_cat)
     print("Saving results")
     temp_cat.to_pickle("./data/" + tng_run + "/catalogues/last_ten_" + test_name + ".pkl")
     #End timer
     end = timer()
     print("Time to process ")
     print(datetime.timedelta(seconds =int(end - start)), "h:m:s")
-
 
 
 def simple_test_all(tng_run, test_name, snapshot=99):
