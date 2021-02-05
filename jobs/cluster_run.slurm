@@ -1,7 +1,7 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
-#SBATCH --time=02:15:00
+#SBATCH --time=03:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=100000
@@ -26,6 +26,7 @@ module load Anaconda3/2018.12
 
 uname -a
 
-python ./src/cluster_run.py -tng "tng-100-1" -n "idun" -id  $SLURM_JOB_ID
+python ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun"
+
 
 

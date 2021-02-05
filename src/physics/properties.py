@@ -100,25 +100,24 @@ def subhalo_velocity_all(particles, N, catalogue):
     catalogue["SubhaloVelZ"] = subhalo_velocities[:, 2]
     return particles, catalogue
 
-def subhalo_velocity(particle, N, catalogue):
+def subhalo_velocity_one(subhalo, catalogue):
     """
     Calculates the mass weighted average velocity of the particles in a subhalo and save them to the group catalogue.
     """
-    subhalo_velocities = np.zeros([N, 3]) #Empty list
-    for i in range(N):
-        m = np.array(particle[i]["Masses"]) 
-        M = np.sum(m)
-        velocities = np.array(list(particle[i]["Velocities"].values))
-        #Velocity times mass for each particle
-        vx_m = velocities[:, 0]*m
-        vy_m = velocities[:, 1]*m
-        vz_m = velocities[:, 2]*m
-        subhalo_velocities[i] = (vx_m.sum(), vy_m.sum(), vz_m.sum())/M #Mass weighted average velocity
+    subhalo_velocities = np.zeros(3) #Empty list
+    m = np.array(subhalo["Masses"]) 
+    M = np.sum(m)
+    velocities = np.array(list(subhalo["Velocities"].values))
+    #Velocity times mass for each particle
+    vx_m = velocities[:, 0]*m
+    vy_m = velocities[:, 1]*m
+    vz_m = velocities[:, 2]*m
+    subhalo_velocities = (vx_m.sum(), vy_m.sum(), vz_m.sum())/M #Mass weighted average velocity
     #save to group catalogue
-    catalogue["SubhaloVelX"] = subhalo_velocities[:, 0]
-    catalogue["SubhaloVelY"] = subhalo_velocities[:, 1]
-    catalogue["SubhaloVelZ"] = subhalo_velocities[:, 2]
-    return particle, catalogue
+    catalogue["SubhaloVelX"] = subhalo_velocities[0]
+    catalogue["SubhaloVelY"] = subhalo_velocities[1]
+    catalogue["SubhaloVelZ"] = subhalo_velocities[2]
+    return subhalo, catalogue
 
 def relative_velocities(particle, N, catalogue):
     """
