@@ -1,2153 +1,717 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: test_run
-Th job ID is 3281800
+Th job ID is 3296132
 The job was run on these nodes: compute-2-0-22
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
 Linux compute-2-0-22.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-slurmstepd: error: *** JOB 3281797 ON compute-2-0-21 CANCELLED AT 2021-02-04T13:59:41 ***
-/lustre1/work/aurorasg/TNG/src/check_rotation.py:24: FutureWarning: 'argmin' is deprecated, use 'idxmin' instead. The behavior of 'argmin'
-will be corrected to return the positional minimum in the future.
-Use 'series.values.argmin' to get the position of the minimum now.
-  latest_index = group_cat["SubhaloGasFrac"].argmin()
-0  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  17185
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 2422056 entries, 0 to 2422055
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 92.4+ MB
+Loading stellar particles
 Subhalo  31342
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 3015291 entries, 0 to 3015290
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 115.0+ MB
+Loading stellar particles
 Subhalo  41582
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1486164 entries, 0 to 1486163
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 56.7+ MB
+Loading stellar particles
 Subhalo  52618
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1255043 entries, 0 to 1255042
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 47.9+ MB
+Loading stellar particles
 Subhalo  60731
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1420884 entries, 0 to 1420883
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 54.2+ MB
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 5 Subhalos: 
-257 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-1  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  69507
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 2378279 entries, 0 to 2378278
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 90.7+ MB
+Loading stellar particles
 Subhalo  76086
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1013954 entries, 0 to 1013953
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 38.7+ MB
+Loading stellar particles
 Subhalo  83280
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 2226171 entries, 0 to 2226170
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 84.9+ MB
+Loading stellar particles
 Subhalo  88663
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 2204429 entries, 0 to 2204428
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 84.1+ MB
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-217 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-2  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  96500
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1868553 entries, 0 to 1868552
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 71.3+ MB
+Loading stellar particles
 Subhalo  102683
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1701405 entries, 0 to 1701404
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 64.9+ MB
+Loading stellar particles
 Subhalo  108012
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 624635 entries, 0 to 624634
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 23.8+ MB
+Loading stellar particles
 Subhalo  114388
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 813485 entries, 0 to 813484
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 31.0+ MB
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-138 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-3  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  118679
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1256729 entries, 0 to 1256728
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 47.9+ MB
+Loading stellar particles
 Subhalo  121863
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1004383 entries, 0 to 1004382
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 38.3+ MB
+Loading stellar particles
 Subhalo  125027
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 921023 entries, 0 to 921022
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 35.1+ MB
+Loading stellar particles
 Subhalo  128393
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1410385 entries, 0 to 1410384
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 53.8+ MB
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-118 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-4  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  131047
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 865287 entries, 0 to 865286
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 33.0+ MB
+Loading stellar particles
 Subhalo  134847
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 847447 entries, 0 to 847446
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 32.3+ MB
+Loading stellar particles
 Subhalo  137885
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 900195 entries, 0 to 900194
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 34.3+ MB
+Loading stellar particles
 Subhalo  140721
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 796063 entries, 0 to 796062
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 30.4+ MB
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-79 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-6  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  143884
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1657485 entries, 0 to 1657484
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 63.2+ MB
+Loading stellar particles
 Subhalo  146176
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 792235 entries, 0 to 792234
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 30.2+ MB
+Loading stellar particles
 Subhalo  149169
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 798609 entries, 0 to 798608
-Columns: 5 entries, count to Velocities
-dtypes: object(5)
-memory usage: 30.5+ MB
+Loading stellar particles
 Subhalo  152031
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-104 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-7  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  154493
+Loading stellar particles
 Subhalo  156809
+Loading stellar particles
 Subhalo  158847
+Loading stellar particles
 Subhalo  161162
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-77 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-8  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  163675
+Loading stellar particles
 Subhalo  165727
+Loading stellar particles
 Subhalo  168390
+Loading stellar particles
 Subhalo  170540
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-81 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-9  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  172649
+Loading stellar particles
 Subhalo  175238
+Loading stellar particles
 Subhalo  177719
+Loading stellar particles
 Subhalo  179886
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-80 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-11  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  181983
+Loading stellar particles
 Subhalo  184828
+Loading stellar particles
 Subhalo  186927
+Loading stellar particles
 Subhalo  188859
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-70 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-12  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  191079
+Loading stellar particles
 Subhalo  192898
+Loading stellar particles
 Subhalo  194946
+Loading stellar particles
 Subhalo  197108
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-42 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-13  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  199321
+Loading stellar particles
 Subhalo  200803
+Loading stellar particles
 Subhalo  202634
+Loading stellar particles
 Subhalo  204234
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-55 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-14  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  206226
+Loading stellar particles
 Subhalo  207473
+Loading stellar particles
 Subhalo  208781
+Loading stellar particles
 Subhalo  210763
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-59 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-16  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  212836
+Loading stellar particles
 Subhalo  214452
+Loading stellar particles
 Subhalo  216016
+Loading stellar particles
 Subhalo  217485
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-55 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-17  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  219032
+Loading stellar particles
 Subhalo  220557
+Loading stellar particles
 Subhalo  222267
+Loading stellar particles
 Subhalo  223896
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-44 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-18  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  225155
+Loading stellar particles
 Subhalo  226194
+Loading stellar particles
 Subhalo  227574
+Loading stellar particles
 Subhalo  228680
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-68 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-19  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  230235
+Loading stellar particles
 Subhalo  231706
+Loading stellar particles
 Subhalo  233214
+Loading stellar particles
 Subhalo  234514
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-51 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-21  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  235692
+Loading stellar particles
 Subhalo  236756
+Loading stellar particles
 Subhalo  237941
+Loading stellar particles
 Subhalo  239245
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-47 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-22  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  239993
+Loading stellar particles
 Subhalo  241153
+Loading stellar particles
 Subhalo  242214
+Loading stellar particles
 Subhalo  243186
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-37 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-23  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  244318
+Loading stellar particles
 Subhalo  245134
+Loading stellar particles
 Subhalo  246232
+Loading stellar particles
 Subhalo  247348
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-42 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-24  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  248157
+Loading stellar particles
 Subhalo  249164
+Loading stellar particles
 Subhalo  250390
+Loading stellar particles
 Subhalo  251299
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-37 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-26  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  252245
+Loading stellar particles
+Subhalo  252995
+Loading stellar particles
 Subhalo  254112
+Loading stellar particles
 Subhalo  254925
+Loading stellar particles
 Subhalo  255614
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-44 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-27  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  256507
+Loading stellar particles
 Subhalo  257302
+Loading stellar particles
 Subhalo  258263
+Loading stellar particles
 Subhalo  259114
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-35 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-28  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  260014
+Loading stellar particles
 Subhalo  260862
+Loading stellar particles
 Subhalo  261959
+Loading stellar particles
 Subhalo  262659
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-31 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-29  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  264412
+Loading stellar particles
 Subhalo  265267
+Loading stellar particles
 Subhalo  265926
+Loading stellar particles
 Subhalo  266559
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-35 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-31  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  267323
+Loading stellar particles
 Subhalo  268295
+Loading stellar particles
 Subhalo  268908
+Loading stellar particles
 Subhalo  269440
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-47 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-32  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  270079
+Loading stellar particles
 Subhalo  270963
+Loading stellar particles
 Subhalo  271729
+Loading stellar particles
 Subhalo  272322
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-33 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-33  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  273141
+Loading stellar particles
 Subhalo  273994
+Loading stellar particles
 Subhalo  274790
+Loading stellar particles
 Subhalo  275531
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-31 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-34  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  276219
+Loading stellar particles
 Subhalo  277020
+Loading stellar particles
 Subhalo  277687
+Loading stellar particles
 Subhalo  278302
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-33 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-36  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  278854
+Loading stellar particles
 Subhalo  279707
+Loading stellar particles
 Subhalo  280454
+Loading stellar particles
 Subhalo  281072
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-34 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-37  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  281700
+Loading stellar particles
 Subhalo  282377
+Loading stellar particles
 Subhalo  283011
+Loading stellar particles
 Subhalo  283637
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-36 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-38  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  284316
+Loading stellar particles
 Subhalo  284948
+Loading stellar particles
 Subhalo  285479
+Loading stellar particles
 Subhalo  286066
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-37 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-39  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  286695
+Loading stellar particles
 Subhalo  287335
+Loading stellar particles
 Subhalo  288743
+Loading stellar particles
 Subhalo  289426
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-29 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-41  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  289945
+Loading stellar particles
 Subhalo  290643
+Loading stellar particles
 Subhalo  291888
+Loading stellar particles
 Subhalo  292355
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-31 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-42  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  292921
+Loading stellar particles
 Subhalo  293439
+Loading stellar particles
 Subhalo  294047
+Loading stellar particles
 Subhalo  294510
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-25 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-43  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  295077
+Loading stellar particles
 Subhalo  296302
+Loading stellar particles
 Subhalo  296787
+Loading stellar particles
 Subhalo  297210
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-34 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-44  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  297712
+Loading stellar particles
 Subhalo  298206
+Loading stellar particles
 Subhalo  298892
+Loading stellar particles
 Subhalo  299429
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-27 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-46  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  299935
+Loading stellar particles
 Subhalo  301746
+Loading stellar particles
 Subhalo  302773
+Loading stellar particles
 Subhalo  303362
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-38 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-47  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  303710
+Loading stellar particles
 Subhalo  304201
+Loading stellar particles
 Subhalo  304726
+Loading stellar particles
 Subhalo  305083
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-39 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-48  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  305653
+Loading stellar particles
 Subhalo  306058
+Loading stellar particles
 Subhalo  306516
+Loading stellar particles
 Subhalo  306945
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-43 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-49  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  307438
+Loading stellar particles
 Subhalo  308598
+Loading stellar particles
 Subhalo  309045
+Loading stellar particles
 Subhalo  309951
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-24 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-51  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  310509
+Loading stellar particles
 Subhalo  310985
+Loading stellar particles
 Subhalo  311302
+Loading stellar particles
 Subhalo  311882
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-21 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-52  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  312412
+Loading stellar particles
 Subhalo  312891
+Loading stellar particles
 Subhalo  313402
+Loading stellar particles
 Subhalo  313954
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-53  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  314365
+Loading stellar particles
 Subhalo  314770
+Loading stellar particles
 Subhalo  315140
+Loading stellar particles
 Subhalo  316029
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-30 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-54  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  316354
+Loading stellar particles
 Subhalo  316855
+Loading stellar particles
 Subhalo  317311
+Loading stellar particles
 Subhalo  317711
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-24 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-56  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  318210
+Loading stellar particles
 Subhalo  318633
+Loading stellar particles
 Subhalo  319643
+Loading stellar particles
 Subhalo  320012
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-23 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-57  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  320433
+Loading stellar particles
+Subhalo  320734
+Loading stellar particles
 Subhalo  321204
+Loading stellar particles
 Subhalo  321674
+Loading stellar particles
 Subhalo  322160
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-28 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-58  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  322979
+Loading stellar particles
 Subhalo  323455
+Loading stellar particles
 Subhalo  323851
+Loading stellar particles
 Subhalo  324127
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-32 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-59  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  324572
+Loading stellar particles
 Subhalo  324997
+Loading stellar particles
 Subhalo  325808
+Loading stellar particles
 Subhalo  326652
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-20 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-61  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  327112
+Loading stellar particles
 Subhalo  327405
+Loading stellar particles
 Subhalo  329105
+Loading stellar particles
 Subhalo  329515
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-27 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-62  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  329849
+Loading stellar particles
 Subhalo  330208
+Loading stellar particles
 Subhalo  330553
+Loading stellar particles
 Subhalo  330955
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-23 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-63  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  331293
+Loading stellar particles
 Subhalo  331701
+Loading stellar particles
 Subhalo  332389
+Loading stellar particles
+Subhalo  333672
+Loading stellar particles
 Subhalo  334028
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-64  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  334350
+Loading stellar particles
 Subhalo  334727
+Loading stellar particles
 Subhalo  335078
+Loading stellar particles
+Subhalo  335486
+Loading stellar particles
 Subhalo  335927
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-27 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-66  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  336276
+Loading stellar particles
 Subhalo  336516
+Loading stellar particles
 Subhalo  336796
+Loading stellar particles
 Subhalo  337048
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-24 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-67  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  337444
+Loading stellar particles
 Subhalo  338148
+Loading stellar particles
 Subhalo  338458
+Loading stellar particles
 Subhalo  339181
+Loading stellar particles
 Subhalo  339547
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-25 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-68  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  339862
+Loading stellar particles
 Subhalo  340106
+Loading stellar particles
 Subhalo  340355
+Loading stellar particles
 Subhalo  341356
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-25 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-69  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  342047
+Loading stellar particles
 Subhalo  342343
+Loading stellar particles
 Subhalo  342689
+Loading stellar particles
 Subhalo  343039
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-20 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-71  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  343429
+Loading stellar particles
+Subhalo  343638
+Loading stellar particles
 Subhalo  344300
+Loading stellar particles
 Subhalo  344987
+Loading stellar particles
 Subhalo  345250
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-25 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-72  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  345812
+Loading stellar particles
 Subhalo  346075
+Loading stellar particles
 Subhalo  346420
+Loading stellar particles
 Subhalo  346748
+Loading stellar particles
 Subhalo  346976
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-20 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-73  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  347237
+Loading stellar particles
 Subhalo  347508
+Loading stellar particles
 Subhalo  347785
+Loading stellar particles
 Subhalo  348038
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-20 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-74  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  348334
+Loading stellar particles
+Subhalo  348593
+Loading stellar particles
 Subhalo  348894
+Loading stellar particles
 Subhalo  349414
+Loading stellar particles
 Subhalo  349897
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-25 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-76  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  350486
+Loading stellar particles
 Subhalo  350843
+Loading stellar particles
 Subhalo  352359
+Loading stellar particles
 Subhalo  352816
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-77  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  353423
+Loading stellar particles
 Subhalo  353729
+Loading stellar particles
 Subhalo  353973
+Loading stellar particles
 Subhalo  354727
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-21 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-78  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  356176
+Loading stellar particles
 Subhalo  356678
+Loading stellar particles
 Subhalo  357235
+Loading stellar particles
+Subhalo  357465
+Loading stellar particles
 Subhalo  357765
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-24 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-79  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  358016
+Loading stellar particles
 Subhalo  358582
+Loading stellar particles
 Subhalo  358886
+Loading stellar particles
 Subhalo  359334
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-80  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  359639
+Loading stellar particles
 Subhalo  360087
+Loading stellar particles
 Subhalo  360294
+Loading stellar particles
 Subhalo  360509
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-23 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-82  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  360750
+Loading stellar particles
 Subhalo  362042
+Loading stellar particles
 Subhalo  362370
+Loading stellar particles
 Subhalo  362780
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-25 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-83  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  363104
+Loading stellar particles
 Subhalo  363315
+Loading stellar particles
 Subhalo  363524
+Loading stellar particles
 Subhalo  363981
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-24 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-84  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  364263
+Loading stellar particles
 Subhalo  364807
+Loading stellar particles
 Subhalo  365263
+Loading stellar particles
+Subhalo  365493
+Loading stellar particles
+Subhalo  367456
+Loading stellar particles
 Subhalo  368436
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-85  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  368697
+Loading stellar particles
+Subhalo  369152
+Loading stellar particles
 Subhalo  369545
+Loading stellar particles
 Subhalo  369789
+Loading stellar particles
 Subhalo  371259
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-21 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-87  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  371471
+Loading stellar particles
 Subhalo  371704
+Loading stellar particles
 Subhalo  372175
+Loading stellar particles
 Subhalo  372568
+Loading stellar particles
 Subhalo  373050
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-88  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  373510
+Loading stellar particles
 Subhalo  374228
+Loading stellar particles
 Subhalo  374593
+Loading stellar particles
 Subhalo  375020
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-89  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  375236
+Loading stellar particles
 Subhalo  376356
+Loading stellar particles
 Subhalo  376963
+Loading stellar particles
 Subhalo  377212
+Loading stellar particles
 Subhalo  377398
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-21 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-90  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  378943
+Loading stellar particles
+Subhalo  379732
+Loading stellar particles
 Subhalo  380119
+Loading stellar particles
 Subhalo  380276
+Loading stellar particles
 Subhalo  381392
+Loading stellar particles
 Subhalo  381608
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-20 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-92  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  382059
+Loading stellar particles
+Subhalo  383307
+Loading stellar particles
 Subhalo  384705
+Loading stellar particles
 Subhalo  387236
+Loading stellar particles
+Subhalo  387590
+Loading stellar particles
+Subhalo  388249
+Loading stellar particles
 Subhalo  389056
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-93  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  389156
+Loading stellar particles
 Subhalo  390305
+Loading stellar particles
+Subhalo  392097
+Loading stellar particles
 Subhalo  392253
+Loading stellar particles
 Subhalo  392725
+Loading stellar particles
 Subhalo  392961
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-22 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-94  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  393731
+Loading stellar particles
+Subhalo  394439
+Loading stellar particles
 Subhalo  394600
+Loading stellar particles
 Subhalo  394719
+Loading stellar particles
 Subhalo  394850
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-19 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-95  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  396073
+Loading stellar particles
 Subhalo  397418
+Loading stellar particles
 Subhalo  398110
+Loading stellar particles
 Subhalo  398282
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-19 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-97  percent of data processed
-Loading all particles
+Loading stellar particles
 Subhalo  398549
+Loading stellar particles
 Subhalo  399101
+Loading stellar particles
+Subhalo  399969
+Loading stellar particles
+Subhalo  400266
+Loading stellar particles
+Subhalo  400426
+Loading stellar particles
 Subhalo  402979
+Loading stellar particles
+Subhalo  404216
+Loading stellar particles
+Subhalo  404644
+Loading stellar particles
 Subhalo  405460
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-18 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-98  percent of data processed
-Loading all particles
+Loading stellar particles
+Subhalo  408393
+Loading stellar particles
 Subhalo  409358
+Loading stellar particles
 Subhalo  413091
+Loading stellar particles
 Subhalo  414050
+Loading stellar particles
+Subhalo  417032
+Loading stellar particles
+Subhalo  424485
+Loading stellar particles
+Subhalo  424725
+Loading stellar particles
 Subhalo  424986
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 4 Subhalos: 
-19 Seconds
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Deleting particles outside galaxy radius
-Time to process:
-1:29:52 h:m:s
-[0.04359815 0.95363095 0.29780398]
-Loading all particles
-Subhalo  372568
-Calculating galaxy radius
-Calculating center of galaxy
-Calculating stellar position and radius
-Deleting particles outside galaxy radius
-Calculating stellar masses
-Calculating subhalo velocity
-Calculating relative velocities
-Calculating half mass radius
-Calculating maximum angular momentum
-Time to process 1 Subhalos: 
-8 Seconds
+Loading stellar particles
+Subhalo  429237
+Loading stellar particles
+Subhalo  381608

@@ -26,7 +26,7 @@ module load Anaconda3/2018.12
 
 uname -a
 
-python ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun"
+./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun"
 
 
 

@@ -20,7 +20,7 @@ dm = [0]*N
 
 #Load all particles
 
-for i in range(N):
+for i in range(50, N):
         print("Subhalo ", indices[i])
         input("Load stellar particles")
         stars[i] = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, indices[i], 'stars', fields["stars"]))
