@@ -1,12 +1,20 @@
+import os
+import argparse
 import numpy as np
 import pandas as pd
-import matplotlib as mpl
 import matplotlib.pyplot as plt
-import illustris_python as il
 import physics
 import tng100_test
 
-import os
+##Parser
+
+parser_rot = argparse.ArgumentParser()
+parser_rot.add_argument('-tng', type=str, required=True, help="What TNG-run do you want to process?")
+parser_rot.add_argument('-id', type=str, default = "none", help="Test run id. The output will have this id-tag.")
+parser_rot.add_argument('-n', '--name', type=str, default = "test", help="Test name. The output will have this name.")
+
+args = parser_rot.parse_args()
+
 
 def create_cat(path):
     df = pd.DataFrame()
@@ -70,7 +78,15 @@ def create_projections(subhalo, index, test_name):
 
 def check(tng_run, test_name, snapshot):
     latest_id, rot_vec = find_most_late(tng_run, test_name)
-    print(rot_vec)
-    most_late = tng100_test.basic_properties_stars(tng_run, snapshot, [latest_id], stars_out=True)
-    most_late = physics.geometry.rotate_coordinates(most_late, 1, [rot_vec])
-    create_projections(most_late[0], latest_id, test_name)
+    most_late = tng100_test.basic_properties_stars(tng_run, snapshot, latest_id, stars_out=True)
+    most_late = physics.geometry.rotate_coordinates(most_late, rot_vec)
+    create_projections(most_late, latest_id, test_name)
+
+tng_run = args.tng
+##Variables
+if args.id != "none":
+    test_name = args.name + "_" + args.id
+else:
+    test_name = args.name
+
+check(tng_run, test_name, 99)

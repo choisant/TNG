@@ -2,7 +2,7 @@ import numpy as np
 import numpy.linalg as lg
 from scipy.spatial.transform import Rotation as R
 
-def rotate_coordinates(particle, N, rot_vector):
+def rotate_coordinates(subhalo, rot_vector):
     """
     Rotates the coordinates of the particles such that the z-sxis aligns with rot_vector.
     """
@@ -19,17 +19,16 @@ def rotate_coordinates(particle, N, rot_vector):
         r = R.from_euler('zyx', [phi, theta, 0])
         rot_matrix = np.array(r.as_matrix()) #convert to numpy array
         return rot_matrix
-    #Go through all subhalos   
-    for i in range (N):
-        rotation_matrix = rotate_basis(rot_vector[i])
-        #print("Rotating galaxy ", i) #This function takes a lot of time
-        temp = particle[i].copy(deep=True)
-        old_positions = np.transpose(np.array([temp["x"], temp["y"], temp["z"]])) #get coordinates in vector form
-        new_positions = np.zeros([len(old_positions), 3]) #empty list
-        for j in range(len(old_positions)): #If this could be done faster, code would improve
-            new_positions[j] = np.dot(rotation_matrix, np.transpose(old_positions[j]))# r' = Rr
-        #new_positions = np.transpose(new_positions)
-        particle[i]["x_rot"] = new_positions[:, 0]
-        particle[i]["y_rot"] = new_positions[:, 1]
-        particle[i]["z_rot"] = new_positions[:, 2]
-    return particle
+
+    rotation_matrix = rotate_basis(rot_vector)
+    #print("Rotating galaxy ", i) #This function takes a lot of time
+    temp = subhalo.copy(deep=True)
+    old_positions = np.transpose(np.array([temp["x"], temp["y"], temp["z"]])) #get coordinates in vector form
+    new_positions = np.zeros([len(old_positions), 3]) #empty list
+    for j in range(len(old_positions)): #If this could be done faster, code would improve
+        new_positions[j] = np.dot(rotation_matrix, np.transpose(old_positions[j]))# r' = Rr
+    #new_positions = np.transpose(new_positions)
+    subhalo["x_rot"] = new_positions[:, 0]
+    subhalo["y_rot"] = new_positions[:, 1]
+    subhalo["z_rot"] = new_positions[:, 2]
+    return subhalo

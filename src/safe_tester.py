@@ -4,14 +4,8 @@ Different functions perfomrm different tests.
 """
 
 import os
-from os import path
-import numpy as np
-import pandas as pd
 import tng100_test as test
 import cut_data_size
-from timeit import default_timer as timer
-import datetime
-import check_rotation as rot
 
 def set_params(tng_run):
     """
@@ -32,7 +26,6 @@ def find_centrals(tng_run, snapshot=99):
     cut_data_size.make_central_id_file(tng_run, snapshot)
 
 def simple_test_all(tng_run, test_name, i, snapshot=99):
-    print(i)
     """
     Creates and saves group catalogues for all central galaxies.
     If process is aborted, data is still saved up until that point.
@@ -46,6 +39,3 @@ def simple_test_all(tng_run, test_name, i, snapshot=99):
         os.makedirs(folder_path)
     temp_cat = test.masses(tng_run, snapshot, dm_part_mass, i, temp_cat)
     temp_cat.to_pickle(folder_path + file_path)
-
-def rotation_test(tng_run, test_name, snapshot=99):
-    rot.check(tng_run, test_name, snapshot)
