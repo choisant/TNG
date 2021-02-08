@@ -1,0 +1,3636 @@
+we are running from this directory: /lustre1/work/aurorasg/TNG
+ the name of the job is: basic_properties
+Th job ID is 3344922
+The job was run on these nodes: compute-2-0-21
+Number of nodes: 1
+We are using 1 cores
+We are using 1 cores per node
+Total of 1 cores
+Linux compute-2-0-21.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Loading stellar particles
+Subhalo  17185
+Loading stellar particles
+Subhalo  31342
+Loading stellar particles
+Subhalo  41582
+Loading stellar particles
+Subhalo  52618
+Loading stellar particles
+Subhalo  60731
+Loading stellar particles
+Subhalo  69507
+Loading stellar particles
+Subhalo  76086
+Loading stellar particles
+Subhalo  83280
+Loading stellar particles
+Subhalo  88663
+Loading stellar particles
+Subhalo  96500
+Loading stellar particles
+Subhalo  102683
+Loading stellar particles
+Subhalo  108012
+Loading stellar particles
+Subhalo  114388
+Loading stellar particles
+Subhalo  118679
+Loading stellar particles
+Subhalo  121863
+Loading stellar particles
+Subhalo  125027
+Loading stellar particles
+Subhalo  128393
+Loading stellar particles
+Subhalo  131047
+Loading stellar particles
+Subhalo  134847
+Loading stellar particles
+Subhalo  137885
+Loading stellar particles
+Subhalo  140721
+Loading stellar particles
+Subhalo  143884
+Loading stellar particles
+Subhalo  146176
+Loading stellar particles
+Subhalo  149169
+Loading stellar particles
+Subhalo  152031
+Loading stellar particles
+Subhalo  154493
+Loading stellar particles
+Subhalo  156809
+Loading stellar particles
+Subhalo  158847
+Loading stellar particles
+Subhalo  161162
+Loading stellar particles
+Subhalo  163675
+Loading stellar particles
+Subhalo  165727
+Loading stellar particles
+Subhalo  168390
+Loading stellar particles
+Subhalo  170540
+Loading stellar particles
+Subhalo  172649
+Loading stellar particles
+Subhalo  175238
+Loading stellar particles
+Subhalo  177719
+Loading stellar particles
+Subhalo  179886
+Loading stellar particles
+Subhalo  181983
+Loading stellar particles
+Subhalo  184828
+Loading stellar particles
+Subhalo  186927
+Loading stellar particles
+Subhalo  188859
+Loading stellar particles
+Subhalo  191079
+Loading stellar particles
+Subhalo  192898
+Loading stellar particles
+Subhalo  194946
+Loading stellar particles
+Subhalo  197108
+Loading stellar particles
+Subhalo  199321
+Loading stellar particles
+Subhalo  200803
+Loading stellar particles
+Subhalo  202634
+Loading stellar particles
+Subhalo  204234
+Loading stellar particles
+Subhalo  206226
+Loading stellar particles
+Subhalo  207473
+Loading stellar particles
+Subhalo  208781
+Loading stellar particles
+Subhalo  210763
+Loading stellar particles
+Subhalo  212836
+Loading stellar particles
+Subhalo  214452
+Loading stellar particles
+Subhalo  216016
+Loading stellar particles
+Subhalo  217485
+Loading stellar particles
+Subhalo  219032
+Loading stellar particles
+Subhalo  220557
+Loading stellar particles
+Subhalo  222267
+Loading stellar particles
+Subhalo  223896
+Loading stellar particles
+Subhalo  225155
+Loading stellar particles
+Subhalo  226194
+Loading stellar particles
+Subhalo  227574
+Loading stellar particles
+Subhalo  228680
+Loading stellar particles
+Subhalo  230235
+Loading stellar particles
+Subhalo  231706
+Loading stellar particles
+Subhalo  233214
+Loading stellar particles
+Subhalo  234514
+Loading stellar particles
+Subhalo  235692
+Loading stellar particles
+Subhalo  236756
+Loading stellar particles
+Subhalo  237941
+Loading stellar particles
+Subhalo  239245
+Loading stellar particles
+Subhalo  239993
+Loading stellar particles
+Subhalo  241153
+Loading stellar particles
+Subhalo  242214
+Loading stellar particles
+Subhalo  243186
+Loading stellar particles
+Subhalo  244318
+Loading stellar particles
+Subhalo  245134
+Loading stellar particles
+Subhalo  246232
+Loading stellar particles
+Subhalo  247348
+Loading stellar particles
+Subhalo  248157
+Loading stellar particles
+Subhalo  249164
+Loading stellar particles
+Subhalo  250390
+Loading stellar particles
+Subhalo  251299
+Loading stellar particles
+Subhalo  252245
+Loading stellar particles
+Subhalo  252995
+Loading stellar particles
+Subhalo  254112
+Loading stellar particles
+Subhalo  254925
+Loading stellar particles
+Subhalo  255614
+Loading stellar particles
+Subhalo  256507
+Loading stellar particles
+Subhalo  257302
+Loading stellar particles
+Subhalo  258263
+Loading stellar particles
+Subhalo  259114
+Loading stellar particles
+Subhalo  260014
+Loading stellar particles
+Subhalo  260862
+Loading stellar particles
+Subhalo  261959
+Loading stellar particles
+Subhalo  262659
+Loading stellar particles
+Subhalo  263557
+Loading stellar particles
+Subhalo  264412
+Loading stellar particles
+Subhalo  265267
+Loading stellar particles
+Subhalo  265926
+Loading stellar particles
+Subhalo  266559
+Loading stellar particles
+Subhalo  267323
+Loading stellar particles
+Subhalo  268295
+Loading stellar particles
+Subhalo  268908
+Loading stellar particles
+Subhalo  269440
+Loading stellar particles
+Subhalo  270079
+Loading stellar particles
+Subhalo  270963
+Loading stellar particles
+Subhalo  271729
+Loading stellar particles
+Subhalo  272322
+Loading stellar particles
+Subhalo  273141
+Loading stellar particles
+Subhalo  273994
+Loading stellar particles
+Subhalo  274790
+Loading stellar particles
+Subhalo  275531
+Loading stellar particles
+Subhalo  276219
+Loading stellar particles
+Subhalo  277020
+Loading stellar particles
+Subhalo  277687
+Loading stellar particles
+Subhalo  278302
+Loading stellar particles
+Subhalo  278854
+Loading stellar particles
+Subhalo  279707
+Loading stellar particles
+Subhalo  280454
+Loading stellar particles
+Subhalo  281072
+Loading stellar particles
+Subhalo  281700
+Loading stellar particles
+Subhalo  282377
+Loading stellar particles
+Subhalo  283011
+Loading stellar particles
+Subhalo  283637
+Loading stellar particles
+Subhalo  284316
+Loading stellar particles
+Subhalo  284948
+Loading stellar particles
+Subhalo  285479
+Loading stellar particles
+Subhalo  286066
+Loading stellar particles
+Subhalo  286695
+Loading stellar particles
+Subhalo  287335
+Loading stellar particles
+Subhalo  288014
+Loading stellar particles
+Subhalo  288743
+Loading stellar particles
+Subhalo  289426
+Loading stellar particles
+Subhalo  289945
+Loading stellar particles
+Subhalo  290643
+Loading stellar particles
+Subhalo  291113
+Loading stellar particles
+Subhalo  291888
+Loading stellar particles
+Subhalo  292355
+Loading stellar particles
+Subhalo  292921
+Loading stellar particles
+Subhalo  293439
+Loading stellar particles
+Subhalo  294047
+Loading stellar particles
+Subhalo  294510
+Loading stellar particles
+Subhalo  295077
+Loading stellar particles
+Subhalo  295674
+Loading stellar particles
+Subhalo  296302
+Loading stellar particles
+Subhalo  296787
+Loading stellar particles
+Subhalo  297210
+Loading stellar particles
+Subhalo  297712
+Loading stellar particles
+Subhalo  298206
+Loading stellar particles
+Subhalo  298892
+Loading stellar particles
+Subhalo  299429
+Loading stellar particles
+Subhalo  299935
+Loading stellar particles
+Subhalo  300568
+Loading stellar particles
+Subhalo  301127
+Loading stellar particles
+Subhalo  301746
+Loading stellar particles
+Subhalo  302165
+Loading stellar particles
+Subhalo  302773
+Loading stellar particles
+Subhalo  303362
+Loading stellar particles
+Subhalo  303710
+Loading stellar particles
+Subhalo  304201
+Loading stellar particles
+Subhalo  304726
+Loading stellar particles
+Subhalo  305083
+Loading stellar particles
+Subhalo  305653
+Loading stellar particles
+Subhalo  306058
+Loading stellar particles
+Subhalo  306516
+Loading stellar particles
+Subhalo  306945
+Loading stellar particles
+Subhalo  307438
+Loading stellar particles
+Subhalo  308060
+Loading stellar particles
+Subhalo  308598
+Loading stellar particles
+Subhalo  309045
+Loading stellar particles
+Subhalo  309428
+Loading stellar particles
+Subhalo  309951
+Loading stellar particles
+Subhalo  310509
+Loading stellar particles
+Subhalo  310985
+Loading stellar particles
+Subhalo  311302
+Loading stellar particles
+Subhalo  311882
+Loading stellar particles
+Subhalo  312412
+Loading stellar particles
+Subhalo  312891
+Loading stellar particles
+Subhalo  313402
+Loading stellar particles
+Subhalo  313954
+Loading stellar particles
+Subhalo  314365
+Loading stellar particles
+Subhalo  314770
+Loading stellar particles
+Subhalo  315140
+Loading stellar particles
+Subhalo  315519
+Loading stellar particles
+Subhalo  316029
+Loading stellar particles
+Subhalo  316354
+Loading stellar particles
+Subhalo  316855
+Loading stellar particles
+Subhalo  317311
+Loading stellar particles
+Subhalo  317711
+Loading stellar particles
+Subhalo  318210
+Loading stellar particles
+Subhalo  318633
+Loading stellar particles
+Subhalo  319144
+Loading stellar particles
+Subhalo  319643
+Loading stellar particles
+Subhalo  320012
+Loading stellar particles
+Subhalo  320433
+Loading stellar particles
+Subhalo  320734
+Loading stellar particles
+Subhalo  321204
+Loading stellar particles
+Subhalo  321674
+Loading stellar particles
+Subhalo  322160
+Loading stellar particles
+Subhalo  322581
+Loading stellar particles
+Subhalo  322979
+Loading stellar particles
+Subhalo  323455
+Loading stellar particles
+Subhalo  323851
+Loading stellar particles
+Subhalo  324127
+Loading stellar particles
+Subhalo  324572
+Loading stellar particles
+Subhalo  324997
+Loading stellar particles
+Subhalo  325335
+Loading stellar particles
+Subhalo  325808
+Loading stellar particles
+Subhalo  326217
+Loading stellar particles
+Subhalo  326652
+Loading stellar particles
+Subhalo  327112
+Loading stellar particles
+Subhalo  327405
+Loading stellar particles
+Subhalo  327822
+Loading stellar particles
+Subhalo  328251
+Loading stellar particles
+Subhalo  328677
+Loading stellar particles
+Subhalo  329105
+Loading stellar particles
+Subhalo  329515
+Loading stellar particles
+Subhalo  329849
+Loading stellar particles
+Subhalo  330208
+Loading stellar particles
+Subhalo  330553
+Loading stellar particles
+Subhalo  330955
+Loading stellar particles
+Subhalo  331293
+Loading stellar particles
+Subhalo  331701
+Loading stellar particles
+Subhalo  332068
+Loading stellar particles
+Subhalo  332389
+Loading stellar particles
+Subhalo  332812
+Loading stellar particles
+Subhalo  333258
+Loading stellar particles
+Subhalo  333672
+Loading stellar particles
+Subhalo  334028
+Loading stellar particles
+Subhalo  334350
+Loading stellar particles
+Subhalo  334727
+Loading stellar particles
+Subhalo  335078
+Loading stellar particles
+Subhalo  335486
+Loading stellar particles
+Subhalo  335927
+Loading stellar particles
+Subhalo  336276
+Loading stellar particles
+Subhalo  336516
+Loading stellar particles
+Subhalo  336796
+Loading stellar particles
+Subhalo  337048
+Loading stellar particles
+Subhalo  337444
+Loading stellar particles
+Subhalo  337843
+Loading stellar particles
+Subhalo  338148
+Loading stellar particles
+Subhalo  338458
+Loading stellar particles
+Subhalo  338817
+Loading stellar particles
+Subhalo  339181
+Loading stellar particles
+Subhalo  339547
+Loading stellar particles
+Subhalo  339862
+Loading stellar particles
+Subhalo  340106
+Loading stellar particles
+Subhalo  340355
+Loading stellar particles
+Subhalo  340585
+Loading stellar particles
+Subhalo  340976
+Loading stellar particles
+Subhalo  341356
+Loading stellar particles
+Subhalo  341683
+Loading stellar particles
+Subhalo  342047
+Loading stellar particles
+Subhalo  342343
+Loading stellar particles
+Subhalo  342689
+Loading stellar particles
+Subhalo  343039
+Loading stellar particles
+Subhalo  343429
+Loading stellar particles
+Subhalo  343638
+Loading stellar particles
+Subhalo  343988
+Loading stellar particles
+Subhalo  344300
+Loading stellar particles
+Subhalo  344593
+Loading stellar particles
+Subhalo  344987
+Loading stellar particles
+Subhalo  345250
+Loading stellar particles
+Subhalo  345456
+Loading stellar particles
+Subhalo  345812
+Loading stellar particles
+Subhalo  346075
+Loading stellar particles
+Subhalo  346420
+Loading stellar particles
+Subhalo  346748
+Loading stellar particles
+Subhalo  346976
+Loading stellar particles
+Subhalo  347237
+Loading stellar particles
+Subhalo  347508
+Loading stellar particles
+Subhalo  347785
+Loading stellar particles
+Subhalo  348038
+Loading stellar particles
+Subhalo  348334
+Loading stellar particles
+Subhalo  348593
+Loading stellar particles
+Subhalo  348894
+Loading stellar particles
+Subhalo  349135
+Loading stellar particles
+Subhalo  349414
+Loading stellar particles
+Subhalo  349624
+Loading stellar particles
+Subhalo  349897
+Loading stellar particles
+Subhalo  350183
+Loading stellar particles
+Subhalo  350486
+Loading stellar particles
+Subhalo  350843
+Loading stellar particles
+Subhalo  351071
+Loading stellar particles
+Subhalo  351452
+Loading stellar particles
+Subhalo  351779
+Loading stellar particles
+Subhalo  352061
+Loading stellar particles
+Subhalo  352359
+Loading stellar particles
+Subhalo  352578
+Loading stellar particles
+Subhalo  352816
+Loading stellar particles
+Subhalo  353167
+Loading stellar particles
+Subhalo  353423
+Loading stellar particles
+Subhalo  353729
+Loading stellar particles
+Subhalo  353973
+Loading stellar particles
+Subhalo  354239
+Loading stellar particles
+Subhalo  354483
+Loading stellar particles
+Subhalo  354727
+Loading stellar particles
+Subhalo  354986
+Loading stellar particles
+Subhalo  355232
+Loading stellar particles
+Subhalo  355537
+Loading stellar particles
+Subhalo  355911
+Loading stellar particles
+Subhalo  356176
+Loading stellar particles
+Subhalo  356415
+Loading stellar particles
+Subhalo  356678
+Loading stellar particles
+Subhalo  356906
+Loading stellar particles
+Subhalo  357235
+Loading stellar particles
+Subhalo  357465
+Loading stellar particles
+Subhalo  357765
+Loading stellar particles
+Subhalo  358016
+Loading stellar particles
+Subhalo  358273
+Loading stellar particles
+Subhalo  358582
+Loading stellar particles
+Subhalo  358886
+Loading stellar particles
+Subhalo  359086
+Loading stellar particles
+Subhalo  359334
+Loading stellar particles
+Subhalo  359639
+Loading stellar particles
+Subhalo  359811
+Loading stellar particles
+Subhalo  360087
+Loading stellar particles
+Subhalo  360294
+Loading stellar particles
+Subhalo  360509
+Loading stellar particles
+Subhalo  360750
+Loading stellar particles
+Subhalo  360916
+Loading stellar particles
+Subhalo  361189
+Loading stellar particles
+Subhalo  361418
+Loading stellar particles
+Subhalo  361752
+Loading stellar particles
+Subhalo  362042
+Loading stellar particles
+Subhalo  362370
+Loading stellar particles
+Subhalo  362551
+Loading stellar particles
+Subhalo  362780
+Loading stellar particles
+Subhalo  363104
+Loading stellar particles
+Subhalo  363315
+Loading stellar particles
+Subhalo  363524
+Loading stellar particles
+Subhalo  363736
+Loading stellar particles
+Subhalo  363981
+Loading stellar particles
+Subhalo  364263
+Loading stellar particles
+Subhalo  364479
+Loading stellar particles
+Subhalo  364807
+Loading stellar particles
+Subhalo  365010
+Loading stellar particles
+Subhalo  365263
+Loading stellar particles
+Subhalo  365493
+Loading stellar particles
+Subhalo  365743
+Loading stellar particles
+Subhalo  366034
+Loading stellar particles
+Subhalo  366338
+Loading stellar particles
+Subhalo  366565
+Loading stellar particles
+Subhalo  366792
+Loading stellar particles
+Subhalo  367139
+Loading stellar particles
+Subhalo  367456
+Loading stellar particles
+Subhalo  367688
+Loading stellar particles
+Subhalo  367929
+Loading stellar particles
+Subhalo  368170
+Loading stellar particles
+Subhalo  368436
+Loading stellar particles
+Subhalo  368697
+Loading stellar particles
+Subhalo  368884
+Loading stellar particles
+Subhalo  369152
+Loading stellar particles
+Subhalo  369366
+Loading stellar particles
+Subhalo  369545
+Loading stellar particles
+Subhalo  369789
+Loading stellar particles
+Subhalo  370003
+Loading stellar particles
+Subhalo  370190
+Loading stellar particles
+Subhalo  370529
+Loading stellar particles
+Subhalo  370781
+Loading stellar particles
+Subhalo  371013
+Loading stellar particles
+Subhalo  371259
+Loading stellar particles
+Subhalo  371471
+Loading stellar particles
+Subhalo  371704
+Loading stellar particles
+Subhalo  371859
+Loading stellar particles
+Subhalo  372175
+Loading stellar particles
+Subhalo  372343
+Loading stellar particles
+Subhalo  372568
+Loading stellar particles
+Subhalo  372778
+Loading stellar particles
+Subhalo  373050
+Loading stellar particles
+Subhalo  373291
+Loading stellar particles
+Subhalo  373510
+Loading stellar particles
+Subhalo  373699
+Loading stellar particles
+Subhalo  373951
+Loading stellar particles
+Subhalo  374228
+Loading stellar particles
+Subhalo  374379
+Loading stellar particles
+Subhalo  374593
+Loading stellar particles
+Subhalo  374789
+Loading stellar particles
+Subhalo  375020
+Loading stellar particles
+Subhalo  375236
+Loading stellar particles
+Subhalo  375401
+Loading stellar particles
+Subhalo  375639
+Loading stellar particles
+Subhalo  375909
+Loading stellar particles
+Subhalo  376132
+Loading stellar particles
+Subhalo  376356
+Loading stellar particles
+Subhalo  376544
+Loading stellar particles
+Subhalo  376738
+Loading stellar particles
+Subhalo  376963
+Loading stellar particles
+Subhalo  377212
+Loading stellar particles
+Subhalo  377398
+Loading stellar particles
+Subhalo  377539
+Loading stellar particles
+Subhalo  377804
+Loading stellar particles
+Subhalo  378115
+Loading stellar particles
+Subhalo  378298
+Loading stellar particles
+Subhalo  378526
+Loading stellar particles
+Subhalo  378745
+Loading stellar particles
+Subhalo  378943
+Loading stellar particles
+Subhalo  379147
+Loading stellar particles
+Subhalo  379320
+Loading stellar particles
+Subhalo  379540
+Loading stellar particles
+Subhalo  379732
+Loading stellar particles
+Subhalo  379949
+Loading stellar particles
+Subhalo  380119
+Loading stellar particles
+Subhalo  380276
+Loading stellar particles
+Subhalo  380475
+Loading stellar particles
+Subhalo  380751
+Loading stellar particles
+Subhalo  380934
+Loading stellar particles
+Subhalo  381147
+Loading stellar particles
+Subhalo  381392
+Loading stellar particles
+Subhalo  381608
+Loading stellar particles
+Subhalo  381831
+Loading stellar particles
+Subhalo  382059
+Loading stellar particles
+Subhalo  382256
+Loading stellar particles
+Subhalo  382483
+Loading stellar particles
+Subhalo  382684
+Loading stellar particles
+Subhalo  382921
+Loading stellar particles
+Subhalo  383118
+Loading stellar particles
+Subhalo  383307
+Loading stellar particles
+Subhalo  383506
+Loading stellar particles
+Subhalo  383723
+Loading stellar particles
+Subhalo  383945
+Loading stellar particles
+Subhalo  384103
+Loading stellar particles
+Subhalo  384355
+Loading stellar particles
+Subhalo  384534
+Loading stellar particles
+Subhalo  384705
+Loading stellar particles
+Subhalo  384914
+Loading stellar particles
+Subhalo  385115
+Loading stellar particles
+Subhalo  385350
+Loading stellar particles
+Subhalo  385582
+Loading stellar particles
+Subhalo  385798
+Loading stellar particles
+Subhalo  386003
+Loading stellar particles
+Subhalo  386247
+Loading stellar particles
+Subhalo  386429
+Loading stellar particles
+Subhalo  386612
+Loading stellar particles
+Subhalo  386827
+Loading stellar particles
+Subhalo  387067
+Loading stellar particles
+Subhalo  387236
+Loading stellar particles
+Subhalo  387438
+Loading stellar particles
+Subhalo  387590
+Loading stellar particles
+Subhalo  387726
+Loading stellar particles
+Subhalo  387936
+Loading stellar particles
+Subhalo  388115
+Loading stellar particles
+Subhalo  388249
+Loading stellar particles
+Subhalo  388428
+Loading stellar particles
+Subhalo  388615
+Loading stellar particles
+Subhalo  388818
+Loading stellar particles
+Subhalo  389056
+Loading stellar particles
+Subhalo  389156
+Loading stellar particles
+Subhalo  389345
+Loading stellar particles
+Subhalo  389511
+Loading stellar particles
+Subhalo  389704
+Loading stellar particles
+Subhalo  389917
+Loading stellar particles
+Subhalo  390127
+Loading stellar particles
+Subhalo  390305
+Loading stellar particles
+Subhalo  390465
+Loading stellar particles
+Subhalo  390724
+Loading stellar particles
+Subhalo  390859
+Loading stellar particles
+Subhalo  391081
+Loading stellar particles
+Subhalo  391260
+Loading stellar particles
+Subhalo  391447
+Loading stellar particles
+Subhalo  391681
+Loading stellar particles
+Subhalo  391869
+Loading stellar particles
+Subhalo  392097
+Loading stellar particles
+Subhalo  392253
+Loading stellar particles
+Subhalo  392368
+Loading stellar particles
+Subhalo  392585
+Loading stellar particles
+Subhalo  392725
+Loading stellar particles
+Subhalo  392852
+Loading stellar particles
+Subhalo  392961
+Loading stellar particles
+Subhalo  393117
+Loading stellar particles
+Subhalo  393336
+Loading stellar particles
+Subhalo  393546
+Loading stellar particles
+Subhalo  393731
+Loading stellar particles
+Subhalo  393888
+Loading stellar particles
+Subhalo  394069
+Loading stellar particles
+Subhalo  394241
+Loading stellar particles
+Subhalo  394439
+Loading stellar particles
+Subhalo  394600
+Loading stellar particles
+Subhalo  394719
+Loading stellar particles
+Subhalo  394850
+Loading stellar particles
+Subhalo  394986
+Loading stellar particles
+Subhalo  395153
+Loading stellar particles
+Subhalo  395338
+Loading stellar particles
+Subhalo  395533
+Loading stellar particles
+Subhalo  395735
+Loading stellar particles
+Subhalo  395882
+Loading stellar particles
+Subhalo  396073
+Loading stellar particles
+Subhalo  396266
+Loading stellar particles
+Subhalo  396462
+Loading stellar particles
+Subhalo  396640
+Loading stellar particles
+Subhalo  396851
+Loading stellar particles
+Subhalo  397063
+Loading stellar particles
+Subhalo  397260
+Loading stellar particles
+Subhalo  397418
+Loading stellar particles
+Subhalo  397568
+Loading stellar particles
+Subhalo  397682
+Loading stellar particles
+Subhalo  397866
+Loading stellar particles
+Subhalo  398110
+Loading stellar particles
+Subhalo  398282
+Loading stellar particles
+Subhalo  398405
+Loading stellar particles
+Subhalo  398549
+Loading stellar particles
+Subhalo  398685
+Loading stellar particles
+Subhalo  398913
+Loading stellar particles
+Subhalo  399101
+Loading stellar particles
+Subhalo  399267
+Loading stellar particles
+Subhalo  399391
+Loading stellar particles
+Subhalo  399520
+Loading stellar particles
+Subhalo  399679
+Loading stellar particles
+Subhalo  399844
+Loading stellar particles
+Subhalo  399969
+Loading stellar particles
+Subhalo  400089
+Loading stellar particles
+Subhalo  400266
+Loading stellar particles
+Subhalo  400426
+Loading stellar particles
+Subhalo  400547
+Loading stellar particles
+Subhalo  400694
+Loading stellar particles
+Subhalo  400846
+Loading stellar particles
+Subhalo  401062
+Loading stellar particles
+Subhalo  401192
+Loading stellar particles
+Subhalo  401328
+Loading stellar particles
+Subhalo  401535
+Loading stellar particles
+Subhalo  401670
+Loading stellar particles
+Subhalo  401859
+Loading stellar particles
+Subhalo  402017
+Loading stellar particles
+Subhalo  402118
+Loading stellar particles
+Subhalo  402293
+Loading stellar particles
+Subhalo  402483
+Loading stellar particles
+Subhalo  402635
+Loading stellar particles
+Subhalo  402769
+Loading stellar particles
+Subhalo  402979
+Loading stellar particles
+Subhalo  403110
+Loading stellar particles
+Subhalo  403261
+Loading stellar particles
+Subhalo  403388
+Loading stellar particles
+Subhalo  403506
+Loading stellar particles
+Subhalo  403624
+Loading stellar particles
+Subhalo  403787
+Loading stellar particles
+Subhalo  403910
+Loading stellar particles
+Subhalo  404093
+Loading stellar particles
+Subhalo  404216
+Loading stellar particles
+Subhalo  404319
+Loading stellar particles
+Subhalo  404501
+Loading stellar particles
+Subhalo  404644
+Loading stellar particles
+Subhalo  404769
+Loading stellar particles
+Subhalo  404888
+Loading stellar particles
+Subhalo  405000
+Loading stellar particles
+Subhalo  405133
+Loading stellar particles
+Subhalo  405295
+Loading stellar particles
+Subhalo  405460
+Loading stellar particles
+Subhalo  405568
+Loading stellar particles
+Subhalo  405745
+Loading stellar particles
+Subhalo  405882
+Loading stellar particles
+Subhalo  406136
+Loading stellar particles
+Subhalo  406256
+Loading stellar particles
+Subhalo  406380
+Loading stellar particles
+Subhalo  406495
+Loading stellar particles
+Subhalo  406698
+Loading stellar particles
+Subhalo  406878
+Loading stellar particles
+Subhalo  407020
+Loading stellar particles
+Subhalo  407204
+Loading stellar particles
+Subhalo  407320
+Loading stellar particles
+Subhalo  407472
+Loading stellar particles
+Subhalo  407606
+Loading stellar particles
+Subhalo  407822
+Loading stellar particles
+Subhalo  407926
+Loading stellar particles
+Subhalo  408076
+Loading stellar particles
+Subhalo  408224
+Loading stellar particles
+Subhalo  408393
+Loading stellar particles
+Subhalo  408497
+Loading stellar particles
+Subhalo  408647
+Loading stellar particles
+Subhalo  408764
+Loading stellar particles
+Subhalo  408935
+Loading stellar particles
+Subhalo  409086
+Loading stellar particles
+Subhalo  409226
+Loading stellar particles
+Subhalo  409358
+Loading stellar particles
+Subhalo  409475
+Loading stellar particles
+Subhalo  409645
+Loading stellar particles
+Subhalo  409761
+Loading stellar particles
+Subhalo  409883
+Loading stellar particles
+Subhalo  409986
+Loading stellar particles
+Subhalo  410140
+Loading stellar particles
+Subhalo  410303
+Loading stellar particles
+Subhalo  410456
+Loading stellar particles
+Subhalo  410567
+Loading stellar particles
+Subhalo  410700
+Loading stellar particles
+Subhalo  410887
+Loading stellar particles
+Subhalo  411034
+Loading stellar particles
+Subhalo  411154
+Loading stellar particles
+Subhalo  411321
+Loading stellar particles
+Subhalo  411452
+Loading stellar particles
+Subhalo  411637
+Loading stellar particles
+Subhalo  411783
+Loading stellar particles
+Subhalo  411949
+Loading stellar particles
+Subhalo  412079
+Loading stellar particles
+Subhalo  412199
+Loading stellar particles
+Subhalo  412332
+Loading stellar particles
+Subhalo  412442
+Loading stellar particles
+Subhalo  412591
+Loading stellar particles
+Subhalo  412743
+Loading stellar particles
+Subhalo  412911
+Loading stellar particles
+Subhalo  413091
+Loading stellar particles
+Subhalo  413194
+Loading stellar particles
+Subhalo  413363
+Loading stellar particles
+Subhalo  413463
+Loading stellar particles
+Subhalo  413608
+Loading stellar particles
+Subhalo  413747
+Loading stellar particles
+Subhalo  413928
+Loading stellar particles
+Subhalo  414050
+Loading stellar particles
+Subhalo  414146
+Loading stellar particles
+Subhalo  414277
+Loading stellar particles
+Subhalo  414447
+Loading stellar particles
+Subhalo  414549
+Loading stellar particles
+Subhalo  414651
+Loading stellar particles
+Subhalo  414759
+Loading stellar particles
+Subhalo  414990
+Loading stellar particles
+Subhalo  415113
+Loading stellar particles
+Subhalo  415211
+Loading stellar particles
+Subhalo  415373
+Loading stellar particles
+Subhalo  415496
+Loading stellar particles
+Subhalo  415628
+Loading stellar particles
+Subhalo  415823
+Loading stellar particles
+Subhalo  415972
+Loading stellar particles
+Subhalo  416112
+Loading stellar particles
+Subhalo  416258
+Loading stellar particles
+Subhalo  416399
+Loading stellar particles
+Subhalo  416522
+Loading stellar particles
+Subhalo  416627
+Loading stellar particles
+Subhalo  416752
+Loading stellar particles
+Subhalo  416897
+Loading stellar particles
+Subhalo  417032
+Loading stellar particles
+Subhalo  417122
+Loading stellar particles
+Subhalo  417281
+Loading stellar particles
+Subhalo  417411
+Loading stellar particles
+Subhalo  417581
+Loading stellar particles
+Subhalo  417717
+Loading stellar particles
+Subhalo  417793
+Loading stellar particles
+Subhalo  417939
+Loading stellar particles
+Subhalo  418076
+Loading stellar particles
+Subhalo  418230
+Loading stellar particles
+Subhalo  418325
+Loading stellar particles
+Subhalo  418452
+Loading stellar particles
+Subhalo  418576
+Loading stellar particles
+Subhalo  418770
+Loading stellar particles
+Subhalo  418911
+Loading stellar particles
+Subhalo  419061
+Loading stellar particles
+Subhalo  419203
+Loading stellar particles
+Subhalo  419301
+Loading stellar particles
+Subhalo  419428
+Loading stellar particles
+Subhalo  419575
+Loading stellar particles
+Subhalo  419749
+Loading stellar particles
+Subhalo  419909
+Loading stellar particles
+Subhalo  420059
+Loading stellar particles
+Subhalo  420172
+Loading stellar particles
+Subhalo  420304
+Loading stellar particles
+Subhalo  420435
+Loading stellar particles
+Subhalo  420550
+Loading stellar particles
+Subhalo  420658
+Loading stellar particles
+Subhalo  420815
+Loading stellar particles
+Subhalo  420924
+Loading stellar particles
+Subhalo  421031
+Loading stellar particles
+Subhalo  421134
+Loading stellar particles
+Subhalo  421312
+Loading stellar particles
+Subhalo  421450
+Loading stellar particles
+Subhalo  421568
+Loading stellar particles
+Subhalo  421711
+Loading stellar particles
+Subhalo  421835
+Loading stellar particles
+Subhalo  421956
+Loading stellar particles
+Subhalo  422109
+Loading stellar particles
+Subhalo  422231
+Loading stellar particles
+Subhalo  422426
+Loading stellar particles
+Subhalo  422551
+Loading stellar particles
+Subhalo  422662
+Loading stellar particles
+Subhalo  422831
+Loading stellar particles
+Subhalo  423013
+Loading stellar particles
+Subhalo  423110
+Loading stellar particles
+Subhalo  423282
+Loading stellar particles
+Subhalo  423387
+Loading stellar particles
+Subhalo  423527
+Loading stellar particles
+Subhalo  423657
+Loading stellar particles
+Subhalo  423804
+Loading stellar particles
+Subhalo  423908
+Loading stellar particles
+Subhalo  424043
+Loading stellar particles
+Subhalo  424152
+Loading stellar particles
+Subhalo  424255
+Loading stellar particles
+Subhalo  424362
+Loading stellar particles
+Subhalo  424485
+Loading stellar particles
+Subhalo  424571
+Loading stellar particles
+Subhalo  424725
+Loading stellar particles
+Subhalo  424803
+Loading stellar particles
+Subhalo  424910
+Loading stellar particles
+Subhalo  424986
+Loading stellar particles
+Subhalo  425061
+Loading stellar particles
+Subhalo  425185
+Loading stellar particles
+Subhalo  425337
+Loading stellar particles
+Subhalo  425487
+Loading stellar particles
+Subhalo  425605
+Loading stellar particles
+Subhalo  425729
+Loading stellar particles
+Subhalo  425836
+Loading stellar particles
+Subhalo  425940
+Loading stellar particles
+Subhalo  426086
+Loading stellar particles
+Subhalo  426242
+Loading stellar particles
+Subhalo  426361
+Loading stellar particles
+Subhalo  426483
+Loading stellar particles
+Subhalo  426575
+Loading stellar particles
+Subhalo  426665
+Loading stellar particles
+Subhalo  426764
+Loading stellar particles
+Subhalo  426902
+Loading stellar particles
+Subhalo  426984
+Loading stellar particles
+Subhalo  427114
+Loading stellar particles
+Subhalo  427215
+Loading stellar particles
+Subhalo  427314
+Loading stellar particles
+Subhalo  427419
+Loading stellar particles
+Subhalo  427532
+Loading stellar particles
+Subhalo  427607
+Loading stellar particles
+Subhalo  427745
+Loading stellar particles
+Subhalo  427829
+Loading stellar particles
+Subhalo  427957
+Loading stellar particles
+Subhalo  428037
+Loading stellar particles
+Subhalo  428158
+Loading stellar particles
+Subhalo  428289
+Loading stellar particles
+Subhalo  428431
+Loading stellar particles
+Subhalo  428537
+Loading stellar particles
+Subhalo  428616
+Loading stellar particles
+Subhalo  428715
+Loading stellar particles
+Subhalo  428813
+Loading stellar particles
+Subhalo  428927
+Loading stellar particles
+Subhalo  429041
+Loading stellar particles
+Subhalo  429127
+Loading stellar particles
+Subhalo  429237
+Loading stellar particles
+Subhalo  429314
+Loading stellar particles
+Subhalo  429435
+Loading stellar particles
+Subhalo  429556
+Loading stellar particles
+Subhalo  429678
+Loading stellar particles
+Subhalo  429758
+Loading stellar particles
+Subhalo  429862
+Loading stellar particles
+Subhalo  429989
+Loading stellar particles
+Subhalo  430070
+Loading stellar particles
+Subhalo  430183
+Loading stellar particles
+Subhalo  430285
+Loading stellar particles
+Subhalo  430394
+Loading stellar particles
+Subhalo  430470
+Loading stellar particles
+Subhalo  430589
+Loading stellar particles
+Subhalo  430683
+Loading stellar particles
+Subhalo  430850
+Loading stellar particles
+Subhalo  430972
+Loading stellar particles
+Subhalo  431106
+Loading stellar particles
+Subhalo  431201
+Loading stellar particles
+Subhalo  431282
+Loading stellar particles
+Subhalo  431390
+Loading stellar particles
+Subhalo  431536
+Loading stellar particles
+Subhalo  431635
+Loading stellar particles
+Subhalo  431751
+Loading stellar particles
+Subhalo  431868
+Loading stellar particles
+Subhalo  431986
+Loading stellar particles
+Subhalo  432130
+Loading stellar particles
+Subhalo  432254
+Loading stellar particles
+Subhalo  432379
+Loading stellar particles
+Subhalo  432485
+Loading stellar particles
+Subhalo  432592
+Loading stellar particles
+Subhalo  432711
+Loading stellar particles
+Subhalo  432831
+Loading stellar particles
+Subhalo  432927
+Loading stellar particles
+Subhalo  433038
+Loading stellar particles
+Subhalo  433111
+Loading stellar particles
+Subhalo  433217
+Loading stellar particles
+Subhalo  433317
+Loading stellar particles
+Subhalo  433401
+Loading stellar particles
+Subhalo  433537
+Loading stellar particles
+Subhalo  433656
+Loading stellar particles
+Subhalo  433723
+Loading stellar particles
+Subhalo  433813
+Loading stellar particles
+Subhalo  433936
+Loading stellar particles
+Subhalo  434026
+Loading stellar particles
+Subhalo  434152
+Loading stellar particles
+Subhalo  434303
+Loading stellar particles
+Subhalo  434410
+Loading stellar particles
+Subhalo  434541
+Loading stellar particles
+Subhalo  434681
+Loading stellar particles
+Subhalo  434787
+Loading stellar particles
+Subhalo  434938
+Loading stellar particles
+Subhalo  435020
+Loading stellar particles
+Subhalo  435126
+Loading stellar particles
+Subhalo  435223
+Loading stellar particles
+Subhalo  435309
+Loading stellar particles
+Subhalo  435417
+Loading stellar particles
+Subhalo  435547
+Loading stellar particles
+Subhalo  435685
+Loading stellar particles
+Subhalo  435782
+Loading stellar particles
+Subhalo  435868
+Loading stellar particles
+Subhalo  436003
+Loading stellar particles
+Subhalo  436127
+Loading stellar particles
+Subhalo  436233
+Loading stellar particles
+Subhalo  436349
+Loading stellar particles
+Subhalo  436458
+Loading stellar particles
+Subhalo  436551
+Loading stellar particles
+Subhalo  436642
+Loading stellar particles
+Subhalo  436797
+Loading stellar particles
+Subhalo  436917
+Loading stellar particles
+Subhalo  436991
+Loading stellar particles
+Subhalo  437121
+Loading stellar particles
+Subhalo  437239
+Loading stellar particles
+Subhalo  437314
+Loading stellar particles
+Subhalo  437408
+Loading stellar particles
+Subhalo  437507
+Loading stellar particles
+Subhalo  437645
+Loading stellar particles
+Subhalo  437749
+Loading stellar particles
+Subhalo  437822
+Loading stellar particles
+Subhalo  437945
+Loading stellar particles
+Subhalo  438038
+Loading stellar particles
+Subhalo  438167
+Loading stellar particles
+Subhalo  438297
+Loading stellar particles
+Subhalo  438368
+Loading stellar particles
+Subhalo  438453
+Loading stellar particles
+Subhalo  438568
+Loading stellar particles
+Subhalo  438669
+Loading stellar particles
+Subhalo  438787
+Loading stellar particles
+Subhalo  438890
+Loading stellar particles
+Subhalo  438996
+Loading stellar particles
+Subhalo  439078
+Loading stellar particles
+Subhalo  439201
+Loading stellar particles
+Subhalo  439283
+Loading stellar particles
+Subhalo  439392
+Loading stellar particles
+Subhalo  439468
+Loading stellar particles
+Subhalo  439518
+Loading stellar particles
+Subhalo  439630
+Loading stellar particles
+Subhalo  439732
+Loading stellar particles
+Subhalo  439827
+Loading stellar particles
+Subhalo  439922
+Loading stellar particles
+Subhalo  440024
+Loading stellar particles
+Subhalo  440144
+Loading stellar particles
+Subhalo  440193
+Loading stellar particles
+Subhalo  440289
+Loading stellar particles
+Subhalo  440377
+Loading stellar particles
+Subhalo  440477
+Loading stellar particles
+Subhalo  440568
+Loading stellar particles
+Subhalo  440642
+Loading stellar particles
+Subhalo  440726
+Loading stellar particles
+Subhalo  440827
+Loading stellar particles
+Subhalo  440923
+Loading stellar particles
+Subhalo  441036
+Loading stellar particles
+Subhalo  441141
+Loading stellar particles
+Subhalo  441218
+Loading stellar particles
+Subhalo  441327
+Loading stellar particles
+Subhalo  441397
+Loading stellar particles
+Subhalo  441494
+Loading stellar particles
+Subhalo  441574
+Loading stellar particles
+Subhalo  441667
+Loading stellar particles
+Subhalo  441763
+Loading stellar particles
+Subhalo  441857
+Loading stellar particles
+Subhalo  441939
+Loading stellar particles
+Subhalo  442084
+Loading stellar particles
+Subhalo  442154
+Loading stellar particles
+Subhalo  442227
+Loading stellar particles
+Subhalo  442299
+Loading stellar particles
+Subhalo  442350
+Loading stellar particles
+Subhalo  442439
+Loading stellar particles
+Subhalo  442532
+Loading stellar particles
+Subhalo  442637
+Loading stellar particles
+Subhalo  442761
+Loading stellar particles
+Subhalo  442855
+Loading stellar particles
+Subhalo  442979
+Loading stellar particles
+Subhalo  443097
+Loading stellar particles
+Subhalo  443175
+Loading stellar particles
+Subhalo  443249
+Loading stellar particles
+Subhalo  443356
+Loading stellar particles
+Subhalo  443421
+Loading stellar particles
+Subhalo  443498
+Loading stellar particles
+Subhalo  443587
+Loading stellar particles
+Subhalo  443683
+Loading stellar particles
+Subhalo  443746
+Loading stellar particles
+Subhalo  443801
+Loading stellar particles
+Subhalo  443914
+Loading stellar particles
+Subhalo  444067
+Loading stellar particles
+Subhalo  444184
+Loading stellar particles
+Subhalo  444251
+Loading stellar particles
+Subhalo  444340
+Loading stellar particles
+Subhalo  444442
+Loading stellar particles
+Subhalo  444545
+Loading stellar particles
+Subhalo  444631
+Loading stellar particles
+Subhalo  444728
+Loading stellar particles
+Subhalo  444834
+Loading stellar particles
+Subhalo  444929
+Loading stellar particles
+Subhalo  444997
+Loading stellar particles
+Subhalo  445092
+Loading stellar particles
+Subhalo  445185
+Loading stellar particles
+Subhalo  445271
+Loading stellar particles
+Subhalo  445342
+Loading stellar particles
+Subhalo  445420
+Loading stellar particles
+Subhalo  445515
+Loading stellar particles
+Subhalo  445567
+Loading stellar particles
+Subhalo  445658
+Loading stellar particles
+Subhalo  445753
+Loading stellar particles
+Subhalo  445878
+Loading stellar particles
+Subhalo  445939
+Loading stellar particles
+Subhalo  446011
+Loading stellar particles
+Subhalo  446112
+Loading stellar particles
+Subhalo  446172
+Loading stellar particles
+Subhalo  446253
+Loading stellar particles
+Subhalo  446330
+Loading stellar particles
+Subhalo  446449
+Loading stellar particles
+Subhalo  446548
+Loading stellar particles
+Subhalo  446612
+Loading stellar particles
+Subhalo  446682
+Loading stellar particles
+Subhalo  446786
+Loading stellar particles
+Subhalo  446937
+Loading stellar particles
+Subhalo  447042
+Loading stellar particles
+Subhalo  447153
+Loading stellar particles
+Subhalo  447236
+Loading stellar particles
+Subhalo  447350
+Loading stellar particles
+Subhalo  447433
+Loading stellar particles
+Subhalo  447532
+Loading stellar particles
+Subhalo  447606
+Loading stellar particles
+Subhalo  447695
+Loading stellar particles
+Subhalo  447767
+Loading stellar particles
+Subhalo  447886
+Loading stellar particles
+Subhalo  448021
+Loading stellar particles
+Subhalo  448111
+Loading stellar particles
+Subhalo  448196
+Loading stellar particles
+Subhalo  448269
+Loading stellar particles
+Subhalo  448371
+Loading stellar particles
+Subhalo  448447
+Loading stellar particles
+Subhalo  448525
+Loading stellar particles
+Subhalo  448642
+Loading stellar particles
+Subhalo  448732
+Loading stellar particles
+Subhalo  448840
+Loading stellar particles
+Subhalo  448928
+Loading stellar particles
+Subhalo  449034
+Loading stellar particles
+Subhalo  449099
+Loading stellar particles
+Subhalo  449201
+Loading stellar particles
+Subhalo  449267
+Loading stellar particles
+Subhalo  449361
+Loading stellar particles
+Subhalo  449465
+Loading stellar particles
+Subhalo  449549
+Loading stellar particles
+Subhalo  449651
+Loading stellar particles
+Subhalo  449733
+Loading stellar particles
+Subhalo  449846
+Loading stellar particles
+Subhalo  449910
+Loading stellar particles
+Subhalo  449972
+Loading stellar particles
+Subhalo  450046
+Loading stellar particles
+Subhalo  450126
+Loading stellar particles
+Subhalo  450177
+Loading stellar particles
+Subhalo  450265
+Loading stellar particles
+Subhalo  450337
+Loading stellar particles
+Subhalo  450420
+Loading stellar particles
+Subhalo  450493
+Loading stellar particles
+Subhalo  450593
+Loading stellar particles
+Subhalo  450683
+Loading stellar particles
+Subhalo  450767
+Loading stellar particles
+Subhalo  450849
+Loading stellar particles
+Subhalo  450920
+Loading stellar particles
+Subhalo  451005
+Loading stellar particles
+Subhalo  451090
+Loading stellar particles
+Subhalo  451179
+Loading stellar particles
+Subhalo  451243
+Loading stellar particles
+Subhalo  451323
+Loading stellar particles
+Subhalo  451410
+Loading stellar particles
+Subhalo  451503
+Loading stellar particles
+Subhalo  451626
+Loading stellar particles
+Subhalo  451693
+Loading stellar particles
+Subhalo  451807
+Loading stellar particles
+Subhalo  451860
+Loading stellar particles
+Subhalo  451961
+Loading stellar particles
+Subhalo  452045
+Loading stellar particles
+Subhalo  452112
+Loading stellar particles
+Subhalo  452185
+Loading stellar particles
+Subhalo  452279
+Loading stellar particles
+Subhalo  452357
+Loading stellar particles
+Subhalo  452395
+Loading stellar particles
+Subhalo  452500
+Loading stellar particles
+Subhalo  452577
+Loading stellar particles
+Subhalo  452651
+Loading stellar particles
+Subhalo  452737
+Loading stellar particles
+Subhalo  452839
+Loading stellar particles
+Subhalo  452895
+Loading stellar particles
+Subhalo  452955
+Loading stellar particles
+Subhalo  453019
+Loading stellar particles
+Subhalo  453081
+Loading stellar particles
+Subhalo  453134
+Loading stellar particles
+Subhalo  453231
+Loading stellar particles
+Subhalo  453313
+Loading stellar particles
+Subhalo  453393
+Loading stellar particles
+Subhalo  453450
+Loading stellar particles
+Subhalo  453526
+Loading stellar particles
+Subhalo  453609
+Loading stellar particles
+Subhalo  453713
+Loading stellar particles
+Subhalo  453753
+Loading stellar particles
+Subhalo  453835
+Loading stellar particles
+Subhalo  453961
+Loading stellar particles
+Subhalo  454015
+Loading stellar particles
+Subhalo  454074
+Loading stellar particles
+Subhalo  454151
+Loading stellar particles
+Subhalo  454247
+Loading stellar particles
+Subhalo  454306
+Loading stellar particles
+Subhalo  454376
+Loading stellar particles
+Subhalo  454462
+Loading stellar particles
+Subhalo  454539
+Loading stellar particles
+Subhalo  454633
+Loading stellar particles
+Subhalo  454729
+Loading stellar particles
+Subhalo  454795
+Loading stellar particles
+Subhalo  454898
+Loading stellar particles
+Subhalo  454963
+Loading stellar particles
+Subhalo  455058
+Loading stellar particles
+Subhalo  455109
+Loading stellar particles
+Subhalo  455198
+Loading stellar particles
+Subhalo  455258
+Loading stellar particles
+Subhalo  455335
+Loading stellar particles
+Subhalo  455413
+Loading stellar particles
+Subhalo  455479
+Loading stellar particles
+Subhalo  455551
+Loading stellar particles
+Subhalo  455637
+Loading stellar particles
+Subhalo  455730
+Loading stellar particles
+Subhalo  455857
+Loading stellar particles
+Subhalo  455957
+Loading stellar particles
+Subhalo  456014
+Loading stellar particles
+Subhalo  456114
+Loading stellar particles
+Subhalo  456168
+Loading stellar particles
+Subhalo  456234
+Loading stellar particles
+Subhalo  456283
+Loading stellar particles
+Subhalo  456381
+Loading stellar particles
+Subhalo  456456
+Loading stellar particles
+Subhalo  456538
+Loading stellar particles
+Subhalo  456584
+Loading stellar particles
+Subhalo  456634
+Loading stellar particles
+Subhalo  456725
+Loading stellar particles
+Subhalo  456786
+Loading stellar particles
+Subhalo  456872
+Loading stellar particles
+Subhalo  456921
+Loading stellar particles
+Subhalo  457000
+Loading stellar particles
+Subhalo  457086
+Loading stellar particles
+Subhalo  457169
+Loading stellar particles
+Subhalo  457227
+Loading stellar particles
+Subhalo  457296
+Loading stellar particles
+Subhalo  457361
+Loading stellar particles
+Subhalo  457452
+Loading stellar particles
+Subhalo  457514
+Loading stellar particles
+Subhalo  457604
+Loading stellar particles
+Subhalo  457697
+Loading stellar particles
+Subhalo  457781
+Loading stellar particles
+Subhalo  457871
+Loading stellar particles
+Subhalo  457931
+Loading stellar particles
+Subhalo  457998
+Loading stellar particles
+Subhalo  458028
+Loading stellar particles
+Subhalo  458111
+Loading stellar particles
+Subhalo  458174
+Loading stellar particles
+Subhalo  458231
+Loading stellar particles
+Subhalo  458302
+Loading stellar particles
+Subhalo  458378
+Loading stellar particles
+Subhalo  458447
+Loading stellar particles
+Subhalo  458509
+Loading stellar particles
+Subhalo  458604
+Loading stellar particles
+Subhalo  458658
+Loading stellar particles
+Subhalo  458722
+Loading stellar particles
+Subhalo  458784
+Loading stellar particles
+Subhalo  458864
+Loading stellar particles
+Subhalo  458945
+Loading stellar particles
+Subhalo  459020
+Loading stellar particles
+Subhalo  459084
+Loading stellar particles
+Subhalo  459169
+Loading stellar particles
+Subhalo  459243
+Loading stellar particles
+Subhalo  459270
+Loading stellar particles
+Subhalo  459360
+Loading stellar particles
+Subhalo  459394
+Loading stellar particles
+Subhalo  459517
+Loading stellar particles
+Subhalo  459576
+Loading stellar particles
+Subhalo  459665
+Loading stellar particles
+Subhalo  459730
+Loading stellar particles
+Subhalo  459786
+Loading stellar particles
+Subhalo  459850
+Loading stellar particles
+Subhalo  459906
+Loading stellar particles
+Subhalo  459959
+Loading stellar particles
+Subhalo  460008
+Loading stellar particles
+Subhalo  460076
+Loading stellar particles
+Subhalo  460117
+Loading stellar particles
+Subhalo  460193
+Loading stellar particles
+Subhalo  460273
+Loading stellar particles
+Subhalo  460351
+Loading stellar particles
+Subhalo  460434
+Loading stellar particles
+Subhalo  460526
+Loading stellar particles
+Subhalo  460595
+Loading stellar particles
+Subhalo  460692
+Loading stellar particles
+Subhalo  460746
+Loading stellar particles
+Subhalo  460823
+Loading stellar particles
+Subhalo  460888
+Loading stellar particles
+Subhalo  460939
+Loading stellar particles
+Subhalo  461038
+Loading stellar particles
+Subhalo  461136
+Loading stellar particles
+Subhalo  461202
+Loading stellar particles
+Subhalo  461283
+Loading stellar particles
+Subhalo  461364
+Loading stellar particles
+Subhalo  461450
+Loading stellar particles
+Subhalo  461521
+Loading stellar particles
+Subhalo  461609
+Loading stellar particles
+Subhalo  461667
+Loading stellar particles
+Subhalo  461709
+Loading stellar particles
+Subhalo  461806
+Loading stellar particles
+Subhalo  461864
+Loading stellar particles
+Subhalo  461929
+Loading stellar particles
+Subhalo  462010
+Loading stellar particles
+Subhalo  462077
+Loading stellar particles
+Subhalo  462141
+Loading stellar particles
+Subhalo  462189
+Loading stellar particles
+Subhalo  462241
+Loading stellar particles
+Subhalo  462323
+Loading stellar particles
+Subhalo  462391
+Loading stellar particles
+Subhalo  462481
+Loading stellar particles
+Subhalo  462564
+Loading stellar particles
+Subhalo  462631
+Loading stellar particles
+Subhalo  462690
+Loading stellar particles
+Subhalo  462775
+Loading stellar particles
+Subhalo  462832
+Loading stellar particles
+Subhalo  462904
+Loading stellar particles
+Subhalo  462986
+Loading stellar particles
+Subhalo  463062
+Loading stellar particles
+Subhalo  463139
+Loading stellar particles
+Subhalo  463233
+Loading stellar particles
+Subhalo  463278
+Loading stellar particles
+Subhalo  463340
+Loading stellar particles
+Subhalo  463395
+Loading stellar particles
+Subhalo  463453
+Loading stellar particles
+Subhalo  463521
+Loading stellar particles
+Subhalo  463597
+Loading stellar particles
+Subhalo  463649
+Loading stellar particles
+Subhalo  463750
+Loading stellar particles
+Subhalo  463804
+Loading stellar particles
+Subhalo  463894
+Loading stellar particles
+Subhalo  463958
+Loading stellar particles
+Subhalo  464018
+Loading stellar particles
+Subhalo  464110
+Loading stellar particles
+Subhalo  464182
+Loading stellar particles
+Subhalo  464247
+Loading stellar particles
+Subhalo  464292
+Loading stellar particles
+Subhalo  464331
+Loading stellar particles
+Subhalo  464422
+Loading stellar particles
+Subhalo  464490
+Loading stellar particles
+Subhalo  464539
+Loading stellar particles
+Subhalo  464576
+Loading stellar particles
+Subhalo  464669
+Loading stellar particles
+Subhalo  464742
+Loading stellar particles
+Subhalo  464788
+Loading stellar particles
+Subhalo  464894
+Loading stellar particles
+Subhalo  464936
+Loading stellar particles
+Subhalo  465016
+Loading stellar particles
+Subhalo  465080
+Loading stellar particles
+Subhalo  465136
+Loading stellar particles
+Subhalo  465205
+Loading stellar particles
+Subhalo  465284
+Loading stellar particles
+Subhalo  465320
+Loading stellar particles
+Subhalo  465361
+Loading stellar particles
+Subhalo  465412
+Loading stellar particles
+Subhalo  465495
+Loading stellar particles
+Subhalo  465548
+Loading stellar particles
+Subhalo  465614
+Loading stellar particles
+Subhalo  465693
+Loading stellar particles
+Subhalo  465764
+Loading stellar particles
+Subhalo  465842
+Loading stellar particles
+Subhalo  465921
+Loading stellar particles
+Subhalo  466003
+Loading stellar particles
+Subhalo  466055
+Loading stellar particles
+Subhalo  466133
+Loading stellar particles
+Subhalo  466182
+Loading stellar particles
+Subhalo  466265
+Loading stellar particles
+Subhalo  466332
+Loading stellar particles
+Subhalo  466387
+Loading stellar particles
+Subhalo  466436
+Loading stellar particles
+Subhalo  466493
+Loading stellar particles
+Subhalo  466599
+Loading stellar particles
+Subhalo  466694
+Loading stellar particles
+Subhalo  466746
+Loading stellar particles
+Subhalo  466801
+Loading stellar particles
+Subhalo  466894
+Loading stellar particles
+Subhalo  466958
+Loading stellar particles
+Subhalo  467011
+Loading stellar particles
+Subhalo  467052
+Loading stellar particles
+Subhalo  467127
+Loading stellar particles
+Subhalo  467212
+Loading stellar particles
+Subhalo  467256
+Loading stellar particles
+Subhalo  467308
+Loading stellar particles
+Subhalo  467385
+Loading stellar particles
+Subhalo  467445
+Loading stellar particles
+Subhalo  467519
+Loading stellar particles
+Subhalo  467575
+Loading stellar particles
+Subhalo  467628
+Loading stellar particles
+Subhalo  467700
+Loading stellar particles
+Subhalo  467740
+Loading stellar particles
+Subhalo  467798
+Loading stellar particles
+Subhalo  467871
+Loading stellar particles
+Subhalo  467919
+Loading stellar particles
+Subhalo  467958
+Loading stellar particles
+Subhalo  468006
+Loading stellar particles
+Subhalo  468064
+Loading stellar particles
+Subhalo  468110
+Loading stellar particles
+Subhalo  468168
+Loading stellar particles
+Subhalo  468251
+Loading stellar particles
+Subhalo  468318
+Loading stellar particles
+Subhalo  468382
+Loading stellar particles
+Subhalo  468450
+Loading stellar particles
+Subhalo  468508
+Loading stellar particles
+Subhalo  468590
+Loading stellar particles
+Subhalo  468623
+Loading stellar particles
+Subhalo  468695
+Loading stellar particles
+Subhalo  468759
+Loading stellar particles
+Subhalo  468817
+Loading stellar particles
+Subhalo  468888
+Loading stellar particles
+Subhalo  468921
+Loading stellar particles
+Subhalo  468967
+Loading stellar particles
+Subhalo  469060
+Loading stellar particles
+Subhalo  469102
+Loading stellar particles
+Subhalo  469147
+Loading stellar particles
+Subhalo  469204
+Loading stellar particles
+Subhalo  469265
+Loading stellar particles
+Subhalo  469315
+Loading stellar particles
+Subhalo  469377
+Loading stellar particles
+Subhalo  469438
+Loading stellar particles
+Subhalo  469464
+Loading stellar particles
+Subhalo  469502
+Loading stellar particles
+Subhalo  469539
+Loading stellar particles
+Subhalo  469589
+Loading stellar particles
+Subhalo  469657
+Loading stellar particles
+Subhalo  469705
+Loading stellar particles
+Subhalo  469740
+Loading stellar particles
+Subhalo  469803
+Loading stellar particles
+Subhalo  469879
+Loading stellar particles
+Subhalo  469930
+Loading stellar particles
+Subhalo  469967
+Loading stellar particles
+Subhalo  470060
+Loading stellar particles
+Subhalo  470134
+Loading stellar particles
+Subhalo  470178
+Loading stellar particles
+Subhalo  470252
+Loading stellar particles
+Subhalo  470322
+Loading stellar particles
+Subhalo  470380
+Loading stellar particles
+Subhalo  470420
+Loading stellar particles
+Subhalo  470493
+Loading stellar particles
+Subhalo  470548
+Loading stellar particles
+Subhalo  470617
+Loading stellar particles
+Subhalo  470679
+Loading stellar particles
+Subhalo  470728
+Loading stellar particles
+Subhalo  470808
+Loading stellar particles
+Subhalo  470884
+Loading stellar particles
+Subhalo  470950
+Loading stellar particles
+Subhalo  471006
+Loading stellar particles
+Subhalo  471109
+Loading stellar particles
+Subhalo  471161
+Loading stellar particles
+Subhalo  471219
+Loading stellar particles
+Subhalo  471358
+Loading stellar particles
+Subhalo  471420
+Loading stellar particles
+Subhalo  471468
+Loading stellar particles
+Subhalo  471517
+Loading stellar particles
+Subhalo  471591
+Loading stellar particles
+Subhalo  471665
+Loading stellar particles
+Subhalo  471740
+Loading stellar particles
+Subhalo  471801
+Loading stellar particles
+Subhalo  471857
+Loading stellar particles
+Subhalo  471901
+Loading stellar particles
+Subhalo  471951
+Loading stellar particles
+Subhalo  472020
+Loading stellar particles
+Subhalo  472104
+Loading stellar particles
+Subhalo  472174
+Loading stellar particles
+Subhalo  472218
+Loading stellar particles
+Subhalo  472295
+Loading stellar particles
+Subhalo  472362
+Loading stellar particles
+Subhalo  472418
+Loading stellar particles
+Subhalo  472457
+Loading stellar particles
+Subhalo  472499
+Loading stellar particles
+Subhalo  472550
+Loading stellar particles
+Subhalo  472641
+Loading stellar particles
+Subhalo  472685
+Loading stellar particles
+Subhalo  472747
+Loading stellar particles
+Subhalo  472824
+Loading stellar particles
+Subhalo  472884
+Loading stellar particles
+Subhalo  472955
+Loading stellar particles
+Subhalo  473004
+Loading stellar particles
+Subhalo  473055
+Loading stellar particles
+Subhalo  473125
+Loading stellar particles
+Subhalo  473166
+Loading stellar particles
+Subhalo  473207
+Loading stellar particles
+Subhalo  473287
+Loading stellar particles
+Subhalo  473349
+Loading stellar particles
+Subhalo  473420
+Loading stellar particles
+Subhalo  473471
+Loading stellar particles
+Subhalo  473514
+Loading stellar particles
+Subhalo  473563
+Loading stellar particles
+Subhalo  473641
+Loading stellar particles
+Subhalo  473676
+Loading stellar particles
+Subhalo  473753
+Loading stellar particles
+Subhalo  473815
+Loading stellar particles
+Subhalo  473858
+Loading stellar particles
+Subhalo  473898
+Loading stellar particles
+Subhalo  473957
+Loading stellar particles
+Subhalo  474017
+Loading stellar particles
+Subhalo  474061
+Loading stellar particles
+Subhalo  474127
+Loading stellar particles
+Subhalo  474170
+Loading stellar particles
+Subhalo  474204
+Loading stellar particles
+Subhalo  474231
+Loading stellar particles
+Subhalo  474271
+Loading stellar particles
+Subhalo  474320
+Loading stellar particles
+Subhalo  474377
+Loading stellar particles
+Subhalo  474437
+Loading stellar particles
+Subhalo  474505
+Loading stellar particles
+Subhalo  474569
+Loading stellar particles
+Subhalo  474623
+Loading stellar particles
+Subhalo  474674
+Loading stellar particles
+Subhalo  474757
+Loading stellar particles
+Subhalo  474813
+Loading stellar particles
+Subhalo  474860
+Loading stellar particles
+Subhalo  474918
+Loading stellar particles
+Subhalo  474979
+Loading stellar particles
+Subhalo  475020
+Loading stellar particles
+Subhalo  475098
+Loading stellar particles
+Subhalo  475171
+Loading stellar particles
+Subhalo  475220
+Loading stellar particles
+Subhalo  475293
+Loading stellar particles
+Subhalo  475354
+Loading stellar particles
+Subhalo  475440
+Loading stellar particles
+Subhalo  475490
+Loading stellar particles
+Subhalo  475542
+Loading stellar particles
+Subhalo  475603
+Loading stellar particles
+Subhalo  475656
+Loading stellar particles
+Subhalo  475722
+Loading stellar particles
+Subhalo  475781
+Loading stellar particles
+Subhalo  475865
+Loading stellar particles
+Subhalo  475906
+Loading stellar particles
+Subhalo  475956
+Loading stellar particles
+Subhalo  476005
+Loading stellar particles
+Subhalo  476044
+Loading stellar particles
+Subhalo  476118
+Loading stellar particles
+Subhalo  476172
+Loading stellar particles
+Subhalo  476232
+Loading stellar particles
+Subhalo  476295
+Loading stellar particles
+Subhalo  476362
+Loading stellar particles
+Subhalo  476417
+Loading stellar particles
+Subhalo  476487
+Loading stellar particles
+Subhalo  476527
+Loading stellar particles
+Subhalo  476557
+Loading stellar particles
+Subhalo  476624
+Loading stellar particles
+Subhalo  476696
+Loading stellar particles
+Subhalo  476745
+Loading stellar particles
+Subhalo  476820
+Loading stellar particles
+Subhalo  476892
+Loading stellar particles
+Subhalo  476944
+Loading stellar particles
+Subhalo  476997
+Loading stellar particles
+Subhalo  477031
+Loading stellar particles
+Subhalo  477089
+Loading stellar particles
+Subhalo  477119
+Loading stellar particles
+Subhalo  477179
+Loading stellar particles
+Subhalo  477227
+Loading stellar particles
+Subhalo  477290
+Loading stellar particles
+Subhalo  477378
+Loading stellar particles
+Subhalo  477419
+Loading stellar particles
+Subhalo  477474
+Loading stellar particles
+Subhalo  477518
+Loading stellar particles
+Subhalo  477564
+Loading stellar particles
+Subhalo  477624
+Loading stellar particles
+Subhalo  477677
+Loading stellar particles
+Subhalo  477745
+Loading stellar particles
+Subhalo  477802
+Loading stellar particles
+Subhalo  477875
+Loading stellar particles
+Subhalo  477919
+Loading stellar particles
+Subhalo  477974
+Loading stellar particles
+Subhalo  478037
+Loading stellar particles
+Subhalo  478092
+Loading stellar particles
+Subhalo  478160
+Loading stellar particles
+Subhalo  478247
+Loading stellar particles
+Subhalo  478298
+Loading stellar particles
+Subhalo  478357
+Loading stellar particles
+Subhalo  478410
+Loading stellar particles
+Subhalo  478452
+Loading stellar particles
+Subhalo  478496
+Loading stellar particles
+Subhalo  478535
+Loading stellar particles
+Subhalo  478604
+Loading stellar particles
+Subhalo  478661
+Loading stellar particles
+Subhalo  478696
+Loading stellar particles
+Subhalo  478759
+Loading stellar particles
+Subhalo  478856
+Loading stellar particles
+Subhalo  478927
+Loading stellar particles
+Subhalo  479002
+Loading stellar particles
+Subhalo  479056
+Loading stellar particles
+Subhalo  479117
+Loading stellar particles
+Subhalo  479174
+Loading stellar particles
+Subhalo  479221
+Loading stellar particles
+Subhalo  479264
+Loading stellar particles
+Subhalo  479314
+Loading stellar particles
+Subhalo  479372
+Loading stellar particles
+Subhalo  479411
+Loading stellar particles
+Subhalo  479461
+Loading stellar particles
+Subhalo  479560
+Loading stellar particles
+Subhalo  479628
+Loading stellar particles
+Subhalo  479682
+Loading stellar particles
+Subhalo  479745
+Loading stellar particles
+Subhalo  479798
+Loading stellar particles
+Subhalo  479839
+Loading stellar particles
+Subhalo  479884
+Loading stellar particles
+Subhalo  479917
+Loading stellar particles
+Subhalo  480000
+Loading stellar particles
+Subhalo  480073
+Loading stellar particles
+Subhalo  480151
+Loading stellar particles
+Subhalo  480194
+Loading stellar particles
+Subhalo  480230
+Loading stellar particles
+Subhalo  480285
+Loading stellar particles
+Subhalo  480345
+Loading stellar particles
+Subhalo  480391
+Loading stellar particles
+Subhalo  480441
+Loading stellar particles
+Subhalo  480497
+Loading stellar particles
+Subhalo  480550
+Loading stellar particles
+Subhalo  480587
+Loading stellar particles
+Subhalo  480645
+Loading stellar particles
+Subhalo  480712
+Loading stellar particles
+Subhalo  480750
+Loading stellar particles
+Subhalo  480803
+Loading stellar particles
+Subhalo  480879
+Loading stellar particles
+Subhalo  480931
+Loading stellar particles
+Subhalo  480989
+Loading stellar particles
+Subhalo  481036
+Loading stellar particles
+Subhalo  481064
+Loading stellar particles
+Subhalo  481126
+Loading stellar particles
+Subhalo  481171
+Loading stellar particles
+Subhalo  481254
+Loading stellar particles
+Subhalo  481300
+Loading stellar particles
+Subhalo  481347
+Loading stellar particles
+Subhalo  481405
+Loading stellar particles
+Subhalo  481453
+Loading stellar particles
+Subhalo  481503
+Loading stellar particles
+Subhalo  481545
+Loading stellar particles
+Subhalo  481597
+Loading stellar particles
+Subhalo  481653
+Loading stellar particles
+Subhalo  481724
+Loading stellar particles
+Subhalo  481804
+Loading stellar particles
+Subhalo  481855
+Loading stellar particles
+Subhalo  481894
+Loading stellar particles
+Subhalo  481947
+Loading stellar particles
+Subhalo  482006
+Loading stellar particles
+Subhalo  482054
+Loading stellar particles
+Subhalo  482117
+Loading stellar particles
+Subhalo  482169
+Loading stellar particles
+Subhalo  482196
+Loading stellar particles
+Subhalo  482257
+Loading stellar particles
+Subhalo  482323
+Loading stellar particles
+Subhalo  482368
+Loading stellar particles
+Subhalo  482435
+Loading stellar particles
+Subhalo  482479
+Loading stellar particles
+Subhalo  482533
+Loading stellar particles
+Subhalo  482589
+Loading stellar particles
+Subhalo  482614
+Loading stellar particles
+Subhalo  482674
+Loading stellar particles
+Subhalo  482714
+Loading stellar particles
+Subhalo  482757
+Loading stellar particles
+Subhalo  482814
+Traceback (most recent call last):
+  File "./src/cluster_run.py", line 24, in <module>
+    safe_tester.simple_test_all(args.tng, test_name, int(args.subhalo), 99)
+  File "/lustre1/work/aurorasg/TNG/src/safe_tester.py", line 41, in simple_test_all
+    temp_cat = test.masses(tng_run, snapshot, dm_part_mass, i, temp_cat)
+  File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 47, in masses
+    df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 68, in dict_to_pandas
+    df = pd.DataFrame(data, dtype=object)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
+    mgr = self._init_dict(data, index, columns, dtype=dtype)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 459, in _init_dict
+    return _arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7356, in _arrays_to_mgr
+    index = extract_index(arrays)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7393, in extract_index
+    raise ValueError('If using all scalar values, you must pass'
+ValueError: If using all scalar values, you must pass an index
+Loading stellar particles
+Subhalo  482869
+Loading stellar particles
+Subhalo  482925
+Loading stellar particles
+Subhalo  482987
+Loading stellar particles
+Subhalo  483033
+Loading stellar particles
+Subhalo  483068
+Loading stellar particles
+Subhalo  483113
+Loading stellar particles
+Subhalo  483179
+Loading stellar particles
+Subhalo  483214
+Loading stellar particles
+Subhalo  483269
+Loading stellar particles
+Subhalo  483323
+Loading stellar particles
+Subhalo  483370
+Loading stellar particles
+Subhalo  483421
+Loading stellar particles
+Subhalo  483484
+Loading stellar particles
+Subhalo  483521
+Loading stellar particles
+Subhalo  483590
+Loading stellar particles
+Subhalo  483641
+Loading stellar particles
+Subhalo  483693
+Loading stellar particles
+Subhalo  483749
+Loading stellar particles
+Subhalo  483812
+Loading stellar particles
+Subhalo  483868
+Loading stellar particles
+Subhalo  483900
+Loading stellar particles
+Subhalo  483927
+Loading stellar particles
+Subhalo  483977
+Loading stellar particles
+Subhalo  484045
+Loading stellar particles
+Subhalo  484113
+Loading stellar particles
+Subhalo  484155
+Loading stellar particles
+Subhalo  484207
+Loading stellar particles
+Subhalo  484257
+Loading stellar particles
+Subhalo  484307
+Loading stellar particles
+Subhalo  484336
+Loading stellar particles
+Subhalo  484366
+Loading stellar particles
+Subhalo  484427
+Loading stellar particles
+Subhalo  484506
+Loading stellar particles
+Subhalo  484550
+Loading stellar particles
+Subhalo  484608
+Loading stellar particles
+Subhalo  484655
+Loading stellar particles
+Subhalo  484715
+Loading stellar particles
+Subhalo  484771
+Loading stellar particles
+Subhalo  484818
+Loading stellar particles
+Subhalo  484852
+Loading stellar particles
+Subhalo  484905
+Loading stellar particles
+Subhalo  484944
+Loading stellar particles
+Subhalo  485017
+Loading stellar particles
+Subhalo  485095
+Loading stellar particles
+Subhalo  485146
+Loading stellar particles
+Subhalo  485196
+Loading stellar particles
+Subhalo  485233
+Loading stellar particles
+Subhalo  485283
+Loading stellar particles
+Subhalo  485326
+Loading stellar particles
+Subhalo  485365
+Loading stellar particles
+Subhalo  485394
+Loading stellar particles
+Subhalo  485441
+Loading stellar particles
+Subhalo  485485
+Loading stellar particles
+Subhalo  485518
+Loading stellar particles
+Subhalo  485542
+Loading stellar particles
+Subhalo  485596
+Loading stellar particles
+Subhalo  485654
+Loading stellar particles
+Subhalo  485703
+Loading stellar particles
+Subhalo  485747
+Loading stellar particles
+Subhalo  485782
+Loading stellar particles
+Subhalo  485833
+Loading stellar particles
+Subhalo  485886
+Loading stellar particles
+Subhalo  485951
+Loading stellar particles
+Subhalo  486009
+Loading stellar particles
+Subhalo  486052
+Loading stellar particles
+Subhalo  486124
+Loading stellar particles
+Subhalo  486186
+Loading stellar particles
+Subhalo  486229
+Loading stellar particles
+Subhalo  486281
+Loading stellar particles
+Subhalo  486341
+Traceback (most recent call last):
+  File "./src/cluster_run.py", line 24, in <module>
+    safe_tester.simple_test_all(args.tng, test_name, int(args.subhalo), 99)
+  File "/lustre1/work/aurorasg/TNG/src/safe_tester.py", line 41, in simple_test_all
+    temp_cat = test.masses(tng_run, snapshot, dm_part_mass, i, temp_cat)
+  File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 47, in masses
+    df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 68, in dict_to_pandas
+    df = pd.DataFrame(data, dtype=object)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
+    mgr = self._init_dict(data, index, columns, dtype=dtype)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 459, in _init_dict
+    return _arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7356, in _arrays_to_mgr
+    index = extract_index(arrays)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7393, in extract_index
+    raise ValueError('If using all scalar values, you must pass'
+ValueError: If using all scalar values, you must pass an index
+Loading stellar particles
+Subhalo  486384
+Loading stellar particles
+Subhalo  486415
+Loading stellar particles
+Subhalo  486463
+Loading stellar particles
+Subhalo  486525
+Loading stellar particles
+Subhalo  486590
+Loading stellar particles
+Subhalo  486632
+Loading stellar particles
+Subhalo  486691
+Loading stellar particles
+Subhalo  486742
+Loading stellar particles
+Subhalo  486781
+Loading stellar particles
+Subhalo  486828
+Loading stellar particles
+Subhalo  486875
+Loading stellar particles
+Subhalo  486917
+Loading stellar particles
+Subhalo  486966
+Loading stellar particles
+Subhalo  487000
+Loading stellar particles
+Subhalo  487042
+Loading stellar particles
+Subhalo  487072
+Loading stellar particles
+Subhalo  487099
+Loading stellar particles
+Subhalo  487152
+Loading stellar particles
+Subhalo  487191
+Loading stellar particles
+Subhalo  487244
+Loading stellar particles
+Subhalo  487276
+Loading stellar particles
+Subhalo  487327
+Loading stellar particles
+Subhalo  487363
+Loading stellar particles
+Subhalo  487393
+Loading stellar particles
+Subhalo  487438
+Loading stellar particles
+Subhalo  487496
+Loading stellar particles
+Subhalo  487530
+Loading stellar particles
+Subhalo  487606
+Loading stellar particles
+Subhalo  487651
+Loading stellar particles
+Subhalo  487698
+Loading stellar particles
+Subhalo  487769
+Loading stellar particles
+Subhalo  487817
+Loading stellar particles
+Subhalo  487877
+Loading stellar particles
+Subhalo  487913
+Loading stellar particles
+Subhalo  487965
+Loading stellar particles
+Subhalo  487993
+Loading stellar particles
+Subhalo  488062
+Loading stellar particles
+Subhalo  488123
+Loading stellar particles
+Subhalo  488174
+Loading stellar particles
+Subhalo  488228
+Loading stellar particles
+Subhalo  488282
+Loading stellar particles
+Subhalo  488355
+Loading stellar particles
+Subhalo  488415
+Loading stellar particles
+Subhalo  488445
+Loading stellar particles
+Subhalo  488500
+Loading stellar particles
+Subhalo  488537
+Loading stellar particles
+Subhalo  488591
+Loading stellar particles
+Subhalo  488662
+Loading stellar particles
+Subhalo  488722
+Loading stellar particles
+Subhalo  488771
+Loading stellar particles
+Subhalo  488841
+Loading stellar particles
+Subhalo  488906
+Loading stellar particles
+Subhalo  488945
+Loading stellar particles
+Subhalo  488990
+Loading stellar particles
+Subhalo  489016
+Loading stellar particles
+Subhalo  489054
+Loading stellar particles
+Subhalo  489100
+Loading stellar particles
+Subhalo  489162
+Loading stellar particles
+Subhalo  489230
+Loading stellar particles
+Subhalo  489273
+Loading stellar particles
+Subhalo  489314
+Loading stellar particles
+Subhalo  489356
+Loading stellar particles
+Subhalo  489417
+Loading stellar particles
+Subhalo  489462
+Loading stellar particles
+Subhalo  489501
+Loading stellar particles
+Subhalo  489550
+Loading stellar particles
+Subhalo  489593
+Loading stellar particles
+Subhalo  489618
+Loading stellar particles
+Subhalo  489666
+Loading stellar particles
+Subhalo  489703
+Loading stellar particles
+Subhalo  489752
+Loading stellar particles
+Subhalo  489812
+Loading stellar particles
+Subhalo  489863
+Loading stellar particles
+Subhalo  489901
+Loading stellar particles
+Subhalo  489953
+Loading stellar particles
+Subhalo  489990
+Loading stellar particles
+Subhalo  490053
+Loading stellar particles
+Subhalo  490109
+Loading stellar particles
+Subhalo  490130
+Loading stellar particles
+Subhalo  490172
+Loading stellar particles
+Subhalo  490195
+Loading stellar particles
+Subhalo  490238
+Loading stellar particles
+Subhalo  490280
+Loading stellar particles
+Subhalo  490342
+Loading stellar particles
+Subhalo  490418
+Loading stellar particles
+Subhalo  490475
+Loading stellar particles
+Subhalo  490533
+Loading stellar particles
+Subhalo  490577
+Loading stellar particles
+Subhalo  490617
+Loading stellar particles
+Subhalo  490661
+Loading stellar particles
+Subhalo  490711
+Loading stellar particles
+Subhalo  490768
+Loading stellar particles
+Subhalo  490806
+Loading stellar particles
+Subhalo  490842
+Loading stellar particles
+Subhalo  490867
+Loading stellar particles
+Subhalo  490921
+Loading stellar particles
+Subhalo  490986
+Loading stellar particles
+Subhalo  491026
+Loading stellar particles
+Subhalo  491066
+Loading stellar particles
+Subhalo  491089
+Loading stellar particles
+Subhalo  491145
+Loading stellar particles
+Subhalo  491189
+Loading stellar particles
+Subhalo  491225
+Loading stellar particles
+Subhalo  491282
+Loading stellar particles
+Subhalo  491316
+Loading stellar particles
+Subhalo  491354
+Loading stellar particles
+Subhalo  491403
+Loading stellar particles
+Subhalo  491471
+Loading stellar particles
+Subhalo  491520
+Loading stellar particles
+Subhalo  491581
+Loading stellar particles
+Subhalo  491614
+Loading stellar particles
+Subhalo  491650
+Loading stellar particles
+Subhalo  491735
+Loading stellar particles
+Subhalo  491761
+Loading stellar particles
+Subhalo  491801
+Loading stellar particles
+Subhalo  491872
+Loading stellar particles
+Subhalo  491901
+Loading stellar particles
+Subhalo  491931
+Loading stellar particles
+Subhalo  491980
+Loading stellar particles
+Subhalo  492023
+Loading stellar particles
+Subhalo  492092
+Loading stellar particles
+Subhalo  492125
+Loading stellar particles
+Subhalo  492178
+Loading stellar particles
+Subhalo  492223
+Loading stellar particles
+Subhalo  492285
+Loading stellar particles
+Subhalo  492326
+Loading stellar particles
+Subhalo  492352
+Loading stellar particles
+Subhalo  492392
+Loading stellar particles
+Subhalo  492425
+Loading stellar particles
+Subhalo  492462
+Loading stellar particles
+Subhalo  492493
+Loading stellar particles
+Subhalo  492528
+Loading stellar particles
+Subhalo  492565
+Loading stellar particles
+Subhalo  492614
+Loading stellar particles
+Subhalo  492666
+Loading stellar particles
+Subhalo  492710
+Loading stellar particles
+Subhalo  492755
+Loading stellar particles
+Subhalo  492808
+Loading stellar particles
+Subhalo  492825
+Loading stellar particles
+Subhalo  492845
+Loading stellar particles
+Subhalo  492889
+Loading stellar particles
+Subhalo  492947
+Loading stellar particles
+Subhalo  492989
+Loading stellar particles
+Subhalo  493034
+Loading stellar particles
+Subhalo  493085
+Loading stellar particles
+Subhalo  493141
+Loading stellar particles
+Subhalo  493183
+Loading stellar particles
+Subhalo  493230
+Loading stellar particles
+Subhalo  493266
+Loading stellar particles
+Subhalo  493314
+Loading stellar particles
+Subhalo  493380
+Loading stellar particles
+Subhalo  493437
+Loading stellar particles
+Subhalo  493491
+Loading stellar particles
+Subhalo  493517
+Loading stellar particles
+Subhalo  493575
+Loading stellar particles
+Subhalo  493633
+Loading stellar particles
+Subhalo  493658
+Loading stellar particles
+Subhalo  493702
+Loading stellar particles
+Subhalo  493751
+Loading stellar particles
+Subhalo  493796
+Loading stellar particles
+Subhalo  493859
+Loading stellar particles
+Subhalo  493920
+Loading stellar particles
+Subhalo  493964
+Loading stellar particles
+Subhalo  494009
+Loading stellar particles
+Subhalo  494036
+Loading stellar particles
+Subhalo  494091
+Loading stellar particles
+Subhalo  494131
+Loading stellar particles
+Subhalo  494178
+Loading stellar particles
+Subhalo  494232
+Loading stellar particles
+Subhalo  494273
+Loading stellar particles
+Subhalo  494326
+Loading stellar particles
+Subhalo  494377
+Loading stellar particles
+Subhalo  494423
+Loading stellar particles
+Subhalo  494487
+Loading stellar particles
+Subhalo  494526
+Loading stellar particles
+Subhalo  494578
+Loading stellar particles
+Subhalo  494622
+Loading stellar particles
+Subhalo  494667
+Loading stellar particles
+Subhalo  494721
+Loading stellar particles
+Subhalo  494771
+Loading stellar particles
+Subhalo  494807
+Loading stellar particles
+Subhalo  494846
+Loading stellar particles
+Subhalo  494928
+Loading stellar particles
+Subhalo  494991
+Loading stellar particles
+Subhalo  495043
+Loading stellar particles
+Subhalo  495073
+Loading stellar particles
+Subhalo  495113
+Loading stellar particles
+Subhalo  495177
+Loading stellar particles
+Subhalo  495214
+Loading stellar particles
+Subhalo  495261
+Loading stellar particles
+Subhalo  495297
+Loading stellar particles
+Subhalo  495331
+Loading stellar particles
+Subhalo  495389
+Loading stellar particles
+Subhalo  495442
+Loading stellar particles
+Subhalo  495471
+Loading stellar particles
+Subhalo  495515
+Loading stellar particles
+Subhalo  495540
+Loading stellar particles
+Subhalo  495589
+Loading stellar particles
+Subhalo  495654
+Loading stellar particles
+Subhalo  495719
+Loading stellar particles
+Subhalo  495772
+Loading stellar particles
+Subhalo  495803
+Loading stellar particles
+Subhalo  495854
+Loading stellar particles
+Subhalo  495882
+Loading stellar particles
+Subhalo  495934
+Loading stellar particles
+Subhalo  495980
+Loading stellar particles
+Subhalo  496019
+Loading stellar particles
+Subhalo  496056
+Loading stellar particles
+Subhalo  496113
+Loading stellar particles
+Subhalo  496132
+Loading stellar particles
+Subhalo  496167
+Loading stellar particles
+Subhalo  496212
+Loading stellar particles
+Subhalo  496244
+Loading stellar particles
+Subhalo  496292
+Loading stellar particles
+Subhalo  496326
+Loading stellar particles
+Subhalo  496369
+Loading stellar particles
+Subhalo  496436
+Loading stellar particles
+Subhalo  496474
+Loading stellar particles
+Subhalo  496515
+Loading stellar particles
+Subhalo  496545
+Loading stellar particles
+Subhalo  496596
+Loading stellar particles
+Subhalo  496646
+Loading stellar particles
+Subhalo  496713
+Loading stellar particles
+Subhalo  496757
+Loading stellar particles
+Subhalo  496805
+Loading stellar particles
+Subhalo  496845
+Loading stellar particles
+Subhalo  496906
+Loading stellar particles
+Subhalo  496938
+Loading stellar particles
+Subhalo  496990
+Loading stellar particles
+Subhalo  497032
+Loading stellar particles
+Subhalo  497088
+Loading stellar particles
+Subhalo  497138
+Loading stellar particles
+Subhalo  497176
+Loading stellar particles
+Subhalo  497220
+Loading stellar particles
+Subhalo  497258
+Loading stellar particles
+Subhalo  497299
+Loading stellar particles
+Subhalo  497351
+Loading stellar particles
+Subhalo  497380
+Loading stellar particles
+Subhalo  497409
+Loading stellar particles
+Subhalo  497450
+Loading stellar particles
+Subhalo  497498
+Loading stellar particles
+Subhalo  497529
+Loading stellar particles
+Subhalo  497548
+Loading stellar particles
+Subhalo  497585
+Loading stellar particles
+Subhalo  497617
+Loading stellar particles
+Subhalo  497646
+Loading stellar particles
+Subhalo  497683
+Loading stellar particles
+Subhalo  497712
+Loading stellar particles
+Subhalo  497754
+Loading stellar particles
+Subhalo  497800
+Loading stellar particles
+Subhalo  497838
+Loading stellar particles
+Subhalo  497879
+Loading stellar particles
+Subhalo  497926
+Loading stellar particles
+Subhalo  497964
+Loading stellar particles
+Subhalo  498011
+Loading stellar particles
+Subhalo  498031
+Loading stellar particles
+Subhalo  498067
+Loading stellar particles
+Subhalo  498118
+Loading stellar particles
+Subhalo  498171
+Loading stellar particles
+Subhalo  498203
+Loading stellar particles
+Subhalo  498248
+Loading stellar particles
+Subhalo  498297
+Loading stellar particles
+Subhalo  498335
+Loading stellar particles
+Subhalo  498389
+Loading stellar particles
+Subhalo  498415
+Loading stellar particles
+Subhalo  498462
+Loading stellar particles
+Subhalo  498520
+Loading stellar particles
+Subhalo  498576
+Loading stellar particles
+Subhalo  498622
+Loading stellar particles
+Subhalo  498677
+Loading stellar particles
+Subhalo  498710
+Loading stellar particles
+Subhalo  498768
+Loading stellar particles
+Subhalo  498803
+Loading stellar particles
+Subhalo  498854
+Loading stellar particles
+Subhalo  498879
+Loading stellar particles
+Subhalo  498923
+Loading stellar particles
+Subhalo  498958
+slurmstepd: error: *** JOB 3344922 ON compute-2-0-21 CANCELLED AT 2021-02-08T18:48:41 DUE TO TIME LIMIT ***
