@@ -1,12 +1,12 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
-#SBATCH --time=03:00:00
+#SBATCH --time=05:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=100000
-#SBATCH --job-name="test_run"
-#SBATCH --output=tng-test-srun.out
+#SBATCH --job-name="basic_properties"
+#SBATCH --output=tng-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
 #SBATCH --mail-type=ALL
  
