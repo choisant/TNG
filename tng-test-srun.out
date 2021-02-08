@@ -1,717 +1,742 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: test_run
-Th job ID is 3296132
+Th job ID is 3334721
 The job was run on these nodes: compute-2-0-22
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
 Linux compute-2-0-22.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  17185
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  31342
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  41582
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  52618
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  60731
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  69507
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  76086
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  83280
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  88663
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  96500
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  102683
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  108012
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  114388
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  118679
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  121863
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  125027
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  128393
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  131047
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  134847
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  137885
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  140721
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  143884
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  146176
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  149169
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  152031
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  154493
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  156809
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  158847
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  161162
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  163675
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  165727
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  168390
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  170540
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  172649
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  175238
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  177719
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  179886
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  181983
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  184828
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  186927
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  188859
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  191079
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  192898
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  194946
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  197108
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  199321
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  200803
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  202634
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  204234
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  206226
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  207473
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  208781
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  210763
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  212836
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  214452
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  216016
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  217485
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  219032
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  220557
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  222267
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  223896
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  225155
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  226194
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  227574
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  228680
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  230235
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  231706
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  233214
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  234514
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  235692
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  236756
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  237941
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  239245
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  239993
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  241153
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  242214
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  243186
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  244318
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  245134
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  246232
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  247348
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  248157
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  249164
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  250390
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  251299
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  252245
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  252995
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  254112
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  254925
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  255614
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  256507
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  257302
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  258263
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  259114
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  260014
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  260862
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  261959
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  262659
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
+Loading stellar particles
+Subhalo  263557
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  264412
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  265267
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  265926
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  266559
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  267323
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  268295
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  268908
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  269440
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  270079
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  270963
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  271729
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  272322
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  273141
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  273994
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  274790
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  275531
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  276219
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  277020
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  277687
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  278302
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  278854
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  279707
+Loading halos
+Choosing only central galaxies
+Starting the central galaxies sorting
+Removing galaxies below  Stellar  mass  0.32
 Loading stellar particles
 Subhalo  280454
-Loading stellar particles
-Subhalo  281072
-Loading stellar particles
-Subhalo  281700
-Loading stellar particles
-Subhalo  282377
-Loading stellar particles
-Subhalo  283011
-Loading stellar particles
-Subhalo  283637
-Loading stellar particles
-Subhalo  284316
-Loading stellar particles
-Subhalo  284948
-Loading stellar particles
-Subhalo  285479
-Loading stellar particles
-Subhalo  286066
-Loading stellar particles
-Subhalo  286695
-Loading stellar particles
-Subhalo  287335
-Loading stellar particles
-Subhalo  288743
-Loading stellar particles
-Subhalo  289426
-Loading stellar particles
-Subhalo  289945
-Loading stellar particles
-Subhalo  290643
-Loading stellar particles
-Subhalo  291888
-Loading stellar particles
-Subhalo  292355
-Loading stellar particles
-Subhalo  292921
-Loading stellar particles
-Subhalo  293439
-Loading stellar particles
-Subhalo  294047
-Loading stellar particles
-Subhalo  294510
-Loading stellar particles
-Subhalo  295077
-Loading stellar particles
-Subhalo  296302
-Loading stellar particles
-Subhalo  296787
-Loading stellar particles
-Subhalo  297210
-Loading stellar particles
-Subhalo  297712
-Loading stellar particles
-Subhalo  298206
-Loading stellar particles
-Subhalo  298892
-Loading stellar particles
-Subhalo  299429
-Loading stellar particles
-Subhalo  299935
-Loading stellar particles
-Subhalo  301746
-Loading stellar particles
-Subhalo  302773
-Loading stellar particles
-Subhalo  303362
-Loading stellar particles
-Subhalo  303710
-Loading stellar particles
-Subhalo  304201
-Loading stellar particles
-Subhalo  304726
-Loading stellar particles
-Subhalo  305083
-Loading stellar particles
-Subhalo  305653
-Loading stellar particles
-Subhalo  306058
-Loading stellar particles
-Subhalo  306516
-Loading stellar particles
-Subhalo  306945
-Loading stellar particles
-Subhalo  307438
-Loading stellar particles
-Subhalo  308598
-Loading stellar particles
-Subhalo  309045
-Loading stellar particles
-Subhalo  309951
-Loading stellar particles
-Subhalo  310509
-Loading stellar particles
-Subhalo  310985
-Loading stellar particles
-Subhalo  311302
-Loading stellar particles
-Subhalo  311882
-Loading stellar particles
-Subhalo  312412
-Loading stellar particles
-Subhalo  312891
-Loading stellar particles
-Subhalo  313402
-Loading stellar particles
-Subhalo  313954
-Loading stellar particles
-Subhalo  314365
-Loading stellar particles
-Subhalo  314770
-Loading stellar particles
-Subhalo  315140
-Loading stellar particles
-Subhalo  316029
-Loading stellar particles
-Subhalo  316354
-Loading stellar particles
-Subhalo  316855
-Loading stellar particles
-Subhalo  317311
-Loading stellar particles
-Subhalo  317711
-Loading stellar particles
-Subhalo  318210
-Loading stellar particles
-Subhalo  318633
-Loading stellar particles
-Subhalo  319643
-Loading stellar particles
-Subhalo  320012
-Loading stellar particles
-Subhalo  320433
-Loading stellar particles
-Subhalo  320734
-Loading stellar particles
-Subhalo  321204
-Loading stellar particles
-Subhalo  321674
-Loading stellar particles
-Subhalo  322160
-Loading stellar particles
-Subhalo  322979
-Loading stellar particles
-Subhalo  323455
-Loading stellar particles
-Subhalo  323851
-Loading stellar particles
-Subhalo  324127
-Loading stellar particles
-Subhalo  324572
-Loading stellar particles
-Subhalo  324997
-Loading stellar particles
-Subhalo  325808
-Loading stellar particles
-Subhalo  326652
-Loading stellar particles
-Subhalo  327112
-Loading stellar particles
-Subhalo  327405
-Loading stellar particles
-Subhalo  329105
-Loading stellar particles
-Subhalo  329515
-Loading stellar particles
-Subhalo  329849
-Loading stellar particles
-Subhalo  330208
-Loading stellar particles
-Subhalo  330553
-Loading stellar particles
-Subhalo  330955
-Loading stellar particles
-Subhalo  331293
-Loading stellar particles
-Subhalo  331701
-Loading stellar particles
-Subhalo  332389
-Loading stellar particles
-Subhalo  333672
-Loading stellar particles
-Subhalo  334028
-Loading stellar particles
-Subhalo  334350
-Loading stellar particles
-Subhalo  334727
-Loading stellar particles
-Subhalo  335078
-Loading stellar particles
-Subhalo  335486
-Loading stellar particles
-Subhalo  335927
-Loading stellar particles
-Subhalo  336276
-Loading stellar particles
-Subhalo  336516
-Loading stellar particles
-Subhalo  336796
-Loading stellar particles
-Subhalo  337048
-Loading stellar particles
-Subhalo  337444
-Loading stellar particles
-Subhalo  338148
-Loading stellar particles
-Subhalo  338458
-Loading stellar particles
-Subhalo  339181
-Loading stellar particles
-Subhalo  339547
-Loading stellar particles
-Subhalo  339862
-Loading stellar particles
-Subhalo  340106
-Loading stellar particles
-Subhalo  340355
-Loading stellar particles
-Subhalo  341356
-Loading stellar particles
-Subhalo  342047
-Loading stellar particles
-Subhalo  342343
-Loading stellar particles
-Subhalo  342689
-Loading stellar particles
-Subhalo  343039
-Loading stellar particles
-Subhalo  343429
-Loading stellar particles
-Subhalo  343638
-Loading stellar particles
-Subhalo  344300
-Loading stellar particles
-Subhalo  344987
-Loading stellar particles
-Subhalo  345250
-Loading stellar particles
-Subhalo  345812
-Loading stellar particles
-Subhalo  346075
-Loading stellar particles
-Subhalo  346420
-Loading stellar particles
-Subhalo  346748
-Loading stellar particles
-Subhalo  346976
-Loading stellar particles
-Subhalo  347237
-Loading stellar particles
-Subhalo  347508
-Loading stellar particles
-Subhalo  347785
-Loading stellar particles
-Subhalo  348038
-Loading stellar particles
-Subhalo  348334
-Loading stellar particles
-Subhalo  348593
-Loading stellar particles
-Subhalo  348894
-Loading stellar particles
-Subhalo  349414
-Loading stellar particles
-Subhalo  349897
-Loading stellar particles
-Subhalo  350486
-Loading stellar particles
-Subhalo  350843
-Loading stellar particles
-Subhalo  352359
-Loading stellar particles
-Subhalo  352816
-Loading stellar particles
-Subhalo  353423
-Loading stellar particles
-Subhalo  353729
-Loading stellar particles
-Subhalo  353973
-Loading stellar particles
-Subhalo  354727
-Loading stellar particles
-Subhalo  356176
-Loading stellar particles
-Subhalo  356678
-Loading stellar particles
-Subhalo  357235
-Loading stellar particles
-Subhalo  357465
-Loading stellar particles
-Subhalo  357765
-Loading stellar particles
-Subhalo  358016
-Loading stellar particles
-Subhalo  358582
-Loading stellar particles
-Subhalo  358886
-Loading stellar particles
-Subhalo  359334
-Loading stellar particles
-Subhalo  359639
-Loading stellar particles
-Subhalo  360087
-Loading stellar particles
-Subhalo  360294
-Loading stellar particles
-Subhalo  360509
-Loading stellar particles
-Subhalo  360750
-Loading stellar particles
-Subhalo  362042
-Loading stellar particles
-Subhalo  362370
-Loading stellar particles
-Subhalo  362780
-Loading stellar particles
-Subhalo  363104
-Loading stellar particles
-Subhalo  363315
-Loading stellar particles
-Subhalo  363524
-Loading stellar particles
-Subhalo  363981
-Loading stellar particles
-Subhalo  364263
-Loading stellar particles
-Subhalo  364807
-Loading stellar particles
-Subhalo  365263
-Loading stellar particles
-Subhalo  365493
-Loading stellar particles
-Subhalo  367456
-Loading stellar particles
-Subhalo  368436
-Loading stellar particles
-Subhalo  368697
-Loading stellar particles
-Subhalo  369152
-Loading stellar particles
-Subhalo  369545
-Loading stellar particles
-Subhalo  369789
-Loading stellar particles
-Subhalo  371259
-Loading stellar particles
-Subhalo  371471
-Loading stellar particles
-Subhalo  371704
-Loading stellar particles
-Subhalo  372175
-Loading stellar particles
-Subhalo  372568
-Loading stellar particles
-Subhalo  373050
-Loading stellar particles
-Subhalo  373510
-Loading stellar particles
-Subhalo  374228
-Loading stellar particles
-Subhalo  374593
-Loading stellar particles
-Subhalo  375020
-Loading stellar particles
-Subhalo  375236
-Loading stellar particles
-Subhalo  376356
-Loading stellar particles
-Subhalo  376963
-Loading stellar particles
-Subhalo  377212
-Loading stellar particles
-Subhalo  377398
-Loading stellar particles
-Subhalo  378943
-Loading stellar particles
-Subhalo  379732
-Loading stellar particles
-Subhalo  380119
-Loading stellar particles
-Subhalo  380276
-Loading stellar particles
-Subhalo  381392
-Loading stellar particles
-Subhalo  381608
-Loading stellar particles
-Subhalo  382059
-Loading stellar particles
-Subhalo  383307
-Loading stellar particles
-Subhalo  384705
-Loading stellar particles
-Subhalo  387236
-Loading stellar particles
-Subhalo  387590
-Loading stellar particles
-Subhalo  388249
-Loading stellar particles
-Subhalo  389056
-Loading stellar particles
-Subhalo  389156
-Loading stellar particles
-Subhalo  390305
-Loading stellar particles
-Subhalo  392097
-Loading stellar particles
-Subhalo  392253
-Loading stellar particles
-Subhalo  392725
-Loading stellar particles
-Subhalo  392961
-Loading stellar particles
-Subhalo  393731
-Loading stellar particles
-Subhalo  394439
-Loading stellar particles
-Subhalo  394600
-Loading stellar particles
-Subhalo  394719
-Loading stellar particles
-Subhalo  394850
-Loading stellar particles
-Subhalo  396073
-Loading stellar particles
-Subhalo  397418
-Loading stellar particles
-Subhalo  398110
-Loading stellar particles
-Subhalo  398282
-Loading stellar particles
-Subhalo  398549
-Loading stellar particles
-Subhalo  399101
-Loading stellar particles
-Subhalo  399969
-Loading stellar particles
-Subhalo  400266
-Loading stellar particles
-Subhalo  400426
-Loading stellar particles
-Subhalo  402979
-Loading stellar particles
-Subhalo  404216
-Loading stellar particles
-Subhalo  404644
-Loading stellar particles
-Subhalo  405460
-Loading stellar particles
-Subhalo  408393
-Loading stellar particles
-Subhalo  409358
-Loading stellar particles
-Subhalo  413091
-Loading stellar particles
-Subhalo  414050
-Loading stellar particles
-Subhalo  417032
-Loading stellar particles
-Subhalo  424485
-Loading stellar particles
-Subhalo  424725
-Loading stellar particles
-Subhalo  424986
-Loading stellar particles
-Subhalo  429237
-Loading stellar particles
-Subhalo  381608
+slurmstepd: error: *** JOB 3334721 ON compute-2-0-22 CANCELLED AT 2021-02-08T13:11:08 DUE TO TIME LIMIT ***
