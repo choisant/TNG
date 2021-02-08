@@ -12,6 +12,7 @@ parser_rot = argparse.ArgumentParser()
 parser_rot.add_argument('-tng', type=str, required=True, help="What TNG-run do you want to process?")
 parser_rot.add_argument('-id', type=str, default = "none", help="Test run id. The output will have this id-tag.")
 parser_rot.add_argument('-n', '--name', type=str, default = "test", help="Test name. The output will have this name.")
+parser_rot.add_argument('-sub', '--subhalo', type=str, default = "0", help="Id of a specific subhalo to rotate.")
 
 args = parser_rot.parse_args()
 
@@ -82,6 +83,17 @@ def check(tng_run, test_name, snapshot):
     most_late = physics.geometry.rotate_coordinates(most_late, rot_vec)
     create_projections(most_late, latest_id, test_name)
 
+def subhalo(tng_run, test_name, snapshot, subhalo_id):
+    new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
+    group_cat = create_cat(new_cat_path)
+    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
+    rot_vector = np.transpose(np.array([group_cat["RotationAxisX"][subhalo_index],
+        group_cat["RotationAxisY"][subhalo_index],
+        group_cat["RotationAxisZ"][subhalo_index]]))
+    subhalo = tng100_test.basic_properties_stars(tng_run, snapshot, subhalo_id, stars_out=True)
+    subhalo = physics.geometry.rotate_coordinates(subhalo, rot_vector)
+    create_projections(subhalo, subhalo_id, test_name)
+
 tng_run = args.tng
 ##Variables
 if args.id != "none":
@@ -89,4 +101,7 @@ if args.id != "none":
 else:
     test_name = args.name
 
-check(tng_run, test_name, 99)
+if args.subhalo == "0":
+    check(tng_run, test_name, 99)
+else:
+    subhalo(tng_run, test_name, 99, int(args.subhalo))

@@ -4,6 +4,7 @@ Different functions perfomrm different tests.
 """
 
 import os
+import pandas as pd
 import tng100_test as test
 import cut_data_size
 
@@ -39,3 +40,16 @@ def simple_test_all(tng_run, test_name, i, snapshot=99):
         os.makedirs(folder_path)
     temp_cat = test.masses(tng_run, snapshot, dm_part_mass, i, temp_cat)
     temp_cat.to_pickle(folder_path + file_path)
+
+def cleanup (tng_run, test_name):
+    def create_cat(path):
+        df = pd.DataFrame()
+        for filename in os.listdir(path):
+            temp = pd.read_pickle(path + filename)
+            df_temp = pd.concat([df, temp])
+            df_temp = df_temp.sort_values(by="id") 
+            df = df_temp.reset_index(drop=True)
+        return df
+    new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
+    new_cat = create_cat(new_cat_path)
+    new_cat.to_pickle("./data/" + tng_run + "/catalogues/" + test_name + ".pkl")
