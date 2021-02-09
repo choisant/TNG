@@ -1,29 +1,47 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: basic_properties
-Th job ID is 3397920
+Th job ID is 3398909
 The job was run on these nodes: compute-2-0-12
 Number of nodes: 1
 We are using 4 cores
 We are using 4 cores per node
 Total of 4 cores
 Linux compute-2-0-12.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-srun: error: compute-2-0-12: tasks 0-3: Exited with exit code 2
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-srun: error: compute-2-0-12: tasks 0-3: Exited with exit code 2
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-srun: error: compute-2-0-12: tasks 0-3: Exited with exit code 2
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-slurmstepd: error: execve(): /src/cluster_run.sh: No such file or directory
-srun: error: compute-2-0-12: tasks 0-3: Exited with exit code 2
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+slurmstepd: error: Step 3398909.0 exceeded memory limit (39935632 > 12288000), being killed
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 3398909.0 ON compute-2-0-12 CANCELLED AT 2021-02-09T15:12:24 ***
+slurmstepd: error: Exceeded job memory limit
+srun: error: compute-2-0-12: tasks 0-3: Killed
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+slurmstepd: error: Step 3398909.1 exceeded memory limit (28481688 > 12288000), being killed
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 3398909.1 ON compute-2-0-12 CANCELLED AT 2021-02-09T15:14:25 ***
+srun: error: compute-2-0-12: tasks 0-3: Killed
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+slurmstepd: error: Step 3398909.2 exceeded memory limit (26383408 > 12288000), being killed
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 3398909.2 ON compute-2-0-12 CANCELLED AT 2021-02-09T15:16:27 ***
+slurmstepd: error: Exceeded job memory limit
+srun: error: compute-2-0-12: tasks 0-3: Killed
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+/lustre1/work/aurorasg/TNG/./src/cluster_run.sh: illegal option -- m
+slurmstepd: error: Step 3398909.3 exceeded memory limit (28285628 > 12288000), being killed
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 3398909.3 ON compute-2-0-12 CANCELLED AT 2021-02-09T15:18:28 ***
+slurmstepd: error: Step 3398909.3 exceeded memory limit (13682720 > 12288000), being killed
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: Exceeded job memory limit
+srun: error: compute-2-0-12: tasks 0-3: Killed
