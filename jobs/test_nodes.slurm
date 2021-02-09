@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=100
 #SBATCH --job-name="basic_properties"
-#SBATCH --output=tng-srun.out
+#SBATCH --output=test-nodes-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
 #SBATCH --mail-type=ALL
 #SBATCH --wait-all-nodes=1
@@ -23,7 +23,7 @@ echo "We are using $SLURM_CPUS_ON_NODE cores per node"
 echo "Total of $SLURM_NTASKS cores"
 
 #launched on Node 1
-srun --nodes=1 echo 'hello from node 1' > test.txt &
+srun --nodes=1 echo 'hello from node 1' >> test.txt &
 
 #Launched on Node2
 srun --nodes=1 echo 'hello from node 2' >> test.txt &
