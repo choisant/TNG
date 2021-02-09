@@ -2,9 +2,9 @@
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
 #SBATCH --time=2:00:00
-#SBATCH --nodes=4
-#SBATCH --ntasks-per-node=1
-#SBATCH --mem=100000
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem=12000
 #SBATCH --job-name="basic_properties"
 #SBATCH --output=tng-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
@@ -26,10 +26,10 @@ module load Anaconda3/2018.12
 
 uname -a
 
-srun -nodes=1 ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 1
-srun -nodes=1 ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 2
-srun -nodes=1 ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 3
-srun -nodes=1 ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 4
+srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 1
+srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 2
+srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 3
+srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -m 4
 
 
 
