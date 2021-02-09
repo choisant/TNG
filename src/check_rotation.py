@@ -79,7 +79,7 @@ def create_projections(subhalo, index, test_name):
 
 def check(tng_run, test_name, snapshot):
     latest_id, rot_vec = find_most_late(tng_run, test_name)
-    most_late = tng100_test.basic_properties_stars(tng_run, snapshot, latest_id, stars_out=True)
+    most_late = tng100_test.angular_momentum(tng_run, snapshot, latest_id, stars_out=True)
     most_late = physics.geometry.rotate_coordinates(most_late, rot_vec)
     create_projections(most_late, latest_id, test_name)
 
@@ -90,7 +90,7 @@ def subhalo(tng_run, test_name, snapshot, subhalo_id):
     rot_vector = np.transpose(np.array([group_cat["RotationAxisX"][subhalo_index],
         group_cat["RotationAxisY"][subhalo_index],
         group_cat["RotationAxisZ"][subhalo_index]]))
-    subhalo = tng100_test.basic_properties_stars(tng_run, snapshot, subhalo_id, stars_out=True)
+    subhalo = tng100_test.angular_momentum(tng_run, snapshot, subhalo_id, stars_out=True)
     subhalo = physics.geometry.rotate_coordinates(subhalo, rot_vector)
     create_projections(subhalo, subhalo_id, test_name)
 

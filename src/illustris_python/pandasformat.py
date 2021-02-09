@@ -59,9 +59,18 @@ def dict_to_pandas(data):
                               "SubhaloHalfmassRadTracers": 3,
                               "SubhaloHalfmassRadStellar": 4,
                               "SubhaloHalfmassRadBH": 5}
-            masses = np.array(data[key]) #create Series object
+            radii = np.array(data[key]) #create Series object
             for particle in particle_types:
-                temp = masses[:, particle_types[particle]]
+                temp = radii[:, particle_types[particle]]
+                data[particle] = list(temp)
+            data.pop(key)
+
+        if key == "GFM_StellarPhotometrics":
+            particle_types = {"StellarPhotometrics_g": 4,
+                              "StellarPhotometrics_i": 6}
+            photometrics = np.array(data[key]) #create Series object
+            for particle in particle_types:
+                temp = photometrics[:, particle_types[particle]]
                 data[particle] = list(temp)
             data.pop(key)
         

@@ -38,11 +38,11 @@ def relative_pos_radius(subhalo, catalogue):
 
     return subhalo
 
-def galaxy_radius(catalogue, base_path):
+def group_properties(catalogue, base_path):
 
     #Decide on galaxy radius. 10% of total halo radius.
     subhalo_indices = np.array(catalogue["id"])
-    halo_fields = ["Group_R_Crit200"]
+    halo_fields = ["Group_R_Crit200", "Group_M_Crit200"]
     subhalo_fields = ["SubhaloGrNr"]
     df_halos = il.pandasformat.dict_to_pandas(il.groupcat.loadHalos(base_path, 99, halo_fields))
     df_subhalos = il.pandasformat.dict_to_pandas(il.groupcat.loadSubhalos(base_path, 99, subhalo_fields))
@@ -54,6 +54,7 @@ def galaxy_radius(catalogue, base_path):
 
     catalogue["SubhaloGalaxyRad"] = 0.15*radius_200
     catalogue["SubhaloRad"] = radius_200
+    catalogue["SubhaloMass200"] = np.array(df_central_halos["Group_M_Crit200"])
 
     return catalogue
 
@@ -142,3 +143,20 @@ def max_ang_momentum(subhalo, catalogue):
     catalogue["RotationAxisY"] = j_dir[1]
     catalogue["RotationAxisZ"] = j_dir[2]
     return catalogue
+
+def rotational_vel(gas, dm, stars, catalogue):
+    G = 4.3*10**(-3)
+    r_max = 2.2*catalogue["SubhaloHalfmassRadStellar"]
+    m_gas = gas[gas["r"] < r_max]["Masses"].sum()
+    m_dm = dm[dm["r"] < r_max]["Masses"].sum()
+    m_stars = stars[stars["r"] < r_max]["Masses"].sum()
+    m_tot = m_gas + m_dm + m_stars
+    catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/r_max)
+    return catalogue
+
+def vel_disp(stars, catalogue):
+    sigma_x = np.array(stars["vx"]).std()
+    sigma_y = np.array(stars["vy"]).std()
+    sigma_z = np.array(stars["vz"]).std()
+    sigma = (1/3)*(sigma_x + sigma_y + sigma_z) #this is not right
+    catalogue["SubhaloVelDisp"] = sigma

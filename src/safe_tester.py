@@ -33,7 +33,7 @@ def simple_test_all(tng_run, test_name, i, snapshot=99):
     """
     dm_part_mass = set_params(tng_run)
 
-    temp_cat = test.basic_properties_stars(tng_run, snapshot, i, stars_out = False)
+    temp_cat = test.angular_momentum(tng_run, snapshot, i, stars_out = False)
     folder_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     file_path = str(i) + ".pkl"
     if not os.path.exists(folder_path):
@@ -53,3 +53,5 @@ def cleanup (tng_run, test_name):
     new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     new_cat = create_cat(new_cat_path)
     new_cat.to_pickle("./data/" + tng_run + "/catalogues/" + test_name + ".pkl")
+
+cleanup("tng-100-1", "idun_3359723")
