@@ -1,5 +1,5 @@
 #!/bin/bash
-while getopts t:i:n: flag
+while getopts t:i:n:g: flag
 do
     case "${flag}" in
         t) tng_run=${OPTARG};;
@@ -15,7 +15,7 @@ then
 else
     list_path="./data/$tng_run/cutdata/central_id.txt"
 fi
-echo "$tng_run:$job_id:$test_name:$g"
+echo "$list_path"
 
 readarray index_list < $list_path
 
