@@ -26,7 +26,7 @@ def find_centrals(tng_run, snapshot=99):
     """
     cut_data_size.make_central_id_file(tng_run, snapshot)
 
-def simple_test_all(tng_run, test_name, i, snapshot=99):
+def test_all(tng_run, test_name, i, snapshot=99):
     """
     Creates and saves group catalogues for all central galaxies.
     If process is aborted, data is still saved up until that point.
@@ -39,6 +39,15 @@ def simple_test_all(tng_run, test_name, i, snapshot=99):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
     temp_cat = test.masses(tng_run, snapshot, dm_part_mass, i, temp_cat)
+    temp_cat.to_pickle(folder_path + file_path)
+
+def memory_tester(tng_run, test_name, i, snapshot=99):
+    temp_cat = test.load(tng_run, snapshot, i)
+    #save data
+    folder_path = "./data/" + tng_run + "/catalogues/test_memory/" + test_name + "/"
+    file_path = str(i) + ".pkl"
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
     temp_cat.to_pickle(folder_path + file_path)
 
 def cleanup (tng_run, test_name):

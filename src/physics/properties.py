@@ -154,9 +154,12 @@ def rotational_vel(gas, dm, stars, catalogue):
     catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/r_max)
     return catalogue
 
-def vel_disp(stars, catalogue):
+def velocity_disp(stars, catalogue):
     sigma_x = np.array(stars["vx"]).std()
     sigma_y = np.array(stars["vy"]).std()
     sigma_z = np.array(stars["vz"]).std()
     sigma = (1/3)*(sigma_x + sigma_y + sigma_z) #this is not right
     catalogue["SubhaloVelDisp"] = sigma
+    return catalogue
+
+#def photometrics(stars, catalogue):

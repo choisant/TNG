@@ -5,6 +5,20 @@ from timeit import default_timer as timer
 import illustris_python as il
 import physics
 
+def load(tng_run, snapshot, i):
+    #intitial setup
+    base_path = "./data/" + str(tng_run) + "/output"
+    fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
+            }
+    group_cat = pd.DataFrame({"id": [i]})
+    #Load particles
+    print("Loading stellar particles")
+
+    print("Subhalo ", i, " ", timer())
+    stars = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'stars', fields["stars"]))
+    print(timer())
+    return group_cat
+
 def angular_momentum(tng_run, snapshot, i, stars_out=False):
     #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
@@ -48,14 +62,23 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
     dm = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'dm', fields["dm"]))
     dm["Masses"] = dm_mass
-
+    #Get total mass, position, radius and change coordinates
     group_cat = physics.properties.group_properties(group_cat, base_path)
     group_cat = physics.properties.center_halo(stars, group_cat)
     stars = physics.properties.relative_pos_radius(stars, group_cat)
+    gas = physics.properties.relative_pos_radius(gas, group_cat)
+    dm = physics.properties.relative_pos_radius(dm, group_cat)
+    #Reduce data size
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
+    gas = gas[gas["r"] < max_rad]
+    dm = dm[dm["r"] < max_rad]
+    #Calculate 
     group_cat = physics.properties.total_stellar_mass(stars, group_cat)
+    group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
+    group_cat = physics.properties.velocity_disp(stars, group_cat)
 
+    return group_cat
 
 
 def masses(tng_run, snapshot, dm_mass, i, catalogue):

@@ -21,5 +21,5 @@ else:
     test_name = args.name
 
 ##Processes to run, uncomment those that should be run.
-safe_tester.simple_test_all(args.tng, test_name, int(args.subhalo), 99)
+safe_tester.test_all(args.tng, test_name, int(args.subhalo), 99)
 #safe_tester.cleanup(args.tng, test_name)

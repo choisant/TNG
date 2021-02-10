@@ -1,15 +1,14 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
-#SBATCH --time=00:05:00
-#SBATCH --nodes=2
+#SBATCH --time=10:00:00
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem=1000
-#SBATCH --job-name="basic_properties"
-#SBATCH --output=test-nodes-srun.out
+#SBATCH --mem=24000
+#SBATCH --job-name="cluster_run"
+#SBATCH --output=tng-cluster-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
 #SBATCH --mail-type=ALL
-#SBATCH --wait-all-nodes=1
  
 WORKDIR=${SLURM_SUBMIT_DIR}
 cd ${WORKDIR}
@@ -22,8 +21,16 @@ echo "We are using $SLURM_CPUS_ON_NODE cores"
 echo "We are using $SLURM_CPUS_ON_NODE cores per node"
 echo "Total of $SLURM_NTASKS cores"
 
-#launched on Node 1
-srun --nodes=1 echo 'hello from node 1' >> test.txt &
+module purge
+module load Anaconda3/2018.12
 
-#Launched on Node2
-srun --nodes=1 echo 'hello from node 2' >> test.txt &
+uname -a
+
+srun ./src/cluster_run.sh [-t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -f 1]
+srun ./src/cluster_run.sh [-t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -f 2]
+srun ./src/cluster_run.sh [-t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -f 3]
+srun ./src/cluster_run.sh [-t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -f 4]
+
+
+
+
