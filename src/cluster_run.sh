@@ -5,7 +5,7 @@ do
         t) tng_run=${OPTARG};;
         i) job_id=${OPTARG};;
         n) test_name=${OPTARG};;
-        f) file_number=${OPTARG};;
+        g) file_number=${OPTARG};;
     esac
 done
 
@@ -15,7 +15,7 @@ then
 else
     list_path="./data/$tng_run/cutdata/central_id.txt"
 fi
-echo "$tng_run:$job_id:$test_name"
+echo "$tng_run:$job_id:$test_name:$g"
 
 readarray index_list < $list_path
 
