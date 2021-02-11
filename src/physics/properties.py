@@ -58,15 +58,6 @@ def group_properties(catalogue, base_path):
 
     return catalogue
 
-def total_stellar_mass(stars, catalogue):
-    """
-    Calculate total mass for a particle type and saves it to the group catalogue
-    """
-    #save value to catalogue
-    catalogue["SubhaloMassStellar"] = stars["Masses"].sum()
-    return catalogue
-
-
 def subhalo_velocity(subhalo, catalogue):
     """
     Calculates the mass weighted average velocity of the particles in a subhalo and save them to the group catalogue.
@@ -84,7 +75,7 @@ def subhalo_velocity(subhalo, catalogue):
     catalogue["SubhaloVelX"] = subhalo_velocities[0]
     catalogue["SubhaloVelY"] = subhalo_velocities[1]
     catalogue["SubhaloVelZ"] = subhalo_velocities[2]
-    return subhalo, catalogue
+    return catalogue
 
 def relative_velocities(subhalo, catalogue):
     """
@@ -145,21 +136,31 @@ def max_ang_momentum(subhalo, catalogue):
     return catalogue
 
 def rotational_vel(gas, dm, stars, catalogue):
+    """
+    Calculates dynamical velocity at radius r_vel.
+    """
     G = 4.3*10**(-3)
-    r_max = 2.2*catalogue["SubhaloHalfmassRadStellar"]
-    m_gas = gas[gas["r"] < r_max]["Masses"].sum()
-    m_dm = dm[dm["r"] < r_max]["Masses"].sum()
-    m_stars = stars[stars["r"] < r_max]["Masses"].sum()
-    m_tot = m_gas + m_dm + m_stars
-    catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/r_max)
+    r_vel = 2.2*catalogue["SubhaloHalfmassRadStellar"][0]
+    m_gas = gas[gas["r"] < r_vel]["Masses"].sum()
+    m_dm = dm[dm["r"] < r_vel]["Masses"].sum()
+    m_stars = stars[stars["r"] < r_vel]["Masses"].sum()
+    m_tot = (m_gas + m_dm + m_stars)*10**10
+    catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/(r_vel*1000))
     return catalogue
 
 def velocity_disp(stars, catalogue):
-    sigma_x = np.array(stars["vx"]).std()
-    sigma_y = np.array(stars["vy"]).std()
-    sigma_z = np.array(stars["vz"]).std()
-    sigma = (1/3)*(sigma_x + sigma_y + sigma_z) #this is not right
+    r_half = catalogue["SubhaloHalfmassRadStellar"][0]
+    temp = stars[stars["r"] < r_half]
+    sigma_x = np.array(temp["Vx"]).std()
+    sigma_y = np.array(temp["Vy"]).std()
+    sigma_z = np.array(temp["Vz"]).std()
+    sigma = np.sqrt((1/3)*(sigma_x**2 + sigma_y**2 + sigma_z**2))
     catalogue["SubhaloVelDisp"] = sigma
     return catalogue
 
-#def photometrics(stars, catalogue):
+def photometrics(stars, catalogue):
+    g_band = stars["StellarPhotometrics_g"].sum()
+    i_band = stars["StellarPhotometrics_i"].sum()
+    catalogue["SubhaloStellarPhotometrics_g"] = g_band
+    catalogue["SubhaloStellarPhotometrics_i"] = i_band
+    return catalogue

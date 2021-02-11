@@ -36,7 +36,7 @@ def angular_momentum(tng_run, snapshot, i, stars_out=False):
     stars = physics.properties.relative_pos_radius(stars, group_cat)
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
-    group_cat = physics.properties.total_stellar_mass(stars, group_cat)
+    group_cat["SubhaloMassStellar"] = stars["Masses"].sum()
     stars, group_cat = physics.properties.subhalo_velocity(stars, group_cat)
     stars = physics.properties.relative_velocities(stars, group_cat)
     group_cat = physics.properties.half_mass_radius(stars, group_cat)
@@ -51,7 +51,7 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
      #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
     fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities", "GFM_StellarPhotometrics"],
-        "gas": ["Coordinates", "Masses"],
+        "gas": ["Coordinates", "Masses", "StarFormationRate"],
         "dm": ["Coordinates", "Potential"]
             }
     group_cat = pd.DataFrame({"id": [i]})
@@ -68,15 +68,35 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     stars = physics.properties.relative_pos_radius(stars, group_cat)
     gas = physics.properties.relative_pos_radius(gas, group_cat)
     dm = physics.properties.relative_pos_radius(dm, group_cat)
+    group_cat = physics.properties.subhalo_velocity(stars, group_cat)
     #Reduce data size
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
     gas = gas[gas["r"] < max_rad]
     dm = dm[dm["r"] < max_rad]
-    #Calculate 
-    group_cat = physics.properties.total_stellar_mass(stars, group_cat)
+    #Calculate SFR
+    group_cat["SubhaloSFR"] = gas["StarFormationRate"].sum()
+    #Calculate masses
+    group_cat["SubhaloMassGas"] = gas["Masses"].sum()
+    group_cat["SubhaloMassDM"] = dm["Masses"].sum()
+    group_cat["SubhaloMassStellar"] = stars["Masses"].sum()
+    group_cat["SubhaloMass"] = group_cat["SubhaloMassGas"] + group_cat["SubhaloMassDM"] + group_cat["SubhaloMassStellar"]
+    #Calculate half mass rad
+    group_cat = physics.properties.half_mass_radius(stars, group_cat)
+    half_rad = group_cat["SubhaloHalfmassRadStellar"][0]
+    #Mass in half mass rad
+    group_cat["SubhaloMassInHalfRadGas"] = gas[gas["r"] < half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadDM"] = dm[dm["r"] < half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadStellar"] = group_cat["SubhaloMassStellar"]/2
+    group_cat["SubhaloMassInHalfRad"] = (group_cat["SubhaloMassInHalfRadGas"] 
+        + group_cat["SubhaloMassInHalfRadDM"] + group_cat["SubhaloMassInHalfRadStellar"])
+
+    #Kinematics
+    stars = physics.properties.relative_velocities(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
     group_cat = physics.properties.velocity_disp(stars, group_cat)
+    #Photometrics
+    group_cat = physics.properties.photometrics(stars, group_cat)
 
     return group_cat
 

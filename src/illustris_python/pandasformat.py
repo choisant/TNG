@@ -65,6 +65,14 @@ def dict_to_pandas(data):
                 data[particle] = list(temp)
             data.pop(key)
 
+        if key == "SubhaloStellarPhotometrics":
+            particle_types = {"SubhaloStellarPhotometrics_g": 4,
+                              "SubhaloStellarPhotometrics_i": 6}
+            photometrics = np.array(data[key]) #create Series object
+            for particle in particle_types:
+                temp = photometrics[:, particle_types[particle]]
+                data[particle] = list(temp)
+
         if key == "GFM_StellarPhotometrics":
             particle_types = {"StellarPhotometrics_g": 4,
                               "StellarPhotometrics_i": 6}

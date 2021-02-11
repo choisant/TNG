@@ -30,7 +30,7 @@ def min_particles(df, minPart):
     return df_copy
 
 def min_ymass(df, minMass, Y, haloType):
-    print("Removing galaxies below ", Y,  " mass ", minMass)
+    print("Removing galaxies below ", minMass,  "*10**10 stellar mass ")
     df_copy = df.copy(deep=True)
     particle_type = (haloType+"Mass"+Y)
     if haloType == "Subhalo":
@@ -98,13 +98,13 @@ def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mas
     print("Choosing only central galaxies")
     centrals = central_galaxies(df_halos, df_subhalos)
     centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
-    #save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_SM", tngFolder="tng100-1")
+    save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_SM", tngFolder="tng-100-3")
 
     lates = late_type_gas(centrals_min_mass)
-    #save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_SM_lateType_Gas", tngFolder="tng100-1")
+    save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_SM_lateType_Gas", tngFolder="tng-100-3")
 
     earlies = early_type_gas(centrals_min_mass)
-    #save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_SM_earlyType_Gas", tngFolder="tng100-1")
+    save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_SM_earlyType_Gas", tngFolder="tng-100-3")
     return (list(centrals_min_mass["id"]), list(lates["id"]), list(earlies["id"]))
 #
 #read in data
@@ -128,4 +128,3 @@ def make_central_id_file(tng_run, snapshot):
     with open('./data/' + tng_run + '/cutdata/earlies_id.txt', 'w') as file:
         for index in earlies_id:
             file.write("%i\n" % index)
-

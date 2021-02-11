@@ -1,15 +1,10 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
-#SBATCH --time=2:00:00
-<<<<<<< HEAD
-#SBATCH --nodes=4
-#SBATCH --ntasks-per-node=1
-=======
+#SBATCH --time=20:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4
->>>>>>> 73401c677eab55a5b98de621a16019fbca07d10d
-#SBATCH --mem=12000
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=50000
 #SBATCH --job-name="basic_properties"
 #SBATCH --output=tng-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
