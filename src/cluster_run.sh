@@ -15,7 +15,7 @@ then
 else
     list_path="./data/$tng_run/cutdata/central_id.txt"
 fi
-echo "$tng_run:$job_id:$test_name:$file_number"
+echo "$list_path"
 
 readarray index_list < $list_path
 
