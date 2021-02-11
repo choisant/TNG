@@ -2,8 +2,9 @@
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
 #SBATCH --time=10:00:00
-#SBATCH --nodes=4
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
+#SBATCH --array=1-4
 #SBATCH --mem=24000
 #SBATCH --job-name="cluster_run"
 #SBATCH --output=tng-cluster-srun.out
@@ -26,10 +27,7 @@ module load Anaconda3/2018.12
 
 uname -a
 
-srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -g 1
-srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -g 2
-srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -g 3
-srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -g 4
+srun ./src/cluster_run.sh -t "tng-100-1" -i $SLURM_JOB_ID -n "idun" -g $SLURM_ARRAY_TASK_ID
 
 
 
