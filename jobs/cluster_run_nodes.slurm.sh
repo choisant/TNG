@@ -1,11 +1,11 @@
 #!/bin/sh
 #SBATCH --partition=CPUQ
 #SBATCH --account=share-nv-fys
-#SBATCH --time=15:00:00
+#SBATCH --time=6:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --array=1-4
-#SBATCH --mem=50000
+#SBATCH --mem=40000
 #SBATCH --job-name="cluster_run"
 #SBATCH --output=tng-cluster-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
