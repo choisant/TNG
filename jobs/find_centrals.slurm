@@ -19,7 +19,7 @@ echo "The job was run on these nodes: $SLURM_JOB_NODELIST"
 echo "Number of nodes: $SLURM_JOB_NUM_NODES"
 echo "We are using $SLURM_CPUS_ON_NODE cores"
 echo "We are using $SLURM_CPUS_ON_NODE cores per node"
-echo "Total of $SLURM_NTASKS cores"
+echo "Total of $SLURM_NTASKS cores" 
 
 module purge
 module load Anaconda3/2018.12

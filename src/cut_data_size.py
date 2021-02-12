@@ -128,3 +128,5 @@ def make_central_id_file(tng_run, snapshot):
     with open('./data/' + tng_run + '/cutdata/earlies_id.txt', 'w') as file:
         for index in earlies_id:
             file.write("%i\n" % index)
+
+make_central_id_file("tng-100-1", 99)
