@@ -139,6 +139,6 @@ def make_pickles(tng_run, snapshot):
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
     centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
-    save_data_subset(centrals, lates, earlies, tng_run)
+    save_data_subset(centrals, earlies, lates, tng_run)
 
 make_pickles("tng-100-1", 99)
