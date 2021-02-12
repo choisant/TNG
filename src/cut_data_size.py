@@ -87,7 +87,13 @@ def save_data_pickle(df, haloType, filename, tngFolder):
     f = open(path, "a+") #Create file if it does not already exist.
     df.to_pickle(path)
 
-def create_data_subset(snapshot, tng_run, base_path, subhalo_fields, halo_fields, min_mass):
+def save_data_subset(centrals, earlies, lates, tng_run):
+    save_data_pickle(centrals, haloType="Subhalo", filename="Centrals_minE9_5_SM", tngFolder=tng_run)
+    save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_5_SM_lateType_Gas", tngFolder=tng_run)
+    save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_5_SM_earlyType_Gas", tngFolder=tng_run)
+
+def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass):
+    base_path = "./data/"+ tng_run + "/output"
     print("Loading halos")
     subhalos = il.groupcat.loadSubhalos(base_path, snapshot, subhalo_fields)
     df_subhalos = il.pandasformat.dict_to_pandas(subhalos)
@@ -98,24 +104,21 @@ def create_data_subset(snapshot, tng_run, base_path, subhalo_fields, halo_fields
     print("Choosing only central galaxies")
     centrals = central_galaxies(df_halos, df_subhalos)
     centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
-    save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_5_SM", tngFolder=tng_run)
-
     lates = late_type_gas(centrals_min_mass)
-    save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_5_SM_lateType_Gas", tngFolder=tng_run)
-
     earlies = early_type_gas(centrals_min_mass)
-    save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_5_SM_earlyType_Gas", tngFolder=tng_run)
-    return (list(centrals_min_mass["id"]), list(lates["id"]), list(earlies["id"]))
-#
+    
+    return centrals_min_mass, lates, earlies
+
 #read in data
 def make_central_id_file(tng_run, snapshot):
-    base_path = "./data/"+ tng_run + "/output"
     subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
-    snapshot = 99
 
-    centrals_id, lates_id, earlies_id = create_data_subset(snapshot, tng_run, base_path, subhalo_fields, halo_fields, min_mass)
+    centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
+    centrals_id = list(centrals["id"])
+    earlies_id = list(earlies["id"])
+    lates_id = list(lates["id"])
 
     with open('./data/' + tng_run + '/cutdata/central_id.txt', 'w') as file:
         for index in centrals_id:
@@ -129,4 +132,13 @@ def make_central_id_file(tng_run, snapshot):
         for index in earlies_id:
             file.write("%i\n" % index)
 
-make_central_id_file("tng-100-1", 99)
+def make_pickles(tng_run, snapshot):
+    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen", 
+    "SubhaloVmax", "SubhaloVelDisp", "SubhaloHalfmassRadType", "SubhaloStellarPhotometrics", "SubhaloSFR", "SubhaloVel",
+    "SubhaloPos"]
+    halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
+    min_mass = 0.32 #minimum stellar mass, about 10**9.5
+    centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
+    save_data_subset(centrals, lates, earlies, tng_run)
+
+make_pickles("tng-100-1", 99)

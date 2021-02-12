@@ -19,7 +19,7 @@ def load(tng_run, snapshot, i):
     print(timer())
     return group_cat
 
-def angular_momentum(tng_run, snapshot, i, stars_out=False):
+def stars_out(tng_run, snapshot, i):
     #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
     fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
@@ -37,15 +37,11 @@ def angular_momentum(tng_run, snapshot, i, stars_out=False):
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
     group_cat["SubhaloMassStellar"] = stars["Masses"].sum()
-    stars, group_cat = physics.properties.subhalo_velocity(stars, group_cat)
+    group_cat = physics.properties.subhalo_velocity(stars, group_cat)
     stars = physics.properties.relative_velocities(stars, group_cat)
     group_cat = physics.properties.half_mass_radius(stars, group_cat)
-    group_cat = physics.properties.max_ang_momentum(stars, group_cat)
 
-    if stars_out:
-        return stars
-    
-    return group_cat
+    return stars
 
 def mass_vel_photo(tng_run, snapshot, dm_mass, i):
      #intitial setup
@@ -69,6 +65,7 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     gas = physics.properties.relative_pos_radius(gas, group_cat)
     dm = physics.properties.relative_pos_radius(dm, group_cat)
     group_cat = physics.properties.subhalo_velocity(stars, group_cat)
+    stars = physics.properties.relative_velocities(stars, group_cat)
     #Reduce data size
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
@@ -92,6 +89,7 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
         + group_cat["SubhaloMassInHalfRadDM"] + group_cat["SubhaloMassInHalfRadStellar"])
 
     #Kinematics
+    group_cat = physics.properties.max_ang_momentum(stars, group_cat)
     stars = physics.properties.relative_velocities(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
     group_cat = physics.properties.velocity_disp(stars, group_cat)
@@ -99,35 +97,6 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     group_cat = physics.properties.photometrics(stars, group_cat)
 
     return group_cat
-
-
-def masses(tng_run, snapshot, dm_mass, i, catalogue):
-    #intitial setup
-    base_path = "./data/" + str(tng_run) + "/output"
-    fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
-        "gas": ["Coordinates", "Masses"],
-        "dm": ["Coordinates", "Potential"]
-        }
-
-    #Load all particles
-
-    df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-    df = physics.properties.relative_pos_radius(df, catalogue)
-    max_rad = catalogue["SubhaloGalaxyRad"][0]
-    df = df[df["r"] < max_rad]
-    catalogue["SubhaloMassGas"] = df["Masses"].sum()
-
-    df = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'dm', fields["dm"]))
-    df["Masses"] = dm_mass
-    df = physics.properties.relative_pos_radius(df, catalogue)
-    max_rad = catalogue["SubhaloGalaxyRad"][0]
-    df = df[df["r"] < max_rad]
-    catalogue["SubhaloMassDM"] = df["Masses"].sum()
-    catalogue["SubhaloMassTotal"] = catalogue["SubhaloMassDM"] + catalogue["SubhaloMassGas"] + catalogue["SubhaloMassStellar"]
-        
-    return catalogue
-
-#def kinematics(tng_run, snapshot, i, catalogue):
 
 
 def save_particle_fields(particle, indices):
