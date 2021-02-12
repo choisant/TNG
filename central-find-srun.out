@@ -1,6 +1,6 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: Find central ids
-Th job ID is 3334712
+Th job ID is 3522229
 The job was run on these nodes: compute-2-0-26
 Number of nodes: 1
 We are using 1 cores
@@ -10,4 +10,4 @@ Linux compute-2-0-26.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed M
 Loading halos
 Choosing only central galaxies
 Starting the central galaxies sorting
-Removing galaxies below  Stellar  mass  0.32
+Removing galaxies below  0.32 *10**10 stellar mass 
