@@ -87,7 +87,7 @@ def save_data_pickle(df, haloType, filename, tngFolder):
     f = open(path, "a+") #Create file if it does not already exist.
     df.to_pickle(path)
 
-def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mass):
+def create_data_subset(snapshot, tng_run, base_path, subhalo_fields, halo_fields, min_mass):
     print("Loading halos")
     subhalos = il.groupcat.loadSubhalos(base_path, snapshot, subhalo_fields)
     df_subhalos = il.pandasformat.dict_to_pandas(subhalos)
@@ -98,13 +98,13 @@ def create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mas
     print("Choosing only central galaxies")
     centrals = central_galaxies(df_halos, df_subhalos)
     centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
-    save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_SM", tngFolder="tng-100-3")
+    save_data_pickle(centrals_min_mass, haloType="Subhalo", filename="Centrals_minE9_5_SM", tngFolder=tng_run)
 
     lates = late_type_gas(centrals_min_mass)
-    save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_SM_lateType_Gas", tngFolder="tng-100-3")
+    save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_5_SM_lateType_Gas", tngFolder=tng_run)
 
     earlies = early_type_gas(centrals_min_mass)
-    save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_SM_earlyType_Gas", tngFolder="tng-100-3")
+    save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_5_SM_earlyType_Gas", tngFolder=tng_run)
     return (list(centrals_min_mass["id"]), list(lates["id"]), list(earlies["id"]))
 #
 #read in data
@@ -115,7 +115,7 @@ def make_central_id_file(tng_run, snapshot):
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
     snapshot = 99
 
-    centrals_id, lates_id, earlies_id = create_data_subset(snapshot, base_path, subhalo_fields, halo_fields, min_mass)
+    centrals_id, lates_id, earlies_id = create_data_subset(snapshot, tng_run, base_path, subhalo_fields, halo_fields, min_mass)
 
     with open('./data/' + tng_run + '/cutdata/central_id.txt', 'w') as file:
         for index in centrals_id:
