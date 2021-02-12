@@ -52,6 +52,18 @@ def dict_to_pandas(data):
                 temp = masses[:, particle_types[particle]]
                 data[particle] = list(temp)
             data.pop(key)
+        if key == "SubhaloMassInRadType":
+            particle_types = {"SubhaloMassInRadGas": 0,
+                              "SubhaloMassInRadDM": 1,
+                              "SubhaloMassInRadNone": 2,
+                              "SubhaloMassInRadTracers": 3,
+                              "SubhaloMassInRadStellar": 4,
+                              "SubhaloMassInRadBH": 5}
+            masses = np.array(data[key]) #create Series object
+            for particle in particle_types:
+                temp = masses[:, particle_types[particle]]
+                data[particle] = list(temp)
+            data.pop(key)
         if key == "SubhaloHalfmassRadType":
             particle_types = {"SubhaloHalfmassRadGas": 0,
                               "SubhaloHalfmassRadDM": 1,

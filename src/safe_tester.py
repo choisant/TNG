@@ -38,7 +38,6 @@ def test_all(tng_run, test_name, i, snapshot=99):
     file_path = str(i) + ".pkl"
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
-    temp_cat = test.masses(tng_run, snapshot, dm_part_mass, i, temp_cat)
     temp_cat.to_pickle(folder_path + file_path)
 
 def memory_tester(tng_run, test_name, i, snapshot=99):
@@ -63,7 +62,3 @@ def cleanup (tng_run, test_name):
     new_cat = create_cat(new_cat_path)
     new_cat.to_pickle("./data/" + tng_run + "/catalogues/" + test_name + ".pkl")
 
-cleanup("tng-100-1", "idun_3470640")
-cleanup("tng-100-1", "idun_3470641")
-cleanup("tng-100-1", "idun_3470642")
-cleanup("tng-100-1", "idun_3470643")

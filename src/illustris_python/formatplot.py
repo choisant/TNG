@@ -10,6 +10,10 @@ def log_formater(df):
     for key in df.keys():
         if key == "id" or key == "cataid":
             df_log[key] = df[key]
+        elif "SubhaloStellarPhotometrics" in key:
+            df_log[key] = df[key]
+        elif "SubhaloColor" in key:
+            df_log[key] = df[key]
         else:
             df_log[key] = np.log10(list(df[key]))
     return df_log

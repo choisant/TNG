@@ -23,4 +23,4 @@ for index in ${index_list[@]}; do
     python ./src/cluster_run.py -tng $tng_run -id $job_id -n $test_name -s $index
     done
 
-#python ./src/check_rotation.py -tng $tng_run -id $job_id -n $test_name
+python ./src/check_rotation.py -tng $tng_run -id $job_id -n $test_name

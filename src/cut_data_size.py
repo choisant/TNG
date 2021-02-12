@@ -64,14 +64,14 @@ def early_type_SFR(df):
 
 def late_type_gas(df):
     df_copy = df.copy(deep=True)
-    df_copy["SubhaloGasFraction"] = df_copy["SubhaloMassInHalfRadGas"]/df_copy["SubhaloMassInHalfRadStellar"]
+    df_copy["SubhaloGasFraction"] = df_copy["SubhaloMassInRadGas"]/df_copy["SubhaloMassInRadStellar"]
     index_names = df_copy[df_copy["SubhaloGasFraction"] < 0.1].index #Ferrero2020
     df_copy = df_copy.drop(index_names)
     return df_copy
 
 def early_type_gas(df):
     df_copy = df.copy(deep=True)
-    df_copy["SubhaloGasFraction"] = df_copy["SubhaloMassInHalfRadGas"]/df_copy["SubhaloMassInHalfRadStellar"]
+    df_copy["SubhaloGasFraction"] = df_copy["SubhaloMassInRadGas"]/df_copy["SubhaloMassInRadStellar"]
     index_names = df_copy[df_copy["SubhaloGasFraction"] > 0.1].index #Ferrero2020
     df_copy = df_copy.drop(index_names)
     return df_copy
@@ -133,7 +133,7 @@ def make_central_id_file(tng_run, snapshot):
             file.write("%i\n" % index)
 
 def make_pickles(tng_run, snapshot):
-    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen", 
+    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloMassInRadType', 'SubhaloFlag', "SubhaloLen", 
     "SubhaloVmax", "SubhaloVelDisp", "SubhaloHalfmassRadType", "SubhaloStellarPhotometrics", "SubhaloSFR", "SubhaloVel",
     "SubhaloPos"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
@@ -141,4 +141,3 @@ def make_pickles(tng_run, snapshot):
     centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     save_data_subset(centrals, earlies, lates, tng_run)
 
-make_pickles("tng-100-1", 99)

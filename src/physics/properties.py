@@ -159,8 +159,8 @@ def velocity_disp(stars, catalogue):
     return catalogue
 
 def photometrics(stars, catalogue):
-    g_band = stars["StellarPhotometrics_g"].sum()
-    i_band = stars["StellarPhotometrics_i"].sum()
-    catalogue["SubhaloStellarPhotometrics_g"] = g_band
-    catalogue["SubhaloStellarPhotometrics_i"] = i_band
+    g_band = (np.array(10**stars["StellarPhotometrics_g"])).sum()
+    i_band = (np.array(10**stars["StellarPhotometrics_i"])).sum()
+    catalogue["SubhaloStellarPhotometrics_g"] = np.log10(g_band)
+    catalogue["SubhaloStellarPhotometrics_i"] = np.log10(i_band)
     return catalogue
