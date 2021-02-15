@@ -121,13 +121,13 @@ def half_mass_radius(subhalo, catalogue):
 
 def max_ang_momentum(subhalo, catalogue):
     j_dir = np.zeros(3)
-    r_max = 5*catalogue["SubhaloHalfmassRadStellar"][0]
+    r_max = 3*catalogue["SubhaloHalfmassRadStellar"][0]
     temp = subhalo[subhalo["r"] < r_max].copy(deep=True)
     m = np.array(temp["Masses"])
     p = np.array([np.array(temp["Vx"]*m), np.array(temp["Vy"]*m), np.array(temp["Vz"]*m)])
     r = np.array([np.array(temp["x"]), np.array(temp["y"]), np.array(temp["z"])])
     l = np.cross(np.transpose(r), np.transpose(p))
-    J = np.sum(l, axis= 0)/np.sum(m)
+    J = np.sum(l, axis=0)/np.sum(m)
     j_dir = J/lg.norm(J)
 
     catalogue["RotationAxisX"] = j_dir[0]
@@ -159,8 +159,11 @@ def velocity_disp(stars, catalogue):
     return catalogue
 
 def photometrics(stars, catalogue):
-    g_band = (np.array(10**stars["StellarPhotometrics_g"])).sum()
-    i_band = (np.array(10**stars["StellarPhotometrics_i"])).sum()
-    catalogue["SubhaloStellarPhotometrics_g"] = np.log10(g_band)
-    catalogue["SubhaloStellarPhotometrics_i"] = np.log10(i_band)
+    luminosities_g = 10**(-0.4*stars["StellarPhotometrics_g"]) #Drop zero points as it falls out in conversion back to mag
+    luminosities_i = 10**(-0.4*stars["StellarPhotometrics_i"])
+    g_band = -2.5*np.log10(luminosities_g.sum())
+    i_band = -2.5*np.log10(luminosities_i.sum())
+    catalogue["SubhaloStellarPhotometrics_g"] = g_band
+    catalogue["SubhaloStellarPhotometrics_i"] = i_band
+    catalogue["SubhaloColor_g-i"] = g_band - i_band
     return catalogue

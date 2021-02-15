@@ -61,5 +61,4 @@ def cleanup (tng_run, test_name):
     new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     new_cat = create_cat(new_cat_path)
     new_cat.to_pickle("./data/" + tng_run + "/catalogues/" + test_name + ".pkl")
-
-cleanup("tng-100-1", "kinematics_1202")
+    
