@@ -69,6 +69,16 @@ def HM_SM(ax, text="", x0=11, x1=14, y0=(9.0), y1=(12)):
     ax.text(0.05, 0.92, text, fontsize=TEXTSIZE, fontweight="bold", transform=ax.transAxes)
     ax.legend(loc=2, fontsize=TEXTSIZE, edgecolor=None)
 
+def GM_SM(ax, text="", x0=5.5, x1=10, y0=9.5, y1=12):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
+    ax.set_xlabel(r"$\log(M_{gas})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.minorticks_on()
+    ax.text(0.05, 0.92, text, fontsize=TEXTSIZE, fontweight="bold", transform=ax.transAxes)
+    ax.legend(loc=2, fontsize=TEXTSIZE, edgecolor=None)
+
+
 def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\log(r_e)$ [kpc]", fontsize=TEXTSIZE)
@@ -125,13 +135,13 @@ def R_BH(ax, x0=0, x1=2, y0=(6), y1=(10)):
     ax.minorticks_on()
     ax.legend(fontsize=TEXTSIZE, frameon=False)
 
-def SM_SFR(ax, x0=9, x1=13, y0=(-4), y1=0):
-    plt.axis([x0, x1, y0, y1])
-    plt.xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    plt.ylabel(r"$\log(sSFR)$ [$ Gyr^{-1} $]", fontsize=TEXTSIZE)
+def rot_galaxy_map(ax, r_e, label_x, label_y):
+    ax.set(xlim=(-r_e*4, r_e*4), ylim=(-r_e*4, r_e*4))
+    ax.set_ylabel(label_x + " [kpc]", fontsize=TEXTSIZE)
+    ax.set_xlabel(label_y + " [kpc]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
-    plt.legend()
+    ax.legend(fontsize=TEXTSIZE, frameon=False)
 
 def FP_3D(df):
     #make the figure

@@ -121,7 +121,7 @@ def half_mass_radius(subhalo, catalogue):
 
 def max_ang_momentum(subhalo, catalogue):
     j_dir = np.zeros(3)
-    r_max = 3*catalogue["SubhaloHalfmassRadStellar"][0]
+    r_max = 2*catalogue["SubhaloHalfmassRadStellar"][0]
     temp = subhalo[subhalo["r"] < r_max].copy(deep=True)
     m = np.array(temp["Masses"])
     p = np.array([np.array(temp["Vx"]*m), np.array(temp["Vy"]*m), np.array(temp["Vz"]*m)])
@@ -148,14 +148,48 @@ def rotational_vel(gas, dm, stars, catalogue):
     catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/(r_vel*1000))
     return catalogue
 
-def velocity_disp(stars, catalogue):
+def velocity_disp_3D(stars, catalogue):
     r_half = catalogue["SubhaloHalfmassRadStellar"][0]
     temp = stars[stars["r"] < r_half]
     sigma_x = np.array(temp["Vx"]).std()
     sigma_y = np.array(temp["Vy"]).std()
     sigma_z = np.array(temp["Vz"]).std()
-    sigma = np.sqrt((1/3)*(sigma_x**2 + sigma_y**2 + sigma_z**2))
-    catalogue["SubhaloVelDisp"] = sigma
+    sigma = np.sqrt(*(sigma_x**2 + sigma_y**2 + sigma_z**2))
+    catalogue["SubhaloVelDisp3D"] = sigma
+    return catalogue
+
+def velocity_disp(stars, catalogue):
+    #xy
+    temp = stars.copy(deep=True)
+    temp_cat = catalogue.copy(deep=True)
+    temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
+    temp_cat = half_mass_radius(temp, temp_cat)
+    catalogue["SubhaloHalfmassRad_xy"] = temp_cat["SubhaloHalfmassRadStellar"]
+    r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
+    temp = temp[temp["r"] < r_half]
+    sigma_z = np.array(temp["Vz"]).std()
+
+    #xz
+    temp = stars.copy(deep=True)
+    temp_cat = catalogue.copy(deep=True)
+    temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
+    temp_cat = half_mass_radius(temp, temp_cat)
+    catalogue["SubhaloHalfmassRad_xz"] = temp_cat["SubhaloHalfmassRadStellar"]
+    r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
+    temp = temp[temp["r"] < r_half]
+    sigma_y = np.array(temp["Vy"]).std()
+
+    #yz
+    temp = stars.copy(deep=True)
+    temp_cat = catalogue.copy(deep=True)
+    temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
+    temp_cat = half_mass_radius(temp, temp_cat)
+    catalogue["SubhaloHalfmassRad_yz"] = temp_cat["SubhaloHalfmassRadStellar"]
+    r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
+    temp = temp[temp["r"] < r_half]
+    sigma_x = np.array(temp["Vx"]).std()
+
+    catalogue["SubhaloVelDisp"] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
     return catalogue
 
 def photometrics(stars, catalogue):

@@ -87,7 +87,11 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     group_cat["SubhaloMassInHalfRadStellar"] = group_cat["SubhaloMassStellar"]/2
     group_cat["SubhaloMassInHalfRad"] = (group_cat["SubhaloMassInHalfRadGas"] 
         + group_cat["SubhaloMassInHalfRadDM"] + group_cat["SubhaloMassInHalfRadStellar"])
-
+    #Mass in 2* half mass rad
+    group_cat["SubhaloMassInRadGas"] = gas[gas["r"] < 2*half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInRadDM"] = dm[dm["r"] < 2*half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInRadStellar"] = stars[stars["r"] < 2*half_rad]["Masses"].sum()
+    
     #Kinematics
     group_cat = physics.properties.max_ang_momentum(stars, group_cat)
     stars = physics.properties.relative_velocities(stars, group_cat)

@@ -20,7 +20,14 @@ echo "$list_path"
 readarray index_list < $list_path
 
 for index in ${index_list[@]}; do
-    python ./src/cluster_run.py -tng $tng_run -id $job_id -n $test_name -s $index
+    python ./src/cluster_run.py -tng $tng_run -id $job_id -n $test_name -sub $index
     done
 
-#python ./src/check_rotation.py -tng $tng_run -id $job_id -n $test_name
+if [ $tng_run == "tng-100-1" ]
+then
+    late_list = [518774, 518810, 518854, 518896, 519091, 583208]
+
+    for index in ${late_list[@]}; do
+        python ./src/check_rotation.py -tng $tng_run -id $job_id -n $test_name -sub  $index
+        done
+fi

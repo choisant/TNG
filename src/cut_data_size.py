@@ -104,6 +104,9 @@ def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     print("Choosing only central galaxies")
     centrals = central_galaxies(df_halos, df_subhalos)
     centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
+    ##Adding some usefull fields
+    centrals_min_mass["SubhalosSFR"] = centrals_min_mass["SubhaloSFR"]/(centrals_min_mass["SubhaloMassStellar"]*10) #Gyr^-1
+    centrals_min_mass["SubhaloGasFraction"] = centrals_min_mass["SubhaloMassInHalfRadGas"]/centrals_min_mass["SubhaloMassInHalfRadStellar"]
     lates = late_type_gas(centrals_min_mass)
     earlies = early_type_gas(centrals_min_mass)
     
@@ -111,7 +114,7 @@ def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
 
 #read in data
 def make_central_id_file(tng_run, snapshot):
-    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
+    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', "SubhaloSFR", 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
 
@@ -139,5 +142,5 @@ def make_pickles(tng_run, snapshot):
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
     centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
+    print(centrals.keys())
     save_data_subset(centrals, earlies, lates, tng_run)
-
