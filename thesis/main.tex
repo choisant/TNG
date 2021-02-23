@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{url}
+\usepackage{appendix}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subfig}
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage[backend=biber, style=numeric, citestyle=authoryear, maxnames=2]{biblatex}
+\addbibresource{mybib.bib} %Imports bibliography file
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={Aurora Grefsrud - Project Report},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{sections/titlepage}
+\pagenumbering{arabic}
+
+\section*{Abstract}
+\input{sections/abstract}
+\newpage
+
+\section*{Preface}
+\input{sections/preface}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction} \label{intro}
+\input{sections/introduction}
+
+\section{Theory} \label{theory}
+\input{sections/theory}
+
+\section{Method} \label{method}
+\input{sections/method}
+
+\section{Results and discussions} \label{results}
+\input{sections/results}
+
+\newpage
+\section{Conclusions} \label{conclusions}
+\input{sections/conclusions}
+
+\medskip
+\printbibliography
+
+\end{document}

@@ -7,4 +7,4 @@ import safe_tester
 
 #safe_tester.test_all("tng-100-3", "kinematics_1802", 1893, 99)
 #cut.make_pickles("tng-100-3", 99)
-safe_tester.cleanup("tng-100-3", "kinematics_18021014")
+safe_tester.cleanup("tng-100-1", "idun_1802")
