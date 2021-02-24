@@ -25,7 +25,7 @@ for index in ${index_list[@]}; do
 
 if [ $tng_run == "tng-100-1" ]
 then
-    late_list = [518774, 518810, 518854, 518896, 519091, 583208]
+    late_list = (518774, 518810, 518854, 518896, 519091, 583208)
 
     for index in ${late_list[@]}; do
         python ./src/check_rotation.py -tng $tng_run -id $job_id -n $test_name -sub  $index

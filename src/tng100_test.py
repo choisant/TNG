@@ -52,8 +52,6 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
             }
     group_cat = pd.DataFrame({"id": [i]})
     #Load particles
-    print("Loading particles")
-    print("Subhalo ", i)
     stars = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'stars', fields["stars"]))
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
     dm = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'dm', fields["dm"]))
@@ -112,8 +110,6 @@ def mass_vel_photo_whole(tng_run, snapshot, dm_mass, i):
             }
     group_cat = pd.DataFrame({"id": [i]})
     #Load particles
-    print("Loading particles")
-    print("Subhalo ", i)
     stars = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'stars', fields["stars"]))
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
     dm = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'dm', fields["dm"]))

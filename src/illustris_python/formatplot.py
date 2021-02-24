@@ -26,9 +26,9 @@ def VD_SM(ax, x0=1.5, x1=3, y0=9, y1=12):
     ax.minorticks_on()
     ax.legend(loc=2, fontsize=TEXTSIZE, frameon=False)
 
-def VD_fVD(ax, x0=1.5, x1=3, y0=0.5, y1=2):
+def SM_fVD(ax, x0=9.5, x1=12, y0=0.5, y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(\sigma_{SF})$ [km/s])", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$\sigma/\sigma_{SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
@@ -50,9 +50,9 @@ def Vmax_SM(ax, x0=1.5, x1=2.5, y0=9, y1=11.5):
     ax.minorticks_on()
     ax.legend(loc=4, fontsize=TEXTSIZE, frameon=False)
 
-def V_fV(ax, x0=2, x1=2.6, y0=0.9, y1=1.4):
+def SM_fV(ax, x0=9.5, x1=12, y0=0.9, y1=1.4):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(V_{max, SF})$ [km/s])", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$V_{rot, 2.2}/V_{max, SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
@@ -138,9 +138,9 @@ def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
     ax.minorticks_on()
     ax.legend(loc=0, fontsize=TEXTSIZE, frameon=False)
 
-def R_fR(ax, x0=(0), x1=1.5, y0=(0.8), y1=2):
+def SM_fR(ax, x0=9.5, x1=12, y0=(0.8), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(R_{e, SF})$ [kpc]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$R_e/R_{e, SF}$ ", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
