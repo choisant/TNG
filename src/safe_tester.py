@@ -33,7 +33,7 @@ def test_all(tng_run, test_name, i, snapshot=99):
     """
     dm_part_mass = set_params(tng_run)
 
-    temp_cat = test.mass_vel_photo_whole(tng_run, snapshot, dm_part_mass, i)
+    temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
     folder_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     file_path = str(i) + ".pkl"
     if not os.path.exists(folder_path):

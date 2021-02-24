@@ -1,6 +1,7 @@
 import numpy as np
 import numpy.linalg as lg
 import illustris_python as il
+import physics
 
 def center_halo(subhalo, catalogue):
     center_of_halo = np.zeros(3) #list for saving the central positions for all subhalos
@@ -120,19 +121,39 @@ def half_mass_radius(subhalo, catalogue):
     return catalogue
 
 def max_ang_momentum(subhalo, catalogue):
-    j_dir = np.zeros(3)
     r_max = 2*catalogue["SubhaloHalfmassRadStellar"][0]
-    temp = subhalo[subhalo["r"] < r_max].copy(deep=True)
+    temp1 = subhalo[subhalo["r"] > 0] #remove central particle
+    temp = temp1[temp1["r"] < r_max].copy(deep=True)
     m = np.array(temp["Masses"])
     p = np.array([np.array(temp["Vx"]*m), np.array(temp["Vy"]*m), np.array(temp["Vz"]*m)])
     r = np.array([np.array(temp["x"]), np.array(temp["y"]), np.array(temp["z"])])
     l = np.cross(np.transpose(r), np.transpose(p))
     J = np.sum(l, axis=0)/np.sum(m)
     j_dir = J/lg.norm(J)
-
     catalogue["RotationAxisX"] = j_dir[0]
     catalogue["RotationAxisY"] = j_dir[1]
     catalogue["RotationAxisZ"] = j_dir[2]
+    return catalogue
+
+def rot_energy(subhalo, catalogue):
+    rot_vector = np.transpose(np.array([catalogue["RotationAxisX"][0],
+        catalogue["RotationAxisY"][0],
+        catalogue["RotationAxisZ"][0]]))
+    
+    subhalo_rot = physics.geometry.rotate_coordinates(subhalo, rot_vector)
+    subhalo_rot = subhalo_rot[subhalo_rot["r"] > 0]
+    v = np.array([np.array(subhalo_rot["Vx"]), np.array(subhalo_rot["Vy"]), np.array(subhalo_rot["Vz"])])
+    V = (v[0]**2 + v[1]**2 + v[2]**2)**(1/2)
+    r = np.array([np.array(subhalo_rot["x"]), np.array(subhalo_rot["y"]), np.array(subhalo_rot["z"])])
+    R = (r[0]**2 + r[1]**2)**(1/2)
+    m = np.array(subhalo_rot["Masses"])
+    j = np.cross(np.transpose(r), np.transpose(v))
+    j_z = np.transpose(j)[2]
+    E_rot = 0.5*m*(j_z/R)**2
+    E_kin = 0.5*m*V**2
+    catalogue["RotationalEnergy"] = np.sum(E_rot)
+    catalogue["KineticEnergy"] = np.sum(E_kin)
+    catalogue["Kappa_rot"] = np.sum((j_z/R)**2)/np.sum(V**2)
     return catalogue
 
 def rotational_vel(gas, dm, stars, catalogue):
@@ -154,7 +175,7 @@ def velocity_disp_3D(stars, catalogue):
     sigma_x = np.array(temp["Vx"]).std()
     sigma_y = np.array(temp["Vy"]).std()
     sigma_z = np.array(temp["Vz"]).std()
-    sigma = np.sqrt(*(sigma_x**2 + sigma_y**2 + sigma_z**2))
+    sigma = np.sqrt((sigma_x**2 + sigma_y**2 + sigma_z**2))
     catalogue["SubhaloVelDisp3D"] = sigma
     return catalogue
 

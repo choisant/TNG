@@ -92,14 +92,13 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     
     #Kinematics
     group_cat = physics.properties.max_ang_momentum(stars, group_cat)
-    stars = physics.properties.relative_velocities(stars, group_cat)
+    group_cat = physics.properties.rot_energy(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
     group_cat = physics.properties.velocity_disp(stars, group_cat)
     #Photometrics
     group_cat = physics.properties.photometrics(stars, group_cat)
 
     return group_cat
-
 
 def mass_vel_photo_whole(tng_run, snapshot, dm_mass, i):
      #intitial setup
@@ -145,7 +144,7 @@ def mass_vel_photo_whole(tng_run, snapshot, dm_mass, i):
     
     #Kinematics
     group_cat = physics.properties.max_ang_momentum(stars, group_cat)
-    stars = physics.properties.relative_velocities(stars, group_cat)
+    group_cat = physics.properties.rot_energy(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
     group_cat = physics.properties.velocity_disp(stars, group_cat)
     #Photometrics
