@@ -1,13 +1,36 @@
 we are running from this directory: /lustre1/work/aurorasg/TNG
  the name of the job is: cluster_run
-Th job ID is 3930761
-The job was run on these nodes: compute-2-0-20
+Th job ID is 3951346
+The job was run on these nodes: compute-2-0-26
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
-Linux compute-2-0-20.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+we are running from this directory: /lustre1/work/aurorasg/TNG
+ the name of the job is: cluster_run
+Th job ID is 3951348
+The job was run on these nodes: compute-2-0-26
+Number of nodes: 1
+We are using 1 cores
+We are using 1 cores per node
+Total of 1 cores
+Linux compute-2-0-25.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux compute-2-0-25.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux compute-2-0-25.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+./data/tng-100-1/cutdata/central_id_5.txt
 ./data/tng-100-1/cutdata/central_id_4.txt
+./data/tng-100-1/cutdata/central_id_6.txt
+Linux compute-2-0-26.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux compute-2-0-26.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux compute-2-0-26.foreman.hpc.ntnu.no 3.10.0-693.21.1.el7.x86_64 #1 SMP Wed Mar 7 19:03:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+./data/tng-100-1/cutdata/central_id_1.txt
+./data/tng-100-1/cutdata/central_id_3.txt
+./data/tng-100-1/cutdata/central_id_2.txt
+slurmstepd: error: Step 3951346.0 exceeded memory limit (26019244 > 25600000), being killed
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 3951346.0 ON compute-2-0-26 CANCELLED AT 2021-02-26T14:56:31 ***
+srun: error: compute-2-0-26: task 0: Killed
 Traceback (most recent call last):
   File "./src/cluster_run.py", line 24, in <module>
     safe_tester.test_all(args.tng, test_name, int(args.subhalo), 99)
@@ -15,7 +38,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -33,7 +56,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -51,7 +74,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -69,7 +92,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -87,7 +110,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -105,7 +128,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -123,7 +146,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -141,7 +164,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -159,7 +182,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -177,7 +200,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -195,7 +218,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -213,7 +236,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -231,7 +254,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -249,7 +272,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -267,7 +290,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -285,7 +308,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -303,7 +326,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -321,7 +344,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -339,7 +362,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -357,7 +380,26 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
+    df = pd.DataFrame(data, dtype=object)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
+    mgr = self._init_dict(data, index, columns, dtype=dtype)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 459, in _init_dict
+    return _arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7356, in _arrays_to_mgr
+    index = extract_index(arrays)
+  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7393, in extract_index
+    raise ValueError('If using all scalar values, you must pass'
+ValueError: If using all scalar values, you must pass an index
+srun: error: compute-2-0-24: task 0: Exited with exit code 1
+Traceback (most recent call last):
+  File "./src/cluster_run.py", line 24, in <module>
+    safe_tester.test_all(args.tng, test_name, int(args.subhalo), 99)
+  File "/lustre1/work/aurorasg/TNG/src/safe_tester.py", line 36, in test_all
+    temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
+  File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
+    gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -375,7 +417,7 @@ Traceback (most recent call last):
     temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
   File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
     gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
+  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 98, in dict_to_pandas
     df = pd.DataFrame(data, dtype=object)
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
     mgr = self._init_dict(data, index, columns, dtype=dtype)
@@ -386,144 +428,3 @@ Traceback (most recent call last):
   File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7393, in extract_index
     raise ValueError('If using all scalar values, you must pass'
 ValueError: If using all scalar values, you must pass an index
-Traceback (most recent call last):
-  File "./src/cluster_run.py", line 24, in <module>
-    safe_tester.test_all(args.tng, test_name, int(args.subhalo), 99)
-  File "/lustre1/work/aurorasg/TNG/src/safe_tester.py", line 36, in test_all
-    temp_cat = test.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
-  File "/lustre1/work/aurorasg/TNG/src/tng100_test.py", line 56, in mass_vel_photo
-    gas = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'gas', fields["gas"]))
-  File "/lustre1/work/aurorasg/TNG/src/illustris_python/pandasformat.py", line 97, in dict_to_pandas
-    df = pd.DataFrame(data, dtype=object)
-  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 348, in __init__
-    mgr = self._init_dict(data, index, columns, dtype=dtype)
-  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 459, in _init_dict
-    return _arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
-  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7356, in _arrays_to_mgr
-    index = extract_index(arrays)
-  File "/share/apps/software/Core/Anaconda3/2018.12/lib/python3.7/site-packages/pandas/core/frame.py", line 7393, in extract_index
-    raise ValueError('If using all scalar values, you must pass'
-ValueError: If using all scalar values, you must pass an index
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Loading stellar particles
-Subhalo  583208
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-srun: error: compute-2-0-18: task 0: Exited with exit code 1
-Loading stellar particles
-Subhalo  518774
-Loading stellar particles
-Subhalo  518810
-Loading stellar particles
-Subhalo  518854
-Loading stellar particles
-Subhalo  518896
-Loading stellar particles
-Subhalo  519091
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-srun: error: compute-2-0-19: task 0: Exited with exit code 1
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-Traceback (most recent call last):
-  File "./src/check_rotation.py", line 113, in <module>
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
-  File "./src/check_rotation.py", line 95, in subhalo_rotation
-    subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-IndexError: index 0 is out of bounds for axis 0 with size 0
-srun: error: compute-2-0-18: task 0: Exited with exit code 1
