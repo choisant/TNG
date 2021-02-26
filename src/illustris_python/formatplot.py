@@ -208,7 +208,7 @@ def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
     ax.set_ylabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
     ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
-    ax.minorticks_on(which = 'both')
+    ax.minorticks_on()
     ax.legend(fontsize=TEXTSIZE, frameon=False)
 
 def FP_3D(df):

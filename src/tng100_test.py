@@ -29,8 +29,8 @@ def stars_out(tng_run, snapshot, i):
     print("Loading stellar particles")
 
     print("Subhalo ", i)
-    stars = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'stars', fields["stars"]))
-
+    stars_dict = il.snapshot.loadSubhalo(base_path, snapshot, i, 'stars', fields["stars"])
+    stars = il.pandasformat.dict_to_pandas(stars_dict)
     group_cat = physics.properties.group_properties(group_cat, base_path)
     group_cat = physics.properties.center_halo(stars, group_cat)
     stars = physics.properties.relative_pos_radius(stars, group_cat)
@@ -91,7 +91,7 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     group_cat["SubhaloMassInRadStellar"] = stars[stars["r"] < 2*half_rad]["Masses"].sum()
     
     #Kinematics
-    group_cat = physics.properties.max_ang_momentum(stars, group_cat)
+    group_cat = physics.properties.ang_momentum(stars, group_cat)
     group_cat = physics.properties.rot_energy(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
     group_cat = physics.properties.velocity_disp(stars, group_cat)
@@ -143,7 +143,7 @@ def mass_vel_photo_whole(tng_run, snapshot, dm_mass, i):
     group_cat["SubhaloMassInRadStellar"] = stars[stars["r"] < 2*half_rad]["Masses"].sum()
     
     #Kinematics
-    group_cat = physics.properties.max_ang_momentum(stars, group_cat)
+    group_cat = physics.properties.ang_momentum(stars, group_cat)
     group_cat = physics.properties.rot_energy(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat)
     group_cat = physics.properties.velocity_disp(stars, group_cat)

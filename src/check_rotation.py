@@ -33,9 +33,9 @@ def find_most_late(tng_run, test_name):
     group_cat["SubhaloGasFrac"] = group_cat["SubhaloMassGas"]/group_cat["SubhaloMassStellar"]
     latest_index = group_cat["SubhaloGasFrac"].values.argmax()
     latest_id = group_cat["id"][latest_index]
-    rot_vector = np.transpose(np.array([group_cat["RotationAxisX"][latest_index],
-        group_cat["RotationAxisY"][latest_index],
-        group_cat["RotationAxisZ"][latest_index]]))
+    rot_vector = np.transpose(np.array([group_cat["AngularMomentumX"][latest_index],
+        group_cat["AngularMomentumY"][latest_index],
+        group_cat["AngularMomentumZ"][latest_index]]))
     return latest_id, rot_vector
 
 def save_particle_fields(subhalo, index):
@@ -55,24 +55,18 @@ def create_projections(subhalo, group_cat, index, test_name):
     y_half_3 = np.sin(theta)*r_half*3
 
     subhalo.plot.scatter("x_rot", "y_rot", color="orange", s=3, alpha=0.5, ax=axs1[0])
-    axs1[0].plot(x_half, y_half, '--', label= r'$r_{half}$')
-    axs1[0].plot(x_half_3, y_half_3, '-', label= r'$3 r_{half}$')
-    axs1[0].set_xlabel('x_rot [ckpc/h]')
-    axs1[0].set_ylabel('y_rot [ckpc/h]')
+    axs1[0].plot(x_half, y_half, '--', label=r'$r_{half}$')
+    axs1[0].plot(x_half_3, y_half_3, '-', label=r'$3 r_{half}$')
     
     
     subhalo.plot.scatter("x_rot", "z_rot", color="orange", s=3, alpha = 0.5, ax=axs1[1])
-    axs1[1].plot(x_half, y_half, '--', label= r'$r_{half}$')
-    axs1[1].plot(x_half_3, y_half_3, '-', label= r'$3 r_{half}$')
-    axs1[1].set_xlabel('x_rot [ckpc/h]')
-    axs1[1].set_ylabel('z_rot [ckpc/h]')
+    axs1[1].plot(x_half, y_half, '--', label=r'$r_{half}$')
+    axs1[1].plot(x_half_3, y_half_3, '-', label=r'$3 r_{half}$')
     
 
     subhalo.plot.scatter("y_rot", "z_rot", color="orange", s=3, alpha=0.5, ax=axs1[2])
-    axs1[2].plot(x_half, y_half, '--', label= r'$r_{half}$')
-    axs1[2].plot(x_half_3, y_half_3, '-', label= r'$3 r_{half}$')
-    axs1[2].set_xlabel('y_rot [ckpc/h]')
-    axs1[2].set_ylabel('z_rot [ckpc/h]')
+    axs1[2].plot(x_half, y_half, '--', label=r'$r_{half}$')
+    axs1[2].plot(x_half_3, y_half_3, '-', label=r'$3 r_{half}$')
 
     il.formatplot.rot_galaxy_map(axs1[0], r_half, "x", "y")
     il.formatplot.rot_galaxy_map(axs1[1], r_half, "x", "z")
@@ -93,9 +87,9 @@ def subhalo_rotation(tng_run, test_name, snapshot, subhalo_id):
     new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     group_cat = create_cat(new_cat_path)
     subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
-    rot_vector = np.transpose(np.array([group_cat["RotationAxisX"][subhalo_index],
-        group_cat["RotationAxisY"][subhalo_index],
-        group_cat["RotationAxisZ"][subhalo_index]]))
+    rot_vector = np.transpose(np.array([group_cat["AngularMomentumX"][subhalo_index],
+        group_cat["AngularMomentumY"][subhalo_index],
+        group_cat["AngularMomentumZ"][subhalo_index]]))
     subhalo = tng100_test.stars_out(tng_run, snapshot, subhalo_id)
     subhalo = physics.geometry.rotate_coordinates(subhalo, rot_vector)
     create_projections(subhalo, group_cat, subhalo_id, test_name)

@@ -51,7 +51,7 @@ def rotate_pos_vel(subhalo, rot_vector):
             theta = 0
             phi = 0
         #Rotate phi radians about z and theta radians about y
-        r = R.from_euler('zyx', [phi, theta, 0])
+        r = R.from_euler('zyx', [phi, -theta, 0])
         rot_matrix = np.array(r.as_matrix()) #convert to numpy array
         return rot_matrix
 

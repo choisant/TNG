@@ -140,11 +140,11 @@ def ang_momentum(subhalo, catalogue):
     return catalogue
 
 def rot_energy(subhalo, catalogue):
-    rot_vector = np.transpose(np.array([catalogue["RotationAxisX"][0],
-        catalogue["RotationAxisY"][0],
-        catalogue["RotationAxisZ"][0]]))
+    rot_vector = np.transpose(np.array([catalogue["AngularMomentumX"][0],
+        catalogue["AngularMomentumY"][0],
+        catalogue["AngularMomentumZ"][0]]))
     
-    subhalo_rot = physics.geometry.rotate_coordinates(subhalo, rot_vector)
+    subhalo_rot = physics.geometry.rotate_pos_vel(subhalo, rot_vector)
     subhalo_rot = subhalo_rot[subhalo_rot["r"] > 0]
     v = np.array([np.array(subhalo_rot["Vx"]), np.array(subhalo_rot["Vy"]), np.array(subhalo_rot["Vz"])])
     V = (v[0]**2 + v[1]**2 + v[2]**2)**(1/2)
