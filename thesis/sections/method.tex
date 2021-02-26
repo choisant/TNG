@@ -91,10 +91,19 @@ This has been done by calculating the velocity dispersion within the projected h
 In SUBFIND, the velocity dispersion is simply calculated as the velocity dispersion of all the particles over the entire subhalo. This would naturally lead to lower values as the particles further out have lower velocities. Also, the velocities of the dark matter is something which cannot be taken into account in observations.
 
 
-\subsection{Galaxy morphologies}
+\subsection{Galaxy morphology classifications}
 
-//gas fraction
+An important factor in many studies of galaxy formation and evolution is looking at and comparing the properties of the two morphological populations of galaxies. As an actual visual classification is intensively time consuming, other methods have been devised for identifying early and late type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction.
 
-//sSFR
+\subsubsection{Gas fraction}
+As early type galaxies have much less cold gass than late type galaxies, a simple cut in the galaxy population based on gas fraction will be effective at seperating the two types. As TNG doesn't differentiate between cold and hot gas, it is important then to consider the physical volume where the gas fraction is calculated. A large volume will enevitably contain more hot gas, and potentially allow for early type galaxies to be considered as late types. Late type galaxies also have a wide range of gas fractions. The most masssive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In //Ferrero2020 galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late type classifications. 
 
-//rotational kinetic energy
+\subsubsection{Star formation rate}
+Another way of seperating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). In this case, the galaxies are tagged as ``quenched'' and ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation. More formally, they are divided by how far from the ridge of the star-formation main-sequence they are found. In \cite{Genel2017} the ridge og the main-sequence is defined as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then `main-sequence' if their sSFR are within 0.5 dex of this value. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge.
+
+\subsubsection{Rotational kinetic energy}
+A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-total-kinetic-energy parameter $\kappa_{rot}$. This value gives an indication of how much of the kinetic energy of the galaxy is invested in the ordered rotation about its axis. To calculate $\kappa_{rot}$, the axis of rotation must first be found. This is, in the case of a disk galaxy, simply the direction of the mass-averaged angular momentum of the inner parts of the galaxy. For an elliptical galaxy this ``rotation-axis'' would just be a random direction. The galaxy is then rotated such that the z-axis is pointed towards the axis of rotation, and $kappa_{rot}$ may be found.
+\begin{equation}
+    \kappa_{rot} = \frac{K_{rot}}{K} = \frac{\sum_{i=1}^{N} m_i (j_{z, i}/R_i)^2}{\sum_{i=1}^{N} m_i v_i^2},
+\end{equation}
+where $j_{z, i}$ is the z-component of the specific angular momentum ($\vec{j} = \vec{r} \times \vec{v}$) of particle $i$, $m_i$ is the mass of stellar particle $i$, and $R_i$ is the projected radius of stellar particle $i$ in the xy-plane. For a perfect disk galaxy that is totally rotationally supported $\kappa = 1$, while for a totally pressure supported system, $\kappa$ would approach zero. In //Sales2012, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', so other works have simply made a single cut at $\kappa_{rot} = 0.6$.

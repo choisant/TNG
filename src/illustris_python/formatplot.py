@@ -196,18 +196,19 @@ def R_BH(ax, x0=0, x1=2, y0=(6), y1=(10)):
 
 def rot_galaxy_map(ax, r_e, label_x, label_y):
     ax.set(xlim=(-r_e*4, r_e*4), ylim=(-r_e*4, r_e*4))
-    ax.set_ylabel(label_x + " [kpc]", fontsize=TEXTSIZE)
-    ax.set_xlabel(label_y + " [kpc]", fontsize=TEXTSIZE)
+    ax.set_xlabel(label_x + " [kpc]", fontsize=TEXTSIZE)
+    ax.set_ylabel(label_y + " [kpc]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
-    ax.legend(fontsize=TEXTSIZE, frameon=False)
+    ax.grid()
+    ax.legend(fontsize=TEXTSIZE, frameon=True)
 
 def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
     ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
-    ax.minorticks_on()
+    ax.minorticks_on(which = 'both')
     ax.legend(fontsize=TEXTSIZE, frameon=False)
 
 def FP_3D(df):

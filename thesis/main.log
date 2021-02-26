@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  23 FEB 2021 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  25 FEB 2021 11:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -623,7 +623,7 @@ LaTeX Info: Redefining \nameref on input line 27.
 \openout4 = `main.out'.
 
  (sections/titlepage.tex
-<images/ntnu.png, id=119, 538.6524pt x 50.8299pt>
+<images/ntnu.png, id=131, 538.6524pt x 50.8299pt>
 File: images/ntnu.png Graphic file (type png)
 <use images/ntnu.png>
 Package pdftex.def Info: images/ntnu.png  used on input line 17.
@@ -643,67 +643,67 @@ l.34 \newpage
 
  [3]
 (sections/introduction.tex) (sections/theory.tex [4] [5]
-<images/halo_mass_function.png, id=194, 426.393pt x 431.81325pt>
+<images/halo_mass_function.png, id=209, 426.393pt x 431.81325pt>
 File: images/halo_mass_function.png Graphic file (type png)
 <use images/halo_mass_function.png>
 Package pdftex.def Info: images/halo_mass_function.png  used on input line 43.
 (pdftex.def)             Requested size: 350.99762pt x 355.47282pt.
  [6] [7 <./images/halo_mass_function.png>] [8]
-<images/luminosity_function.png, id=223, 457.10776pt x 495.65175pt>
+<images/luminosity_function.png, id=238, 457.10776pt x 495.65175pt>
 File: images/luminosity_function.png Graphic file (type png)
 <use images/luminosity_function.png>
 Package pdftex.def Info: images/luminosity_function.png  used on input line 70.
 
 (pdftex.def)             Requested size: 350.99762pt x 380.60176pt.
  [9] [10 <./images/luminosity_function.png>]
-<images/hubble.jpg, id=245, 409.53pt x 337.26pt>
+<images/hubble.jpg, id=260, 409.53pt x 337.26pt>
 File: images/hubble.jpg Graphic file (type jpg)
 <use images/hubble.jpg>
 Package pdftex.def Info: images/hubble.jpg  used on input line 91.
 (pdftex.def)             Requested size: 272.99881pt x 224.83601pt.
  [11 <./images/hubble.jpg>] [12]
-<images/rotation_curves.png, id=260, 702.82574pt x 395.076pt>
+<images/rotation_curves.png, id=275, 702.82574pt x 395.076pt>
 File: images/rotation_curves.png Graphic file (type png)
 <use images/rotation_curves.png>
 Package pdftex.def Info: images/rotation_curves.png  used on input line 142.
 (pdftex.def)             Requested size: 350.99762pt x 197.3024pt.
  [13] [14 <./images/rotation_curves.png>]
-<images/tully_fisher.png, id=280, 410.7345pt x 388.45125pt>
+<images/tully_fisher.png, id=295, 410.7345pt x 388.45125pt>
 File: images/tully_fisher.png Graphic file (type png)
 <use images/tully_fisher.png>
 Package pdftex.def Info: images/tully_fisher.png  used on input line 170.
 (pdftex.def)             Requested size: 350.99762pt x 331.96329pt.
-<images/faber_jackson.png, id=285, 423.38174pt x 290.88675pt>
+<images/faber_jackson.png, id=300, 423.38174pt x 290.88675pt>
 File: images/faber_jackson.png Graphic file (type png)
 <use images/faber_jackson.png>
 Package pdftex.def Info: images/faber_jackson.png  used on input line 186.
 (pdftex.def)             Requested size: 350.99762pt x 241.1563pt.
  [15] [16 <./images/tully_fisher.png>] [17 <./images/faber_jackson.png>]
-<images/color_bimodality.png, id=312, 522.15076pt x 238.491pt>
+<images/color_bimodality.png, id=327, 522.15076pt x 238.491pt>
 File: images/color_bimodality.png Graphic file (type png)
 <use images/color_bimodality.png>
 Package pdftex.def Info: images/color_bimodality.png  used on input line 204.
 (pdftex.def)             Requested size: 350.99762pt x 160.32307pt.
  [18 <./images/color_bimodality.png>]) (sections/method.tex [19]
-<images/TNG.png, id=347, 595.9866pt x 628.0263pt>
+<images/TNG.png, id=362, 595.9866pt x 628.0263pt>
 File: images/TNG.png Graphic file (type png)
 <use images/TNG.png>
 Package pdftex.def Info: images/TNG.png  used on input line 10.
 (pdftex.def)             Requested size: 350.99762pt x 369.87108pt.
  [20] [21 <./images/TNG.png>] [22]
-[23] [24]) (sections/results.tex) [25] (sections/conclusions.tex) [26] [27]
-[28] (main.aux)
+[23] [24] [25]) (sections/results.tex) [26] [27] (sections/conclusions.tex)
+[28] [29] [30] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DBFB77076F4E651FF0DFBF4450E50377;2034.
+(rerunfilecheck)             Checksum: D67D08F850F26B03DEA2B0B05293DEF0;2284.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14742 strings out of 479799
- 263417 string characters out of 2879559
- 974986 words of memory out of 3000000
- 31412 multiletter control sequences out of 15000+200000
+ 14754 strings out of 479799
+ 263663 string characters out of 2879559
+ 976033 words of memory out of 3000000
+ 31417 multiletter control sequences out of 15000+200000
  543072 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,10n,75p,1694b,1759s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -721,9 +721,9 @@ public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Progr
 am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (29 pages, 8235832 bytes).
+Output written on main.pdf (31 pages, 8247150 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 278 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -120,7 +120,7 @@ def half_mass_radius(subhalo, catalogue):
     catalogue[rad_key] = halfmass_rad #save to catalogue
     return catalogue
 
-def max_ang_momentum(subhalo, catalogue):
+def ang_momentum(subhalo, catalogue):
     r_max = 2*catalogue["SubhaloHalfmassRadStellar"][0]
     temp1 = subhalo[subhalo["r"] > 0] #remove central particle
     temp = temp1[temp1["r"] < r_max].copy(deep=True)
@@ -128,11 +128,15 @@ def max_ang_momentum(subhalo, catalogue):
     p = np.array([np.array(temp["Vx"]*m), np.array(temp["Vy"]*m), np.array(temp["Vz"]*m)])
     r = np.array([np.array(temp["x"]), np.array(temp["y"]), np.array(temp["z"])])
     l = np.cross(np.transpose(r), np.transpose(p))
+    L = np.sum(l, axis=0)
     J = np.sum(l, axis=0)/np.sum(m)
-    j_dir = J/lg.norm(J)
-    catalogue["RotationAxisX"] = j_dir[0]
-    catalogue["RotationAxisY"] = j_dir[1]
-    catalogue["RotationAxisZ"] = j_dir[2]
+    catalogue["AngularMomentumX"] = L[0]
+    catalogue["AngularMomentumY"] = L[1]
+    catalogue["AngularMomentumZ"] = L[2]
+
+    catalogue["SpecificAngularMomentumX"] = J[0]
+    catalogue["SpecificAngularMomentumY"] = J[1]
+    catalogue["SpecificAngularMomentumZ"] = J[2]
     return catalogue
 
 def rot_energy(subhalo, catalogue):

@@ -274,6 +274,109 @@
       \endverb
       \keyw{Astronomical Photometry,Elliptical Galaxies,Galactic Rotation,Galactic Structure,Cosmology,Galactic Evolution,Mass To Light Ratios,Velocity Distribution,Astrophysics,COSMOLOGY,GALAXIES: INTERNAL MOTIONS,GALAXIES: PHOTOMETRY,GALAXIES: STRUCTURE}
     \endentry
+    \entry{Genel2017}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=c91318360a31c3782dec15bb32a9a305}{%
+           family={Genel},
+           familyi={G\bibinitperiod},
+           given={Shy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
+           family={Pillepich},
+           familyi={P\bibinitperiod},
+           given={Annalisa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
+           family={Springel},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
+           family={Pakmor},
+           familyi={P\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa99d0c50cfa159b56dc9db955ca117}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
+           family={Hernquist},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37bfef933d675128c909933d7f961c17}{%
+           family={Naiman},
+           familyi={N\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=135d434ea2b67c33af17ac769847bc4f}{%
+           family={Vogelsberger},
+           familyi={V\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8d123402326022e2d7ff6a46172c40c}{%
+           family={Marinacci},
+           familyi={M\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{71f832896f4bb780f832146f6026e1e9}
+      \strng{fullhash}{11f8fd02d37e6cdc75495dc37160aecc}
+      \strng{bibnamehash}{71f832896f4bb780f832146f6026e1e9}
+      \strng{authorbibnamehash}{71f832896f4bb780f832146f6026e1e9}
+      \strng{authornamehash}{71f832896f4bb780f832146f6026e1e9}
+      \strng{authorfullhash}{11f8fd02d37e6cdc75495dc37160aecc}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1365-2966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{11}
+      \field{number}{3}
+      \field{title}{The size evolution of star-forming and quenched galaxies in the IllustrisTNG simulation}
+      \field{volume}{474}
+      \field{year}{2017}
+      \field{pages}{3976\bibrangedash 3996}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/mnras/stx3078
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/mnras/stx3078
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/mnras/stx3078
+      \endverb
+    \endentry
     \entry{Hubble1926}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2f8189d19a15710c6e056c923d1dce96}{%

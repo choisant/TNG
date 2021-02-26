@@ -2383,6 +2383,8 @@
     <bcf:citekey order="26">Marinacci2018</bcf:citekey>
     <bcf:citekey order="27">Weinberger2016</bcf:citekey>
     <bcf:citekey order="28">Planck2016</bcf:citekey>
+    <bcf:citekey order="29">Mo2010</bcf:citekey>
+    <bcf:citekey order="30">Genel2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -16,7 +16,7 @@ def rotate_coordinates(subhalo, rot_vector):
         theta = np.nan_to_num(np.arccos(np.dot(v/lg.norm(v), old_basis[:, 2]))) #get angle between new z axis and old z axis
         phi = np.nan_to_num(np.arccos(np.dot(v_xy/lg.norm(v_xy), old_basis[:, 0]))) #get angle between projected new z axis and old x axis
         #Rotate phi radians about z and theta radians about y
-        r = R.from_euler('zyx', [phi, theta, 0])
+        r = R.from_euler('zyx', [phi, -theta, 0])
         rot_matrix = np.array(r.as_matrix()) #convert to numpy array
         return rot_matrix
 
@@ -43,9 +43,13 @@ def rotate_pos_vel(subhalo, rot_vector):
         """
         old_basis = np.identity(3)
         v = new_z_axis
-        v_xy = np.array([v[0], v[1], 0])
-        theta = np.nan_to_num(np.arccos(np.dot(v/lg.norm(v), old_basis[:, 2]))) #get angle between new z axis and old z axis
-        phi = np.nan_to_num(np.arccos(np.dot(v_xy/lg.norm(v_xy), old_basis[:, 0]))) #get angle between projected new z axis and old x axis
+        if lg.norm(v) > 0: #Check that the new z-axis is non-zero
+            v_xy = np.array([v[0], v[1], 0])
+            theta = np.arccos(np.dot(v/lg.norm(v), old_basis[:, 2])) #get angle between new z axis and old z axis
+            phi = np.arccos(np.dot(v_xy/lg.norm(v_xy), old_basis[:, 0])) #get angle between projected new z axis and old x axis
+        else:
+            theta = 0
+            phi = 0
         #Rotate phi radians about z and theta radians about y
         r = R.from_euler('zyx', [phi, theta, 0])
         rot_matrix = np.array(r.as_matrix()) #convert to numpy array
