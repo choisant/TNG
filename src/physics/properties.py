@@ -151,7 +151,7 @@ def rot_energy(subhalo, catalogue):
     r = np.array([np.array(subhalo_rot["x"]), np.array(subhalo_rot["y"]), np.array(subhalo_rot["z"])])
     R = (r[0]**2 + r[1]**2)**(1/2)
     m = np.array(subhalo_rot["Masses"])
-    j = np.cross(np.transpose(r), np.transpose(v))
+    j = np.cross(np.transpose(r), np.transpose(v)) #gives angular momentum about origo, but about z axis for j_z
     j_z = np.transpose(j)[2]
     E_rot = 0.5*m*(j_z/R)**2
     E_kin = 0.5*m*V**2

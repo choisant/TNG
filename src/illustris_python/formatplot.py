@@ -14,6 +14,8 @@ def log_formater(df):
             df_log[key] = df[key]
         elif "SubhaloColor" in key:
             df_log[key] = df[key]
+        elif "Kappa_rot" in key:
+            df_log[key] = df[key]
         else:
             df_log[key] = np.log10(list(df[key]))
     return df_log
@@ -207,6 +209,14 @@ def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
     ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.minorticks_on()
+    ax.legend(fontsize=TEXTSIZE, frameon=False)
+
+def kappa_fG(ax, x0=(0.1), x1=0.8, y0=(-3.5), y1=0.5):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
+    ax.set_xlabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{gas}/M_{*})$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
     ax.legend(fontsize=TEXTSIZE, frameon=False)

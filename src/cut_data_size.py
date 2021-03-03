@@ -136,7 +136,7 @@ def make_central_id_file(tng_run, snapshot):
             file.write("%i\n" % index)
 
 def make_pickles(tng_run, snapshot):
-    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloMassInRadType', 'SubhaloFlag', "SubhaloLen", 
+    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', 'SubhaloMassInHalfRadType', 'SubhaloMassInRadType', 'SubhaloFlag', "SubhaloLen", "SubhaloLenType",
     "SubhaloVmax", "SubhaloVelDisp", "SubhaloHalfmassRadType", "SubhaloStellarPhotometrics", "SubhaloSFR", "SubhaloVel",
     "SubhaloPos"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
