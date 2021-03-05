@@ -72,7 +72,7 @@ def create_projections(subhalo, group_cat, index, test_name):
     il.formatplot.rot_galaxy_map(axs1[1], r_half, "x", "z")
     il.formatplot.rot_galaxy_map(axs1[2], r_half, "y", "z")
 
-    plt.savefig("./fig/projections/" + test_name + "_rot_subhalo_" + str(index) + "_xy.png")
+    plt.savefig("./fig/projections/" + test_name + "/_rot_subhalo_" + str(index) + ".png")
 
 
 def check(tng_run, test_name, snapshot):
