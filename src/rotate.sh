@@ -9,7 +9,7 @@ do
 done
 
 
-list_path="./data/$tng_run/cutdata/rotation.txt"
+list_path="./data/$tng_run/cutdata/rotate.txt"
 
 readarray index_list < $list_path
 
