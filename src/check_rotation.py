@@ -28,7 +28,7 @@ def create_cat(path):
     return df
 
 def find_most_late(tng_run, test_name):
-    new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
+    new_cat_path = "./data/" + tng_run + "/catalogues/" + test_name + "/"
     group_cat = create_cat(new_cat_path)
     group_cat["SubhaloGasFrac"] = group_cat["SubhaloMassGas"]/group_cat["SubhaloMassStellar"]
     latest_index = group_cat["SubhaloGasFrac"].values.argmax()
