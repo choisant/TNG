@@ -45,7 +45,7 @@ def save_particle_fields(subhalo, index):
 
 def create_projections(subhalo, group_cat, index, test_name):
 
-    fig1, axs1 = plt.subplots(nrows = 1, ncols = 3, figsize=(30,9))
+    fig1, axs1 = plt.subplots(nrows = 1, ncols = 3, figsize=(31,9))
     
     r_half = group_cat[group_cat["id"] == index]["SubhaloHalfmassRadStellar"].values[0]
     theta = np.linspace(0, 2*np.pi, 100)
@@ -101,7 +101,4 @@ if args.id != "none":
 else:
     test_name = args.name
 
-if args.subhalo == "0":
-    check(tng_run, test_name, 99)
-else:
-    subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
+subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))

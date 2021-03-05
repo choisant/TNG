@@ -2384,8 +2384,9 @@
     <bcf:citekey order="27">Weinberger2016</bcf:citekey>
     <bcf:citekey order="28">Planck2016</bcf:citekey>
     <bcf:citekey order="29">Mo2010</bcf:citekey>
-    <bcf:citekey order="30">Genel2017</bcf:citekey>
-    <bcf:citekey order="31">Sales2012</bcf:citekey>
+    <bcf:citekey order="30">Ferrero2020</bcf:citekey>
+    <bcf:citekey order="31">Genel2017</bcf:citekey>
+    <bcf:citekey order="32">Sales2012</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

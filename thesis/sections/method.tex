@@ -52,7 +52,7 @@ When observing galaxies with telescopes, there is always the problem of contamin
 In simulations, we are not limited by hardware, attenuation, and background light. A cut-off point still needs to be determined. SUBFIND does this for the dark matter part of the simulation, separating out subhalos from larger halos. The galaxy properties of that subhalo are then calculated using all the stellar and gas particles in the subhalo and saved in the group catalog. 
 
 
-When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a given physical aperture size for all galaxies, using a multiple of their particular effective radius, or using a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. For this work, the galaxy size is chosen to be a spherical volume with a radius equal to 15 \% of the subhalo's virial radius.
+When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. For this work, the galaxy size is chosen to be a spherical volume with a radius ($R_{gal}$) equal to 15 \% of the subhalo's virial radius.
 
 \subsection{Galaxy properties}
 
@@ -60,18 +60,20 @@ When comparing simulation data to observational data, there are many ways to emu
 
 The absolute magnitude ($\mathcal{M}$) is a measure of the total luminosity ($L$) of the galaxy such that $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$, where $L_\odot$ is the solar luminosity and $\mathcal{M}_\odot$ is the solar magnitude.
 
-For the SUBHALO group catalog, the \texttt{SubhaloStellarPhotometrics} field gives the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. Eight bands are available, but in this work, only the g- and i-band are used.
+For the SUBHALO group catalog, the \texttt{SubhaloStellarPhotometrics} field gives the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. Our luminosities are determined by summing the luminosities within $R_{gal}$. Eight bands are available, but here only the g- and i-band are used. 
 
 The g-i colors are calculated by simply subtracting the i-band magnitude from the g-band magnitude.
 
 \subsubsection{Masses}
 
-///
+In SUBFIND, masses for each particle type are calculated by summing up all the masses of that particle type belonging to the halo. Values for the mass within the half-mass radius, two times the half-mass radius and the radius at which the maximum rotational velocity is found are also available.
+
+The stellar masses of the galaxies studied using the particles are the summed up masses of all stellar particles within $R_{gal}$.
 
 \subsubsection{Size}
 For the group catalog, the \texttt{SubhaloHalfmassRadStellar} field has been used as the effective radius. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius ($R_e$), as it is not a projected quantity.
 
-The half-mass radii of the galaxies calculated using the particles are calculated using the same method, but with the total stellar mass calculated within the galaxy radius only.
+The half-mass radii of the galaxies calculated using the particles are calculated using the same method, but with the total stellar mass calculated within $R_{gal}$.
 
 \subsubsection{Velocities}
 
@@ -94,18 +96,18 @@ If the velocity dispersion tends to fall off at larger radii, and the galaxy has
 
 In this work the velocity dispersion was calculated within the projected half-mass radius in each projection.
 
-In SUBFIND, the velocity dispersion is simply calculated as the velocity dispersion of all the particles over the entire subhalo. This would naturally lead to lower values as the particles further out have lower velocities. Also, the velocities of the dark matter are something that cannot be taken into account in observations. They should however have similar velocity dispersions as the stars (//cite).
+In SUBFIND, the velocity dispersion is simply calculated as the velocity dispersion of all the particles over the entire subhalo.
 
 
 \subsection{Galaxy morphology classifications}
 
-An important factor in many studies of galaxy formation and evolution is looking at the properties of the two morphological types of galaxies. As a visual classification method is intensively time-consuming, other methods have been devised for identifying early and late-type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction. They are described in this section.
+An important factor in many studies of galaxy formation and evolution is looking at the properties of the two morphological types of galaxies. As a visual classification method is intensively time-consuming, other methods have been devised for identifying early and late-type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction.
 
 \subsubsection{Gas fraction}
-As early-type galaxies have much less cold gas than late-type galaxies, a simple cut in the galaxy population based on the gas fraction will be effective at separating the two types. TNG doesn't differentiate between cold and hot gas, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In //Ferrero2020 galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
+As early-type galaxies have much less cold gas than late-type galaxies, a simple cut in the galaxy population based on the gas fraction will be effective at roughly separating the two types. TNG doesn't differentiate between cold and hot gas, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
 
 \subsubsection{Star formation rate}
-Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). In this case, the galaxies are tagged as ``quenched'' and ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation. More formally, they are divided by how far from the ridge of the star-formation main-sequence they are found. In \textcite{Genel2017} the ridge of the main-sequence is defined as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge.
+Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. In this case, the galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found (//cite). In \textcite{Genel2017} the ridge of the main-sequence is defined as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge.
 
 \subsubsection{Rotational kinetic energy}
 A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-total-kinetic-energy parameter $\kappa_{rot}$. 
@@ -113,5 +115,5 @@ A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-
     \kappa_{rot} = \frac{K_{rot}}{K} = \frac{\sum_{i=1}^{N} m_i (j_{z, i}/R_i)^2}{\sum_{i=1}^{N} m_i v_i^2},
 \end{equation}
 where $j_{z, i}$ is the z-component of the specific angular momentum ($\vec{j} = \vec{r} \times \vec{v}$), $m_i$ is the mass, and $R_i$ is the projected radius of stellar particle $i$ in the xy-plane. 
-This value indicates how much of the kinetic energy of the galaxy is invested in the ordered rotation about its axis. To calculate $\kappa_{rot}$, the axis of rotation must first be found. The galaxy is then rotated such that the z-axis of the galaxy's coordinate system is pointed in the direction of the axis of rotation, and $\kappa_{rot}$ may be found.
-For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$.
+This value indicates how much of the kinetic energy of the galaxy is invested in the ordered rotation about its axis. To calculate $\kappa_{rot}$, the axis of rotation must first be found. The galaxy is then rotated such that the z-axis of the galaxy's coordinate system is pointed in the direction of the axis of rotation, and $\kappa_{rot}$ is calculated.
+For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa_{rot}$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$.

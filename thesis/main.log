@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  1 MAR 2021 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  4 MAR 2021 10:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -692,6 +692,11 @@ Package pdftex.def Info: images/TNG.png  used on input line 12.
 (pdftex.def)             Requested size: 350.99762pt x 369.87108pt.
  [20] [21 <./images/TNG.png>] [22]
 [23] [24] [25]) [26] (sections/results.tex) [27] (sections/conclusions.tex)
+Overfull \hbox (9.78357pt too wide) in paragraph at lines 61--61
+\OT1/cmr/m/n/12 cal Galaxy Struc-tural Scal-ing Laws''. In: \OT1/cmr/m/it/12 ar
+Xiv e-prints\OT1/cmr/m/n/12 , arXiv:2009.03916
+ []
+
 [28] [29] [30] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F27334B9711264BE42502D1F7E8F2240;2284.
@@ -700,10 +705,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14760 strings out of 479799
- 263860 string characters out of 2879559
- 976080 words of memory out of 3000000
- 31422 multiletter control sequences out of 15000+200000
+ 14764 strings out of 479799
+ 264015 string characters out of 2879559
+ 976131 words of memory out of 3000000
+ 31425 multiletter control sequences out of 15000+200000
  543072 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,10n,75p,1524b,1759s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -721,9 +726,9 @@ public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Progr
 am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (31 pages, 8248550 bytes).
+Output written on main.pdf (31 pages, 8250628 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
  302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

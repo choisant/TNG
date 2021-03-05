@@ -274,6 +274,65 @@
       \endverb
       \keyw{Astronomical Photometry,Elliptical Galaxies,Galactic Rotation,Galactic Structure,Cosmology,Galactic Evolution,Mass To Light Ratios,Velocity Distribution,Astrophysics,COSMOLOGY,GALAXIES: INTERNAL MOTIONS,GALAXIES: PHOTOMETRY,GALAXIES: STRUCTURE}
     \endentry
+    \entry{Ferrero2020}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b0008199405491ff268b5cbd0168f185}{%
+           family={{Ferrero}},
+           familyi={F\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91449ee526f23ecdd8b2599a0c991ab7}{%
+           family={{Navarro}},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e08bb9b3df2abefa2a638680a91eea2}{%
+           family={{Abadi}},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dff30eae693a8c8e08ce3cadb239987}{%
+           family={{Benavides}},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e25fb7da183c80900d50654666a542f3}{%
+           family={{Mast}},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c356eeec067900f7680a15a2706e6a19}
+      \strng{fullhash}{b007cad3672d22b9d46af0e55867046a}
+      \strng{bibnamehash}{c356eeec067900f7680a15a2706e6a19}
+      \strng{authorbibnamehash}{c356eeec067900f7680a15a2706e6a19}
+      \strng{authornamehash}{c356eeec067900f7680a15a2706e6a19}
+      \strng{authorfullhash}{b007cad3672d22b9d46af0e55867046a}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2009.03916}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{9}
+      \field{title}{A Unified Scenario for the Origin of Spiral and Elliptical Galaxy Structural Scaling Laws}
+      \field{year}{2020}
+      \field{pages}{arXiv:2009.03916}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb 2009.03916
+      \endverb
+      \keyw{Astrophysics - Astrophysics of Galaxies}
+    \endentry
     \entry{Genel2017}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=c91318360a31c3782dec15bb32a9a305}{%

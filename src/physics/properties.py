@@ -173,9 +173,8 @@ def rotational_vel(gas, dm, stars, catalogue):
     catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/(r_vel*1000))
     return catalogue
 
-def velocity_disp_3D(stars, catalogue):
-    r_half = catalogue["SubhaloHalfmassRadStellar"][0]
-    temp = stars[stars["r"] < r_half]
+def velocity_disp_3D(stars, catalogue, radius):
+    temp = stars[stars["r"] < radius]
     sigma_x = np.array(temp["Vx"]).std()
     sigma_y = np.array(temp["Vy"]).std()
     sigma_z = np.array(temp["Vz"]).std()
