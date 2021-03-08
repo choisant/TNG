@@ -72,7 +72,11 @@ def create_projections(subhalo, group_cat, index, test_name):
     il.formatplot.rot_galaxy_map(axs1[1], r_half, "x", "z")
     il.formatplot.rot_galaxy_map(axs1[2], r_half, "y", "z")
 
-    plt.savefig("./fig/projections/" + test_name + "/_rot_subhalo_" + str(index) + ".png")
+    folder_path = "./fig/projections/" + test_name + "/"
+    file_path = "rot_subhalo_" + str(index) + ".png"
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    plt.savefig(folder_path + file_path)
 
 
 def check(tng_run, test_name, snapshot):
