@@ -60,4 +60,4 @@ def cleanup (tng_run, test_name):
         return df
     new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     new_cat = create_cat(new_cat_path)
-    new_cat.to_pickle("./data/" + tng_run + "/catalogues/" + test_name + ".pkl")
+    new_cat.to_pickle("./data/" + tng_run + "/catalogues/" + test_name + ".pkl", protocol=4)
