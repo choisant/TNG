@@ -84,8 +84,8 @@ def check(tng_run, test_name, snapshot):
     create_projections(most_late, group_cat, latest_id, test_name)
 
 def subhalo_rotation(tng_run, test_name, snapshot, subhalo_id):
-    new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
-    group_cat = create_cat(new_cat_path)
+    new_cat_path = "./data/" + tng_run + "/catalogues/" + test_name + ".pkl"
+    group_cat = pd.read_pickle(new_cat_path)
     subhalo_index = group_cat[group_cat["id"] == subhalo_id].index.values.astype(int)[0]
     rot_vector = np.transpose(np.array([group_cat["AngularMomentumX"][subhalo_index],
         group_cat["AngularMomentumY"][subhalo_index],
