@@ -30,7 +30,7 @@ def VD_SM(ax, x0=1.5, x1=3, y0=9, y1=12):
 
 def SM_fVD(ax, x0=9.5, x1=12, y0=0.5, y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{*, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$\sigma/\sigma_{SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
