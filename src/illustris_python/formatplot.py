@@ -200,9 +200,8 @@ def rot_galaxy_map(ax, r_e, label_x, label_y):
     ax.set(xlim=(-r_e*4, r_e*4), ylim=(-r_e*4, r_e*4))
     ax.set_xlabel(label_x + " [kpc]", fontsize=TEXTSIZE)
     ax.set_ylabel(label_y + " [kpc]", fontsize=TEXTSIZE)
-    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2, color='lightgrey')
     ax.minorticks_on()
-    ax.grid()
     ax.legend(fontsize=TEXTSIZE, frameon=True)
 
 def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
