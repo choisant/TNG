@@ -5,7 +5,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --array=1-7
-#SBATCH --mem=30000
+#SBATCH --mem=35000
 #SBATCH --job-name="cluster_run"
 #SBATCH --output=tng-cluster-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no

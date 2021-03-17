@@ -46,13 +46,13 @@ For this project, only the central galaxies in each halo are selected. The FoF c
 
 Only galaxies with stellar mass greater than $10^{9.5} M_{\odot}$ are used, which corresponds to about 4500 stellar particles.
 
-\subsection{Galaxy sizes}
+\subsection{Galaxy sizes} \label{galaxy_size}
 When observing galaxies with telescopes, there is always the problem of contamination of the measurements by surrounding sources as well as background radiation. As such, when the images are processed, aperture sizes have to be chosen with care for each identified galaxy. A larger aperture will be sure to contain most of the light from the galaxy but might overshoot by including surrounding light as well. However, choosing a too small aperture will result in lost data, and as such a smaller apparent galaxy. Usually a circular or elliptical aperture with a calculated radius to balance these two issues is chosen.
 
-In simulations, we are not limited by hardware, attenuation, and background light. A cut-off point still needs to be determined. SUBFIND does this for the dark matter part of the simulation, separating out subhalos from larger halos. The galaxy properties of that subhalo are then calculated using all the stellar and gas particles in the subhalo and saved in the group catalog. 
+In simulations, we are not limited by hardware, attenuation, and background light. A cut-off point still needs to be determined. \texttt{SUBFIND} does this for the dark matter part of the simulation, separating out subhalos from larger halos. The galaxy properties of that subhalo are then calculated using all the stellar and gas particles in the subhalo and saved in the group catalog. 
 
 
-When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. For this work, the galaxy size is chosen to be a spherical volume with a radius ($R_{gal}$) equal to 15 \% of the subhalo's virial radius.
+When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. For this work, the galaxy size is chosen to be a spherical volume with a radius ($R_{gal}$) equal to 15 \% of the subhalo's virial radius ($R_{200}$).
 
 \subsection{Galaxy properties}
 
@@ -60,26 +60,26 @@ When comparing simulation data to observational data, there are many ways to emu
 
 The absolute magnitude ($\mathcal{M}$) is a measure of the total luminosity ($L$) of the galaxy such that $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$, where $L_\odot$ is the solar luminosity and $\mathcal{M}_\odot$ is the solar magnitude.
 
-For the SUBHALO group catalog, the \texttt{SubhaloStellarPhotometrics} field gives the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. Our luminosities are determined by summing the luminosities within $R_{gal}$. Eight bands are available, but here only the g- and i-band are used. 
+For the \texttt{SUBFIND} group catalog, the \texttt{SubhaloStellarPhotometrics} field gives the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. The particle luminosities are determined by summing the luminosities within $R_{gal}$. Eight bands are available, but here only the g- and i-band are used. 
 
 The g-i colors are calculated by simply subtracting the i-band magnitude from the g-band magnitude.
 
 \subsubsection{Masses}
 
-In SUBFIND, masses for each particle type are calculated by summing up all the masses of that particle type belonging to the halo. Values for the mass within the half-mass radius, two times the half-mass radius and the radius at which the maximum rotational velocity is found are also available.
+In \texttt{SUBFIND}, masses for each particle type are calculated by summing up all the masses of that particle type belonging to the subhalo. Values for the mass within the stellar half-mass radius, two times the stellar half-mass radius and the radius at which the maximum rotational velocity is found are also available.
 
 The stellar masses of the galaxies studied using the particles are the summed up masses of all stellar particles within $R_{gal}$.
 
 \subsubsection{Size}
 For the group catalog, the \texttt{SubhaloHalfmassRadStellar} field has been used as the effective radius. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius ($R_e$), as it is not a projected quantity.
 
-The half-mass radii of the galaxies calculated using the particles are calculated using the same method, but with the total stellar mass calculated within $R_{gal}$.
+The half-mass radii of the galaxies calculated using the particles are derived using the same method, but with the total stellar mass calculated within $R_{gal}$.
 
 \subsubsection{Velocities}
 
 Galaxy velocities are usually given by the velocity dispersion and rotational velocity for early and late-type galaxies, respectively. This is because of the difference in the shape of the two galaxy types. It makes more sense to talk about velocity dispersion in a spheroidal pressure-dominated system and rotational velocity in a rotating disk.
 
-In SUBFIND, the field \texttt{SubhaloVMax} gives the maximum value for the spherically averaged rotation curve of a given galaxy. As the rotational curves are nearly flat for large enough radii, it should not be very important at which specific radius the observational rotational velocity is measured, as long as it is in the flat part of the curve. For observational data, a common practice is to look at the rotational velocities of stars in the outer part of the galaxy. To compare with SUBFIND's \texttt{SubhaloVMax}, the rotational velocity at a radius of $2.2 \times R_e$ was calculated for all galaxies.
+In \texttt{SUBFIND}, the field \texttt{SubhaloVMax} gives the maximum value for the spherically averaged rotation curve of a given galaxy. As the rotational curves are nearly flat for large enough radii, it should not be very important at which specific radius the observational rotational velocity is measured, as long as it is in the flat part of the curve. For observational data, a common practice is to look at the rotational velocities of stars in the outer part of the galaxy. To compare with \texttt{SUBFIND}'s \texttt{SubhaloVMax}, the rotational velocity at a radius of $2.2 \times R_e$ was calculated for all galaxies.
 
 
 In observations, the only velocities of the components of a galaxy we can measure are the line-of-sight velocities. These are calculated using the observed Doppler shift in the galactic spectrum. The velocity dispersion of a galaxy is then defined as the standard deviation of the line-of sight velocities.
@@ -96,18 +96,44 @@ If the velocity dispersion tends to fall off at larger radii, and the galaxy has
 
 In this work the velocity dispersion was calculated within the projected half-mass radius in each projection.
 
-In SUBFIND, the velocity dispersion is simply calculated as the velocity dispersion of all the particles over the entire subhalo.
+In \texttt{SUBFIND}, the velocity dispersion is simply calculated as the velocity dispersion of all the particles over the entire subhalo.
 
 
 \subsection{Galaxy morphology classifications}
 
 An important factor in many studies of galaxy formation and evolution is looking at the properties of the two morphological types of galaxies. As a visual classification method is intensively time-consuming, other methods have been devised for identifying early and late-type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction.
 
+
+
 \subsubsection{Gas fraction}
 As early-type galaxies have much less cold gas than late-type galaxies, a simple cut in the galaxy population based on the gas fraction will be effective at roughly separating the two types. TNG doesn't differentiate between cold and hot gas, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
 
+Starting off with the same subset of 5433 galaxies for both the \texttt{SUBFIND} group catalogue and the particles, we get different results for which galaxies are early- and late-type galaxies, based on the volume in which the gas mass is measured. Table \ref{gas_frac} show the number of early and late type galaxies for different volumes.
+
+
+\begin{table}
+\begin{center}
+\caption{Gas fraction.}
+ \label{gas_frac}
+\begin{tabular}{ l| c c c c c } 
+ \hline
+ \hline
+   &\multicolumn{2}{c}{\texttt{SUBFIND}}&\multicolumn{2}{c}{Particles} \\
+   &  Early-type & Late-type & Early-type & Late-type \\
+ \hline
+ Half-mass radius & 2024 & 3409 & 2065 & 3368 \\ 
+ 2 $\times$ half-mass radius & 1446 & 3987 & 1532 & 3901 \\ 
+ 15\% R$_{200}$ & - & - & 619 & 4814 \\ 
+ R$_{subhalo}$ & 40 & 5393 & - & - \\ 
+ \hline 
+ \end{tabular}
+\end{center}
+\end{table}
+
 \subsubsection{Star formation rate}
 Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. In this case, the galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found (//cite). In \textcite{Genel2017} the ridge of the main-sequence is defined as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge.
+
+The selection is here very similar whether \texttt{SUBFIND} or particles are used. For \texttt{SUBFIND} we get 1028 early-types, 3874 late-types and 531 intermediate types, while for the particles we find 1040 early-types and 3858 late-type galaxies with 535 intermediate types.
 
 \subsubsection{Rotational kinetic energy}
 A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-total-kinetic-energy parameter $\kappa_{rot}$. 
@@ -117,3 +143,7 @@ A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-
 where $j_{z, i}$ is the z-component of the specific angular momentum ($\vec{j} = \vec{r} \times \vec{v}$), $m_i$ is the mass, and $R_i$ is the projected radius of stellar particle $i$ in the xy-plane. 
 This value indicates how much of the kinetic energy of the galaxy is invested in the ordered rotation about its axis. To calculate $\kappa_{rot}$, the axis of rotation must first be found. The galaxy is then rotated such that the z-axis of the galaxy's coordinate system is pointed in the direction of the axis of rotation, and $\kappa_{rot}$ is calculated.
 For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa_{rot}$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$.
+
+By using the simple cut at $\kappa_{rot} = 0.6$ the 5433 galaxies are then separated into 3970 early type galaxies and 1463 late types. This is a completely different result from the two methods above, where there was a majority of late-type galaxies. In real life we know that smaller late-type galaxies dominate, so using only the rotational energy does not yield the expected ratio. However, combining this result with one of the two above should result in a subset of galaxies which exhibit both the right amount of cold gas and the star formation that goes with it, as well as the right kinematic structure.
+
+In the rest of this paper, early-type galaxies are those which, calculated using the particles, have a sSFR of $\log (sSFR[Gyr^{-1}]) < -1.94$ as well as $\kappa_{rot} < 0.6$. Late-types have a sSFR of $ -1.44 < \log (sSFR[Gyr^{-1}]) < -0.44$ as well as $\kappa_{rot} > 0.6$. This results in 925 early-type galaxies, 1227 late-types and 3281 intermediate-type galaxies. For the \texttt{SUBFIND} sample, the same galaxies in each group are chosen by matching the subhalo-id from the previously mentioned selection.

@@ -174,6 +174,55 @@
       \verb http://dx.doi.org/10.1093/mnras/stx1701
       \endverb
     \endentry
+    \entry{Boveia2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9dc4289eb003e6fdfc9374bab18acc24}{%
+           family={Boveia},
+           familyi={B\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d51dad372ab14a8c339b6729540ec93}{%
+           family={Doglioni},
+           familyi={D\bibinitperiod},
+           given={Caterina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \strng{fullhash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \strng{bibnamehash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \strng{authorbibnamehash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \strng{authornamehash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \strng{authorfullhash}{1fd8b3b71a7d269eb8db8cc612173380}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1545-4134}
+      \field{journaltitle}{Annual Review of Nuclear and Particle Science}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Dark Matter Searches at Colliders}
+      \field{volume}{68}
+      \field{year}{2018}
+      \field{pages}{429\bibrangedash 459}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1146/annurev-nucl-101917-021008
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1146/annurev-nucl-101917-021008
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1146/annurev-nucl-101917-021008
+      \endverb
+    \endentry
     \entry{Conselice2016}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=3656ee9393e837cf1a3051fda8da589c}{%
@@ -332,6 +381,51 @@
       \verb 2009.03916
       \endverb
       \keyw{Astrophysics - Astrophysics of Galaxies}
+    \endentry
+    \entry{Frenk1983}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ef23aac7fe4d2fa9e78bdb2c475a6b77}{%
+           family={{Frenk}},
+           familyi={F\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6c6fe2ff35a586cc62a3180c1add3c8}{%
+           family={{White}},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi D.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d27993d3d39ca56a54118eba9bc5ab30}{%
+           family={{Davis}},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
+      \strng{fullhash}{d5cfdedcfcd44439f8acae4163ff3090}
+      \strng{bibnamehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
+      \strng{authorbibnamehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
+      \strng{authornamehash}{85ccfa72360bb7dcf4f50d1bf2e3c327}
+      \strng{authorfullhash}{d5cfdedcfcd44439f8acae4163ff3090}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{8}
+      \field{title}{Nonlinear evolution of large-scale structure in the universe}
+      \field{volume}{271}
+      \field{year}{1983}
+      \field{pages}{417\bibrangedash 430}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1086/161209
+      \endverb
+      \keyw{Astronomical Models,Cosmology,Galactic Evolution,Correlation,Many Body Problem,Neutrinos,Poisson Density Functions,Quasars,Temporal Distribution,Velocity Distribution,Astrophysics}
     \endentry
     \entry{Genel2017}{article}{}
       \name{author}{11}{}{%

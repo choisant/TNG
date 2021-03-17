@@ -1,65 +1,75 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Theory}{4}{section.2}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{5}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Galaxy formation}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {1.2}The structure of this report}{6}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Dark matter halos}{5}{subsubsection.2.1.1}%
+\contentsline {section}{\numberline {2}Theory}{6}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Galaxies}{6}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1}Galaxy formation}{7}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.3}The Stellar-to-Halo mass relation}{9}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.1}Dark matter halos}{8}{subsubsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Galaxy evolution and classification}{9}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Galaxies}{9}{subsubsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Elliptical (early type) galaxies}{12}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.3}The Stellar-to-Halo mass relation}{11}{subsubsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Spiral (late type) galaxies}{13}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2}Galaxy evolution and classification}{13}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Galaxy properties}{13}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.1}Elliptical (early type) galaxies}{14}{subsubsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}The Tully-Fisher relation}{15}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Spiral (late type) galaxies}{15}{subsubsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}The Faber-Jackson relation and the Fundamental Plane}{15}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3}Galaxy properties}{16}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3}Color bimodality}{18}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}The Tully-Fisher relation}{17}{subsubsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Halo finders}{19}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.3.2}The Faber-Jackson relation and the Fundamental Plane}{17}{subsubsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}SUBFIND}{19}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.3}Color bimodality}{20}{subsubsection.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Method}{19}{section.3}%
+\contentsline {subsection}{\numberline {2.4}Halo finders}{21}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}IllustrisTNG}{19}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {2.4.1}SUBFIND}{21}{subsubsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}The simulations}{20}{subsubsection.3.1.1}%
+\contentsline {section}{\numberline {3}Method}{21}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}Data products}{22}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1}IllustrisTNG}{21}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.3}Sample reduction}{22}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.1}The simulations}{22}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Galaxy sizes}{23}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Data products}{24}{subsubsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Galaxy properties}{23}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3}Sample reduction}{24}{subsubsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Magnitude and colors}{23}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2}Galaxy sizes}{25}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Masses}{24}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3}Galaxy properties}{25}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Size}{24}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Magnitude and colors}{25}{subsubsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4}Velocities}{24}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.2}Masses}{26}{subsubsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Galaxy morphology classifications}{25}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3}Size}{26}{subsubsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Gas fraction}{25}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.3.4}Velocities}{26}{subsubsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Star formation rate}{26}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4}Galaxy morphology classifications}{27}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Rotational kinetic energy}{26}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.1}Gas fraction}{27}{subsubsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Results and discussions}{27}{section.4}%
+\contentsline {subsubsection}{\numberline {3.4.2}Star formation rate}{28}{subsubsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{28}{section.5}%
+\contentsline {subsubsection}{\numberline {3.4.3}Rotational kinetic energy}{29}{subsubsection.3.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Results and discussions}{30}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Stellar mass and half-mass radius}{30}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Kinematics}{30}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Color bimodality}{31}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusions}{32}{section.5}%

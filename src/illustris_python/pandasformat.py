@@ -18,8 +18,6 @@ def dict_to_pandas(data):
         if key == "SubhaloMassType":
             particle_types = {"SubhaloMassGas": 0,
                             "SubhaloMassDM": 1,
-                            "None": 2,
-                            "SubhaloMassTracers": 3,
                             "SubhaloMassStellar": 4,
                             "SubhaloMassBH": 5}
             masses = np.array(data[key]) #create Series object
@@ -31,8 +29,6 @@ def dict_to_pandas(data):
         if key == "GroupMassType":
             particle_types = {"GroupMassGas": 0,
                             "GroupMassDM": 1,
-                            "None": 2,
-                            "GroupMassTracers": 3,
                             "GroupMassStellar": 4,
                             "GroupMassBH": 5}
             masses = np.array(data[key]) #create Series object
@@ -44,8 +40,6 @@ def dict_to_pandas(data):
         if key == "SubhaloMassInHalfRadType":
             particle_types = {"SubhaloMassInHalfRadGas": 0,
                             "SubhaloMassInHalfRadDM": 1,
-                            "SubhaloMassInHalfRadNone": 2,
-                            "SubhaloMassInHalfRadTracers": 3,
                             "SubhaloMassInHalfRadStellar": 4,
                             "SubhaloMassInHalfRadBH": 5}
             masses = np.array(data[key]) #create Series object
@@ -56,8 +50,6 @@ def dict_to_pandas(data):
         if key == "SubhaloMassInRadType":
             particle_types = {"SubhaloMassInRadGas": 0,
                             "SubhaloMassInRadDM": 1,
-                            "SubhaloMassInRadNone": 2,
-                            "SubhaloMassInRadTracers": 3,
                             "SubhaloMassInRadStellar": 4,
                             "SubhaloMassInRadBH": 5}
             masses = np.array(data[key]) #create Series object
@@ -68,8 +60,6 @@ def dict_to_pandas(data):
         if key == "SubhaloHalfmassRadType":
             particle_types = {"SubhaloHalfmassRadGas": 0,
                             "SubhaloHalfmassRadDM": 1,
-                            "SubhaloHalfmassRadNone": 2,
-                            "SubhaloHalfmassRadTracers": 3,
                             "SubhaloHalfmassRadStellar": 4,
                             "SubhaloHalfmassRadBH": 5}
             radii = np.array(data[key]) #create Series object
@@ -94,17 +84,22 @@ def dict_to_pandas(data):
                 temp = photometrics[:, particle_types[particle]]
                 data[particle] = list(temp)
             data.pop(key)
-    if len(key_list) > 0:
-        df = pd.DataFrame(data, dtype=object)
-    else:
+    """
+    if not bool(data): #checks for empty dict
         df = empty_df()
+    else:
+        print("Empty dataframe")
+        df = pd.DataFrame(data, dtype=object)
+    """
+    df = pd.DataFrame(data, dtype=object)
     return df
 
 def empty_df():
     data = {
-        "Coordinates": [[0, 0, 0]],
-        "Masses": [0],
-        "StarFormationRate":[0]
+        "Coordinates" : [[0, 0, 0]],
+        "Masses" : [0],
+        "StarFormationRate" : [0],
+        "Velocities" : [[0, 0, 0]],
     }
     df = pd.DataFrame(data, dtype=object)
     return df

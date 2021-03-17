@@ -8,6 +8,7 @@ TEXTSIZE = 20
 def log_formater(df):
     df_log = df.copy(deep=True)
     for key in df.keys():
+        print(key)
         if key == "id" or key == "cataid":
             df_log[key] = df[key]
         elif "SubhaloStellarPhotometrics" in key:
@@ -16,6 +17,25 @@ def log_formater(df):
             df_log[key] = df[key]
         elif "Kappa_rot" in key:
             df_log[key] = df[key]
+        elif "GasFraction" in key:
+            df_log[key] = df[key]
+        elif "Mass" in key:
+            temp = np.array(df[key])
+            for item in temp:
+                if item == 0:
+                    item = 10**(-16)
+            df_log[key] = np.log10(list(temp))
+        elif "SFR" in key:
+            temp = np.array(df[key])
+            for item in temp:
+                if item == 0:
+                    item = 10**(-16)
+            df_log[key] = np.log10(list(temp))
+        elif "Rad" in key:
+            for value in df[key]:
+                if value == 0:
+                    value = 10**(-16)
+            df_log[key] = np.log10(list(df[key]))
         else:
             df_log[key] = np.log10(list(df[key]))
     return df_log
@@ -76,7 +96,16 @@ def C_SM(color, ax, x0=9, x1=12, y0=-1, y1=1):
     ax.tick_params(which="minor", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=5, width=3)
     ax.minorticks_on()
     ax.legend(loc=0, fontsize=TEXTSIZE+5, frameon=False)
-    
+
+def SM_fC(color, ax, x0=9.5, x1=12, y0=-1, y1=1):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
+    ax.set_ylabel(color + " [mag]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_*, SF)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.tick_params(which="major", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.tick_params(which="minor", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.minorticks_on()
+    ax.legend(loc=0, fontsize=TEXTSIZE, frameon=False)
+     
 def PDF_C(color, ax, legend_on, x0=-1, x1=2, y0=0, y1=4):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel("PDF", fontsize=TEXTSIZE)
@@ -142,7 +171,7 @@ def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
 
 def SM_fR(ax, x0=9.5, x1=12, y0=(0.8), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{*, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$R_e/R_{e, SF}$ ", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
@@ -219,6 +248,14 @@ def kappa_fG(ax, x0=(0.1), x1=0.8, y0=(-3.5), y1=0.5):
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
     ax.legend(fontsize=TEXTSIZE, frameon=False)
+
+def kappa_sSFR(ax, x0=(0.1), x1=0.8, y0=(-6), y1=0.5):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
+    ax.set_xlabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(sSFR [Gyr^{-1}])$", fontsize=TEXTSIZE)
+    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.minorticks_on()
+    ax.legend(fontsize=TEXTSIZE, frameon=True)
 
 def FP_3D(df):
     #make the figure

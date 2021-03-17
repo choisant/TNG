@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import illustris_python as il
 import physics
-import tng100_test
+import process_snapshot as process
 
 ##Parser
 
@@ -78,12 +78,11 @@ def create_projections(subhalo, group_cat, index, test_name):
         os.makedirs(folder_path)
     plt.savefig(folder_path + file_path)
 
-
 def check(tng_run, test_name, snapshot):
     latest_id, rot_vec = find_most_late(tng_run, test_name)
     new_cat_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     group_cat = create_cat(new_cat_path)
-    most_late = tng100_test.stars_out(tng_run, snapshot, latest_id)
+    most_late = process.stars_out(tng_run, snapshot, latest_id)
     most_late = physics.geometry.rotate_coordinates(most_late, rot_vec)
     create_projections(most_late, group_cat, latest_id, test_name)
 
@@ -94,7 +93,7 @@ def subhalo_rotation(tng_run, test_name, snapshot, subhalo_id):
     rot_vector = np.transpose(np.array([group_cat["AngularMomentumX"][subhalo_index],
         group_cat["AngularMomentumY"][subhalo_index],
         group_cat["AngularMomentumZ"][subhalo_index]]))
-    subhalo = tng100_test.stars_out(tng_run, snapshot, subhalo_id)
+    subhalo = process.stars_out(tng_run, snapshot, subhalo_id)
     subhalo = physics.geometry.rotate_coordinates(subhalo, rot_vector)
     create_projections(subhalo, group_cat, subhalo_id, test_name)
 

@@ -94,14 +94,12 @@ def relative_velocities(subhalo, catalogue):
     subhalo["Vz"] = vz - vel_av[2]
     return subhalo
 
-def half_mass_radius(subhalo, catalogue):
+def half_mass_radius(subhalo, catalogue, mass_key="SubhaloMassStellar", rad_key="SubhaloHalfmassRadStellar"):
     """
     Calculates stellar half mass radius for a certain particle type and adds it to the group catalogue.
     """
-    mass_key = "SubhaloMassStellar"
-    rad_key = "SubhaloHalfmassRadStellar"
     temp = subhalo.copy(deep=True)
-    temp.sort_values(by="r", inplace = True) #sort particles by radius
+    temp.sort_values(by="r", inplace=True) #sort particles by radius
     temp = temp.reset_index(drop=True)
     temp_mass = 0
     #Start adding the masses of all particles starting with smallest radius
@@ -160,31 +158,30 @@ def rot_energy(subhalo, catalogue):
     catalogue["Kappa_rot"] = np.sum((j_z/R)**2)/np.sum(V**2)
     return catalogue
 
-def rotational_vel(gas, dm, stars, catalogue):
+def rotational_vel(gas, dm, stars, catalogue, r_vel, v_key="SubhaloRotVel"):
     """
     Calculates dynamical velocity at radius r_vel.
     """
     G = 4.3*10**(-3)
-    r_vel = 2.2*catalogue["SubhaloHalfmassRadStellar"][0]
     m_gas = gas[gas["r"] < r_vel]["Masses"].sum()
     m_dm = dm[dm["r"] < r_vel]["Masses"].sum()
     m_stars = stars[stars["r"] < r_vel]["Masses"].sum()
     m_tot = (m_gas + m_dm + m_stars)*10**10
-    catalogue["SubhaloRotVel_2_2Re"] = np.sqrt((G*m_tot)/(r_vel*1000))
+    catalogue[v_key] = np.sqrt((G*m_tot)/(r_vel*1000))
     return catalogue
 
-def velocity_disp_3D(stars, catalogue, radius):
-    temp = stars[stars["r"] < radius]
+def velocity_disp_3D(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
+    temp = particle[particle["r"] < radius]
     sigma_x = np.array(temp["Vx"]).std()
     sigma_y = np.array(temp["Vy"]).std()
     sigma_z = np.array(temp["Vz"]).std()
     sigma = np.sqrt((sigma_x**2 + sigma_y**2 + sigma_z**2))
-    catalogue["SubhaloVelDisp3D"] = sigma
+    catalogue[vd_key] = sigma
     return catalogue
 
-def velocity_disp(stars, catalogue):
+def velocity_disp_projected(particle, catalogue, vd_key="SubhaloVelDisp"):
     #xy
-    temp = stars.copy(deep=True)
+    temp = particle.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat)
@@ -194,7 +191,7 @@ def velocity_disp(stars, catalogue):
     sigma_z = np.array(temp["Vz"]).std()
 
     #xz
-    temp = stars.copy(deep=True)
+    temp = particle.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat)
@@ -204,7 +201,7 @@ def velocity_disp(stars, catalogue):
     sigma_y = np.array(temp["Vy"]).std()
 
     #yz
-    temp = stars.copy(deep=True)
+    temp = particle.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat)
@@ -213,7 +210,7 @@ def velocity_disp(stars, catalogue):
     temp = temp[temp["r"] < r_half]
     sigma_x = np.array(temp["Vx"]).std()
 
-    catalogue["SubhaloVelDisp"] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
+    catalogue[vd_key] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
     return catalogue
 
 def photometrics(stars, catalogue):
