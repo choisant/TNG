@@ -8,17 +8,25 @@ TEXTSIZE = 20
 def log_formater(df):
     df_log = df.copy(deep=True)
     for key in df.keys():
-        print(key)
-        if key == "id" or key == "cataid":
-            df_log[key] = df[key]
-        elif "SubhaloStellarPhotometrics" in key:
-            df_log[key] = df[key]
-        elif "SubhaloColor" in key:
-            df_log[key] = df[key]
-        elif "Kappa_rot" in key:
-            df_log[key] = df[key]
-        elif "GasFraction" in key:
-            df_log[key] = df[key]
+        #print(key)
+        if "VelDisp" in key:
+            temp = np.array(df[key])
+            for item in temp:
+                if item == 0:
+                    item = 10**(-16)
+            df_log[key] = np.log10(list(temp))
+        elif "Vmax" in key:
+            temp = np.array(df[key])
+            for item in temp:
+                if item == 0:
+                    item = 10**(-16)
+            df_log[key] = np.log10(list(temp))
+        elif "RotVel" in key:
+            temp = np.array(df[key])
+            for item in temp:
+                if item == 0:
+                    item = 10**(-16)
+            df_log[key] = np.log10(list(temp))
         elif "Mass" in key:
             temp = np.array(df[key])
             for item in temp:
@@ -37,7 +45,7 @@ def log_formater(df):
                     value = 10**(-16)
             df_log[key] = np.log10(list(df[key]))
         else:
-            df_log[key] = np.log10(list(df[key]))
+            df_log[key] = df[key]
     return df_log
 
 def VD_SM(ax, x0=1.5, x1=3, y0=9, y1=12):

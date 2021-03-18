@@ -34,7 +34,7 @@ On the cluster you must load in the software you intend to use. These are contai
 
 ```bash
  module purge
- module load Anaconda3/2018.12
+ module load Anaconda3/2020.07
 ``` 
 You can check the the installed Python packages, as well as installing new packages using pip
 ```bash
@@ -149,11 +149,11 @@ Now open an SSH-tunnel from the NTNU login to the Idun login. Remember that you 
 ssh -L YYYY:localhost:8890 username@idun-login1.hpc.ntnu.no
 ``` 
 YYYY can be any available port. Try 8888 for instance, or 1234.
-However, we can still not access Jupyter Notebook from our browser, so we must make another tunnel from the NTNU login to your computer. Open a third command line window:
+However, we can still not access Jupyter Notebook from our browser, so we must make another tunnel from the NTNU login to our computer. Open a third command line window:
 ```
 ssh -L XXXX:localhost:YYYY username@login.stud.ntnu.no
 ```
 Now you can copy the link from earlier, and change the port to your chosen port XXXX. Paste that into your browser:
 http://localhost:XXXX/?token=ff0495955e8663c1f31c2f6bae32da7197127e081142e590
 
-You should now be able to access your files from the Idun folder you started jupyter notebook from.
+You should be able to access your files from the Idun folder you started jupyter notebook from.

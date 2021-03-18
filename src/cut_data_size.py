@@ -107,32 +107,20 @@ def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     ##Adding some usefull fields
     centrals_min_mass["SubhalosSFR"] = centrals_min_mass["SubhaloSFR"]/(centrals_min_mass["SubhaloMassStellar"]*10) #Gyr^-1
     centrals_min_mass["SubhaloGasFraction"] = centrals_min_mass["SubhaloMassInHalfRadGas"]/centrals_min_mass["SubhaloMassInHalfRadStellar"]
-    lates = late_type_gas(centrals_min_mass)
-    earlies = early_type_gas(centrals_min_mass)
     
-    return centrals_min_mass, lates, earlies
+    return centrals_min_mass
 
 #read in data
 def make_central_id_file(tng_run, snapshot):
-    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', "SubhaloSFR", 'SubhaloMassInHalfRadType', 'SubhaloFlag', "SubhaloLen"]
+    subhalo_fields = ["SubhaloMass", 'SubhaloMassType', "SubhaloSFR", 'SubhaloMassInHalfRadType', 'SubhaloMassInRadType', 'SubhaloFlag', "SubhaloLen"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
 
-    centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
+    centrals = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     centrals_id = list(centrals["id"])
-    earlies_id = list(earlies["id"])
-    lates_id = list(lates["id"])
 
     with open('./data/' + tng_run + '/cutdata/central_id.txt', 'w') as file:
         for index in centrals_id:
-            file.write("%i\n" % index)
-
-    with open('./data/' + tng_run + '/cutdata/lates_id.txt', 'w') as file:
-        for index in lates_id:
-            file.write("%i\n" % index)
-
-    with open('./data/' + tng_run + '/cutdata/earlies_id.txt', 'w') as file:
-        for index in earlies_id:
             file.write("%i\n" % index)
 
 def make_pickles(tng_run, snapshot):
