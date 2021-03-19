@@ -32,10 +32,16 @@ def relative_pos_radius(subhalo, catalogue):
 
     #Calculate new coordinates
     positions = np.array(list(subhalo["Coordinates"].values))
-    subhalo["x"] = positions[:, 0] - catalogue["SubhaloPosX"][0]
-    subhalo["y"] = positions[:, 1] - catalogue["SubhaloPosY"][0]
-    subhalo["z"] = positions[:, 2] - catalogue["SubhaloPosZ"][0]
-    subhalo["r"] = radius(subhalo)
+    if len(positions) > 1:
+        subhalo["x"] = positions[:, 0] - catalogue["SubhaloPosX"][0]
+        subhalo["y"] = positions[:, 1] - catalogue["SubhaloPosY"][0]
+        subhalo["z"] = positions[:, 2] - catalogue["SubhaloPosZ"][0]
+        subhalo["r"] = radius(subhalo)
+    else:
+        subhalo["x"] = np.array([0])
+        subhalo["y"] = np.array([0])
+        subhalo["z"] = np.array([0])
+        subhalo["r"] = np.array([0])
 
     return subhalo
 
@@ -82,16 +88,20 @@ def relative_velocities(subhalo, catalogue):
     """
     Adds the relative velocity to the dataframes of a chosen particle type.
     """
-
     vel_av = [catalogue["SubhaloVelX"][0], catalogue["SubhaloVelY"][0], catalogue["SubhaloVelZ"][0]]
     velocities = np.array(list(subhalo["Velocities"].values))
-    vx = velocities[:, 0]
-    vy = velocities[:, 1]
-    vz = velocities[:, 2]
-    #Subtracts subhalo velocity from global velocities to get local velocities
-    subhalo["Vx"] = vx - vel_av[0]
-    subhalo["Vy"] = vy - vel_av[1]
-    subhalo["Vz"] = vz - vel_av[2]
+    if len(velocities) > 1:
+        vx = velocities[:, 0]
+        vy = velocities[:, 1]
+        vz = velocities[:, 2]
+        #Subtracts subhalo velocity from global velocities to get local velocities
+        subhalo["Vx"] = vx - vel_av[0]
+        subhalo["Vy"] = vy - vel_av[1]
+        subhalo["Vz"] = vz - vel_av[2]
+    else:
+        subhalo["Vx"] = np.array([0])
+        subhalo["Vy"] = np.array([0])
+        subhalo["Vz"] = np.array([0])
     return subhalo
 
 def half_mass_radius(subhalo, catalogue, mass_key="SubhaloMassStellar", rad_key="SubhaloHalfmassRadStellar"):
@@ -221,7 +231,10 @@ def velocity_disp_projected(particle, catalogue, vd_key):
     temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
     r_half = temp_cat["SubhaloHalfmassRad_xy"][0]
     temp = temp[temp["r"] < r_half]
-    sigma_z = np.array(temp["Vz"]).std()
+    if temp.empty:
+        sigma_z = np.array([0])
+    else:
+        sigma_z = np.array(temp["Vz"]).std()
 
     #xz
     temp = particle.copy(deep=True)
@@ -229,7 +242,10 @@ def velocity_disp_projected(particle, catalogue, vd_key):
     temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
     r_half = temp_cat["SubhaloHalfmassRad_xz"][0]
     temp = temp[temp["r"] < r_half]
-    sigma_y = np.array(temp["Vy"]).std()
+    if temp.empty:
+        sigma_y = np.array([0])
+    else:
+        sigma_y = np.array(temp["Vy"]).std()
 
     #yz
     temp = particle.copy(deep=True)
@@ -237,7 +253,10 @@ def velocity_disp_projected(particle, catalogue, vd_key):
     temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
     r_half = temp_cat["SubhaloHalfmassRad_yz"][0]
     temp = temp[temp["r"] < r_half]
-    sigma_x = np.array(temp["Vx"]).std()
+    if temp.empty:
+        sigma_x = np.array([0])
+    else:
+        sigma_x = np.array(temp["Vx"]).std()
 
     catalogue[vd_key] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
     return catalogue

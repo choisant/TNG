@@ -84,25 +84,34 @@ def dict_to_pandas(data):
                 temp = photometrics[:, particle_types[particle]]
                 data[particle] = list(temp)
             data.pop(key)
-    """
-    if not bool(data): #checks for empty dict
-        df = empty_df()
+    
+    if len(data.keys()) < 2: #checks for empty dict
+        data = empty_gas_dict()
+    
     else:
-        print("Empty dataframe")
         df = pd.DataFrame(data, dtype=object)
-    """
+    
     df = pd.DataFrame(data, dtype=object)
     return df
 
-def empty_df():
+def empty_gas_df():
     data = {
         "Coordinates" : [[0, 0, 0]],
-        "Masses" : [0],
+        "Masses" : [10**(-10)],
         "StarFormationRate" : [0],
         "Velocities" : [[0, 0, 0]],
     }
     df = pd.DataFrame(data, dtype=object)
     return df
+
+def empty_gas_dict():
+    data = {
+        "Coordinates" : [[0, 0, 0]],
+        "Masses" : [10**(-10)],
+        "StarFormationRate" : [0],
+        "Velocities" : [[0, 0, 0]],
+    }
+    return data
 
 def ssfr(df):
     """

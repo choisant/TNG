@@ -44,6 +44,12 @@ def log_formater(df):
                 if value == 0:
                     value = 10**(-16)
             df_log[key] = np.log10(list(df[key]))
+
+        elif "GasFraction" in key:
+            for value in df[key]:
+                if value == 0:
+                    value = 10**(-16)
+            df_log[key] = np.log10(list(df[key]))
         else:
             df_log[key] = df[key]
     return df_log

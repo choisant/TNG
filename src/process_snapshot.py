@@ -81,16 +81,22 @@ def velocities(tng_run, snapshot, dm_mass, i):
     rad = group_cat["SubhaloRad"][0]
     group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, "SubhaloVelDispTotalStellar")
     group_cat = physics.properties.velocity_disp_3D(stars, group_cat, rad, "SubhaloVelDispTotalStellar3D")
+    
     group_cat = physics.properties.velocity_disp_projected(gas, group_cat, "SubhaloVelDispTotalGas")
     group_cat = physics.properties.velocity_disp_3D(gas, group_cat, rad, "SubhaloVelDispTotalGas3D")
+    
     group_cat = physics.properties.velocity_disp_projected(dm, group_cat, "SubhaloVelDispTotalDM")
     group_cat = physics.properties.velocity_disp_3D(dm, group_cat, rad, "SubhaloVelDispTotalDM3D")
-    
     #Reduce data size
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
     gas = gas[gas["r"] < max_rad]
     dm = dm[dm["r"] < max_rad]
+    
+    if gas.empty:
+        gas = il.pandasformat.empty_gas_df()
+        gas = physics.properties.relative_pos_radius(gas, group_cat)
+        gas = physics.properties.relative_velocities(gas, group_cat)
 
     #Calculate masses
     group_cat["SubhaloMassGas"] = gas["Masses"].sum()
@@ -136,6 +142,12 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     stars = stars[stars["r"] < max_rad]
     gas = gas[gas["r"] < max_rad]
     dm = dm[dm["r"] < max_rad]
+
+    if gas.empty:
+        gas = il.pandasformat.empty_gas_df()
+        gas = physics.properties.relative_pos_radius(gas, group_cat)
+        gas = physics.properties.relative_velocities(gas, group_cat)
+    
     #Calculate SFR
     group_cat["SubhaloSFR"] = gas["StarFormationRate"].sum()
     #Calculate masses
@@ -161,7 +173,7 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     group_cat = physics.properties.ang_momentum(stars, group_cat)
     group_cat = physics.properties.rot_energy(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2.2*half_rad, "SubhaloRotVel2_2Re")
-    group_cat = physics.properties.velocity_disp_projected(stars, group_cat)
+    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, "SubhaloVelDispStellar")
     #Photometrics
     group_cat = physics.properties.photometrics(stars, group_cat)
 
@@ -213,7 +225,7 @@ def mass_vel_photo_whole(tng_run, snapshot, dm_mass, i):
     group_cat = physics.properties.ang_momentum(stars, group_cat)
     group_cat = physics.properties.rot_energy(stars, group_cat)
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2.2*half_rad, "SubhaloRotVel2_2Re")
-    group_cat = physics.properties.velocity_disp_projected(stars, group_cat)
+    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, "SubhaloVelDispStellar")
     #Photometrics
     group_cat = physics.properties.photometrics(stars, group_cat)
 
