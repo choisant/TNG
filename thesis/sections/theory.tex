@@ -146,9 +146,9 @@ where $M(<R)$ is the total mass within radius $R$. However, the observational da
 
 \subsubsection{Classifying galaxies}
 
-An important factor in many studies of galaxy formation and evolution is looking at the properties of the two morphological types of galaxies. As a visual classification method is intensively time-consuming, other methods have been devised for identifying early and late-type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction.
+An important factor in many studies of galaxy formation and evolution is looking at and comparing the properties of the two morphological types of galaxies. In observations, a visual classification method is usually used, although it is intensively time-consuming. Other methods have therefore been devised for identifying early and late-type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction.
 
-As early-type galaxies have much less cold gas than late-type galaxies, a simple cut in the galaxy population based on the gas fraction will be effective at roughly separating the two types. TNG doesn't differentiate between cold and hot gas, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
+As early-type galaxies have much less cold gas than late-type galaxies, a simple division in the galaxy population based on the gas fraction will be effective at roughly separating the two types. Gas is not distributed evenly in galaxies however, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot (not star-forming) gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
 
 Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. In this case, the galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found (//cite). In \textcite{Genel2017} the ridge of the main-sequence is defined as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge.
 
@@ -189,7 +189,13 @@ This relation is a great tool for estimating the distance to a galaxy, as the pr
 \end{figure}
 
 \subsubsection{The Faber-Jackson relation and the Fundamental Plane}
-At around the same time \textcite{TullyFisher1977} linked the velocity dispersion and luminosity of early type galaxies. The proposed relation was on the form of a power law as well,
+At around the same time \textcite{TullyFisher1977} linked the velocity dispersion and luminosity of early type galaxies. In observations, the only velocities of the components of a galaxy we can measure are the line-of-sight velocities ($V$). These are calculated using the observed Doppler shift in the galactic spectrum. The velocity dispersion of a galaxy is then defined as the standard deviation of the line-of sight velocities.
+
+\begin{equation} \label{standard_dev}
+    \sigma^{2} = \frac{1}{N} \sum_{n=1}^{N} (V_{i} - \overline{V})^2
+\end{equation}
+
+The proposed relation between $\sigma$ and $L$ was on the form of a power law as well,
 
 \begin{equation}
     L \propto \sigma^{\gamma},

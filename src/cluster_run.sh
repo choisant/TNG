@@ -11,7 +11,7 @@ done
 
 if [ $file_number -gt 0 ]
 then
-    list_path="./data/$tng_run/cutdata/id_file_1/central_id_$file_number.txt"
+    list_path="./data/$tng_run/cutdata/central_id_$file_number.txt"
 else
     list_path="./data/$tng_run/cutdata/central_id.txt"
 fi
