@@ -1842,6 +1842,213 @@
       \verb http://dx.doi.org/10.1093/mnras/stx3040
       \endverb
     \endentry
+    \entry{Noeske2007}{article}{}
+      \name{author}{29}{}{%
+        {{un=0,uniquepart=base,hash=373619bb7a4bb0e218c98895288f7e4e}{%
+           family={{Noeske}},
+           familyi={N\bibinitperiod},
+           given={K.\bibnamedelimi G.},
+           giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=504ea2473332c23f376ec192a4e08f72}{%
+           family={{Weiner}},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d341a05053bf57d3cac961ed960ebb4e}{%
+           family={{Faber}},
+           familyi={F\bibinitperiod},
+           given={S.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e73281c06abfcd6bca82a1ae59f0235}{%
+           family={{Papovich}},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1c03f5fa6da89b2e317ad9f2c345cc5}{%
+           family={{Koo}},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c5d11ca8c65df6a2ad979123a725520}{%
+           family={{Somerville}},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f68b2fd7e3e44b1a710093a3edbf6d0}{%
+           family={{Bundy}},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fa7fa615356c601878d4b5dc21b253b}{%
+           family={{Conselice}},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a705ceaea3e85023ad9af19ab2dcfd9f}{%
+           family={{Newman}},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cfd57af17800c7fceff59e75a89bf07b}{%
+           family={{Schiminovich}},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=483d0377fab0546eac6ee28c06d25845}{%
+           family={{Le Floc'h}},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbc1b118f41cd01088dd6f3c7511510f}{%
+           family={{Coil}},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e27e0bd47e24e043af97ead415b7500}{%
+           family={{Rieke}},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6e303f9dc26f0e792e737dd4ef9b57a}{%
+           family={{Lotz}},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6b550c5aa2fc8ff55c0124916815fbf}{%
+           family={{Primack}},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fa1f89c41ce2d0d5318a4bbab1e17b7}{%
+           family={{Barmby}},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faa4d6e46f6fe7f42aa6e63f4ab78b77}{%
+           family={{Cooper}},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d27993d3d39ca56a54118eba9bc5ab30}{%
+           family={{Davis}},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c912c05fa246fc10f74e88ad1757b468}{%
+           family={{Ellis}},
+           familyi={E\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce43a93e09770ed4d4a788fc95dbae13}{%
+           family={{Fazio}},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi G.},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9837be36162899c3c2c2ae765c29cfbc}{%
+           family={{Guhathakurta}},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={{Huang}},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=733439fbec4b46f4eafc62ca92d1c4f4}{%
+           family={{Kassin}},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=312584b4d6231fefdc85ad1643705746}{%
+           family={{Martin}},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40e94b1e38dc5aaa881f6972d1db496f}{%
+           family={{Phillips}},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4bb68cd2da0e3040ebfb9ccc1c2a57c3}{%
+           family={{Rich}},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34dfdf878085e3230f9c6740dcf5c67e}{%
+           family={{Small}},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e9d528f67de52eab985eb19a3faa96e}{%
+           family={{Willmer}},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi N.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=999b28e3ecc54fade907d529b77e2727}{%
+           family={{Wilson}},
+           familyi={W\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f64f7fe3ae9097a1f6c1a14697cffb3d}
+      \strng{fullhash}{daa116cbc802d4886d0d979138d32ca0}
+      \strng{bibnamehash}{f64f7fe3ae9097a1f6c1a14697cffb3d}
+      \strng{authorbibnamehash}{f64f7fe3ae9097a1f6c1a14697cffb3d}
+      \strng{authornamehash}{f64f7fe3ae9097a1f6c1a14697cffb3d}
+      \strng{authorfullhash}{daa116cbc802d4886d0d979138d32ca0}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Star Formation in AEGIS Field Galaxies since z=1.1: The Dominance of Gradually Declining Star Formation, and the Main Sequence of Star-forming Galaxies}
+      \field{volume}{660}
+      \field{year}{2007}
+      \field{pages}{L43\bibrangedash L46}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1086/517926
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/0701924
+      \endverb
+      \keyw{Galaxies: Evolution,Galaxies: Formation,Galaxies: High-Redshift,Galaxies: Starburst,Astrophysics}
+    \endentry
     \entry{Pillepich2017}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%

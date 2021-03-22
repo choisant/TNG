@@ -22,5 +22,5 @@ else:
 
 ##Processes to run, uncomment those that should be run.
 print("Processing subhalo ", int(args.subhalo))
-safe_tester.kinematics(args.tng, test_name, int(args.subhalo), 99)
+safe_tester.general_properties(args.tng, test_name, int(args.subhalo), 99)
 

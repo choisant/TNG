@@ -13,12 +13,15 @@ pd.options.mode.chained_assignment = None  # default='warn'
 def subhalo_flag_drop(df):
     df_copy = df.copy(deep=True)
     index_names = df_copy[df_copy["SubhaloFlag"] == 0].index
+    print("SUBHALO_FLAG", len(index_names))
     df_copy = df_copy.drop(index_names)
     return df_copy
 
-def dark_matter_zeros(df):
+def dark_matter_min(df):
     df_copy = df.copy(deep=True)
-    index_names = df_copy[df_copy["SubhaloMassDM"] == 0].index
+    df_copy["SubhaloDMFraction"] = df_copy["SubhaloMassDM"]/df_copy["SubhaloMass"]
+    index_names = df_copy[df_copy["SubhaloDMFraction"] < 0.1].index
+    print("Less than 10% DM", len(index_names))
     df_copy = df_copy.drop(index_names)
     return df_copy
 
@@ -30,12 +33,9 @@ def min_particles(df, minPart):
     return df_copy
 
 def min_ymass(df, minMass, Y, haloType):
-    print("Removing galaxies below ", minMass,  "*10**10 stellar mass ")
+    print("Removing galaxies below ", minMass, "*10**10 stellar mass ")
     df_copy = df.copy(deep=True)
     particle_type = (haloType+"Mass"+Y)
-    if haloType == "Subhalo":
-        df_copy = subhalo_flag_drop(df)
-        df_copy = dark_matter_zeros(df)
     #Get indices that fail to meet this condition.
     index_names = df_copy[df_copy[particle_type] < minMass].index
     df_copy = df_copy.drop(index_names)
@@ -103,12 +103,14 @@ def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     df_halos = il.pandasformat.dict_to_pandas(halos)
     print("Choosing only central galaxies")
     centrals = central_galaxies(df_halos, df_subhalos)
-    centrals_min_mass = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
+    centrals = min_ymass(centrals, minMass=min_mass, Y="Stellar", haloType="Subhalo")
+    #Remove unwanted halos
+    centrals = subhalo_flag_drop(centrals)
+    centrals = dark_matter_min(centrals)
     ##Adding some usefull fields
-    centrals_min_mass["SubhalosSFR"] = centrals_min_mass["SubhaloSFR"]/(centrals_min_mass["SubhaloMassStellar"]*10) #Gyr^-1
-    centrals_min_mass["SubhaloGasFraction"] = centrals_min_mass["SubhaloMassInHalfRadGas"]/centrals_min_mass["SubhaloMassInHalfRadStellar"]
+    centrals["SubhalosSFR"] = centrals["SubhaloSFR"]/(centrals["SubhaloMassStellar"]*10) #Gyr^-1
     
-    return centrals_min_mass
+    return centrals
 
 #read in data
 def make_central_id_file(tng_run, snapshot):
@@ -119,7 +121,7 @@ def make_central_id_file(tng_run, snapshot):
     centrals = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     centrals_id = list(centrals["id"])
 
-    with open('./data/' + tng_run + '/cutdata/central_id.txt', 'w') as file:
+    with open('./data/' + tng_run + '/cutdata/central_id_test.txt', 'w') as file:
         for index in centrals_id:
             file.write("%i\n" % index)
 
