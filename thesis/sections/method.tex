@@ -107,8 +107,7 @@ When observing galaxies with telescopes, there is always the problem of contamin
 
 In simulations, we are not limited by hardware, attenuation, and background light. A cut-off point still needs to be determined. \texttt{SUBFIND} does this for the dark matter part of the simulation, separating out subhalos from larger halos. The galaxy properties of that subhalo are then calculated using all the stellar and gas particles in the subhalo and saved in the group catalog. 
 
-
-When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. For this work, the galaxy size is chosen to be a spherical volume with a radius ($R_{gal}$) equal to 15 \% of the subhalo's virial radius ($R_{200}$).
+When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. In \textcite{Pillepich2017} users of TNG data are urged to consider their choice of aperture size with caution and emphasise that the definitions must always be stated clearly. They adovcate the use of a simple galaxy radius of some fixed aperture in physical kiloparsecs.
 
 \subsubsection{Magnitude and colors}
 
@@ -126,19 +125,17 @@ Stellar mass estimates depend on the stellar initial mass function (IMF), which 
 
 In \texttt{SUBFIND}, masses for each particle type are calculated by summing up all the masses of that particle type belonging to the subhalo. Values for the mass within the stellar half-mass radius, two times the stellar half-mass radius and the radius at which the maximum rotational velocity is found are also available.
 
-The stellar masses of the galaxies studied using the particles are the summed up masses of all stellar particles within $R_{gal}$.
+//Write more about the mass within 30 kpc etc. The high-mass end results from Pillepich. 
 
 For SAMI DR2, the stellar mass values are taken from the GAMA Sérsic catalogue \parencite{Driver2011}. They calculate the stellar masses by using the i-band magnitude and g-i color of each galaxy through the formula $\log(M_*/M_\odot) = 1.15 + 0.70(g-i) -0.4\mathcal{M}_i$, where $\mathcal{M}_i$ is the rest-frame i-band absolute magnitude \parencite{Taylor2011}.
 
 \subsubsection{Size}
 
-In observational data, galaxy sizes are always projected sizes, as they are derived from 2D images. A common measure of the size of a galaxy is the effective radius, which is the radius within which half the light of the galaxy is contained. This quantity depends on the analysis and quality of the 2D profiles, and may not be able to include all the light in a galaxy in the way that we can ensure for computer simulated data. The radius also depends on which optical filter the measurements are made in, as different filters will be receptive to light from different parts of the galaxy.
+In observational data, galaxy sizes are always projected sizes, as they are derived from 2D images. A common measure of the size of a galaxy is the effective radius ($R_e$), which is the radius within which half the light of the galaxy is contained. This quantity depends on the analysis and quality of the 2D profiles, and may not be able to include all the light in a galaxy in the way that we can ensure for computer simulated data. The radius also depends on which optical filter the measurements are made in, as different filters will be receptive to light from different parts of the galaxy. To be consistent with the simulation data, the 2D radius from the observations are projected by using the relation $r_{1/2} = \frac{4}{3}R_{e}$, where $r_{1/2}$ is the 3D deprojected half-light radius and $R_e$ is the 2D projected half-light radius, which generally holds for a range of surface brightness profiles observed in stellar systems \parencite{Wolf2010}.
 
-For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius ($R_hm$), as it is not a projected quantity. This value is generally higher than the 2D half-light radius ($r_{hl}$) for a given mass up to $M_{*} < 10^{10.5}$, as seen in \textcite{Genel2017}. 
+For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius ($r_hm$), as it is not a projected quantity. This value is generally higher than the 2D half-light radius ($R_{hl}$) for a given mass up to $M_{*} < 10^{10.5}$, as seen in \textcite{Genel2017}. 
 
 The half-mass radii of the galaxies calculated using the particles are derived using the same method, but using only the total stellar mass calculated within $R_{gal}$.
-
-To be consistent with observed data, the 3D radius from the simulation is projected by using the relation $R_{hm} = \frac{4}{3}r_{hm}$ which generally holds for pressure supported systems like elliptical galaxies \parencite{Wolf2010}.
 
 The SAMI catalog data takes the values for the effective radius from the GAMA Sérsic catalogue \parencite{Driver2011}. The effective radius is defined as the semi-major axis half-light radius, measured in the r-band. The values are given in units of arcsec which were then converted to a physical radius in kpc.
 
