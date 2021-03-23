@@ -7,7 +7,7 @@
 #SBATCH --array=1-4
 #SBATCH --mem=35000
 #SBATCH --job-name="cluster_run"
-#SBATCH --output=tng-cluster-srun.out
+#SBATCH --output=missed-srun.out
 #SBATCH --mail-user=aurorasg@stud.ntnu.no
 #SBATCH --mail-type=ALL
  
