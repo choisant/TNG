@@ -60,7 +60,7 @@ def group_properties(catalogue, base_path):
     radius_200 = np.array(df_central_halos["Group_R_Crit200"])
 
     catalogue["SubhaloGalaxyRad"] = 0.15*radius_200
-    catalogue["SubhaloRad"] = radius_200
+    catalogue["SubhaloRad200"] = radius_200
     catalogue["SubhaloMass200"] = np.array(df_central_halos["Group_M_Crit200"])
 
     return catalogue
@@ -190,13 +190,13 @@ def velocity_disp_3D(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
     catalogue[vd_key] = sigma
     return catalogue
 
-def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp"):
+def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp", rad_key=""):
     #xy
     temp = stars.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat)
-    catalogue["SubhaloHalfmassRad_xy"] = temp_cat["SubhaloHalfmassRadStellar"]
+    catalogue["SubhaloHalfmassRad_xy" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
     r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
     temp = temp[temp["r"] < r_half]
     sigma_z = np.array(temp["Vz"]).std()
@@ -206,7 +206,7 @@ def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp"):
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat)
-    catalogue["SubhaloHalfmassRad_xz"] = temp_cat["SubhaloHalfmassRadStellar"]
+    catalogue["SubhaloHalfmassRad_xz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
     r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
     temp = temp[temp["r"] < r_half]
     sigma_y = np.array(temp["Vy"]).std()
@@ -216,7 +216,7 @@ def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp"):
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat)
-    catalogue["SubhaloHalfmassRad_yz"] = temp_cat["SubhaloHalfmassRadStellar"]
+    catalogue["SubhaloHalfmassRad_yz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
     r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
     temp = temp[temp["r"] < r_half]
     sigma_x = np.array(temp["Vx"]).std()
@@ -261,12 +261,17 @@ def velocity_disp_projected(particle, catalogue, vd_key):
     catalogue[vd_key] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
     return catalogue
 
-def photometrics(stars, catalogue):
-    luminosities_g = 10**(-0.4*stars["StellarPhotometrics_g"]) #Drop zero points as it falls out in conversion back to mag
-    luminosities_i = 10**(-0.4*stars["StellarPhotometrics_i"])
+def photometrics(stars, catalogue, rad_string):
+    luminosities_g = 10**(-0.4*stars["StellarPhotometrics_g" + rad_string]) #Drop zero points as it falls out in conversion back to mag
+    luminosities_r = 10**(-0.4*stars["StellarPhotometrics_r" + rad_string])
+    luminosities_i = 10**(-0.4*stars["StellarPhotometrics_i" + rad_string])
+    luminosities_z = 10**(-0.4*stars["StellarPhotometrics_z" + rad_string])
     g_band = -2.5*np.log10(luminosities_g.sum())
+    r_band = -2.5*np.log10(luminosities_r.sum())
     i_band = -2.5*np.log10(luminosities_i.sum())
-    catalogue["SubhaloStellarPhotometrics_g"] = g_band
-    catalogue["SubhaloStellarPhotometrics_i"] = i_band
-    catalogue["SubhaloColor_g-i"] = g_band - i_band
+    z_band = -2.5*np.log10(luminosities_z.sum())
+    catalogue["SubhaloStellarPhotometrics_g" + rad_string] = g_band
+    catalogue["SubhaloStellarPhotometrics_r" + rad_string] = r_band
+    catalogue["SubhaloStellarPhotometrics_i" + rad_string] = i_band
+    catalogue["SubhaloStellarPhotometrics_z" + rad_string] = z_band
     return catalogue

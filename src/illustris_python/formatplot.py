@@ -10,46 +10,48 @@ def log_formater(df):
     for key in df.keys():
         #print(key)
         if "VelDisp" in key:
-            temp = np.array(df[key])
-            for item in temp:
-                if item == 0:
-                    item = 10**(-16)
-            df_log[key] = np.log10(list(temp))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
         elif "Vmax" in key:
-            temp = np.array(df[key])
-            for item in temp:
-                if item == 0:
-                    item = 10**(-16)
-            df_log[key] = np.log10(list(temp))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
         elif "RotVel" in key:
-            temp = np.array(df[key])
-            for item in temp:
-                if item == 0:
-                    item = 10**(-16)
-            df_log[key] = np.log10(list(temp))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
         elif "Mass" in key:
-            temp = np.array(df[key])
-            for item in temp:
-                if item == 0:
-                    item = 10**(-16)
-            df_log[key] = np.log10(list(temp))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
         elif "SFR" in key:
-            temp = np.array(df[key])
-            for item in temp:
-                if item == 0:
-                    item = 10**(-16)
-            df_log[key] = np.log10(list(temp))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
         elif "Rad" in key:
-            for value in df[key]:
-                if value == 0:
-                    value = 10**(-16)
-            df_log[key] = np.log10(list(df[key]))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
 
         elif "GasFraction" in key:
-            for value in df[key]:
-                if value == 0:
-                    value = 10**(-16)
-            df_log[key] = np.log10(list(df[key]))
+            temp = list(df[key])
+            for i in range(len(temp)):
+                if temp[i] == 0:
+                    temp[i] = 10**(-16)
+            df_log[key] = np.log10(temp)
         else:
             df_log[key] = df[key]
     return df_log
@@ -60,15 +62,23 @@ def VD_SM(ax, x0=1.5, x1=3, y0=9, y1=12):
     ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
-    ax.legend(loc=2, fontsize=TEXTSIZE, frameon=False)
+    ax.legend(fontsize=TEXTSIZE, frameon=False)
+
+def SM_VD(ax, y0=1.5, y1=3, x0=9, x1=12):
+    ax.set(xlim=(x0, x1), ylim=(y0, y1))
+    ax.set_ylabel(r"$\log(\sigma)$ [km/s])", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
+    ax.minorticks_on()
+    ax.legend(fontsize=TEXTSIZE, frameon=False)
 
 def SM_fVD(ax, x0=9.5, x1=12, y0=0.5, y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$\sigma/\sigma_{SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
-    ax.legend(loc=2, fontsize=TEXTSIZE, frameon=False)
+    ax.legend(fontsize=TEXTSIZE, frameon=False)
 
 def VSigma_SM(ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
@@ -140,7 +150,7 @@ def HM_SM(ax, text="", x0=11, x1=14, y0=(9.0), y1=(12)):
 
 def SM_SM(ax, text="", x0=9.5, x1=12, y0=(9.5), y1=(12)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
@@ -149,8 +159,8 @@ def SM_SM(ax, text="", x0=9.5, x1=12, y0=(9.5), y1=(12)):
 
 def SM_fSM(ax, text="", x0=9.5, x1=12, y0=(1), y1=(1.5)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$M_{*}/M_{*, SF}$", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$M_{*}/M^{SF}_{*}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
     ax.text(0.05, 0.92, text, fontsize=TEXTSIZE, fontweight="bold", transform=ax.transAxes)
@@ -158,7 +168,7 @@ def SM_fSM(ax, text="", x0=9.5, x1=12, y0=(1), y1=(1.5)):
 
 def HM_fHM(ax, text="", x0=11, x1=14, y0=(0), y1=(1)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{halo, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SF}_{halo})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$M_{200}/M_{halo, SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
@@ -185,7 +195,7 @@ def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
 
 def SM_fR(ax, x0=9.5, x1=12, y0=(0.8), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*, SF})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$R_e/R_{e, SF}$ ", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()

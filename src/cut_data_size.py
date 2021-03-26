@@ -87,10 +87,8 @@ def save_data_pickle(df, haloType, filename, tngFolder):
     f = open(path, "a+") #Create file if it does not already exist.
     df.to_pickle(path)
 
-def save_data_subset(centrals, earlies, lates, tng_run):
+def save_data_subset(centrals, tng_run):
     save_data_pickle(centrals, haloType="Subhalo", filename="Centrals_minE9_5_SM", tngFolder=tng_run)
-    save_data_pickle(lates, haloType="Subhalo", filename="Centrals_minE9_5_SM_lateType_Gas", tngFolder=tng_run)
-    save_data_pickle(earlies, haloType="Subhalo", filename="Centrals_minE9_5_SM_earlyType_Gas", tngFolder=tng_run)
 
 def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass):
     base_path = "./data/"+ tng_run + "/output"
@@ -131,6 +129,5 @@ def make_pickles(tng_run, snapshot):
     "SubhaloPos"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
     min_mass = 0.32 #minimum stellar mass, about 10**9.5
-    centrals, lates, earlies = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
-    print(centrals.keys())
-    save_data_subset(centrals, earlies, lates, tng_run)
+    centrals = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
+    save_data_subset(centrals, tng_run)

@@ -180,9 +180,9 @@ With the particles the velocity dispersion was calculated within the projected h
 
 \subsection{Galaxy morphology classifications}
 
-Starting off with the same subset of 5433 galaxies for both the \texttt{SUBFIND} group catalogue and the particles, we get different results for which galaxies are early- and late-type galaxies, based on the volume in which the gas mass is measured. Table \ref{gas_frac} show the number of early and late type galaxies for different volumes.
+Starting off with the same subset of 5877 galaxies for both the \texttt{SUBFIND} group catalogue and the particles, we get different results for which galaxies are early- and late-type galaxies, based on the volume in which the gas mass is measured. Table \ref{gas_frac} show the number of early and late type galaxies for different volumes.
 
-
+//UPDATE this with new numbers
 
 \begin{table}
 \begin{center}
@@ -194,17 +194,17 @@ Starting off with the same subset of 5433 galaxies for both the \texttt{SUBFIND}
    &\multicolumn{2}{c}{\texttt{SUBFIND}}&\multicolumn{2}{c}{Particles} \\
    &  Early-type & Late-type & Early-type & Late-type \\
  \hline
- Half-mass radius & 2024 & 3409 & 2065 & 3368 \\ 
- 2 $\times$ half-mass radius & 1446 & 3987 & 1532 & 3901 \\ 
- 15\% R$_{200}$ & - & - & 619 & 4814 \\ 
- R$_{subhalo}$ & 40 & 5393 & - & - \\ 
+ Half-mass radius & 2438 & 3439 & 2479 & 3398 \\ 
+ 2 $\times$ half-mass radius & 1818 & 4059 & 1920 & 3957 \\ 
+ 15\% R$_{200}$ & - & - & 799 & 5078 \\ 
+ R$_{subhalo}$ & 63 & 5814 & - & - \\ 
  \hline 
  \end{tabular}
 \end{center}
 \end{table}
 
-The selection is here very similar whether \texttt{SUBFIND} or particles are used. For \texttt{SUBFIND} we get 1028 early-types, 3874 late-types and 531 intermediate types, while for the particles we find 1040 early-types and 3858 late-type galaxies with 535 intermediate types.
+The selection process using the sSFR with $ -1.44 < \log (sSFR[Gyr^{-1}]) $ being late type and $\log (sSFR[Gyr^{-1}]) < -1.94$ being early type gives very similar results whether \texttt{SUBFIND} or particles are used. For \texttt{SUBFIND} we get 1350 early-types, 4129 late-types and 398 intermediate types, while for the particles we find 1365 early-types and 4129 late-type galaxies with 383 intermediate types.
 
-By using the simple cut at $\kappa_{rot} = 0.6$ the 5433 galaxies are then separated into 3970 early type galaxies and 1463 late types. This is a completely different result from the two methods above, where there was a majority of late-type galaxies. In real life we know that smaller late-type galaxies dominate, so using only the rotational energy does not yield the expected ratio. However, combining this result with one of the two above should result in a subset of galaxies which exhibit both the right amount of cold gas and the star formation that goes with it, as well as the right kinematic structure.
+By using the simple cut at $\kappa_{rot} = 0.6$ the 5877 galaxies are then separated into 4359 early type galaxies and 1518 late types. This is a completely different result from the two methods above, where there was a majority of late-type galaxies. In real life we know that smaller late-type galaxies dominate, so using only the rotational energy does not yield the expected ratio. However, combining this result with one of the two above should result in a subset of galaxies which exhibit both the right amount of cold gas and the star formation that goes with it, as well as the right kinematic structure.
 
-In the rest of this paper, early-type galaxies are those which, calculated using the particles, have a sSFR of $\log (sSFR[Gyr^{-1}]) < -1.94$ as well as $\kappa_{rot} < 0.6$. Late-types have a sSFR of $ -1.44 < \log (sSFR[Gyr^{-1}]) < -0.44$ as well as $\kappa_{rot} > 0.6$. This results in 925 early-type galaxies, 1227 late-types and 3281 intermediate-type galaxies. For the \texttt{SUBFIND} sample, the same galaxies in each group are chosen by matching the subhalo-id from the previously mentioned selection.
+In the rest of this paper, early-type galaxies are those which, calculated using the particles, have a sSFR of $\log (sSFR[Gyr^{-1}]) < -1.94$ as well as $\kappa_{rot} < 0.6$. Late-types have a sSFR of $ -1.44 < \log (sSFR[Gyr^{-1}]) $ as well as $\kappa_{rot} > 0.6$. This results in 1228 early-type galaxies, 1300 late-types and 3349 intermediate-type galaxies. For the \texttt{SUBFIND} sample, the same galaxies in each group are chosen by matching the subhalo-id from the previously mentioned selection.

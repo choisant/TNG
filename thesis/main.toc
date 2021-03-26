@@ -66,9 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Results and discussions}{33}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Stellar mass and half-mass radius}{33}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Stellar-to-halo-mass relation}{33}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Kinematics}{34}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Mass-size-velocity relations}{34}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Color bimodality}{34}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
