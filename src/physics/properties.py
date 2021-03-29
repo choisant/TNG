@@ -262,10 +262,10 @@ def velocity_disp_projected(particle, catalogue, vd_key):
     return catalogue
 
 def photometrics(stars, catalogue, rad_string):
-    luminosities_g = 10**(-0.4*stars["StellarPhotometrics_g" + rad_string]) #Drop zero points as it falls out in conversion back to mag
-    luminosities_r = 10**(-0.4*stars["StellarPhotometrics_r" + rad_string])
-    luminosities_i = 10**(-0.4*stars["StellarPhotometrics_i" + rad_string])
-    luminosities_z = 10**(-0.4*stars["StellarPhotometrics_z" + rad_string])
+    luminosities_g = 10**(-0.4*stars["StellarPhotometrics_g"]) #Drop zero points as it falls out in conversion back to mag
+    luminosities_r = 10**(-0.4*stars["StellarPhotometrics_r"])
+    luminosities_i = 10**(-0.4*stars["StellarPhotometrics_i"])
+    luminosities_z = 10**(-0.4*stars["StellarPhotometrics_z"])
     g_band = -2.5*np.log10(luminosities_g.sum())
     r_band = -2.5*np.log10(luminosities_r.sum())
     i_band = -2.5*np.log10(luminosities_i.sum())

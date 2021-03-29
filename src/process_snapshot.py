@@ -183,7 +183,7 @@ def set_aperture(tng_run, snapshot, dm_mass, i):
      #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
     fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities", "GFM_StellarPhotometrics"],
-        "gas": ["Coordinates", "Masses", "StarFormationRate"],
+        "gas": ["Coordinates", "Masses", "StarFormationRate", "Velocities"],
         "dm": ["Coordinates", "Potential"]
             }
     group_cat = pd.DataFrame({"id": [i]})
@@ -224,6 +224,7 @@ def set_aperture(tng_run, snapshot, dm_mass, i):
     group_cat["SubhaloMass30kpc"] = group_cat["SubhaloMassGas30kpc"] + group_cat["SubhaloMassDM30kpc"] + group_cat["SubhaloMassStellar30kpc"]
     #Calculate half mass rad
     group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="SubhaloHalfmassRadStellar30kpc")
+    group_cat["SubhaloHalfmassRadStellar"] = group_cat["SubhaloHalfmassRadStellar30kpc"] #Will get overwritten, necessary for calculations
     half_rad = group_cat["SubhaloHalfmassRadStellar30kpc"][0]
     #Mass in half mass rad
     group_cat["SubhaloMassInHalfRad30kpcGas"] = gas[gas["r"] < half_rad]["Masses"].sum()
