@@ -8,21 +8,21 @@ from uncertainties.umath import *
 from uncertainties import ufloat
 
 
-def median_values_log_y(df, datatype, x_key, y_key, ymin=9, ymax=12, n=12, error_out=False):
+def median_values_df(df, datatype, x_key, y_key, xmin=9.5, xmax=12, n=12, error_out=False):
     if datatype == "sami":
-        x_values = df[np.isnan(df[x_key]) == False][x_key]
-        y_values = df[np.isnan(df[x_key]) == False][y_key]
+        x_values = df[np.isnan(df[y_key]) == False][x_key]
+        y_values = df[np.isnan(df[y_key]) == False][y_key]
     else:
         x_values = df[x_key]
         y_values = df[y_key]
-    bins = np.logspace(ymin, ymax, n)
+    bins = np.linspace(xmin, xmax, n)
     y_medians = np.zeros(len(bins) -1)
     x_medians = np.zeros(len(bins) -1)
     y_errors = np.zeros((2, len(bins)-1))
     x_errors = np.zeros((2, len(bins)-1))
     for i in range(len(y_medians)):
-        larger = y_values[y_values > bins[i]].index
-        smaller = y_values[y_values < bins[i+1]].index
+        larger = x_values[x_values > bins[i]].index
+        smaller = x_values[x_values < bins[i+1]].index
         indices = list(set(larger) & set(smaller))
         binlist_x = np.zeros(len(indices))
         binlist_y = np.zeros(len(indices))
@@ -48,6 +48,7 @@ def median_errors(x_values, y_values, xmin, xmax, n=12):
     x_medians = np.zeros(len(bins) -1)
     y_errors = np.zeros((2, len(bins)-1))
     x_errors = np.zeros((2, len(bins)-1))
+
     for i in range(len(y_medians)):
         larger = np.where(x_values > bins[i])
         smaller = np.where(x_values < bins[i+1])
@@ -90,3 +91,4 @@ def lin_reg(X, Y, xmin=1, xmax=3):
     y_pred_list = model.intercept_ + model.coef_ *x_out
     y_pred = y_pred_list.reshape(1,-1)[0]
     return x_out, y_pred
+

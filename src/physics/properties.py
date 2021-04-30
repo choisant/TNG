@@ -104,7 +104,7 @@ def relative_velocities(subhalo, catalogue):
         subhalo["Vz"] = np.array([0])
     return subhalo
 
-def half_mass_radius(subhalo, catalogue, mass_key="SubhaloMassStellar", rad_key="SubhaloHalfmassRadStellar"):
+def half_mass_radius(subhalo, catalogue, rad_key):
     """
     Calculates stellar half mass radius for a certain particle type and adds it to the group catalogue.
     """
@@ -115,7 +115,7 @@ def half_mass_radius(subhalo, catalogue, mass_key="SubhaloMassStellar", rad_key=
     #Start adding the masses of all particles starting with smallest radius
     for j in range(len(temp["r"])):
         #Check if total mass is less than half total particle mass
-        if temp_mass < (catalogue[mass_key][0]/2):
+        if temp_mass < (catalogue["SubhaloMassStellar" + rad_key][0]/2):
             temp_mass = temp_mass + temp["Masses"][j] #Add mass of next particle
         else:
             #Add half mass radius.
@@ -126,11 +126,11 @@ def half_mass_radius(subhalo, catalogue, mass_key="SubhaloMassStellar", rad_key=
             halfmass_rad = (m1*temp["r"][j-1] + m2*temp["r"][j])/M
             break  #stop loop
         halfmass_rad = temp["r"][j]
-    catalogue[rad_key] = halfmass_rad #save to catalogue
+    catalogue["SubhaloHalfmassRadStellar" + rad_key] = halfmass_rad #save to catalogue
     return catalogue
 
-def ang_momentum(subhalo, catalogue):
-    r_max = 2*catalogue["SubhaloHalfmassRadStellar"][0]
+def ang_momentum(subhalo, catalogue, rad_key):
+    r_max = 2*catalogue["SubhaloHalfmassRadStellar" + rad_key][0]
     temp1 = subhalo[subhalo["r"] > 0] #remove central particle
     temp = temp1[temp1["r"] < r_max].copy(deep=True)
     m = np.array(temp["Masses"])
@@ -139,19 +139,19 @@ def ang_momentum(subhalo, catalogue):
     l = np.cross(np.transpose(r), np.transpose(p))
     L = np.sum(l, axis=0)
     J = np.sum(l, axis=0)/np.sum(m)
-    catalogue["AngularMomentumX"] = L[0]
-    catalogue["AngularMomentumY"] = L[1]
-    catalogue["AngularMomentumZ"] = L[2]
+    catalogue["AngularMomentumX" + rad_key] = L[0]
+    catalogue["AngularMomentumY" + rad_key] = L[1]
+    catalogue["AngularMomentumZ" + rad_key] = L[2]
 
-    catalogue["SpecificAngularMomentumX"] = J[0]
-    catalogue["SpecificAngularMomentumY"] = J[1]
-    catalogue["SpecificAngularMomentumZ"] = J[2]
+    catalogue["SpecificAngularMomentumX" + rad_key] = J[0]
+    catalogue["SpecificAngularMomentumY" + rad_key] = J[1]
+    catalogue["SpecificAngularMomentumZ" + rad_key] = J[2]
     return catalogue
 
-def rot_energy(subhalo, catalogue):
-    rot_vector = np.transpose(np.array([catalogue["AngularMomentumX"][0],
-        catalogue["AngularMomentumY"][0],
-        catalogue["AngularMomentumZ"][0]]))
+def rot_energy(subhalo, catalogue, rad_key):
+    rot_vector = np.transpose(np.array([catalogue["AngularMomentumX" + rad_key][0],
+        catalogue["AngularMomentumY" + rad_key][0],
+        catalogue["AngularMomentumZ" + rad_key][0]]))
     
     subhalo_rot = physics.geometry.rotate_pos_vel(subhalo, rot_vector)
     subhalo_rot = subhalo_rot[subhalo_rot["r"] > 0]
@@ -164,9 +164,9 @@ def rot_energy(subhalo, catalogue):
     j_z = np.transpose(j)[2]
     E_rot = 0.5*m*(j_z/R)**2
     E_kin = 0.5*m*V**2
-    catalogue["RotationalEnergy"] = np.sum(E_rot)
-    catalogue["KineticEnergy"] = np.sum(E_kin)
-    catalogue["Kappa_rot"] = np.sum((j_z/R)**2)/np.sum(V**2)
+    catalogue["RotationalEnergy" + rad_key] = np.sum(E_rot)
+    catalogue["KineticEnergy" + rad_key] = np.sum(E_kin)
+    catalogue["Kappa_rot" + rad_key] = np.sum((j_z/R)**2)/np.sum(V**2)
     return catalogue
 
 def rotational_vel(gas, dm, stars, catalogue, r_vel, v_key="SubhaloRotVel"):
@@ -190,12 +190,12 @@ def velocity_disp_3D(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
     catalogue[vd_key] = sigma
     return catalogue
 
-def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp", rad_key=""):
+def velocity_disp_projected_stars(stars, catalogue, rad_key, vd_key="SubhaloVelDisp"):
     #xy
     temp = stars.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
-    temp_cat = half_mass_radius(temp, temp_cat)
+    temp_cat = half_mass_radius(temp, temp_cat, rad_key)
     catalogue["SubhaloHalfmassRad_xy" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
     r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
     temp = temp[temp["r"] < r_half]
@@ -205,7 +205,7 @@ def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp", rad
     temp = stars.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
-    temp_cat = half_mass_radius(temp, temp_cat)
+    temp_cat = half_mass_radius(temp, temp_cat, rad_key)
     catalogue["SubhaloHalfmassRad_xz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
     r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
     temp = temp[temp["r"] < r_half]
@@ -215,7 +215,7 @@ def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp", rad
     temp = stars.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
-    temp_cat = half_mass_radius(temp, temp_cat)
+    temp_cat = half_mass_radius(temp, temp_cat, rad_key)
     catalogue["SubhaloHalfmassRad_yz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
     r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
     temp = temp[temp["r"] < r_half]
@@ -224,44 +224,7 @@ def velocity_disp_projected_stars(stars, catalogue, vd_key="SubhaloVelDisp", rad
     catalogue[vd_key] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
     return catalogue
 
-def velocity_disp_projected(particle, catalogue, vd_key):
-    #xy
-    temp = particle.copy(deep=True)
-    temp_cat = catalogue.copy(deep=True)
-    temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
-    r_half = temp_cat["SubhaloHalfmassRad_xy"][0]
-    temp = temp[temp["r"] < r_half]
-    if temp.empty:
-        sigma_z = np.array([0])
-    else:
-        sigma_z = np.array(temp["Vz"]).std()
-
-    #xz
-    temp = particle.copy(deep=True)
-    temp_cat = catalogue.copy(deep=True)
-    temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
-    r_half = temp_cat["SubhaloHalfmassRad_xz"][0]
-    temp = temp[temp["r"] < r_half]
-    if temp.empty:
-        sigma_y = np.array([0])
-    else:
-        sigma_y = np.array(temp["Vy"]).std()
-
-    #yz
-    temp = particle.copy(deep=True)
-    temp_cat = catalogue.copy(deep=True)
-    temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
-    r_half = temp_cat["SubhaloHalfmassRad_yz"][0]
-    temp = temp[temp["r"] < r_half]
-    if temp.empty:
-        sigma_x = np.array([0])
-    else:
-        sigma_x = np.array(temp["Vx"]).std()
-
-    catalogue[vd_key] = ((1/3)*(sigma_z**2 + sigma_y**2 + sigma_x**2))**(1/2)
-    return catalogue
-
-def photometrics(stars, catalogue, rad_string):
+def photometrics(stars, catalogue, rad_key):
     luminosities_g = 10**(-0.4*stars["StellarPhotometrics_g"]) #Drop zero points as it falls out in conversion back to mag
     luminosities_r = 10**(-0.4*stars["StellarPhotometrics_r"])
     luminosities_i = 10**(-0.4*stars["StellarPhotometrics_i"])
@@ -270,8 +233,8 @@ def photometrics(stars, catalogue, rad_string):
     r_band = -2.5*np.log10(luminosities_r.sum())
     i_band = -2.5*np.log10(luminosities_i.sum())
     z_band = -2.5*np.log10(luminosities_z.sum())
-    catalogue["SubhaloStellarPhotometrics_g" + rad_string] = g_band
-    catalogue["SubhaloStellarPhotometrics_r" + rad_string] = r_band
-    catalogue["SubhaloStellarPhotometrics_i" + rad_string] = i_band
-    catalogue["SubhaloStellarPhotometrics_z" + rad_string] = z_band
+    catalogue["SubhaloStellarPhotometrics_g" + rad_key] = g_band
+    catalogue["SubhaloStellarPhotometrics_r" + rad_key] = r_band
+    catalogue["SubhaloStellarPhotometrics_i" + rad_key] = i_band
+    catalogue["SubhaloStellarPhotometrics_z" + rad_key] = z_band
     return catalogue

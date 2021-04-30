@@ -4,7 +4,7 @@ import pandas as pd
 from timeit import default_timer as timer
 import illustris_python as il
 import physics
-
+"""
 def load(tng_run, snapshot, i):
     #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
@@ -178,7 +178,7 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     group_cat = physics.properties.photometrics(stars, group_cat, "15Rvir")
 
     return group_cat
-
+"""
 def set_aperture(tng_run, snapshot, dm_mass, i):
      #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
@@ -217,7 +217,7 @@ def set_aperture(tng_run, snapshot, dm_mass, i):
     
     #Calculate SFR
     group_cat["SubhaloSFR30kpc"] = gas["StarFormationRate"].sum()
-    """
+    
     #Calculate masses
     group_cat["SubhaloMassGas30kpc"] = gas["Masses"].sum()
     group_cat["SubhaloMassDM30kpc"] = dm["Masses"].sum()
@@ -225,53 +225,31 @@ def set_aperture(tng_run, snapshot, dm_mass, i):
     group_cat["SubhaloMassStellar"] = stars["Masses"].sum() #Will get overwritten, necessary for calculations
     group_cat["SubhaloMass30kpc"] = group_cat["SubhaloMassGas30kpc"] + group_cat["SubhaloMassDM30kpc"] + group_cat["SubhaloMassStellar30kpc"]
     #Calculate half mass rad
-    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="SubhaloHalfmassRadStellar30kpc")
+    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="30kpc")
     group_cat["SubhaloHalfmassRadStellar"] = group_cat["SubhaloHalfmassRadStellar30kpc"] #Will get overwritten, necessary for calculations
     half_rad = group_cat["SubhaloHalfmassRadStellar30kpc"][0]
     #Mass in half mass rad
-    group_cat["SubhaloMassInHalfRad30kpcGas"] = gas[gas["r"] < half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInHalfRad30kpcDM"] = dm[dm["r"] < half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInHalfRad30kpcStellar"] = group_cat["SubhaloMassStellar30kpc"]/2
-    group_cat["SubhaloMassInHalfRad30kpc"] = (group_cat["SubhaloMassInHalfRad30kpcGas"] 
-        + group_cat["SubhaloMassInHalfRad30kpcDM"] + group_cat["SubhaloMassInHalfRad30kpcStellar"])
-    #Mass in 2* half mass rad
-    group_cat["SubhaloMassInRad30kpcGas"] = gas[gas["r"] < 2*half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInRad30kpcDM"] = dm[dm["r"] < 2*half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInRad30kpcStellar"] = stars[stars["r"] < 2*half_rad]["Masses"].sum()
-    """
+    group_cat["SubhaloMassInHalfRadGas30kpc"] = gas[gas["r"] < half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadDM30kpc"] = dm[dm["r"] < half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadStellar30kpc"] = group_cat["SubhaloMassStellar30kpc"]/2
+    group_cat["SubhaloMassInHalfRad30kpc"] = (group_cat["SubhaloMassInHalfRadGas30kpc"] 
+        + group_cat["SubhaloMassInHalfRadDM30kpc"] + group_cat["SubhaloMassInHalfRadStellar30kpc"])
+    
     #Kinematics
-    #group_cat = physics.properties.ang_momentum(stars, group_cat)
-    #group_cat = physics.properties.rot_energy(stars, group_cat)
-    #group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2*half_rad, "SubhaloRotVel2Re30kpc")
-    #group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, "SubhaloVelDispStellarRe30kpc", rad_key="30kpc")
+    group_cat = physics.properties.ang_momentum(stars, group_cat, "30kpc")
+    group_cat = physics.properties.rot_energy(stars, group_cat, "30kpc")
+    group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, half_rad, "SubhaloRotVelRe30kpc")
+    group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2.2*half_rad, "SubhaloRotVelRe2230kpc")
+    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, rad_key="30kpc")
     group_cat = physics.properties.velocity_disp_3D(stars, group_cat, 30, "SubhaloVelDisp3D_Stellar_30kpc")
     group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 30, "SubhaloVelDisp3D_Gas_30kpc")
     group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 30, "SubhaloVelDisp3D_DM_30kpc")
     #Photometrics
-    #group_cat = physics.properties.photometrics(stars, group_cat, "30kpc")
-
-    #10 kpc
-    max_rad = 10
-    #Reduce data size
-    stars = stars[stars["r"] < max_rad]
-    gas = gas[gas["r"] < max_rad]
-    dm = dm[dm["r"] < max_rad]
-
-    if gas.empty:
-        gas = il.pandasformat.empty_gas_df()
-        gas = physics.properties.relative_pos_radius(gas, group_cat)
-        gas = physics.properties.relative_velocities(gas, group_cat)
-    
-    #Calculate SFR
-    group_cat["SubhaloSFR10kpc"] = gas["StarFormationRate"].sum()
-
-    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, 30, "SubhaloVelDisp3D_Stellar_10kpc")
-    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 30, "SubhaloVelDisp3D_Gas_10kpc")
-    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 30, "SubhaloVelDisp3D_DM_10kpc")
+    group_cat = physics.properties.photometrics(stars, group_cat, "30kpc")
 
     return group_cat
 
-
+"""
 def mass_vel_photo_whole(tng_run, snapshot, dm_mass, i):
      #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
@@ -330,4 +308,4 @@ def save_particle_fields(particle, indices):
     #Save all fields for particles in one subhalo for later inspection
     g = 0
     particle[g].to_pickle("./data/tng-100-1/subhalos/subhalo" + str(indices[g]) +"_stars.pkl")
-    
+"""

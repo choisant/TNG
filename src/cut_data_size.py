@@ -114,12 +114,12 @@ def create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
 def make_central_id_file(tng_run, snapshot):
     subhalo_fields = ["SubhaloMass", 'SubhaloMassType', "SubhaloSFR", 'SubhaloMassInHalfRadType', 'SubhaloMassInRadType', 'SubhaloFlag', "SubhaloLen"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
-    min_mass = 0.32 #minimum stellar mass, about 10**9.5
+    min_mass = 0.21 #0.32 #minimum stellar mass, about 10**9.5
 
     centrals = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     centrals_id = list(centrals["id"])
 
-    with open('./data/' + tng_run + '/cutdata/central_id_test.txt', 'w') as file:
+    with open('./data/' + tng_run + '/cutdata/central_id.txt', 'w') as file:
         for index in centrals_id:
             file.write("%i\n" % index)
 
@@ -128,6 +128,6 @@ def make_pickles(tng_run, snapshot):
     "SubhaloVmax", "SubhaloVelDisp", "SubhaloHalfmassRadType", "SubhaloStellarPhotometrics", "SubhaloSFR", "SubhaloVel",
     "SubhaloPos"]
     halo_fields = ["GroupNsubs", "GroupFirstSub", "Group_R_Crit200"]
-    min_mass = 0.32 #minimum stellar mass, about 10**9.5
+    min_mass = 0.21 #0.32 #minimum stellar mass, about 10**9.5
     centrals = create_data_subset(snapshot, tng_run, subhalo_fields, halo_fields, min_mass)
     save_data_subset(centrals, tng_run)
