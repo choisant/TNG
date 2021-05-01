@@ -115,13 +115,13 @@ def velocities(tng_run, snapshot, dm_mass, i):
 
     return group_cat
 
-
-def mass_vel_photo(tng_run, snapshot, dm_mass, i):
-     #intitial setup
+"""
+def fifteen_virial(tng_run, snapshot, dm_mass, i):
+    #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
     fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities", "GFM_StellarPhotometrics"],
-        "gas": ["Coordinates", "Masses", "StarFormationRate"],
-        "dm": ["Coordinates", "Potential"]
+        "gas": ["Coordinates", "Masses", "StarFormationRate", "Velocities"],
+        "dm": ["Coordinates", "Potential", "Velocities"]
             }
     group_cat = pd.DataFrame({"id": [i]})
     #Load particles
@@ -137,8 +137,12 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
     dm = physics.properties.relative_pos_radius(dm, group_cat)
     group_cat = physics.properties.subhalo_velocity(stars, group_cat)
     stars = physics.properties.relative_velocities(stars, group_cat)
-    #Reduce data size
+    gas = physics.properties.relative_velocities(gas, group_cat)
+    dm = physics.properties.relative_velocities(dm, group_cat)
+    
+    #15 x R_200
     max_rad = group_cat["SubhaloGalaxyRad"][0]
+    #Reduce data size
     stars = stars[stars["r"] < max_rad]
     gas = gas[gas["r"] < max_rad]
     dm = dm[dm["r"] < max_rad]
@@ -149,36 +153,39 @@ def mass_vel_photo(tng_run, snapshot, dm_mass, i):
         gas = physics.properties.relative_velocities(gas, group_cat)
     
     #Calculate SFR
-    group_cat["SubhaloSFR"] = gas["StarFormationRate"].sum()
+    group_cat["SubhaloSFR15Rvir"] = gas["StarFormationRate"].sum()
+    
     #Calculate masses
-    group_cat["SubhaloMassGas"] = gas["Masses"].sum()
-    group_cat["SubhaloMassDM"] = dm["Masses"].sum()
-    group_cat["SubhaloMassStellar"] = stars["Masses"].sum()
-    group_cat["SubhaloMass"] = group_cat["SubhaloMassGas"] + group_cat["SubhaloMassDM"] + group_cat["SubhaloMassStellar"]
+    group_cat["SubhaloMassGas15Rvir"] = gas["Masses"].sum()
+    group_cat["SubhaloMassDM15Rvir"] = dm["Masses"].sum()
+    group_cat["SubhaloMassStellar15Rvir"] = stars["Masses"].sum()
+    group_cat["SubhaloMassStellar"] = stars["Masses"].sum() #Will get overwritten, necessary for calculations
+    group_cat["SubhaloMass15Rvir"] = group_cat["SubhaloMassGas15Rvir"] + group_cat["SubhaloMassDM15Rvir"] + group_cat["SubhaloMassStellar15Rvir"]
     #Calculate half mass rad
-    group_cat = physics.properties.half_mass_radius(stars, group_cat)
-    half_rad = group_cat["SubhaloHalfmassRadStellar"][0]
+    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="15Rvir")
+    group_cat["SubhaloHalfmassRadStellar"] = group_cat["SubhaloHalfmassRadStellar15Rvir"] #Will get overwritten, necessary for calculations
+    half_rad = group_cat["SubhaloHalfmassRadStellar15Rvir"][0]
     #Mass in half mass rad
-    group_cat["SubhaloMassInHalfRadGas"] = gas[gas["r"] < half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInHalfRadDM"] = dm[dm["r"] < half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInHalfRadStellar"] = group_cat["SubhaloMassStellar"]/2
-    group_cat["SubhaloMassInHalfRad"] = (group_cat["SubhaloMassInHalfRadGas"] 
-        + group_cat["SubhaloMassInHalfRadDM"] + group_cat["SubhaloMassInHalfRadStellar"])
-    #Mass in 2* half mass rad
-    group_cat["SubhaloMassInRadGas"] = gas[gas["r"] < 2*half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInRadDM"] = dm[dm["r"] < 2*half_rad]["Masses"].sum()
-    group_cat["SubhaloMassInRadStellar"] = stars[stars["r"] < 2*half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadGas15Rvir"] = gas[gas["r"] < half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadDM15Rvir"] = dm[dm["r"] < half_rad]["Masses"].sum()
+    group_cat["SubhaloMassInHalfRadStellar15Rvir"] = group_cat["SubhaloMassStellar15Rvir"]/2
+    group_cat["SubhaloMassInHalfRad15Rvir"] = (group_cat["SubhaloMassInHalfRadGas15Rvir"] 
+        + group_cat["SubhaloMassInHalfRadDM15Rvir"] + group_cat["SubhaloMassInHalfRadStellar15Rvir"])
     
     #Kinematics
-    group_cat = physics.properties.ang_momentum(stars, group_cat)
-    group_cat = physics.properties.rot_energy(stars, group_cat)
-    group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2.2*half_rad, "SubhaloRotVel2_2Re")
-    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, "SubhaloVelDispStellar")
+    group_cat = physics.properties.ang_momentum(stars, group_cat, "15Rvir")
+    group_cat = physics.properties.rot_energy(stars, group_cat, "15Rvir")
+    group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, half_rad, "SubhaloRotVelRe15Rvir")
+    group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2.2*half_rad, "SubhaloRotVelRe2215Rvir")
+    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, rad_key="15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, 30, "SubhaloVelDisp3D_Stellar_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 30, "SubhaloVelDisp3D_Gas_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 30, "SubhaloVelDisp3D_DM_15Rvir")
     #Photometrics
     group_cat = physics.properties.photometrics(stars, group_cat, "15Rvir")
 
     return group_cat
-"""
+
 def set_aperture(tng_run, snapshot, dm_mass, i):
      #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"

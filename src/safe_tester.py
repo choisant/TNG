@@ -26,25 +26,13 @@ def find_centrals(tng_run, snapshot=99):
     """
     cut_data_size.make_central_id_file(tng_run, snapshot)
 
-def general_properties(tng_run, test_name, i, snapshot=99):
+def fifteen_virial(tng_run, test_name, i, snapshot=99):
     """
     Creates and saves group catalogue for subhalo with id i.
     """
     dm_part_mass = set_params(tng_run)
 
-    temp_cat = process.mass_vel_photo(tng_run, snapshot, dm_part_mass, i)
-    folder_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
-    file_path = str(i) + ".pkl"
-    if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
-    temp_cat.to_pickle(folder_path + file_path)
-
-def kinematics(tng_run, test_name, i, snapshot=99):
-    """
-    Creates and saves group catalogue for subhalo with id i.
-    """
-    dm_part_mass = set_params(tng_run)
-    temp_cat = process.velocities(tng_run, snapshot, dm_part_mass, i)
+    temp_cat = process.fifteen_virial(tng_run, snapshot, dm_part_mass, i)
     folder_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
     file_path = str(i) + ".pkl"
     if not os.path.exists(folder_path):
@@ -58,15 +46,6 @@ def set_aperture_size(tng_run, test_name, i, snapshot=99):
     dm_part_mass = set_params(tng_run)
     temp_cat = process.set_aperture(tng_run, snapshot, dm_part_mass, i)
     folder_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
-    file_path = str(i) + ".pkl"
-    if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
-    temp_cat.to_pickle(folder_path + file_path)
-
-def memory_tester(tng_run, test_name, i, snapshot=99):
-    temp_cat = process.load(tng_run, snapshot, i)
-    #save data
-    folder_path = "./data/" + tng_run + "/catalogues/test_memory/" + test_name + "/"
     file_path = str(i) + ".pkl"
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
