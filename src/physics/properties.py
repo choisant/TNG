@@ -190,14 +190,14 @@ def velocity_disp_3D(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
     catalogue[vd_key] = sigma
     return catalogue
 
-def velocity_disp_projected_stars(stars, catalogue, rad_key, vd_key="SubhaloVelDisp"):
+def velocity_disp_projected_stars(stars, catalogue, rad_key, vd_key="SubhaloVelDispReProjected"):
     #xy
     temp = stars.copy(deep=True)
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["y"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat, rad_key)
-    catalogue["SubhaloHalfmassRad_xy" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
-    r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
+    catalogue["SubhaloHalfmassRad_xy" + rad_key] = temp_cat["SubhaloHalfmassRadStellar" + rad_key]
+    r_half = temp_cat["SubhaloHalfmassRadStellar" + rad_key][0]
     temp = temp[temp["r"] < r_half]
     sigma_z = np.array(temp["Vz"]).std()
 
@@ -206,8 +206,8 @@ def velocity_disp_projected_stars(stars, catalogue, rad_key, vd_key="SubhaloVelD
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["x"]**2 + temp["z"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat, rad_key)
-    catalogue["SubhaloHalfmassRad_xz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
-    r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
+    catalogue["SubhaloHalfmassRad_xz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar" + rad_key]
+    r_half = temp_cat["SubhaloHalfmassRadStellar" + rad_key][0]
     temp = temp[temp["r"] < r_half]
     sigma_y = np.array(temp["Vy"]).std()
 
@@ -216,8 +216,8 @@ def velocity_disp_projected_stars(stars, catalogue, rad_key, vd_key="SubhaloVelD
     temp_cat = catalogue.copy(deep=True)
     temp["r"] = (temp["y"]**2 + temp["z"]**2)**(1/2)
     temp_cat = half_mass_radius(temp, temp_cat, rad_key)
-    catalogue["SubhaloHalfmassRad_yz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar"]
-    r_half = temp_cat["SubhaloHalfmassRadStellar"][0]
+    catalogue["SubhaloHalfmassRad_yz" + rad_key] = temp_cat["SubhaloHalfmassRadStellar" + rad_key]
+    r_half = temp_cat["SubhaloHalfmassRadStellar" + rad_key][0]
     temp = temp[temp["r"] < r_half]
     sigma_x = np.array(temp["Vx"]).std()
 

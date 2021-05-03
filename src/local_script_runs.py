@@ -10,7 +10,7 @@ import process_snapshot as pros
 #cut.make_pickles("tng-100-1", 99)
 #safe_tester.cleanup("tng-100-1", "30_kpc_0105")
 #cut.make_central_id_file("tng-100-1", 99)
-cat1 = pros.fifteen_virial("tng-100-3", 99, 0.0323567549719664, 29507)
+cat1 = pros.velocities("tng-100-3", 99, 0.0323567549719664, 29507)
 #cat2 = pros.velocities("tng-100-3", 99, 0.0323567549719664, 3403)
 #print(cat1)
 
