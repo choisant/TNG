@@ -22,4 +22,4 @@ else:
 
 ##Processes to run, uncomment those that should be run.
 print("Processing subhalo ", int(args.subhalo))
-safe_tester.fifteen_virial(args.tng, test_name, int(args.subhalo), 99)
+safe_tester.velocities(args.tng, test_name, int(args.subhalo), 99)
