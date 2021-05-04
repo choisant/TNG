@@ -1,15 +1,15 @@
 \subsection{IllustrisTNG}
-IllustrisTNG \footnote{https://www.tng-project.org/} is the follow-up project after the success of the Illustris simulations \parencite{Springel2017, Pillepich2017,Naiman2018, Nelson2017, Marinacci2018}. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. Adding physical processes like gas radiation, star formation, stellar feedback through supernova explosions, supermassive black hole accretion and magnetic fields is essential to model galaxy formation and evolution and allows for a much better comparison to reality compared to dark matter-only simulations. The data output from the simulations is extensive, and is not meant to be analyzed all in one go, but rather through a series of analyzes, each targeting a specific scientific question. 
+IllustrisTNG \footnote{https://www.tng-project.org/} is the follow-up project after the success of the Illustris simulations \parencite{Springel2017, Pillepich2017,Naiman2018, Nelson2017, Marinacci2018}. It is a huge project, built upon a magneto-hydrodynamical cosmological simulation code with added physical processes on a subgrid level \parencite{Weinberger2016}. Adding physical processes like gas radiation, star formation, stellar feedback through supernova explosions, supermassive black hole accretion and magnetic fields is essential to model galaxy formation and evolution and allows for a much better comparison to reality than dark matter-only simulations. The data output from the simulations is extensive, and is not meant to be analyzed all in one go, but rather through a series of analyzes, each targeting a specific scientific question. 
 
-Hydrodynamical cosmological simulations are used to predict the movements and interactions between different types of particles in a cosmological box, and follow these through time steps as the simulation progresses. In the end, the simulation gives information about the final particle positions and properties. The simulation does not know about halos, so the raw data must be processed to extract information about seperate halos and galaxies. To identify which particles belong together as one halo, their closeness has to be examined, as well as their velocities to see if their kinetic energy is enough to make them gravitationally unbound.
+Hydrodynamical cosmological simulations are used to predict the movements and interactions between different types of particles in a cosmological box, and follow these through time steps as the simulation progresses. In the end, the simulation gives information about the final particle positions and properties. The simulation does not know about halos, so the raw data must be processed to extract information about separate halos and galaxies. To identify which particles belong together as one halo, their closeness has to be examined, as well as their velocities to see if their kinetic energy is enough to make them gravitationally unbound.
 
-\texttt{SUBFIND} is an algorithm developed by (...Springel et al 2001) for identifying halos and subhalos. It first defines parent halos with a Friends-Of-Friends algorithm, which determines halos by the proximity of the particles only. It then looks at the halo's density fields and separates out subhalos. Finally physically unbound particles (those with positive total energy) are removed. Subhalos identified to reside inside a larger subhalo are counted as a seperate subhalo, and thus its particles are not part of the parent subhalo. The relative mass of a parent subhalo and any subhalos contained within it is usually such that the impact of removing the latter is minimal with respect to any properties of the former.
+\texttt{SUBFIND} is an algorithm presented in \textcite{Springel2001} for identifying halos and subhalos. It first defines parent halos with a Friends-Of-Friends algorithm, which determines halos by the proximity of the particles only. It then looks at the halo's density fields and separates out subhalos. Finally physically unbound particles (those with positive total energy) are removed. Subhalos identified to reside inside a larger subhalo are counted as a seperate subhalo, and thus its particles are not part of the parent subhalo. The relative mass of a parent subhalo and any subhalos contained within it is usually such that the impact of removing the latter is minimal with respect to any properties of the former.
 
 
 \subsubsection{The simulations}
 The IllustrisTNG project includes 18 different simulations with varying resolutions, spatial size, and included physics. There are three main simulations, TNG300, TNG100, and TNG50, that differ in volume and resolution. The details of these are summed up in Table \ref{TNG}. Each of the main simulations has been run at three different resolution levels, which makes it possible to study how the outcome is affected by changing only the resolution in a given simulation. TNG100 has a physical box volume of $110.7^3 \, $Mpc$^3$, and a baryonic particle resolution of $1.4 \times 10^6 M_{\odot}$, while the TNG300 simulation has a volume of $302.6^3 \, $Mpc$^3$ and a baryonic particle resolution of $1.1 \times 10^7 M_{\odot}$. The newly released third simulation, TNG50, has a smaller volume of $51.7^3 \, $Mpc$^3$, but with a much higher baryonic particle resolution of $8.5 \times 10^4 M_{\odot}$. 
 
-In this project, a large statistical sample of galaxies was needed, as well as a resolved structure of the inner part of the galaxies to calculate the different properties, so the TNG100 simulation was the best choice with respect to size and resolution. The TNG100-1 simulation data, which is the highest available resolution for TNG100, has been used throughout the project and will from now on be referred to as TNG only. A visual representation of parts of the simulations can be seen in Figure \ref{tng_illustration}. For its cosmology parameters TNG uses the results from the Planck Collaboration, which are given by $\Omega_{\Lambda,0} = 0.6911$, $\Omega_{m,0}=0.3089$, $\Omega_{b,0}=0.0486$, $\sigma_8=0.8159$, $n_s=0.9667$ and $h = 0.6774$ \parencite{Planck2016}.
+In this project, a large statistical sample of galaxies was needed, as well as resolved structure of the inner part of the galaxies to calculate the different properties, so the TNG100 simulation was the best choice with respect to size and resolution. The TNG100-1 simulation data, which is the highest available resolution for TNG100, has been used throughout the project and will from now on be referred to as TNG only. A visual representation of parts of the simulations can be seen in Figure \ref{tng_illustration}. For its cosmology parameters TNG uses the results from the Planck Collaboration, which are given by $\Omega_{\Lambda,0} = 0.6911$, $\Omega_{m,0}=0.3089$, $\Omega_{b,0}=0.0486$, $\sigma_8=0.8159$, $n_s=0.9667$ and $h = 0.6774$ \parencite{Planck2016}. Throughout this work we adopt a standard flat $\Lambda$ CDM cosmology with these parameters.
 
 \begin{figure}
     \centering
@@ -40,7 +40,7 @@ All the Illustris-TNG data is publically available online at the TNG webpage\foo
 
 The group catalogs provide a convenient way to quickly access already calculated properties of the different halos and subhalos instead of dealing with all the particles in a snapshot. This saves a lot of time and effort but gives the user less control over what can be analyzed. There is one group catalog for each snapshot, and this includes two types of objects, Friends-of-Friends (FoF) and SUBFIND. The FoF catalog contains all the halos, and the SUBFIND catalog contains all the subhalos and their associated galaxy (if there is any) for each halo. Each subhalo has a parent halo, and the largest subhalo in each halo is the central subhalo. The merger trees data products contain the merger history of each subhalo.
 
-This project makes use of the group catalogs and particles for the $z = 0$ snapshot.
+This project makes use of the group catalogs and particles for the $z=0$ snapshot.
 
 \subsubsection{Sample reduction}
 
@@ -51,10 +51,10 @@ For this project, only the central galaxies in each halo are selected. The FoF c
 Only galaxies with stellar mass greater than $10^{9.5} M_{\odot}$ are used, which corresponds to about 4500 stellar particles.
 
 \subsection{Observational data}
-When possible, it is good practice to use the same observational data for comparisons with the simulation data. Trying to accomplish this, in the the SAMI Galaxy Survey \parencite{Bryant2015} has been used throughout this work. For the SHM relation however, it was not possible to use the SAMI data set, so other works have been chosen to use for that comparison. All the data sets and best fits used in comparing the results from TNG to observations are described in this section.
+When possible, it is good practice to use the same observational data for comparisons with the simulation data across several properties. Therefore, the SAMI Galaxy Survey \parencite{Bryant2015} has been used throughout this work. For the SHM relation however, it was not possible to use the SAMI data set, so other works have been chosen to use for that comparison. All the data sets and best fits used in comparing the results from TNG to observations are described in this section.
 
 \subsubsection{SAMI Galaxy Survey}
-The Sydney–Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby Universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been two major data releases, with the newest being Data Release Two (DR2) \parencite{Scott2018}. DR2 includes data for 1559 galaxies, which is about 50 \% of the full galaxy survey. The data products available are IFS data cubes and 2D maps, as well as catalogue data. As the same galaxies have been cataloged in several other studies, data products from those studies are added to SAMI data. Analysing data cubes and 2D maps falls outside the scope of this work, so catalogue data is used where possible. 
+The Sydney–Australian Astronomical Observatory Multi-Object Integral Field Spectrograph (SAMI) is mounted on the Anglo-Saxan telescope in Australia. The SAMI Galaxy Survey \footnote{https://sami-survey.org/} is a spectroscopic survey of a large sample of galaxies in the nearby Universe ($z < 0.113$). The survey was started in 2013, and ended in 2018. There have been three major data releases, with the newest being the final Data Release Three (DR3) \parencite{Scott2021}. DR3 includes data for all the 3068 galaxies which were observed. The data products available are IFS data cubes and 2D maps, as well as catalogue data. As the same galaxies have been cataloged in several other studies, data products from those studies are added to SAMI data. Analysing data cubes and 2D maps falls outside the scope of this work, so catalogue data is used where possible. 
 
 \subsubsection{Other data sets}
 For the SHM relation, best fit models from two different abundance method papers were used in the comparison to TNG.
@@ -70,7 +70,7 @@ The first one found a fit to the data by using a power law for the high mass end
 
 Here $M_1$ is a characteristic halo mass, $\delta$ is the strength of the subpower law, $\alpha$ is the power law slope for $M_{halo} << M_1$ and $\gamma$ is the power law index for $M_{halo} >> M_1$. The best fit values for the parameters are $M_1 = 11.514\pm(0.053, 0.009)$, $\delta = 3.508 \pm (0.087, -0.369)$, $\alpha = -1.412 \pm (0.020, -0.105)$, $\epsilon = -1.777 \pm (0.133, 0.146)$ and $\gamma = 0.316 \pm (0.076, -0.012)$.
 
-The second one employed the same function for the fit as \textcite{Behroozi2013}, but with different data. The best fit parameters were found to be $M_1 = 11.632\pm(0.008, 0.009)$, $\delta = 3.797 \pm (0.026, 0.021)$, $\alpha = -2.352 \pm (0.026, -0.021)$, $\epsilon = -1.785 \pm (0.010, 0.008)$  and $\gamma = 0.600 \pm (0.10, 0.013)$ \parencite{Zanisi2019}.
+The second one employed the same function for the fit as \textcite{Behroozi2013}, but with different data (OBS OBS). The best fit parameters were found to be $M_1 = 11.632\pm(0.008, 0.009)$, $\delta = 3.797 \pm (0.026, 0.021)$, $\alpha = -2.352 \pm (0.026, -0.021)$, $\epsilon = -1.785 \pm (0.010, 0.008)$  and $\gamma = 0.600 \pm (0.10, 0.013)$ \parencite{Zanisi2019}.
 
 
 \subsection{Calculating properties}
@@ -117,7 +117,7 @@ For the \texttt{SUBFIND} group catalog, the \texttt{SubhaloStellarPhotometrics} 
 
 The g-i colors for the particles are calculated by simply subtracting the i-band magnitude from the g-band magnitude.
 
-In SAMI, g-i color values are adopted from the GAMA Sérsic catalogue \parencite{Driver2011}.
+In SAMI, g-i color values are adopted from the GAMA Sérsic catalogue \parencite{Driver2011} as well as the SAMI Cluster Redshift Survey \parencite{Owers2017}.
 
 \subsubsection{Masses}
 
@@ -125,9 +125,10 @@ Stellar mass estimates depend on the stellar initial mass function (IMF), which 
 
 In \texttt{SUBFIND}, masses for each particle type are calculated by summing up all the masses of that particle type belonging to the subhalo. Values for the mass within the stellar half-mass radius, two times the stellar half-mass radius and the radius at which the maximum rotational velocity is found are also available.
 
-//Write more about the mass within 30 kpc etc. The high-mass end results from Pillepich. 
+To study the effect of the choice in stellar mass definitions, several possible galaxy radii have been used to calculate the galaxy's total stellar mass. The largest possible value is that of SUBFIND, where the mass is the sum of all the stellar particles bound to the subhalo ($M^{SF}_\ast$). The other definitions of stellar mass which were studied are compared to this value. These definitions are the stellar mass within 15 \% of the virial radius ($M_\ast^1$), the stellar mass within 30$\,$ kpc ($M_\ast^{30kpc}$) and the stellar mass within twice the SUBFIND half mass radius ($M_\ast^{2Rhm}$)\footnote{These values are available in the TNG group catalog}. These are all definitions which are commonly used in works where TNG data is employed. 
+//Write more about who uses what. 30 kpc Schaye 2015, Petrosian etc.
 
-For SAMI DR2, the stellar mass values are taken from the GAMA Sérsic catalogue \parencite{Driver2011}. They calculate the stellar masses by using the i-band magnitude and g-i color of each galaxy through the formula $\log(M_*/M_\odot) = 1.15 + 0.70(g-i) -0.4\mathcal{M}_i$, where $\mathcal{M}_i$ is the rest-frame i-band absolute magnitude \parencite{Taylor2011}.
+For SAMI DR3, the stellar mass values are taken from the GAMA Sérsic catalogue \parencite{Driver2011} as well as the SAMI Cluster Redshift Survey \parencite{Owers2017}. They calculate the stellar masses by using the i-band magnitude and g-i color of each galaxy through the formula $\log(M_*/M_\odot) = 1.15 + 0.70(g-i) -0.4\mathcal{M}_i$, where $\mathcal{M}_i$ is the rest-frame i-band absolute magnitude \parencite{Taylor2011}.
 
 \subsubsection{Size}
 
@@ -137,9 +138,7 @@ For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The ha
 
 The half-mass radii of the galaxies calculated using the particles are derived using the same method, but using only the total stellar mass calculated within $R_{gal}$.
 
-The SAMI catalog data takes the values for the effective radius from the GAMA Sérsic catalogue \parencite{Driver2011}. The effective radius is defined as the semi-major axis half-light radius, measured in the r-band. The values are given in units of arcsec which were then converted to a physical radius in kpc. //Write about MGE and the other// 
-
-Then these semi-major axis radii are converted to circular radii using the formula
+The SAMI catalog data has two different estimates for effective radius. The first is based on Sersic fits to SDSS and VST imaging data and is defined as the semi-major axis half-light radius, measured in the r-band. They are found in the GAMA Sérsic catalogue \parencite{Driver2011} and the SAMI Cluster Redshift Survey \parencite{Owers2017}. The values are given in units of arcsec which were then converted to a physical radius in kpc. Then these semi-major axis radii are converted to circular radii using the formula
 
 \begin{equation}
    r_{circ} = r_{sm}\sqrt{(1-\epsilon)},
@@ -147,36 +146,34 @@ Then these semi-major axis radii are converted to circular radii using the formu
 
 where $r_{circ}$ is the circular radius, $r_{sm}$ is the semi-major axis effective radius and $\epsilon$ is the eccentricity.
 
+The other effective radius available in the catalogs is the circularized effective radius calculated from the SDSS and VST photometric data using the Multi Gaussian Expansion algorithm, the details of which can be found in \textcite{Scott2021}. These values are on average slightly larger than the former definition, especially for late-type galaxies.
+
 
 \subsubsection{Velocities}
 
 Galaxy velocities are usually given by the velocity dispersion and rotational velocity for early and late-type galaxies, respectively. This is because of the difference in the shape of the two galaxy types. It makes more sense to talk about velocity dispersion in a spheroidal pressure-dominated system and rotational velocity in a rotating disk.
 
-In \texttt{SUBFIND}, the field \texttt{SubhaloVMax} gives the maximum value for the spherically averaged rotation curve of a given galaxy. As the rotational curves are nearly flat for large enough radii, it should not be very important at which specific radius the observational rotational velocity is measured, as long as it is in the flat part of the curve. For observational data, a common practice is to look at the rotational velocities of stars in the outer part of the galaxy. 
+In \texttt{SUBFIND}, the field \texttt{SubhaloVMax} gives the maximum value for the spherically averaged rotation curve of a given galaxy. As the rotational curves are nearly flat for large enough radii, it should not be very important at which specific radius the observational rotational velocity is measured, as long as it is in the flat part of the curve. For observational data, a common practice is to look at the rotational velocities of stars in the outer part of the galaxy. A common place to measure is at $2.2\, R_e$ which is the radius of maximum rotation for an isothermal sphere.
 
-Rotational velocities were not available as SAMI catalogue data, but an extensive analysis of the 2D velocity maps in DR2 is found in \textcite{Bloom2017}. They defined the rotational velocity as the velocity at $2.2\, r_e$, which should be in the flat regime of the velocity curve, and coincide well with the maximum velocity. Their best fit for the TFR was used in our comparison, 
+Using the particles it is possible to study the rotational velocity at any radius, so it was calculated at $2.2\, r_{\ast, 3D}$ to see if this made a difference in the overall trend.
+
+Rotational velocities were not available as SAMI catalogue data, but an extensive analysis of the 2D velocity maps in DR2 is found in \textcite{Bloom2017}. They defined the rotational velocity as the velocity at $2.2\, R_e$, which should be in the flat regime of the velocity curve, and coincide well with the maximum velocity. Their best fit for the TFR was used in our comparison, 
 \begin{equation}
 	\log(V_{rot}) = 0.31 \pm 0.0092 \times \log(M_*)-0.93 \pm 0.1.
 \end{equation}
 
-//To compare with \texttt{SUBFIND}'s \texttt{SubhaloVMax}, the rotational velocity at a radius of $2.2 \times R_e$ was calculated for all galaxies.
 
+In \texttt{SUBFIND}, the velocity dispersion is simply calculated as the 3D velocity dispersion of all the particles over the entire subhalo, divided by $1/\sqrt{3}$.
 
-
-If the velocity dispersion tends to fall off at larger radii, and the galaxy has an ellipsoid shape, the angle at which the galaxy is viewed will affect the observed velocity dispersion. To compensate for this when comparing simulations to observations, velocity dispersions in simulations may be calculated in three different projections of the galaxy and averaged over these. 
+Assuming that velocity dispersion tends to fall off at larger radii, and the galaxy has an ellipsoid shape, the angle at which the galaxy is viewed will affect the observed velocity dispersion. To compensate for this when comparing simulations to observations, velocity dispersions in simulations may be calculated in three different projections of the galaxy and averaged over these. 
 
 \begin{equation} \label{sigma1}
     \sigma^{2} = \frac{1}{3}(\sigma_x^2 + \sigma_y^2 + \sigma_z^2)
 \end{equation}
 
+This was done for the TNG particles, as well as calculating 3D velocity dispersions of each particle type within the entire subhalo, $0.15 \times R_{200}$, $30\,kpc$ and $10\,kpc$.
 
-
-In \texttt{SUBFIND}, the velocity dispersion is simply calculated as the velocity dispersion of all the particles over the entire subhalo.
-
-In SAMI catalog data, the given velocity dispersion is averaged within an aperture with radius equal to the effective radius of each galaxy.
-
-With the particles the velocity dispersion was calculated within the projected half-mass radius in three orthogonal projections.
-
+In SAMI catalog data, the given velocity dispersion is averaged within an aperture with radius equal to the effective radius of each galaxy. Here the Sersic fits were chosen, as a quick comparison to MGE data showed that there was no real difference between the two.
 
 \subsection{Galaxy morphology classifications}
 
@@ -208,3 +205,6 @@ The selection process using the sSFR with $ -1.44 < \log (sSFR[Gyr^{-1}]) $ bein
 By using the simple cut at $\kappa_{rot} = 0.6$ the 5877 galaxies are then separated into 4359 early type galaxies and 1518 late types. This is a completely different result from the two methods above, where there was a majority of late-type galaxies. In real life we know that smaller late-type galaxies dominate, so using only the rotational energy does not yield the expected ratio. However, combining this result with one of the two above should result in a subset of galaxies which exhibit both the right amount of cold gas and the star formation that goes with it, as well as the right kinematic structure.
 
 In the rest of this paper, early-type galaxies are those which, calculated using the particles, have a sSFR of $\log (sSFR[Gyr^{-1}]) < -1.94$ as well as $\kappa_{rot} < 0.6$. Late-types have a sSFR of $ -1.44 < \log (sSFR[Gyr^{-1}]) $ as well as $\kappa_{rot} > 0.6$. This results in 1228 early-type galaxies, 1300 late-types and 3349 intermediate-type galaxies. For the \texttt{SUBFIND} sample, the same galaxies in each group are chosen by matching the subhalo-id from the previously mentioned selection. //Insert figure of galaxies.
+
+
+SAMI DR3 provides its users with a catalog of visual morphology classifications that members of their team have done. It is realtively simple with 4 galaxy types, ellipticals, S0s, early spirals and late spirals, as well as a ``unknown'' category. This last category comprises only about 5\% of the sample. In this work, the galaxys are further separated into just two categories, early and late type galaxies, where the former contains ellipticals and S0s while the latter contains the early and late spirals.

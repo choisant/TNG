@@ -1,17 +1,15 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
 [0] Config.pm:315> INFO - Logfile is 'main.blg'
-[125] biber-MSWIN64:330> INFO - === 
-[146] Biber.pm:415> INFO - Reading 'main.bcf'
-[262] Biber.pm:952> INFO - Found 35 citekeys in bib section 0
-[279] Biber.pm:4334> INFO - Processing section 0
-[296] Biber.pm:4523> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[313] bibtex.pm:1682> INFO - LaTeX decoding ...
-[625] bibtex.pm:1494> INFO - Found BibTeX data source 'mybib.bib'
-[1391] Utils.pm:395> WARN - I didn't find a database entry for 'Zaninsi2019' (section 0)
-[1529] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1530] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1530] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1530] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[1618] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[2329] bbl.pm:754> INFO - Output to main.bbl
-[2330] Biber.pm:128> INFO - WARNINGS: 1
+[135] biber-MSWIN64:330> INFO - === 
+[160] Biber.pm:415> INFO - Reading 'main.bcf'
+[284] Biber.pm:952> INFO - Found 36 citekeys in bib section 0
+[303] Biber.pm:4334> INFO - Processing section 0
+[320] Biber.pm:4523> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[343] bibtex.pm:1682> INFO - LaTeX decoding ...
+[679] bibtex.pm:1494> INFO - Found BibTeX data source 'mybib.bib'
+[1512] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1513] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1513] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[1597] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[2216] bbl.pm:754> INFO - Output to main.bbl
