@@ -182,7 +182,10 @@ def rotational_vel(gas, dm, stars, catalogue, r_vel, v_key="SubhaloRotVel"):
     return catalogue
 
 def velocity_disp_3D(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
-    temp = particle[particle["r"] < radius]
+    if radius > 0:
+        temp = particle[particle["r"] < radius]
+    else:
+        temp = particle
     sigma_x = np.array(temp["Vx"]).std()
     sigma_y = np.array(temp["Vy"]).std()
     sigma_z = np.array(temp["Vz"]).std()

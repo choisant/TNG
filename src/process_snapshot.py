@@ -76,14 +76,12 @@ def velocities(tng_run, snapshot, dm_mass, i):
     group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="Total")
     r_half = group_cat["SubhaloHalfmassRadStellarTotal"][0]
 
-    #Kinematics before data_reduction
-    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, rad_key="Total", vd_key = "SubhaloVelDispReProjectedStellarTotal")
-    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, r_half, "SubhaloVelDisp3D_Stellar_Re_Total")
-    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, 30, "SubhaloVelDisp3D_Stellar_Total")
-    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 30, "SubhaloVelDisp3D_Gas_Total")
-    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 30, "SubhaloVelDisp3D_DM_Total")
+    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, -1, "SubhaloVelDisp3D_Stellar_Total")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, -1, "SubhaloVelDisp3D_Gas_Total")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, -1, "SubhaloVelDisp3D_DM_Total")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, r_half, "SubhaloVelDisp3D_Gas_Re_Total")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, r_half, "SubhaloVelDisp3D_DM_Re_Total")
 
-    """
     #Reduce data size
     max_rad = group_cat["SubhaloGalaxyRad"][0]
     stars = stars[stars["r"] < max_rad]
@@ -94,22 +92,50 @@ def velocities(tng_run, snapshot, dm_mass, i):
         gas = il.pandasformat.empty_gas_df()
         gas = physics.properties.relative_pos_radius(gas, group_cat)
         gas = physics.properties.relative_velocities(gas, group_cat)
+    #Masses and half mass radius
+    group_cat["SubhaloMassStellar15Rvir"] = stars["Masses"].sum()
+    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="15Rvir")
+    r_half = group_cat["SubhaloHalfmassRadStellar15Rvir"][0]
+    #Velocities
+    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, max_rad, "SubhaloVelDisp3D_Stellar_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, max_rad, "SubhaloVelDisp3D_Gas_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, max_rad, "SubhaloVelDisp3D_DM_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, r_half, "SubhaloVelDisp3D_Gas_Re_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, r_half, "SubhaloVelDisp3D_DM_Re_15Rvir")
+    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, rad_key="15Rvir", vd_key = "SubhaloVelDispReProjectedStellar15Rvir")
 
-    #Calculate masses
-    group_cat["SubhaloMassGas"] = gas["Masses"].sum()
-    group_cat["SubhaloMassDM"] = dm["Masses"].sum()
-    group_cat["SubhaloMassStellar"] = stars["Masses"].sum()
-    group_cat["SubhaloMass"] = group_cat["SubhaloMassGas"] + group_cat["SubhaloMassDM"] + group_cat["SubhaloMassStellar"]
-    #Calculate SFR
-    group_cat["SubhaloSFR"] = gas["StarFormationRate"].sum()
-    #Calculate half mass rad
-    group_cat = physics.properties.half_mass_radius(stars, group_cat)
-    #velocities
-    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, "SubhaloVelDispStellar")
-    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, max_rad, "SubhaloVelDispStellar3D")
-    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, max_rad, "SubhaloVelDispGas3D")
-    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, max_rad, "SubhaloVelDispDM3D")
-    """
+    max_rad = 30
+    stars = stars[stars["r"] < max_rad]
+    gas = gas[gas["r"] < max_rad]
+    dm = dm[dm["r"] < max_rad]
+    
+    if gas.empty:
+        gas = il.pandasformat.empty_gas_df()
+        gas = physics.properties.relative_pos_radius(gas, group_cat)
+        gas = physics.properties.relative_velocities(gas, group_cat)
+
+    group_cat["SubhaloMassStellar30kpc"] = stars["Masses"].sum()
+    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="30kpc")
+    r_half = group_cat["SubhaloHalfmassRadStellar30kpc"][0]
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, r_half, "SubhaloVelDisp3D_Gas_Re_30kpc")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, r_half, "SubhaloVelDisp3D_DM_Re_30kpc")
+    group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, rad_key="30kpc", vd_key = "SubhaloVelDispReProjectedStellar30kpc")
+
+    max_rad = 10
+    stars = stars[stars["r"] < max_rad]
+    gas = gas[gas["r"] < max_rad]
+    dm = dm[dm["r"] < max_rad]
+    
+    if gas.empty:
+        gas = il.pandasformat.empty_gas_df()
+        gas = physics.properties.relative_pos_radius(gas, group_cat)
+        gas = physics.properties.relative_velocities(gas, group_cat)
+
+    group_cat["SubhaloMassStellar10kpc"] = stars["Masses"].sum()
+    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="10kpc")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 10, "SubhaloVelDisp3D_Gas_10kpc")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 10, "SubhaloVelDisp3D_DM_10kpc")
+    
     return group_cat
 
 def fifteen_virial(tng_run, snapshot, dm_mass, i):
@@ -173,9 +199,9 @@ def fifteen_virial(tng_run, snapshot, dm_mass, i):
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, half_rad, "SubhaloRotVelRe15Rvir")
     group_cat = physics.properties.rotational_vel(gas, dm, stars, group_cat, 2.2*half_rad, "SubhaloRotVelRe2215Rvir")
     group_cat = physics.properties.velocity_disp_projected_stars(stars, group_cat, rad_key="15Rvir", vd_key = "SubhaloVelDispReProjected15Rvir")
-    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, 30, "SubhaloVelDisp3D_Stellar_15Rvir")
-    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 30, "SubhaloVelDisp3D_Gas_15Rvir")
-    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 30, "SubhaloVelDisp3D_DM_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, max_rad, "SubhaloVelDisp3D_Stellar_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(gas, group_cat, max_rad, "SubhaloVelDisp3D_Gas_15Rvir")
+    group_cat = physics.properties.velocity_disp_3D(dm, group_cat, max_rad, "SubhaloVelDisp3D_DM_15Rvir")
     #Photometrics
     group_cat = physics.properties.photometrics(stars, group_cat, "15Rvir")
 
@@ -224,7 +250,6 @@ def set_aperture(tng_run, snapshot, dm_mass, i):
     group_cat["SubhaloMassGas30kpc"] = gas["Masses"].sum()
     group_cat["SubhaloMassDM30kpc"] = dm["Masses"].sum()
     group_cat["SubhaloMassStellar30kpc"] = stars["Masses"].sum()
-    group_cat["SubhaloMassStellar"] = stars["Masses"].sum() #Will get overwritten, necessary for calculations
     group_cat["SubhaloMass30kpc"] = group_cat["SubhaloMassGas30kpc"] + group_cat["SubhaloMassDM30kpc"] + group_cat["SubhaloMassStellar30kpc"]
     #Calculate half mass rad
     group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="30kpc")
