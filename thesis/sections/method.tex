@@ -107,15 +107,13 @@ When observing galaxies with telescopes, there is always the problem of contamin
 
 In simulations, we are not limited by hardware, attenuation, and background light. A cut-off point still needs to be determined. \texttt{SUBFIND} does this for the dark matter part of the simulation, separating out subhalos from larger halos. The galaxy properties of that subhalo are then calculated using all the stellar and gas particles in the subhalo and saved in the group catalog. 
 
-When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. In \textcite{Pillepich2017} users of TNG data are urged to consider their choice of aperture size with caution and emphasise that the definitions must always be stated clearly. They adovcate the use of a simple galaxy radius of some fixed aperture in physical kiloparsecs.
+When comparing simulation data to observational data, there are many ways to emulate the finite size of observed galaxies. Calculating luminosities and selecting a cut-off point at the faint end, using a spherical volume with a radius that is a multiple of their particular effective radius, or a fraction of the virial radius of the parent subhalo are some of the most commonly employed methods. In \textcite{Pillepich2017} users of TNG data are urged to consider their choice of aperture size with caution and emphasise that the definitions must always be stated clearly. They adovcate the use of a simple galaxy radius of some fixed aperture in physical kiloparsecs. In this work, properties in TNG have been calculated within two different 3D apertures as well as within the entire subhalo. The first of the two apertures has a 3D radius of $15 \% r_{200}$, where $r_{200}$ is the virial radius of the halo to which the central subhalo is bound. //write more about why this is chosen// The second aperture is a simple 30 kpc aperture, which is commonly used to simulate the observational Petrosian aperture \parencite{Schaye2015}.
 
 \subsubsection{Magnitude and colors}
 
 The absolute magnitude ($\mathcal{M}$) is a measure of the total luminosity ($L$) of the galaxy such that $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$, where $L_\odot$ is the solar luminosity and $\mathcal{M}_\odot$ is the solar magnitude.
 
-For the \texttt{SUBFIND} group catalog, the \texttt{SubhaloStellarPhotometrics} field gives the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. The particle luminosities are determined by summing the luminosities within $R_{gal}$. Eight bands are available, but here only the g- and i-band are used. 
-
-The g-i colors for the particles are calculated by simply subtracting the i-band magnitude from the g-band magnitude.
+For the \texttt{SUBFIND} group catalog, the \texttt{SubhaloStellarPhotometrics} field gives the magnitudes based on the summed up luminosities of all the stellar particles in the Subhalo. The particle luminosities are determined by summing the luminosities within $R_{gal}$. Eight bands are available, but here only the g- and i-band are used. The g-i colors are then calculated by simply subtracting the i-band magnitude from the g-band magnitude. The color is also computed for the $15 \% r_{200}$ and the 30 kpc aperture.
 
 In SAMI, g-i color values are adopted from the GAMA Sérsic catalogue \parencite{Driver2011} as well as the SAMI Cluster Redshift Survey \parencite{Owers2017}.
 
@@ -125,8 +123,7 @@ Stellar mass estimates depend on the stellar initial mass function (IMF), which 
 
 In \texttt{SUBFIND}, masses for each particle type are calculated by summing up all the masses of that particle type belonging to the subhalo. Values for the mass within the stellar half-mass radius, two times the stellar half-mass radius and the radius at which the maximum rotational velocity is found are also available.
 
-To study the effect of the choice in stellar mass definitions, several possible galaxy radii have been used to calculate the galaxy's total stellar mass. The largest possible value is that of SUBFIND, where the mass is the sum of all the stellar particles bound to the subhalo ($M^{SF}_\ast$). The other definitions of stellar mass which were studied are compared to this value. These definitions are the stellar mass within 15 \% of the virial radius ($M_\ast^1$), the stellar mass within 30$\,$ kpc ($M_\ast^{30kpc}$) and the stellar mass within twice the SUBFIND half mass radius ($M_\ast^{2Rhm}$)\footnote{These values are available in the TNG group catalog}. These are all definitions which are commonly used in works where TNG data is employed. 
-//Write more about who uses what. 30 kpc Schaye 2015, Petrosian etc.
+To study the effect of the choice in stellar mass definitions, several possible galaxy radii have been used to calculate the galaxy's total stellar mass. The largest possible value is that of SUBFIND, where the mass is the sum of all the stellar particles bound to the subhalo ($M^{SF}_\ast$). The other definitions of stellar mass which were studied are compared to this value. Using the particles, the stellar mass within 15 \% of the virial radius ($M_\ast^1$) and the stellar mass within 30$\,$ kpc ($M_\ast^{30kpc}$) was calculated. These, along with the SUBFIND total stellar mass and the SUBFIND stellar mass within $2 \times r_{hm}^{SF}$ are all definitions which are commonly used in works where TNG data is employed. 
 
 For SAMI DR3, the stellar mass values are taken from the GAMA Sérsic catalogue \parencite{Driver2011} as well as the SAMI Cluster Redshift Survey \parencite{Owers2017}. They calculate the stellar masses by using the i-band magnitude and g-i color of each galaxy through the formula $\log(M_*/M_\odot) = 1.15 + 0.70(g-i) -0.4\mathcal{M}_i$, where $\mathcal{M}_i$ is the rest-frame i-band absolute magnitude \parencite{Taylor2011}.
 
@@ -135,8 +132,6 @@ For SAMI DR3, the stellar mass values are taken from the GAMA Sérsic catalogue 
 In observational data, galaxy sizes are always projected sizes, as they are derived from 2D images. A common measure of the size of a galaxy is the effective radius ($R_e$), which is the radius within which half the light of the galaxy is contained. This quantity depends on the analysis and quality of the 2D profiles, and may not be able to include all the light in a galaxy in the way that we can ensure for computer simulated data. The radius also depends on which optical filter the measurements are made in, as different filters will be receptive to light from different parts of the galaxy. To be consistent with the simulation data, the 2D radius from the observations are projected by using the relation $r_{1/2} = \frac{4}{3}R_{e}$, where $r_{1/2}$ is the 3D deprojected half-light radius and $R_e$ is the 2D projected half-light radius, which generally holds for a range of surface brightness profiles observed in stellar systems \parencite{Wolf2010}.
 
 For TNG data, the \texttt{SubhaloHalfmassRadStellar} field has been used. The half-mass radius is the radius of a spherical volume within which half the stellar mass is found. It is the 3D half-mass radius ($r_hm$), as it is not a projected quantity. This value is generally higher than the 2D half-light radius ($R_{hl}$) for a given mass up to $M_{*} < 10^{10.5}$, as seen in \textcite{Genel2017}. 
-
-The half-mass radii of the galaxies calculated using the particles are derived using the same method, but using only the total stellar mass calculated within $R_{gal}$.
 
 The SAMI catalog data has two different estimates for effective radius. The first is based on Sersic fits to SDSS and VST imaging data and is defined as the semi-major axis half-light radius, measured in the r-band. They are found in the GAMA Sérsic catalogue \parencite{Driver2011} and the SAMI Cluster Redshift Survey \parencite{Owers2017}. The values are given in units of arcsec which were then converted to a physical radius in kpc. Then these semi-major axis radii are converted to circular radii using the formula
 
@@ -177,34 +172,37 @@ In SAMI catalog data, the given velocity dispersion is averaged within an apertu
 
 \subsection{Galaxy morphology classifications}
 
-Starting off with the same subset of 5877 galaxies for both the \texttt{SUBFIND} group catalogue and the particles, we get different results for which galaxies are early- and late-type galaxies, based on the volume in which the gas mass is measured. Table \ref{gas_frac} show the number of early and late type galaxies for different volumes.
-
-//UPDATE this with new numbers
+Starting off with the same subset of 7303 TNG subhalos, we get different results for which galaxies are classfied as early- and late-type galaxies, based on the classification method as well as the volume in which the relevant properties are measured. The details are presented in Table \ref{morph}.
 
 \begin{table}
 \begin{center}
-\caption{Gas fraction.}
- \label{gas_frac}
-\begin{tabular}{ l| c c c c c } 
+\caption{The number of early (E) and late (L) type galaxies in the sample of 7303 galaxies for different classification methods and volumes within the classifying properties are calculated within. Values marked with a * are available through the SUBFIND catalog.}
+ \label{morph}
+\begin{tabular}{ l| c c c c c c c } 
  \hline
  \hline
-   &\multicolumn{2}{c}{\texttt{SUBFIND}}&\multicolumn{2}{c}{Particles} \\
-   &  Early-type & Late-type & Early-type & Late-type \\
+   &\multicolumn{2}{c}{\texttt{sSFR}}&\multicolumn{2}{c}{$f_{gas}$}&\multicolumn{2}{c}{$\kappa_{rot}$}\\
+   &  E & L & E & L & E & L \\
  \hline
- Half-mass radius & 2438 & 3439 & 2479 & 3398 \\ 
- 2 $\times$ half-mass radius & 1818 & 4059 & 1920 & 3957 \\ 
- 15\% R$_{200}$ & - & - & 799 & 5078 \\ 
- R$_{subhalo}$ & 63 & 5814 & - & - \\ 
+ $r_{hm}^{SF}$ & - & - & 2493* & 4811* & - & - \\ 
+ 2 $\times r_{hm}^{SF}$ & - & - & 1847* & 5456* & - & - \\ 
+ 30 kpc & 1493 & 5213 & 864 & 6439 & 5554 & 1749 \\ 
+ 15\% r$_{200}$ & 1497 & 5212 & 817 & 6486 & 5582 & 1721 \\ 
+ Subhalo & 1491* & 5201* & 80* & 7224* & - & - \\ 
  \hline 
  \end{tabular}
 \end{center}
 \end{table}
 
-The selection process using the sSFR with $ -1.44 < \log (sSFR[Gyr^{-1}]) $ being late type and $\log (sSFR[Gyr^{-1}]) < -1.94$ being early type gives very similar results whether \texttt{SUBFIND} or particles are used. For \texttt{SUBFIND} we get 1350 early-types, 4129 late-types and 398 intermediate types, while for the particles we find 1365 early-types and 4129 late-type galaxies with 383 intermediate types.
+The selection process using the sSFR with $ -1.44 < \log (sSFR[Gyr^{-1}]) $ being late type and $\log (sSFR[Gyr^{-1}]) < -1.94$ being early type gives very similar results whether the star formation rate and stellar mass is calculated within 30 kpc, $15\% r_{200}$ or the entire subhalo. These findings agree well with \textcite{Schaye2015}, which found the effect of a 30 kpc aperture to be neglible for star formation rates compared to that of the whole subhalo. The stellar mass is found to be affected, with smaller galaxy apertures giving smaller stellar masses for galaxies with mass $M_* > 10^{11}M_{\odot}$. This would give a slighly larger sSFR to the most massive galaxies, leading to fewer early type galaxies, but the SFR is close to zero in these galaxies so the effect on the selection process is minimal.
 
-By using the simple cut at $\kappa_{rot} = 0.6$ the 5877 galaxies are then separated into 4359 early type galaxies and 1518 late types. This is a completely different result from the two methods above, where there was a majority of late-type galaxies. In real life we know that smaller late-type galaxies dominate, so using only the rotational energy does not yield the expected ratio. However, combining this result with one of the two above should result in a subset of galaxies which exhibit both the right amount of cold gas and the star formation that goes with it, as well as the right kinematic structure.
+For the classification method using the criteria of late type galaxies having a gas-to-stellar mass fraction $f_{gas} > 0.1$ and early types having $f_{gas} < 0.1$ to separate the galaxies we get a much more profound difference by using different apertures when calculating $f_{gas}$. Especially for the values which are available using $SUBFIND$ catalog values only, there is a huge difference in the selection. This is because there is a large difference in where the gas and stellar particles are situated within the halo, with the majority of the gas mass being found in the outer part of the galaxy where there are few stars.
 
-In the rest of this paper, early-type galaxies are those which, calculated using the particles, have a sSFR of $\log (sSFR[Gyr^{-1}]) < -1.94$ as well as $\kappa_{rot} < 0.6$. Late-types have a sSFR of $ -1.44 < \log (sSFR[Gyr^{-1}]) $ as well as $\kappa_{rot} > 0.6$. This results in 1228 early-type galaxies, 1300 late-types and 3349 intermediate-type galaxies. For the \texttt{SUBFIND} sample, the same galaxies in each group are chosen by matching the subhalo-id from the previously mentioned selection. //Insert figure of galaxies.
+By using the simple cut at $\kappa_{rot} = 0.6$ //NEED MORE NUMBERS// This is a completely different result from the two methods above, where there was a majority of late-type galaxies. In real life we know that smaller late-type galaxies dominate, so using only the rotational energy does not yield the expected ratio. However, combining this result with one of the two above should result in a subset of galaxies which exhibit both the right amount of cold gas and the star formation that goes with it, as well as the expected kinematic structure.
+
+In the rest of this paper, early-type galaxies are those which, calculated using the particles and an aperture of 30 kpc, have a sSFR of $\log (sSFR[Gyr^{-1}]) < -1.94$ as well as $\kappa_{rot} < 0.6$. Late-types have a sSFR of $ -1.44 < \log (sSFR[Gyr^{-1}]) $ as well as $\kappa_{rot} > 0.6$. This results in 1336 early-type galaxies, 1449 late-types and 4518 intermediate-type galaxies. For the \texttt{SUBFIND} sample, the same galaxies in each group are chosen by matching the subhalo-id from the previously mentioned selection. 
+
+//Insert figure of galaxies.
 
 
-SAMI DR3 provides its users with a catalog of visual morphology classifications that members of their team have done. It is realtively simple with 4 galaxy types, ellipticals, S0s, early spirals and late spirals, as well as a ``unknown'' category. This last category comprises only about 5\% of the sample. In this work, the galaxys are further separated into just two categories, early and late type galaxies, where the former contains ellipticals and S0s while the latter contains the early and late spirals.
+SAMI DR3 provides its users with a catalog of visual morphology classifications that members of their team have done. It is realtively simple with 4 galaxy types, ellipticals, S0s, early spirals and late spirals, as well as a ``unknown'' category. This last category comprises only about 5\% of the sample. In this work, the galaxys are further separated into just two categories, early and late type galaxies, where the former contains ellipticals and S0s while the latter contains only late spirals.

@@ -4436,6 +4436,171 @@
       \endverb
       \keyw{Galaxy: formation,Galaxy: kinematics and dynamics,Galaxy: structure,Astrophysics - Cosmology and Extragalactic Astrophysics}
     \endentry
+    \entry{Schaye2015}{article}{}
+      \name{author}{22}{}{%
+        {{un=0,uniquepart=base,hash=fb5d964c21d66f0678b20896194a0938}{%
+           family={{Schaye}},
+           familyi={S\bibinitperiod},
+           given={Joop},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00011de90f6acac8cf25b1200055e7d1}{%
+           family={{Crain}},
+           familyi={C\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a649cfc990b5f0cb1a596291759a536}{%
+           family={{Bower}},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad9d46e28b9b10b4138c0f81164ea31c}{%
+           family={{Furlong}},
+           familyi={F\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a53038c7c9dc300c3d236132e69765c1}{%
+           family={{Schaller}},
+           familyi={S\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5112f068f6909ce09501499b5de8252e}{%
+           family={{Theuns}},
+           familyi={T\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a6a7d6e3e4cbbdc7ae2a6c0c86d4c24}{%
+           family={{Dalla Vecchia}},
+           familyi={D\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4776d513b928b621a13d84daa52cd5b}{%
+           family={{Frenk}},
+           familyi={F\bibinitperiod},
+           given={Carlos\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7b235504b4e7a5a2b28fb7d684357ce}{%
+           family={{McCarthy}},
+           familyi={M\bibinitperiod},
+           given={I.\bibnamedelimi G.},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4bead5d934a2269b3c89ea0cf4f4cba}{%
+           family={{Helly}},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b8cbec7a93ab16a62ad241b44e8f43b}{%
+           family={{Jenkins}},
+           familyi={J\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a08f493397122e65c0d2d5c8dc3aee05}{%
+           family={{Rosas-Guevara}},
+           familyi={R\bibinitperiod},
+           given={Y.\bibnamedelimi M.},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04393094616177a4b8448cc28119da88}{%
+           family={{White}},
+           familyi={W\bibinitperiod},
+           given={Simon\bibnamedelima D.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a377de877c7915ba8f35840378ef704}{%
+           family={{Baes}},
+           familyi={B\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c62db8ad732899210e9354039aa753f}{%
+           family={{Booth}},
+           familyi={B\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a16b51f6eb71476cda0c2731c0ac6c8}{%
+           family={{Camps}},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5867b69dd938a4ea4a392940f5e3d47f}{%
+           family={{Navarro}},
+           familyi={N\bibinitperiod},
+           given={Julio\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=317b027a62a899a7160c846e4413a7e4}{%
+           family={{Qu}},
+           familyi={Q\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55bd51b5292aff40557abbcfd01f8218}{%
+           family={{Rahmati}},
+           familyi={R\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96ea5c0e665f1d3e9edb7ba1be047c0b}{%
+           family={{Sawala}},
+           familyi={S\bibinitperiod},
+           given={Till},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d7a124413bace48a622d8df2231d8fc3}{%
+           family={{Thomas}},
+           familyi={T\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=476f47c0e67a3a2236c92c45b73e8b13}{%
+           family={{Trayford}},
+           familyi={T\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d8d2c784b9cf2f7d2d403cfe283db6d6}
+      \strng{fullhash}{5c92d0b168e0cb38b84b4047988d8636}
+      \strng{bibnamehash}{d8d2c784b9cf2f7d2d403cfe283db6d6}
+      \strng{authorbibnamehash}{d8d2c784b9cf2f7d2d403cfe283db6d6}
+      \strng{authornamehash}{d8d2c784b9cf2f7d2d403cfe283db6d6}
+      \strng{authorfullhash}{5c92d0b168e0cb38b84b4047988d8636}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{{The EAGLE project: simulating the evolution and assembly of galaxies and their environments}}
+      \field{volume}{446}
+      \field{year}{2015}
+      \field{pages}{521\bibrangedash 554}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1093/mnras/stu2058
+      \endverb
+      \verb{eprint}
+      \verb 1407.7040
+      \endverb
+      \keyw{methods: numerical,galaxies: evolution,galaxies: formation,cosmology: theory,Astrophysics - Astrophysics of Galaxies,Astrophysics - Cosmology and Nongalactic Astrophysics}
+    \endentry
     \entry{Schechter1976}{article}{}
       \name{author}{1}{}{%
         {{un=1,uniquepart=given,hash=b02c82ff35a06495f14a2532e68def71}{%
