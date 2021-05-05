@@ -1,36 +1,60 @@
 we are running from this directory: /cluster/work/aurorasg/TNG
+we are running from this directory: /cluster/work/aurorasg/TNG
  the name of the job is: cluster_run
-Th job ID is 206270
-The job was run on these nodes: idun-02-17
+ the name of the job is: cluster_run
+Th job ID is 207297
+Th job ID is 207291
+The job was run on these nodes: idun-02-12
+The job was run on these nodes: idun-02-12
+Number of nodes: 1
+Number of nodes: 1
+We are using 1 cores
+We are using 1 cores
+We are using 1 cores per node
+We are using 1 cores per node
+Total of 1 cores
+Total of 1 cores
+we are running from this directory: /cluster/work/aurorasg/TNG
+ the name of the job is: cluster_run
+Th job ID is 207296
+The job was run on these nodes: idun-02-12
 Number of nodes: 1
 We are using 1 cores
 We are using 1 cores per node
 Total of 1 cores
 we are running from this directory: /cluster/work/aurorasg/TNG
+we are running from this directory: /cluster/work/aurorasg/TNG
  the name of the job is: cluster_run
-Th job ID is 206264
-The job was run on these nodes: idun-02-17
+ the name of the job is: cluster_run
+Th job ID is 207294
+Th job ID is 207295
+The job was run on these nodes: idun-02-08
+The job was run on these nodes: idun-02-08
+Number of nodes: 1
 Number of nodes: 1
 We are using 1 cores
+We are using 1 cores
+We are using 1 cores per node
 We are using 1 cores per node
 Total of 1 cores
-Linux idun-02-02 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-Linux idun-02-17 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-Linux idun-02-17 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Total of 1 cores
 Linux idun-02-08 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-Linux idun-02-05 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-Linux idun-02-05 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-Linux idun-02-05 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-./data/tng-100-1/cutdata/missed/missed_1.txt
-./data/tng-100-1/cutdata/missed/missed_7.txt
-/cluster/work/aurorasg/TNG/./src/cluster_run.sh: line 21: ./data/tng-100-1/cutdata/missed/missed_7.txt: No such file or directory
-./data/tng-100-1/cutdata/missed/missed_6.txt
-/cluster/work/aurorasg/TNG/./src/cluster_run.sh: line 21: ./data/tng-100-1/cutdata/missed/missed_6.txt: No such file or directory
-./data/tng-100-1/cutdata/missed/missed_5.txt
-/cluster/work/aurorasg/TNG/./src/cluster_run.sh: line 21: ./data/tng-100-1/cutdata/missed/missed_5.txt: No such file or directory
+Linux idun-02-08 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Linux idun-02-03 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Linux idun-02-12 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ./data/tng-100-1/cutdata/missed/missed_3.txt
+Linux idun-02-03 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Linux idun-02-12 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ./data/tng-100-1/cutdata/missed/missed_4.txt
+./data/tng-100-1/cutdata/missed/missed_1.txt
+Linux idun-02-12 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ./data/tng-100-1/cutdata/missed/missed_2.txt
+./data/tng-100-1/cutdata/missed/missed_5.txt
+./data/tng-100-1/cutdata/missed/missed_6.txt
+./data/tng-100-1/cutdata/missed/missed_7.txt
+/cluster/work/aurorasg/TNG/./src/cluster_run.sh: line 21: ./data/tng-100-1/cutdata/missed/missed_5.txt: No such file or directory
+/cluster/work/aurorasg/TNG/./src/cluster_run.sh: line 21: ./data/tng-100-1/cutdata/missed/missed_6.txt: No such file or directory
+/cluster/work/aurorasg/TNG/./src/cluster_run.sh: line 21: ./data/tng-100-1/cutdata/missed/missed_7.txt: No such file or directory
 Processing subhalo  405882
 Processing subhalo  384355
 Processing subhalo  392097
@@ -38,128 +62,128 @@ Processing subhalo  406136
 Processing subhalo  384534
 Processing subhalo  406256
 Processing subhalo  392253
-Processing subhalo  406380
 Processing subhalo  384705
+Processing subhalo  406380
 Processing subhalo  392368
-Processing subhalo  406495
 Processing subhalo  384914
+Processing subhalo  406495
 Processing subhalo  392585
-Processing subhalo  406698
 Processing subhalo  385115
-Processing subhalo  406878
-Processing subhalo  392725
+Processing subhalo  406698
 Processing subhalo  385350
+Processing subhalo  392725
+Processing subhalo  406878
 Processing subhalo  407020
-Processing subhalo  392852
 Processing subhalo  385582
-Processing subhalo  407204
+Processing subhalo  392852
 Processing subhalo  385798
-Processing subhalo  407320
+Processing subhalo  407204
 Processing subhalo  392961
 Processing subhalo  386003
-Processing subhalo  407472
+Processing subhalo  407320
 Processing subhalo  393117
-Processing subhalo  407606
 Processing subhalo  386247
+Processing subhalo  407472
 Processing subhalo  393336
-Processing subhalo  407822
 Processing subhalo  386429
+Processing subhalo  407606
 Processing subhalo  393546
-Processing subhalo  407926
-Processing subhalo  408076
+Processing subhalo  407822
 Processing subhalo  386612
+Processing subhalo  407926
 Processing subhalo  393731
-Processing subhalo  408224
 Processing subhalo  386827
-Processing subhalo  393888
+Processing subhalo  408076
 Processing subhalo  387067
-Processing subhalo  408393
+Processing subhalo  393888
+Processing subhalo  408224
 Processing subhalo  394069
-Processing subhalo  408497
 Processing subhalo  387236
 Processing subhalo  394241
-Processing subhalo  408647
+Processing subhalo  408393
 Processing subhalo  387438
-Processing subhalo  408764
+Processing subhalo  408497
 Processing subhalo  394439
-Processing subhalo  408935
+Processing subhalo  408647
 Processing subhalo  387590
 Processing subhalo  394600
-Processing subhalo  409086
+Processing subhalo  408764
 Processing subhalo  387726
-Processing subhalo  409226
-Processing subhalo  394719
+Processing subhalo  408935
 Processing subhalo  387936
-Processing subhalo  409358
-Processing subhalo  394850
+Processing subhalo  394719
+Processing subhalo  409086
 Processing subhalo  388115
-Processing subhalo  409475
-Processing subhalo  394986
+Processing subhalo  394850
+Processing subhalo  409226
 Processing subhalo  388249
-Processing subhalo  409645
+Processing subhalo  394986
+Processing subhalo  409358
 Processing subhalo  395153
-Processing subhalo  395338
 Processing subhalo  388428
-Processing subhalo  409761
-Processing subhalo  395533
+Processing subhalo  409475
+Processing subhalo  395338
 Processing subhalo  388615
-Processing subhalo  409883
-Processing subhalo  395735
+Processing subhalo  395533
+Processing subhalo  409645
 Processing subhalo  388818
-Processing subhalo  409986
+Processing subhalo  395735
+Processing subhalo  409761
 Processing subhalo  395882
-Processing subhalo  410140
-Processing subhalo  396073
+Processing subhalo  409883
 Processing subhalo  389056
-Processing subhalo  410303
-Processing subhalo  396266
-Processing subhalo  410456
+Processing subhalo  396073
+Processing subhalo  409986
 Processing subhalo  389156
-Processing subhalo  396462
+Processing subhalo  396266
+Processing subhalo  410140
 Processing subhalo  389345
-Processing subhalo  410567
-Processing subhalo  396640
+Processing subhalo  396462
 Processing subhalo  389511
-Processing subhalo  410700
-Processing subhalo  396851
-Processing subhalo  410887
+Processing subhalo  410303
+Processing subhalo  396640
 Processing subhalo  389704
-Processing subhalo  397063
-Processing subhalo  411034
+Processing subhalo  396851
+Processing subhalo  410456
 Processing subhalo  389917
-Processing subhalo  397260
-Processing subhalo  411154
+Processing subhalo  397063
+Processing subhalo  410567
 Processing subhalo  390127
-Processing subhalo  411321
-Processing subhalo  397418
-Processing subhalo  411452
+Processing subhalo  410700
+Processing subhalo  397260
+Processing subhalo  410887
 Processing subhalo  390305
-Processing subhalo  397568
-Processing subhalo  411637
+Processing subhalo  411034
+Processing subhalo  397418
 Processing subhalo  390465
-Processing subhalo  397682
-Processing subhalo  411783
+Processing subhalo  411154
+Processing subhalo  397568
+Processing subhalo  411321
 Processing subhalo  390724
+Processing subhalo  397682
+Processing subhalo  411452
 Processing subhalo  397866
-Processing subhalo  411949
 Processing subhalo  390859
-Processing subhalo  398110
-Processing subhalo  412079
+Processing subhalo  411637
 Processing subhalo  391081
-Processing subhalo  412199
-Processing subhalo  398282
-Processing subhalo  412332
+Processing subhalo  398110
+Processing subhalo  411783
 Processing subhalo  391260
-Processing subhalo  398405
-Processing subhalo  412442
+Processing subhalo  398282
+Processing subhalo  411949
 Processing subhalo  391447
-Processing subhalo  412591
-Processing subhalo  398549
-Processing subhalo  412743
+Processing subhalo  398405
+Processing subhalo  412079
 Processing subhalo  391681
-Processing subhalo  398685
+Processing subhalo  412199
+Processing subhalo  398549
+Processing subhalo  412332
 Processing subhalo  391869
+Processing subhalo  398685
+Processing subhalo  412442
 Processing subhalo  398913
+Processing subhalo  412591
+Processing subhalo  412743
 Processing subhalo  399101
 Processing subhalo  399267
 Processing subhalo  399391
