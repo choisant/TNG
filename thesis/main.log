@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  3 MAY 2021 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  4 MAY 2021 09:21
 entering extended mode
 **./main.tex
 (main.tex
@@ -766,48 +766,13 @@ Overfull \hbox (1.58226pt too wide) in paragraph at lines 65--65
 i-cal So-ci-ety of the Pa-cific \OT1/cmr/m/n/12 115.809
  []
 
-! Undefined control sequence.
-<argument> \mnras 
-                  
-l.65 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [47]
 Overfull \hbox (9.78357pt too wide) in paragraph at lines 65--65
 \OT1/cmr/m/n/12 cal Galaxy Struc-tural Scal-ing Laws''. In: \OT1/cmr/m/it/12 ar
 Xiv e-prints\OT1/cmr/m/n/12 , arXiv:2009.03916
  []
 
-[48]
-! Undefined control sequence.
-<argument> \mnras 
-                  
-l.65 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[49]
-! Undefined control sequence.
-<argument> \mnras 
-                  
-l.65 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[50] (main.aux)
+[48] [49] [50] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6F269A1288667B8F09A1A8CB1E85EEAE;2937.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -815,10 +780,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15024 strings out of 479799
- 269363 string characters out of 2879559
+ 15023 strings out of 479799
+ 269358 string characters out of 2879559
  980662 words of memory out of 3000000
- 31613 multiletter control sequences out of 15000+200000
+ 31612 multiletter control sequences out of 15000+200000
  543072 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,10n,75p,1524b,1759s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -837,7 +802,7 @@ s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (51 pages, 10214465 bytes).
+Output written on main.pdf (51 pages, 10214570 bytes).
 PDF statistics:
  830 PDF objects out of 1000 (max. 8388607)
  170 named destinations out of 1000 (max. 500000)

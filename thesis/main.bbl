@@ -58,7 +58,7 @@
       \field{journaltitle}{The Astrophysical Journal}
       \field{month}{6}
       \field{number}{1}
-      \field{title}{{The Average Star Formation Histories of Galaxies in Dark Matter Halos from z = 0-8}}
+      \field{title}{The Average Star Formation Histories of Galaxies in Dark Matter Halos from z = 0-8}
       \field{volume}{770}
       \field{year}{2013}
       \field{pages}{57}
@@ -967,7 +967,7 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.GA}
       \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
       \field{month}{2}
       \field{title}{The SAMI Galaxy Survey: the third and final data release}
       \field{year}{2021}
@@ -2599,10 +2599,10 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph.GA}
       \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
       \field{month}{6}
       \field{number}{2}
-      \field{title}{{The SAMI Galaxy Survey: the cluster redshift survey, target selection and cluster properties}}
+      \field{title}{The SAMI Galaxy Survey: the cluster redshift survey, target selection and cluster properties}
       \field{volume}{468}
       \field{year}{2017}
       \field{pages}{1824\bibrangedash 1849}
@@ -4612,7 +4612,7 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{astro-ph}
       \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
       \field{month}{12}
       \field{number}{3}
       \field{title}{Populating a cluster of galaxies - I. Results at [formmu2]z=0}
