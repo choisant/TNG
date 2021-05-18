@@ -18,11 +18,11 @@ def load(tng_run, snapshot, i):
     stars = il.pandasformat.dict_to_pandas(il.snapshot.loadSubhalo(base_path, snapshot, i, 'stars', fields["stars"]))
     print(timer())
     return group_cat
-
+"""
 def stars_out(tng_run, snapshot, i):
     #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"
-    fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities"],
+    fields = {"stars": ["Coordinates", "Potential", "Masses", "Velocities", "GFM_StellarPhotometrics"],
             }
     group_cat = pd.DataFrame({"id": [i]})
     #Load particles
@@ -34,15 +34,12 @@ def stars_out(tng_run, snapshot, i):
     group_cat = physics.properties.group_properties(group_cat, base_path)
     group_cat = physics.properties.center_halo(stars, group_cat)
     stars = physics.properties.relative_pos_radius(stars, group_cat)
-    max_rad = group_cat["SubhaloGalaxyRad"][0]
-    stars = stars[stars["r"] < max_rad]
-    group_cat["SubhaloMassStellar"] = stars["Masses"].sum()
     group_cat = physics.properties.subhalo_velocity(stars, group_cat)
     stars = physics.properties.relative_velocities(stars, group_cat)
-    group_cat = physics.properties.half_mass_radius(stars, group_cat)
-
+    #print(group_cat["SubhaloPosX"][0], group_cat["SubhaloPosY"][0], group_cat["SubhaloPosZ"][0])
+    group_cat["SubhaloMassStellarTotal"] = stars["Masses"].sum()
+    group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="Total")
     return stars
-"""
 def velocities(tng_run, snapshot, dm_mass, i):
      #intitial setup
     base_path = "./data/" + str(tng_run) + "/output"

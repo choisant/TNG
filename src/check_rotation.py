@@ -8,7 +8,7 @@ import physics
 import process_snapshot as process
 
 ##Parser
-
+"""
 parser_rot = argparse.ArgumentParser()
 parser_rot.add_argument('-tng', type=str, required=True, help="What TNG-run do you want to process?")
 parser_rot.add_argument('-id', type=str, default = "none", help="Test run id. The output will have this id-tag.")
@@ -16,7 +16,7 @@ parser_rot.add_argument('-n', '--name', type=str, default = "test", help="Test n
 parser_rot.add_argument('-sub', '--subhalo', type=str, default = "0", help="Id of a specific subhalo to rotate.")
 
 args = parser_rot.parse_args()
-
+"""
 
 def create_cat(path):
     df = pd.DataFrame()
@@ -96,12 +96,17 @@ def subhalo_rotation(tng_run, test_name, snapshot, subhalo_id):
     subhalo = process.stars_out(tng_run, snapshot, subhalo_id)
     subhalo = physics.geometry.rotate_coordinates(subhalo, rot_vector)
     create_projections(subhalo, group_cat, subhalo_id, test_name)
-
+"""
 tng_run = args.tng
 ##Variables
 if args.id != "none":
     test_name = args.name + "_" + args.id
 else:
     test_name = args.name
+"""
+tng_run = "tng-100-3"
+snapshot = 99
+test_name = "kapparot_2602"
+subhalo_id = 13332
 
-subhalo_rotation(tng_run, test_name, 99, int(args.subhalo))
+subhalo_rotation(tng_run, test_name, 99, subhalo_id)
