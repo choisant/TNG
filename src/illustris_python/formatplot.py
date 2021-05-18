@@ -170,7 +170,7 @@ def C_SM(color, ax, x0=9, x1=12, y0=-1, y1=1):
     ax.tick_params(which="major", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=8, width=3)
     ax.tick_params(which="minor", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=5, width=3)
     ax.minorticks_on()
-    ax.legend(loc=0, fontsize=TEXTSIZE+5, frameon=False)
+    ax.legend(loc=0, fontsize=TEXTSIZE+5, frameon=True)
 
 def SM_fC(color, ax, x0=9.5, x1=12, y0=-1, y1=1):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
@@ -249,7 +249,7 @@ def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
-    ax.legend(loc=0, fontsize=TEXTSIZE, frameon=False)
+    ax.legend(loc=2, fontsize=TEXTSIZE, frameon=False)
 
 def SM_fR(ax, x0=9.5, x1=12, y0=(0.8), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
@@ -267,7 +267,7 @@ def SM_R(ax, x0=(9), x1=13, y0=(-1), y1=2):
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
-    ax.legend(loc=0, fontsize=TEXTSIZE, frameon=False)
+    ax.legend(loc=2, fontsize=TEXTSIZE, frameon=False)
 
 def R_VD(ax, x0=(-1), x1=2, y0=1.5, y1=3):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))

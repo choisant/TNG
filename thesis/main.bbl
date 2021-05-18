@@ -71,6 +71,159 @@
       \endverb
       \keyw{dark matter,galaxies: abundances,galaxies: evolution,methods: numerical,Astrophysics - Cosmology and Extragalactic Astrophysics}
     \endentry
+    \entry{Bekerait2016}{article}{}
+      \name{author}{19}{}{%
+        {{un=0,uniquepart=base,hash=25dc65d1b9ebaf73b4e398815d1aab03}{%
+           family={Bekeraitė},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd65ae343343fcc5fcdfe3f4c47cdb77}{%
+           family={Walcher},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e0a7bd0ad3a3c1eadd674e07828c7fc}{%
+           family={Wisotzki},
+           familyi={W\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a9acc7e33deeae9a778f129cc6ddb8b}{%
+           family={Croton},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1c082ec582c2542a3e1ac66633e4345}{%
+           family={Falcón-Barroso},
+           familyi={F\bibinithyphendelim B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9345ca48832e949c42cf7bc61c1b132}{%
+           family={Lyubenova},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=073492533f09cbde27241af8c73e1237}{%
+           family={Obreschkow},
+           familyi={O\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01bdc0ccf94d3164c98653d0fb591557}{%
+           family={Sánchez},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi F.},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ae1517f5c2442ea778c6bc96a1e28c1}{%
+           family={Spekkens},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a9472cab299bcfa0f98ad47022cfb02}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e2370f2c2fe0885699f6fc988f03ecd}{%
+           family={Ven},
+           familyi={V\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=ce0b64128efe9d32547871e152ad72d8}{%
+           family={Zwaan},
+           familyi={Z\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c952313e93f7bf8fe75b18717050647}{%
+           family={Ascasibar},
+           familyi={A\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=918a5344257a864ca5f55747ba500e19}{%
+           family={Bland-Hawthorn},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21c7935556f3f09090aa8221cfa1699f}{%
+           family={Delgado},
+           familyi={D\bibinitperiod},
+           given={R.\bibnamedelimi González},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f3c894f65ab9c6a2e302d16fbfbb501}{%
+           family={Husemann},
+           familyi={H\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=782ddb755234d731a078369af967522c}{%
+           family={Marino},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b88608a3cf44fea67e6bbcabd97914be}{%
+           family={Vogelsberger},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca5d721b7c039bde4680acfc0b6ba201}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Astronomical Society}%
+      }
+      \strng{namehash}{31014e632234badcd46461a6756cc030}
+      \strng{fullhash}{15b983811648a6f8be0228f5831e08c4}
+      \strng{bibnamehash}{31014e632234badcd46461a6756cc030}
+      \strng{authorbibnamehash}{31014e632234badcd46461a6756cc030}
+      \strng{authornamehash}{31014e632234badcd46461a6756cc030}
+      \strng{authorfullhash}{15b983811648a6f8be0228f5831e08c4}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{{THE} {CALIFA} {AND} {HIPASS} {CIRCULAR} {VELOCITY} {FUNCTION} {FOR} {ALL} {MORPHOLOGICAL} {GALAXY} {TYPES}}
+      \field{volume}{827}
+      \field{year}{2016}
+      \field{pages}{L36}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/2041-8205/827/2/l36
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3847/2041-8205/827/2/l36
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3847/2041-8205/827/2/l36
+      \endverb
+    \endentry
     \entry{Bloom2017}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=0781fbda7755dff413aa251fba73624f}{%

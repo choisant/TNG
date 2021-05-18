@@ -150,7 +150,7 @@ An important factor in many studies of galaxy formation and evolution is looking
 
 As early-type galaxies have much less cold gas than late-type galaxies, a simple division in the galaxy population based on the gas fraction will be effective at roughly separating the two types. Gas is not distributed evenly in galaxies however, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot (not star-forming) gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
 
-Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. In this case, the galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation \parencite{Noeske2007}. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found. In a study using TNG100 \textcite{Genel2017} the ridge of the main-sequence is defined as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge. //write soemthing about using just > 0.5 below ridge.
+Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. In this case, the galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation \parencite{Noeske2007}. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found. In a study using the data from the TNG simulation, \textcite{Genel2017} defined the ridge of the main-sequence as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. A simpler criteria for main-sequence galaxies is to drop the upper bounds and include all galaxies that have sSFR more than 0.5 below the ridge. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge. 
 
 A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-total-kinetic-energy parameter $\kappa_{rot}$. 
 \begin{equation}
@@ -158,7 +158,15 @@ A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-
 \end{equation}
 where $j_{z, i}$ is the z-component of the specific angular momentum ($\vec{j} = \vec{r} \times \vec{v}$), $m_i$ is the mass, and $R_i$ is the projected radius of stellar particle $i$ in the xy-plane. 
 This value indicates how much of the kinetic energy of the galaxy is invested in the ordered rotation about its axis. To calculate $\kappa_{rot}$, the axis of rotation must first be found. The galaxy is then rotated such that the z-axis of the galaxy's coordinate system is pointed in the direction of the axis of rotation, and $\kappa_{rot}$ is calculated.
-For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa_{rot}$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$.
+For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa_{rot}$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$ \parencite{Ferrero2020}. Figure \ref{kappa_rot} shows ...//need to update this figure.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{images/disk_galaxy.png}
+    \caption{Update this photo with one showing more samples of galaxies.}
+    \label{kappa_rot}
+\end{figure}
 
 \subsection{Galaxy properties}
 In this report I will be looking at many of the main galaxy properties that have been explored throughout the years. We will only be looking at the relations in the present time, $z=0$, but the relations have been studied across redshifts and many are redshift-dependent.
@@ -224,7 +232,7 @@ Color, in astrophysics, is defined as the difference in magnitudes measured for 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{images/color_bimodality.png}
-    \caption{To the left: The probability density of the colors for over 350 000 galaxies in the Sloan Digital Sky Survey. To the right: The color-magnitude contour map for the same galaxies, clearly showing two distinct populations. Credit: \textcite{Mo2010}}.
+    \caption{To the left: The probability density of the g-i color for over 350 000 galaxies in the Sloan Digital Sky Survey. To the right: The color-magnitude contour map for the same galaxies, clearly showing two distinct populations. Credit: \textcite{Mo2010}}.
     \label{color_bimodality}
 \end{figure}
 

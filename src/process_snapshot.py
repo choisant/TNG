@@ -133,6 +133,7 @@ def velocities(tng_run, snapshot, dm_mass, i):
 
     group_cat["SubhaloMassStellar10kpc"] = stars["Masses"].sum()
     group_cat = physics.properties.half_mass_radius(stars, group_cat, rad_key="10kpc")
+    group_cat = physics.properties.velocity_disp_3D(stars, group_cat, 10, "SubhaloVelDisp3D_Stellar_10kpc") #forgot in last run
     group_cat = physics.properties.velocity_disp_3D(gas, group_cat, 10, "SubhaloVelDisp3D_Gas_10kpc")
     group_cat = physics.properties.velocity_disp_3D(dm, group_cat, 10, "SubhaloVelDisp3D_DM_10kpc")
     
