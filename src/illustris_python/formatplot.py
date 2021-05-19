@@ -314,8 +314,8 @@ def R_BH(ax, x0=0, x1=2, y0=(6), y1=(10)):
     ax.minorticks_on()
     ax.legend(fontsize=TEXTSIZE, frameon=False)
 
-def rot_galaxy_map(ax, r_e, label_x, label_y):
-    ax.set(xlim=(-r_e*4, r_e*4), ylim=(-r_e*4, r_e*4))
+def rot_galaxy_map(ax, r_max, label_x, label_y):
+    ax.set(xlim=(-r_max, r_max), ylim=(-r_max, r_max))
     ax.set_xlabel(label_x + " [kpc]", fontsize=TEXTSIZE)
     ax.set_ylabel(label_y + " [kpc]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2, color='lightgrey')
