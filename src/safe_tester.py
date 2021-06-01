@@ -51,6 +51,17 @@ def velocities(tng_run, test_name, i, snapshot=99):
         os.makedirs(folder_path)
     temp_cat.to_pickle(folder_path + file_path)
 
+def veldisp_test(tng_run, test_name, i, snapshot=99):
+    """
+    Creates and saves group catalogue for subhalo with id i.
+    """
+    dm_part_mass = set_params(tng_run)
+    temp_cat = process.veldisp_test(tng_run, snapshot, dm_part_mass, i)
+    folder_path = "./data/" + tng_run + "/catalogues/test_runs/" + test_name + "/"
+    file_path = str(i) + ".pkl"
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    temp_cat.to_pickle(folder_path + file_path)
 
 def set_aperture_size(tng_run, test_name, i, snapshot=99):
     """

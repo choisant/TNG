@@ -1282,63 +1282,6 @@
       \endverb
       \keyw{atlases,catalogs,surveys,Astrophysics}
     \endentry
-    \entry{Behroozi2019}{article}{}
-      \name{author}{4}{}{%
-        {{un=1,uniquepart=given,hash=04769c7a81ac6aaad4ed57420c596d76}{%
-           family={{Behroozi}},
-           familyi={B\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=23b84e5175df95b0831fecc070c43d6d}{%
-           family={{Wechsler}},
-           familyi={W\bibinitperiod},
-           given={Risa\bibnamedelima H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=21ee5e51353546f9235bd169f6b79a30}{%
-           family={{Hearin}},
-           familyi={H\bibinitperiod},
-           given={Andrew\bibnamedelima P.},
-           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=faf864974eb463953af6bf764204af95}{%
-           family={{Conroy}},
-           familyi={C\bibinitperiod},
-           given={Charlie},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3cb2247589ccee0d2304f4ebec1eea05}
-      \strng{fullhash}{57764dca200c5f13220ea1a571f13e56}
-      \strng{bibnamehash}{3cb2247589ccee0d2304f4ebec1eea05}
-      \strng{authorbibnamehash}{3cb2247589ccee0d2304f4ebec1eea05}
-      \strng{authornamehash}{3cb2247589ccee0d2304f4ebec1eea05}
-      \strng{authorfullhash}{57764dca200c5f13220ea1a571f13e56}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.GA}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{\mnras}
-      \field{month}{9}
-      \field{number}{3}
-      \field{title}{{UNIVERSEMACHINE: The correlation between galaxy growth and dark matter halo assembly from z = 0-10}}
-      \field{volume}{488}
-      \field{year}{2019}
-      \field{pages}{3143\bibrangedash 3194}
-      \range{pages}{52}
-      \verb{doi}
-      \verb 10.1093/mnras/stz1182
-      \endverb
-      \verb{eprint}
-      \verb 1806.07893
-      \endverb
-      \keyw{galaxies: formation,galaxies: haloes,Astrophysics - Astrophysics of Galaxies}
-    \endentry
     \entry{Behroozi2013}{article}{}
       \name{author}{3}{}{%
         {{un=1,uniquepart=given,hash=9672939ec01d5aad87fff46d86d06f33}{%
@@ -1390,6 +1333,60 @@
       \verb 1207.6105
       \endverb
       \keyw{dark matter,galaxies: abundances,galaxies: evolution,methods: numerical,Astrophysics - Cosmology and Extragalactic Astrophysics}
+    \endentry
+    \entry{Behroozi2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bd695f50f8662fc49107475a2a4027bc}{%
+           family={{Behroozi}},
+           familyi={B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=23b84e5175df95b0831fecc070c43d6d}{%
+           family={{Wechsler}},
+           familyi={W\bibinitperiod},
+           given={Risa\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21ee5e51353546f9235bd169f6b79a30}{%
+           family={{Hearin}},
+           familyi={H\bibinitperiod},
+           given={Andrew\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faf864974eb463953af6bf764204af95}{%
+           family={{Conroy}},
+           familyi={C\bibinitperiod},
+           given={Charlie},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{789520583a72a957bc2c728869aca8e8}
+      \strng{fullhash}{cf77be74457a91163eedaf2037ef531f}
+      \strng{bibnamehash}{789520583a72a957bc2c728869aca8e8}
+      \strng{authorbibnamehash}{789520583a72a957bc2c728869aca8e8}
+      \strng{authornamehash}{789520583a72a957bc2c728869aca8e8}
+      \strng{authorfullhash}{cf77be74457a91163eedaf2037ef531f}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{{Monthly Notices of the Royal Astronomical Society}}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{{UNIVERSEMACHINE: The correlation between galaxy growth and dark matter halo assembly from z = 0-10}}
+      \field{volume}{488}
+      \field{year}{2019}
+      \field{pages}{3143\bibrangedash 3194}
+      \range{pages}{52}
+      \verb{doi}
+      \verb 10.1093/mnras/stz1182
+      \endverb
+      \verb{eprint}
+      \verb 1806.07893
+      \endverb
+      \keyw{galaxies: formation,galaxies: haloes,Astrophysics - Astrophysics of Galaxies}
     \endentry
     \entry{Bekerait2016}{article}{}
       \name{author}{19}{}{%
@@ -1529,7 +1526,7 @@
       \field{journaltitle}{The Astrophysical Journal}
       \field{month}{8}
       \field{number}{2}
-      \field{title}{{THE} {CALIFA} {AND} {HIPASS} {CIRCULAR} {VELOCITY} {FUNCTION} {FOR} {ALL} {MORPHOLOGICAL} {GALAXY} {TYPES}}
+      \field{title}{The CALIFA and HIPASS circular velocity function for all morphological galaxy types.}
       \field{volume}{827}
       \field{year}{2016}
       \field{pages}{L36}

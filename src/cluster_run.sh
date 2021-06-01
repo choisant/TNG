@@ -14,7 +14,7 @@ then
     list_path="./data/$tng_run/cutdata/central_id_$file_number.txt"
     #list_path="./data/$tng_run/cutdata/missed/missed_$file_number.txt"
 else
-    list_path="./data/$tng_run/cutdata/central_id.txt"
+    list_path="./data/$tng_run/cutdata/central_id_1.txt"
 fi
 echo "$list_path"
 

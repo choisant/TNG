@@ -197,10 +197,15 @@ def velocity_disp_3D_mass_weighted(particle, catalogue, radius, vd_key="SubhaloV
     else:
         temp = particle
     mass = temp["Masses"].sum()
-    sigma_x = np.array(temp["Vx"]*temp["Masses"]).std()
-    sigma_y = np.array(temp["Vy"]*temp["Masses"]).std()
-    sigma_z = np.array(temp["Vz"]*temp["Masses"]).std()
-    sigma = np.sqrt((sigma_x**2 + sigma_y**2 + sigma_z**2))/mass
+    m = np.array(temp["Masses"])
+    vx = temp["Vx"]
+    vy = temp["Vy"]
+    vz = temp["Vz"]
+    sigma_x = np.sqrt(np.cov(vx, aweights=m))
+    sigma_y = np.sqrt(np.cov(vy, aweights=m))
+    sigma_z = np.sqrt(np.cov(vz, aweights=m))
+    
+    sigma = np.sqrt((sigma_x**2 + sigma_y**2 + sigma_z**2))
     catalogue[vd_key] = sigma
     return catalogue
 

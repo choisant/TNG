@@ -129,14 +129,18 @@ Figure \ref{gal_size_disk} and Figure \ref{gal_size_big} illustrate the effect o
 \begin{figure}
 	\centering
     \includegraphics[width=1\textwidth]{images/galaxy_size_disk.png}
-    \caption{..}.
+    \caption{Left: The stellar mass distribution of a $M_\ast = 10^{10.67} M_\odot$ late type galaxy. The orange lines represent three different galaxy size definitions, $2 \times r^{SUBF}$ (solid line), 30 kpc (dotted line) and $0.15 \times r_{200}$ (dashed line).
+    Right: The cumulative stellar mass distribution, divided by the total stellar mass bound to the subhalo, as function of radius.
+    }
     \label{gal_size_disk}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/galaxy_size_big.png}
-    \caption{..}.
+    \caption{Left: The stellar mass distribution of a $M_\ast = 10^{11.88} M_\odot$ early type galaxy. The orange lines represent three different galaxy size definitions, $2 \times r^{SUBF}$ (solid line), 30 kpc (dotted line) and $0.15 \times r_{200}$ (dashed line).
+    Right: The cumulative stellar mass distribution, divided by the total stellar mass bound to the subhalo, as function of radius.
+    }
     \label{gal_size_big}
 \end{figure}
 
@@ -158,10 +162,13 @@ Using the particles, the stellar mass within 15 \% of the virial radius ($M_\ast
 For the SAMI data, the stellar masses are calculated by using the redshift, the i-band magnitude and g-i color of each galaxy through the formula 
 
 \begin{equation}
-	\log(M_*/M_\odot) = -0.4i + 0.4D - \log(1.0+z) + (1.2117 - 0.5893z) + (0.7106 - 0.1467z) \times (g-i), 
+	\begin{split}
+		\log(M_*/M_\odot) = -0.4i + 0.4D - \log(1.0+z) + (1.2117 - 0.5893z) + \\
+		 (0.7106 - 0.1467z) \times (g-i), 
+	\end{split}
 \end{equation}
 
-where $D$ is the distance modulus and $g and i$ are the aperture-matched observed-frame Milky Way-extinction-corrected apparent magnitudes \parencite{Bryant2015}.
+where $D$ is the distance modulus and $g$ and $i$ are the aperture-matched observed-frame Milky Way-extinction-corrected apparent magnitudes \parencite{Bryant2015}.
 
 \subsubsection{Characteristic size}\label{charsize}
 
