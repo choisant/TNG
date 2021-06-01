@@ -11,8 +11,12 @@
 \usepackage{multirow}
 \usepackage{parskip}
 \usepackage{amsmath}
-\usepackage[backend=biber, style=numeric, citestyle=authoryear, maxnames=2]{biblatex}
+\usepackage[backend=biber, style=authoryear, citestyle=authoryear, maxnames=2, giveninits]{biblatex}
+\DeclareNameAlias{sortname}{family-given}
 \addbibresource{mybib.bib} %Imports bibliography file
+
+
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -53,14 +57,15 @@
 \section{Results} \label{results}
 \input{sections/results}
 
-\section{Discussions} \label{discussions}
+\newpage
+\section{Discussions and conclusion} \label{discussions}
 \input{sections/discussions}
 
-\newpage
-\section{Conclusions} \label{conclusions}
-\input{sections/conclusions}
+%\section{Conclusions} \label{conclusions}
+%\input{sections/conclusions}
 
 \medskip
 \printbibliography
-
+%\bibliographystyle{aa}
+%\bibliography{mybib} % if your bibtex file is called example.bib
 \end{document}

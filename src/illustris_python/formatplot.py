@@ -92,7 +92,7 @@ def log_formater_sami(df):
 def VD_SM(ax, x0=1.5, x1=3, y0=9, y1=12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\log(\sigma)$ [km/s])", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.tick_params(which="major", length=6)
@@ -102,7 +102,7 @@ def VD_SM(ax, x0=1.5, x1=3, y0=9, y1=12):
 def SM_VD(ax, y0=1.5, y1=3, x0=9, x1=12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\log(\sigma)$ [km/s])", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -110,8 +110,8 @@ def SM_VD(ax, y0=1.5, y1=3, x0=9, x1=12):
 
 def SM_fVD(ax, x0=9.5, x1=12, y0=0.5, y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\sigma/\sigma^{SF}$", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SUBF}_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\sigma/\sigma^{SUBF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -120,7 +120,7 @@ def SM_fVD(ax, x0=9.5, x1=12, y0=0.5, y1=2):
 def VSigma_SM(ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$V_{max}/\sigma$", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$M_*$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$M_{\ast}$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -129,7 +129,7 @@ def VSigma_SM(ax, x0=0, x1=2.5, y0=10**9, y1=10**12):
 def Vmax_SM(ax, x0=1.5, x1=2.5, y0=9, y1=11.5):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\log(V_{max})$ [km/s]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_*)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -138,7 +138,7 @@ def Vmax_SM(ax, x0=1.5, x1=2.5, y0=9, y1=11.5):
 def SM_Vmax(ax, x0=9.5, x1=11, y0=1.5, y1=2.5):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\log(V_{rot})$ [km/s]", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_*)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -147,7 +147,7 @@ def SM_Vmax(ax, x0=9.5, x1=11, y0=1.5, y1=2.5):
 
 def SM_fV(ax, x0=9.5, x1=12, y0=0.9, y1=1.4):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$V_{rot, 2.2}/V_{max, SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
@@ -166,16 +166,16 @@ def GF_sSFR(ax, x0=-5, x1=0.1, y0=-5, y1=1):
 def C_SM(color, ax, x0=9, x1=12, y0=-1, y1=1):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(color + " [mag]", fontsize=TEXTSIZE+5)
-    ax.set_xlabel(r"$\log(M_*)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE+5)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE+5)
     ax.tick_params(which="major", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=8, width=3)
     ax.tick_params(which="minor", direction="in", top=True, right=True, labelsize=TEXTSIZE+5, pad=20, length=5, width=3)
     ax.minorticks_on()
-    ax.legend(loc=0, fontsize=TEXTSIZE+5, frameon=True)
+    ax.legend(loc=0, fontsize=TEXTSIZE+5, frameon=True, markerscale=3)
 
 def SM_fC(color, ax, x0=9.5, x1=12, y0=-1, y1=1):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(color + " [mag]", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_*, SF)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast}, SF)$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="major", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="minor", direction="in", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.minorticks_on()
@@ -194,7 +194,7 @@ def PDF_C(color, ax, legend_on, x0=-1, x1=2, y0=0, y1=4):
 def HM_SM(ax, text="", x0=11, x1=14, y0=(9.0), y1=(12)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\log(M_{halo})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -203,18 +203,18 @@ def HM_SM(ax, text="", x0=11, x1=14, y0=(9.0), y1=(12)):
 
 def SM_SM(ax, text="", x0=9.5, x1=12, y0=(9.5), y1=(12)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SUBF}_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
     ax.text(0.05, 0.92, text, fontsize=TEXTSIZE, fontweight="bold", transform=ax.transAxes)
     ax.legend(loc=2, fontsize=TEXTSIZE, edgecolor=None)
 
-def SM_fSM(ax, text="", x0=9.5, x1=12, y0=(1), y1=(1.5)):
+def HM_fSM(ax, text="", x0=11, x1=14, y0=(1), y1=(1.5)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$M_{*}/M^{SF}_{*}$", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{halo})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$M_{\ast}/M^{SUBF}_{\ast}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -223,7 +223,7 @@ def SM_fSM(ax, text="", x0=9.5, x1=12, y0=(1), y1=(1.5)):
 
 def HM_fHM(ax, text="", x0=11, x1=14, y0=(0), y1=(1)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M^{SF}_{halo})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SUBF}_{halo})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$M_{200}/M_{halo, SF}$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
@@ -234,7 +234,7 @@ def HM_fHM(ax, text="", x0=11, x1=14, y0=(0), y1=(1)):
 def GM_SM(ax, text="", x0=5.5, x1=10, y0=9.5, y1=12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\log(M_{gas})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -245,7 +245,7 @@ def GM_SM(ax, text="", x0=5.5, x1=10, y0=9.5, y1=12):
 def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\log(r_e)$ [kpc]", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -253,7 +253,7 @@ def R_SM(ax, x0=(-1), x1=2, y0=9, y1=12):
 
 def SM_fR(ax, x0=9.5, x1=12, y0=(0.8), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
-    ax.set_xlabel(r"$\log(M^{SF}_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M^{SUBF}_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.set_ylabel(r"$R_e/R_{e, SF}$ ", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
@@ -263,7 +263,7 @@ def SM_fR(ax, x0=9.5, x1=12, y0=(0.8), y1=2):
 def SM_R(ax, x0=(9), x1=13, y0=(-1), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\log(r)$ [kpc]", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -290,7 +290,7 @@ def VD_BH(ax, x0=1, x1=3, y0=(6), y1=(10)):
 def SM_BH(ax, x0=9, x1=(13), y0=(6), y1=(10)):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\log(M_{BH})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -325,7 +325,7 @@ def rot_galaxy_map(ax, r_max, label_x, label_y):
 def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_ylabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
-    ax.set_xlabel(r"$\log(M_{*})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
+    ax.set_xlabel(r"$\log(M_{\ast})$ [$ \mathrm{M}_\odot $]", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()
@@ -334,7 +334,7 @@ def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
 def kappa_fG(ax, x0=(0.1), x1=0.8, y0=(-3.5), y1=0.5):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
     ax.set_xlabel(r"$\kappa_{rot}$", fontsize=TEXTSIZE)
-    ax.set_ylabel(r"$\log(M_{gas}/M_{*})$", fontsize=TEXTSIZE)
+    ax.set_ylabel(r"$\log(M_{gas}/M_{\ast})$", fontsize=TEXTSIZE)
     ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=4, width=2)
     ax.tick_params(which="major", length=8)
     ax.minorticks_on()

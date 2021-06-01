@@ -18,8 +18,6 @@ def center_halo(subhalo, catalogue):
 
 def relative_pos_radius(subhalo, catalogue):
     """
-    Finds the center of the subhalo by locating  the particle with the lowest gravitational potential.
-    Saves this to group catalogue.
     Calculates the relative positions of all particles and adds the new fields to dataframe.
     Calculates distance from center (radius) for all particles and adds the field to dataframe.
     """
@@ -190,6 +188,19 @@ def velocity_disp_3D(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
     sigma_y = np.array(temp["Vy"]).std()
     sigma_z = np.array(temp["Vz"]).std()
     sigma = np.sqrt((sigma_x**2 + sigma_y**2 + sigma_z**2))
+    catalogue[vd_key] = sigma
+    return catalogue
+
+def velocity_disp_3D_mass_weighted(particle, catalogue, radius, vd_key="SubhaloVelDisp3D"):
+    if radius > 0:
+        temp = particle[particle["r"] < radius]
+    else:
+        temp = particle
+    mass = temp["Masses"].sum()
+    sigma_x = np.array(temp["Vx"]*temp["Masses"]).std()
+    sigma_y = np.array(temp["Vy"]*temp["Masses"]).std()
+    sigma_z = np.array(temp["Vz"]*temp["Masses"]).std()
+    sigma = np.sqrt((sigma_x**2 + sigma_y**2 + sigma_z**2))/mass
     catalogue[vd_key] = sigma
     return catalogue
 

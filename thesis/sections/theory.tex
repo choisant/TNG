@@ -5,11 +5,12 @@ Some astrophysical notation, terms and constants:
     \item $H_{0}$ - The Hubble constant at present time $H(z=0)$, a cosmological constant related to the expansion rate of the Universe. The best measurements of today sets the value of $H_0$ to $67.8\, $ km/s/Mpc \parencite{Planck2016}. Specifically, this means that at $z=0$ a galaxy located 1 Mpc away is receding from us at a velocity of $67.8\,$km/s because of the expansion of the Universe.
     \item $h$ - The ``little Hubble constant'', given by $H_0 = 100\,h\,$km/s/Mpc.
     \item G - The gravitational constant. 
-    \item $M_{*}$ - The stellar mass of a given galaxy.
+    \item $M_{\ast}$ - The stellar mass of a given galaxy.
     \item $M_{halo}$ - The dark matter halo mass of a given galaxy.
-    \item $M_{\odot}$ - Solar mass. In astrophysics, masses are always given in units of solar masses.
+    \item $M_{\odot}$ - Solar mass, the mass of our sun. In astrophysics, masses are always given in units of solar masses.
     \item $L$ - Luminosity. The luminosity of a galaxy is a measure of its total radiated electromagnetic energy per unit time. The absolute magnitude ($\mathcal{M}$) is related to the luminosity as $\mathcal{M} = -2.5 \log(L/L_\odot) + \mathcal{M}_\odot$. With $L_\odot$ and $\mathcal{M}_\odot$ being the solar luminosity and solar magnitude respectively.
-    \item $r_e$ - Effective radius. The radius within which half the luminosity of a galaxy is emitted.
+    \item $r_{hm}$ - Stellar half-mass radius. The radius within which half the stellar mass of a galaxy is emitted.
+    \item $R_e$ - Effective radius. The radius within which half the luminosity of a galaxy is emitted. Is also used to refer to $r_{hm}$ for simulations.
 \end{itemize}
 
 \subsection{Galaxy formation}
@@ -80,7 +81,7 @@ One way of looking for this relation is through a method called abundance matchi
 
 Using abundance matching, the SHM relation has been found to be well described by a double power law with different slopes for the low-mass and high-mass end of the spectrum \parencite{Behroozi2013}. 
 
-Other ways of studying the SHM relation could be through simulations which include halo and stellar mass like IllustrisTNG, or inferring the halo mass empirically by using the rotational curves of disk galaxies (see section \ref{lates}).
+Other ways of studying the SHM relation could be through simulations which include halo and stellar mass like IllustrisTNG, or inferring the halo mass empirically by using the rotational curves of disk galaxies (see Section \ref{lates}), gravitational lensing and other mobservational methods.
 
 \subsection{Galaxy evolution and classification}
 
@@ -97,7 +98,7 @@ In the $\Lambda$CDM model, galaxies grow through mergers. Mergers are separated 
 
 It is not always easy to distinguish between a disky elliptical and a spiral with a large spheroidal component (bulge). Some galaxies are also in the middle of a merging process. These can have very irregular shapes, and so are hard to classify. Other galaxies are very small, so called dwarf galaxies. These galaxies tend to have very little stellar mass compared to dark matter, so they do not exhibit the properties of ellipticals, even though they may be more elliptical in shape.
 
-Galaxies were initially seperated into the two types (early and late) by their shape, but as astronomers have studied these different galaxy categories, it has become apparent that there are many other properties that also serve to distinguish the two types. Table \ref{morphologies} gives a quick overview of the main properties of early and late type galaxies, while the rest of this section explains them in more detail.
+Galaxies were initially seperated into the two types (early and late) by their shape, but as astronomers have studied these different galaxy categories, it has become apparent that there are many other properties that also serve to distinguish the two types. Table \ref{morphologies} gives a quick overview of the main properties of early and late type galaxies, while the rest of this Section explains them in more detail.
 
 
 \begin{table}
@@ -146,25 +147,26 @@ where $M(<R)$ is the total mass within radius $R$. However, the observational da
 
 \subsubsection{Classifying galaxies}
 
-An important factor in many studies of galaxy formation and evolution is looking at and comparing the properties of the two morphological types of galaxies. In observations, a visual classification method is usually used, although it is intensively time-consuming. Other methods have therefore been devised for identifying early and late-type galaxies in simulations. In many studies, several of these classification criteria are used in conjunction.
+An important factor in many studies of galaxy formation and evolution is looking at and comparing the properties of the two main morphological types of galaxies. In observations, a visual classification method is usually used, although it is intensively time-consuming. %you can cite here galaxy zoo (https://www.zooniverse.org/projects/zookeeper/galaxy-zoo/) 
+Other methods have therefore been devised for identifying early and late-type galaxies in simulations. In many studies, several classification methods are used in conjunction. 
 
-As early-type galaxies have much less cold gas than late-type galaxies, a simple division in the galaxy population based on the gas fraction will be effective at roughly separating the two types. Gas is not distributed evenly in galaxies however, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot (not star-forming) gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies can contain as little as 5\% gas, while low-mass disks can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} galaxies with less than 10\% gas were considered for early types, while those with more were potential candidates for late-type classifications.
+As early-type galaxies have much less cold gas than late-type galaxies, a simple division in the galaxy population based on the gas fraction (gas mass divided by stellar mass) will be effective at roughly separating the two types. Gas is not distributed evenly in galaxies however, so it is important to consider the physical volume where the gas fraction is calculated. A large volume will inevitably contain more hot (not star-forming) gas and potentially allow for early-type galaxies to be considered as late types. Late-type galaxies also have a wide range of gas fractions. The most massive spiral galaxies ($M_\ast \sim 10^{11} M_\odot$) can contain as little as 5\% gas, while low-mass disks ($M_\ast < 10^{9.5} M_\odot$) can contain up to 80\% \parencite{Mo2010}. In \textcite{Ferrero2020} gas fraction was used as one of two criteria of morphological classification. Galaxies with a gas fraction of less than 0.1 were considered for early types, while those with more were potential candidates for late-type classifications.
 
-Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. In this case, the galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation \parencite{Noeske2007}. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found. In a study using the data from the TNG simulation, \textcite{Genel2017} defined the ridge of the main-sequence as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. A simpler criteria for main-sequence galaxies is to drop the upper bounds and include all galaxies that have sSFR more than 0.5 below the ridge. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge. 
+Another way of separating galaxies into the early and late-type categories is by using the specific star formation rate (sSFR). The sSFR of a galaxy is the galaxy's star formation rate divided by the stellar mass content of the galaxy. As an example, a galaxy with a stellar mass of $10^{10} M_\odot$ that produces stars with a total mass $1 M_\odot$ has a sSFR of $10^{-10}$, commonly expressed as $\log(sSFR) = -10$. Galaxies are tagged as ``quenched'' or ``main-sequence'', where quenched galaxies have little to no star formation, while main-sequence galaxies have a significant amount of star formation \parencite{Noeske2007}. More formally, they are separated by how far from the ridge of the star-formation main-sequence they are found. In a study using the data from the TNG simulation, \textcite{Genel2017} defined the ridge of the main-sequence as the mean of the sSFR for galaxies with mass $10^{9} M_{\odot} < M_* < 10^{10.5} M_{\odot}$, and takes a value of $\log (sSFR[Gyr^{-1}]) = -0.94$ for $z=0$. Galaxies are then considered `main-sequence' if their sSFR are within 0.5 dex of this value. A simpler criteria for main-sequence galaxies is to drop the upper bound and include all galaxies that have sSFR more than 0.5 below the ridge. ``Quenched'' galaxies are defined as those with sSFR at least 1 dex below the ridge. 
 
-A common way of estimating a galaxy's ``diskyness'' is to use the rotational-to-total-kinetic-energy parameter $\kappa_{rot}$. 
+A common way of estimating a galaxy's ``diskyness'' is to use the rotational ($K_{rot}$) to total ($K$) kinetic energy parameter $\kappa_{rot}$. 
 \begin{equation}
     \kappa_{rot} = \frac{K_{rot}}{K} = \frac{\sum_{i=1}^{N} m_i (j_{z, i}/R_i)^2}{\sum_{i=1}^{N} m_i v_i^2},
 \end{equation}
 where $j_{z, i}$ is the z-component of the specific angular momentum ($\vec{j} = \vec{r} \times \vec{v}$), $m_i$ is the mass, and $R_i$ is the projected radius of stellar particle $i$ in the xy-plane. 
 This value indicates how much of the kinetic energy of the galaxy is invested in the ordered rotation about its axis. To calculate $\kappa_{rot}$, the axis of rotation must first be found. The galaxy is then rotated such that the z-axis of the galaxy's coordinate system is pointed in the direction of the axis of rotation, and $\kappa_{rot}$ is calculated.
-For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa_{rot}$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$ \parencite{Ferrero2020}. Figure \ref{kappa_rot} shows ...//need to update this figure.
+For a perfect disk galaxy that is totally rotationally supported $\kappa_{rot} = 1$, while for a totally pressure supported system, $\kappa_{rot}$ would approach zero. In \textcite{Sales2012}, galaxies were classified as early type if they had $\kappa_{rot} < 0.5$ and late type for $\kappa_{rot} > 0.7$. This leads to a significant amount of ``intermediate types'', but other works have simply made use of a single cut at $\kappa_{rot} = 0.6$ \parencite{Ferrero2020}. Figure \ref{kappa_rot} shows the face-on and edge on structure of three rotated galaxies with varying values of $\kappa_{rot}$. The higher the rotational to kinetic energy ratio, the more disk shaped is the galaxy.
 
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{images/disk_galaxy.png}
-    \caption{Update this photo with one showing more samples of galaxies.}
+    \includegraphics[width=\textwidth]{images/kappa_rot.png}
+    \caption{The stellar mass density projections of three different galaxies with $\kappa_{rot} = 0.77, 0.5 and 0.3$, from top to bottom. The galaxies are shown both face on (right) and edge on (left).}
     \label{kappa_rot}
 \end{figure}
 
