@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  1 JUN 2021 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  5 JUN 2021 09:33
 entering extended mode
 **./main.tex
 (main.tex
@@ -659,114 +659,197 @@ l.39 \newpage
 <images/halo_mass_function.png, id=287, 426.393pt x 431.81325pt>
 File: images/halo_mass_function.png Graphic file (type png)
 <use images/halo_mass_function.png>
-Package pdftex.def Info: images/halo_mass_function.png  used on input line 44.
+Package pdftex.def Info: images/halo_mass_function.png  used on input line 45.
 (pdftex.def)             Requested size: 350.99762pt x 355.47282pt.
  [9] [10 <./images/halo_mass_function.png>] [11]
-<images/luminosity_function.png, id=318, 457.10776pt x 495.65175pt>
+<images/luminosity_function.png, id=318, 515.67656pt x 609.77812pt>
 File: images/luminosity_function.png Graphic file (type png)
 <use images/luminosity_function.png>
-Package pdftex.def Info: images/luminosity_function.png  used on input line 71.
+Package pdftex.def Info: images/luminosity_function.png  used on input line 72.
 
-(pdftex.def)             Requested size: 350.99762pt x 380.60176pt.
+(pdftex.def)             Requested size: 350.99762pt x 415.06233pt.
  [12] [13 <./images/luminosity_function.png>]
 <images/hubble.jpg, id=340, 409.53pt x 337.26pt>
 File: images/hubble.jpg Graphic file (type jpg)
 <use images/hubble.jpg>
-Package pdftex.def Info: images/hubble.jpg  used on input line 92.
+Package pdftex.def Info: images/hubble.jpg  used on input line 93.
 (pdftex.def)             Requested size: 272.99881pt x 224.83601pt.
 
 [14 <./images/hubble.jpg>] [15]
 <images/rotation_curves.png, id=352, 702.82574pt x 395.076pt>
 File: images/rotation_curves.png Graphic file (type png)
 <use images/rotation_curves.png>
-Package pdftex.def Info: images/rotation_curves.png  used on input line 143.
+Package pdftex.def Info: images/rotation_curves.png  used on input line 144.
 (pdftex.def)             Requested size: 350.99762pt x 197.3024pt.
  [16] [17 <./images/rotation_curves.png>]
 [18]
 <images/kappa_rot.png, id=384, 908.64468pt x 1310.64656pt>
 File: images/kappa_rot.png Graphic file (type png)
 <use images/kappa_rot.png>
-Package pdftex.def Info: images/kappa_rot.png  used on input line 168.
-(pdftex.def)             Requested size: 312.00119pt x 450.03368pt.
- [19] [20 <./images/kappa_rot.png>]
-<images/tully_fisher.png, id=406, 410.7345pt x 388.45125pt>
+Package pdftex.def Info: images/kappa_rot.png  used on input line 169.
+(pdftex.def)             Requested size: 350.99762pt x 506.29039pt.
+
+
+LaTeX Warning: Float too large for page by 8.5904pt on input line 172.
+
+[19] [20 <./images/kappa_rot.png>]
+<images/tully_fisher.png, id=403, 410.7345pt x 388.45125pt>
 File: images/tully_fisher.png Graphic file (type png)
 <use images/tully_fisher.png>
-Package pdftex.def Info: images/tully_fisher.png  used on input line 196.
+Package pdftex.def Info: images/tully_fisher.png  used on input line 197.
 (pdftex.def)             Requested size: 350.99762pt x 331.96329pt.
  [21 <./images/tully_fisher.png>]
 <images/faber_jackson.png, id=416, 423.38174pt x 290.88675pt>
 File: images/faber_jackson.png Graphic file (type png)
 <use images/faber_jackson.png>
-Package pdftex.def Info: images/faber_jackson.png  used on input line 218.
+Package pdftex.def Info: images/faber_jackson.png  used on input line 219.
 (pdftex.def)             Requested size: 350.99762pt x 241.1563pt.
-
-[22 <./images/faber_jackson.png>]
-<images/color_bimodality.png, id=429, 522.15076pt x 238.491pt>
+ [22]
+[23 <./images/faber_jackson.png>]
+<images/color_bimodality.png, id=436, 522.15076pt x 238.491pt>
 File: images/color_bimodality.png Graphic file (type png)
 <use images/color_bimodality.png>
-Package pdftex.def Info: images/color_bimodality.png  used on input line 236.
+Package pdftex.def Info: images/color_bimodality.png  used on input line 237.
 (pdftex.def)             Requested size: 350.99762pt x 160.32307pt.
-) (sections/method.tex [23] [24 <./images/color_bimodality.png>]
-<images/TNG.png, id=464, 595.9866pt x 628.0263pt>
+) (sections/method.tex [24 <./images/color_bimodality.png>] [25]
+<images/TNG.png, id=470, 595.9866pt x 628.0263pt>
 File: images/TNG.png Graphic file (type png)
 <use images/TNG.png>
 Package pdftex.def Info: images/TNG.png  used on input line 16.
 (pdftex.def)             Requested size: 350.99762pt x 369.87108pt.
- [25] [26 <./images/TNG.png>] [27] [28] [29] [30] [31]
-<images/galaxy_size_disk.png, id=540, 587.19376pt x 455.45157pt>
+ [26] [27 <./images/TNG.png>] [28] [29] [30] [31] [32]
+<images/galaxy_size_disk.png, id=548, 587.19376pt x 455.45157pt>
 File: images/galaxy_size_disk.png Graphic file (type png)
 <use images/galaxy_size_disk.png>
-Package pdftex.def Info: images/galaxy_size_disk.png  used on input line 131.
+Package pdftex.def Info: images/galaxy_size_disk.png  used on input line 142.
 (pdftex.def)             Requested size: 390.0pt x 302.4962pt.
-<images/galaxy_size_big.png, id=541, 570.63188pt x 457.71pt>
+<images/galaxy_size_big.png, id=549, 570.63188pt x 457.71pt>
 File: images/galaxy_size_big.png Graphic file (type png)
 <use images/galaxy_size_big.png>
-Package pdftex.def Info: images/galaxy_size_big.png  used on input line 140.
+Package pdftex.def Info: images/galaxy_size_big.png  used on input line 151.
 (pdftex.def)             Requested size: 390.0pt x 312.82408pt.
 
-[32] [33 <./images/galaxy_size_disk.png>] [34 <./images/galaxy_size_big.png>]
-Overfull \hbox (3.25148pt too wide) in paragraph at lines 171--172
+[33] [34 <./images/galaxy_size_disk.png>] [35 <./images/galaxy_size_big.png>]
+Overfull \hbox (3.25148pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/12 observed-frame Milky Way-extinction-corrected ap-par-ent mag-ni
 -tudes ([]Bryant
  []
 
-[35] [36] [37] [38]
-Overfull \hbox (15.82884pt too wide) in paragraph at lines 227--240
- [] 
- []
-
-) [39] (sections/results.tex
-<images/HM_fSM.png, id=603, 564.6696pt x 521.5485pt>
+[36] [37] [38] [39]) (sections/results.tex [40]
+<images/HM_fSM.png, id=609, 564.6696pt x 521.5485pt>
 File: images/HM_fSM.png Graphic file (type png)
 <use images/HM_fSM.png>
 Package pdftex.def Info: images/HM_fSM.png  used on input line 10.
 (pdftex.def)             Requested size: 350.99762pt x 324.20029pt.
- [40] [41 <./images/HM_fSM.png>]
-<images/shmr.png, id=623, 573.1011pt x 521.5485pt>
+<images/shmr.png, id=616, 573.1011pt x 521.5485pt>
 File: images/shmr.png Graphic file (type png)
 <use images/shmr.png>
 Package pdftex.def Info: images/shmr.png  used on input line 20.
 (pdftex.def)             Requested size: 350.99762pt x 319.42537pt.
- [42] [43 <./images/shmr.png>]
-<images/SM_R_tng.png, id=649, 560.3334pt x 519.3804pt>
+ [41] [42 <./images/HM_fSM.png>] [43] [44 <./images/shmr.png>]
+<images/SM_R_tng.png, id=654, 560.3334pt x 519.3804pt>
 File: images/SM_R_tng.png Graphic file (type png)
 <use images/SM_R_tng.png>
-Package pdftex.def Info: images/SM_R_tng.png  used on input line 45.
+Package pdftex.def Info: images/SM_R_tng.png  used on input line 44.
 (pdftex.def)             Requested size: 350.99762pt x 325.34898pt.
-<images/SM_R.png, id=650, 560.3334pt x 521.5485pt>
+<images/SM_R.png, id=655, 560.3334pt x 521.5485pt>
 File: images/SM_R.png Graphic file (type png)
 <use images/SM_R.png>
-Package pdftex.def Info: images/SM_R.png  used on input line 53.
+Package pdftex.def Info: images/SM_R.png  used on input line 52.
 (pdftex.def)             Requested size: 350.99762pt x 326.7071pt.
-<images/SM_R_earlies.png, id=651, 3151.27313pt x 1629.83907pt>
+<images/SM_R_earlies.png, id=656, 3151.27313pt x 1629.83907pt>
 File: images/SM_R_earlies.png Graphic file (type png)
 <use images/SM_R_earlies.png>
-Package pdftex.def Info: images/SM_R_earlies.png  used on input line 61.
+Package pdftex.def Info: images/SM_R_earlies.png  used on input line 60.
 (pdftex.def)             Requested size: 390.0pt x 201.6901pt.
-<images/SM_R_lates.png, id=652, 3151.27313pt x 1629.83907pt>
+<images/SM_R_lates.png, id=657, 3151.27313pt x 1629.83907pt>
 File: images/SM_R_lates.png Graphic file (type png)
 <use images/SM_R_lates.png>
-Package pdftex.def Info: images/SM_R_lates.png  used on input line 68.
+Package pdftex.def Info: images/SM_R_lates.png  used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 201.6901pt.
- [44] [45 <./images/SM_R_tng.png>] [46 <./images/SM_R.png>] [47 <.
+ [45] [46 <./images/SM_R_tng.png>] [47 <./images/SM_R.png>] [48 <./images/SM_R_
+earlies.png>] [49 <./images/SM_R_lates.png>]
+<images/TFR.png, id=687, 566.5968pt x 521.5485pt>
+File: images/TFR.png Graphic file (type png)
+<use images/TFR.png>
+Package pdftex.def Info: images/TFR.png  used on input line 80.
+(pdftex.def)             Requested size: 350.99762pt x 323.08614pt.
+
+[50] [51 <./images/TFR.png>]
+<images/VD_particles.png, id=704, 561.0561pt x 526.1256pt>
+File: images/VD_particles.png Graphic file (type png)
+<use images/VD_particles.png>
+Package pdftex.def Info: images/VD_particles.png  used on input line 92.
+(pdftex.def)             Requested size: 350.99762pt x 329.15683pt.
+<images/FJ.png, id=708, 560.3334pt x 517.935pt>
+File: images/FJ.png Graphic file (type png)
+<use images/FJ.png>
+Package pdftex.def Info: images/FJ.png  used on input line 102.
+(pdftex.def)             Requested size: 350.99762pt x 324.44354pt.
+ [52] [53 <./images/VD_particles.png>] [54 <./images/FJ.png>]
+<images/CB.png, id=728, 3208.48688pt x 1639.62563pt>
+File: images/CB.png Graphic file (type png)
+<use images/CB.png>
+Package pdftex.def Info: images/CB.png  used on input line 119.
+(pdftex.def)             Requested size: 390.0pt x 199.29848pt.
+<images/CB_PDF.png, id=729, 533.8344pt x 520.5849pt>
+File: images/CB_PDF.png Graphic file (type png)
+<use images/CB_PDF.png>
+Package pdftex.def Info: images/CB_PDF.png  used on input line 126.
+(pdftex.def)             Requested size: 350.99762pt x 342.2923pt.
+) [55] (sections/discussions.tex [56 <./images/CB.png>] [57 <./images/CB_PDF.pn
+g>] [58] [59] [60]
+Overfull \hbox (21.57211pt too wide) in paragraph at lines 36--37
+\OT1/cmr/m/n/12 clas-si-fi-ca-tion method (us-ing both spe-cific star for-ma-ti
+on rate and rotational-
+ []
+
+[61]) [62] [63]
+Overfull \hbox (6.17519pt too wide) in paragraph at lines 66--66
+\OT1/cmr/m/n/12 pp. 763{795. \OT1/cmr/m/sc/12 doi\OT1/cmr/m/n/12 : [][]$\OT1/cm
+tt/m/n/12 10 . 1086 / 376392$[][]\OT1/cmr/m/n/12 . arXiv: [][]$\OT1/cmtt/m/n/12
+ astro -[] ph / 0304382$ [astro-ph][][]\OT1/cmr/m/n/12 . 
+ []
+
+[64] [65] [66]
+Overfull \hbox (1.77036pt too wide) in paragraph at lines 66--66
+\OT1/cmr/m/n/12 ies''. In: \OT1/cmr/m/it/12 Monthly No-tices of the Royal As-tr
+o-nom-i-cal So-ci-ety \OT1/cmr/m/n/12 406.2, pp. 1220{
+ []
+
+[67] [68] (main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 62EF3D73E0974C5FA039D1D720720F0D;3100.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 15309 strings out of 479799
+ 274432 string characters out of 2879559
+ 1061671 words of memory out of 3000000
+ 31856 multiletter control sequences out of 15000+200000
+ 543072 words of font info for 57 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,15n,75p,2185b,1761s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\auror\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (69 pages, 13110376 bytes).
+PDF statistics:
+ 1028 PDF objects out of 1200 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -13,6 +13,8 @@ You may then log in to the cluster. There are 3 login nodes, login1, login2 and 
 ssh -X -l username  idun-login1.hpc.ntnu.no
 ```
 This is a Linux cluster, so from now on you must type Unix commands. Navigate to your home directory. It is important to remember that data on the cluster is not backed up, so make sure to back up any important files using for instance a GitHub repository.
+
+## Linux basics
 ```bash
 cd cluster/work/username
 ``` 
@@ -32,10 +34,18 @@ nano file/path.txt
 ```
 On the cluster you must load in the software you intend to use. These are contained in something called modules. There are many modules to choose from, but to work with Python programs you probably only need the Anaconda module. It is good practice to remove any previously loaded modules to make sure there is no conflict between software dependencies.
 
+## Python
 ```bash
  module purge
  module load Anaconda3/2020.07
 ``` 
+
+If this wont load, try to find the right installation version:
+
+```bash
+module spider Anaconda3
+```
+
 You can check the the installed Python packages, as well as installing new packages using pip
 ```bash
 #shows installed packages and their version numbers
@@ -94,7 +104,7 @@ echo "We are using $SLURM_CPUS_ON_NODE cores per node"
 echo "Total of $SLURM_NTASKS cores"
 
 module purge
-module load Anaconda/2018.12
+module load Anaconda/2020.07
 python /path/to/file.py
 
 uname -a
@@ -105,16 +115,16 @@ Let's break down this example. The first line, `#!/bin/sh` tells the computer th
 
 | Item      | Environment variable | Description |
 | ----------- | ----------- |----------- |
-| partition     | Title       |Title       |
-| account   | Text        |Text        |
-| time   | Text        |Text        |
-| nodes   | $SLURM_JOB_NUM_NODES  |Text        |
-| ntasks-per-node| |Text        |
-| mem   | Text        |Text        |
-| job-name   | $SLURM_JOB_NAM|Text        |
-| output   | Text        |Text        |
-| mail-user   | Text        |Text        |
-| mail   | Text        |Text        |
+| partition |-|-|
+| account|-|The account to bill for the memory usage.|
+| time| Text |The amount of time allocated for your job. The task fails if your program runs for longer than this time limit. |
+| nodes| $SLURM_JOB_NUM_NODES  |The number of nodes.|
+| ntasks-per-node| | The number of tasks per node. |
+| mem| |The amount of memory allocated for your job. The task fails if your program exceeds this limit.|
+| job-name| $SLURM_JOB_NAME| The name of the job.|
+| output   |-|The file in which to save all printed outputs.|
+| mail-user|-|The email to send notifications to.|
+| mail-type|-|Which emails to send. |
 |  |  | |
 
 chmod u+x filename
@@ -129,7 +139,7 @@ Start a jupyter notebook session from the folder you want to work with while log
 
 ```
 cd /lustre1/work/username/foldername
-module load Anaconda3/2018.12
+module load Anaconda3/2020.07
 jupyter notebook --no-browser
 ```
 You will get a message like this:
@@ -139,7 +149,7 @@ You will get a message like this:
     Or copy and paste one of these URLs:
         http://localhost:8890/?token=ff0495955e8663c1f31c2f6bae32da7197127e081142e590
 ```
-Jupyter Notebook is then hosted on localhost:8890. We want to access this from our own localhost:XXXX to open it in our local browser.
+Jupyter Notebook is then hosted on localhost:8890. Note that you might get another port. We want to access this from our own localhost:XXXX to open it in our local browser.
 Open a new command line window and log in to the NTNU servers:
 ```
 ssh -X login.stud.ntnu.no -l username
