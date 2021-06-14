@@ -14,6 +14,7 @@
 \usepackage[backend=biber, style=authoryear, citestyle=authoryear, maxnames=2, giveninits]{biblatex}
 \DeclareNameAlias{sortname}{family-given}
 \addbibresource{mybib.bib} %Imports bibliography file
+%\usepackage[nottoc]{tocbibind}
 
 
 
@@ -48,12 +49,15 @@
 \section{Introduction} \label{intro}
 \input{sections/introduction}
 
+\newpage
 \section{Theory} \label{theory}
 \input{sections/theory}
 
+\newpage
 \section{Method} \label{method}
 \input{sections/method}
 
+\newpage
 \section{Results} \label{results}
 \input{sections/results}
 
@@ -62,5 +66,7 @@
 \input{sections/discussions}
 
 \medskip
+\phantomsection
+\addcontentsline{toc}{section}{References}
 \printbibliography
 \end{document}

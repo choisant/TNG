@@ -3966,8 +3966,130 @@
       \endverb
       \keyw{COSMOLOGY: THEORY,COSMOLOGY: DARK MATTER,GALAXIES: HALOS,METHODS: NUMERICAL,Astrophysics}
     \endentry
+    \entry{Nelson2015}{article}{}
+      \name{author}{15}{ul=3}{%
+        {{un=0,uniquepart=base,hash=c939c21c0db1913701ab6b0cc7273835}{%
+           family={{Nelson}},
+           familyi={N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9aef4b766c05d2b269b32ed8ec7e84fd}{%
+           family={{Pillepich}},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb3613dbb2c279ec8a0400477e49de1a}{%
+           family={{Genel}},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b88608a3cf44fea67e6bbcabd97914be}{%
+           family={{Vogelsberger}},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d14f84c0b1740881731aadf0b220bb7}{%
+           family={{Springel}},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a9472cab299bcfa0f98ad47022cfb02}{%
+           family={{Torrey}},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a2af76f5b3630209a7943e23a816188}{%
+           family={{Rodriguez-Gomez}},
+           familyi={R\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f20abe72ff4a36621e5a4a23d4038e44}{%
+           family={{Sijacki}},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e90c58f18be0a00255cd97c11fe48673}{%
+           family={{Snyder}},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2195c05670341e8ea334fd600c71a1e2}{%
+           family={{Griffen}},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d28f50623bcd673c9c3c133284146834}{%
+           family={{Marinacci}},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c924d80245cdc4954db563f89c3318f9}{%
+           family={{Blecha}},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab4f89c3f33a83c3bc40cbdaade4af4c}{%
+           family={{Sales}},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1e24125fad7f1b6c66d26501937ec52}{%
+           family={{Xu}},
+           familyi={X\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2d60675539f9efe0bcd81b1cce60910}{%
+           family={{Hernquist}},
+           familyi={H\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c0ca6bca2ba17eb08653122c551da318}
+      \strng{fullhash}{f302af42446eba88e687e0aa06b8e6da}
+      \strng{bibnamehash}{c0ca6bca2ba17eb08653122c551da318}
+      \strng{authorbibnamehash}{c0ca6bca2ba17eb08653122c551da318}
+      \strng{authornamehash}{c0ca6bca2ba17eb08653122c551da318}
+      \strng{authorfullhash}{f302af42446eba88e687e0aa06b8e6da}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.CO}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Astronomy and Computing}
+      \field{month}{11}
+      \field{title}{{The illustris simulation: Public data release}}
+      \field{volume}{13}
+      \field{year}{2015}
+      \field{pages}{12\bibrangedash 37}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.ascom.2015.09.003
+      \endverb
+      \verb{eprint}
+      \verb 1504.00362
+      \endverb
+      \keyw{Methods: data analysis,Methods: numerical,Galaxies: formation,Galaxies: evolution,Data management systems,Data access methods,Astrophysics - Cosmology and Nongalactic Astrophysics,Astrophysics - Astrophysics of Galaxies,Astrophysics - High Energy Astrophysical Phenomena,Astrophysics - Instrumentation and Methods for Astrophysics}
+    \endentry
     \entry{Nelson2017}{article}{}
-      \name{author}{11}{}{%
+      \name{author}{11}{ul=3}{%
         {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
            family={Nelson},
            familyi={N\bibinitperiod},
@@ -4038,11 +4160,11 @@
       \list{publisher}{1}{%
         {Oxford University Press (OUP)}%
       }
-      \strng{namehash}{01fad1087dc4a720456f487dd93428f7}
+      \strng{namehash}{6531644e2fb6c434f7dbbf5553c4d519}
       \strng{fullhash}{4304ac83f6e033b109740ad551056718}
-      \strng{bibnamehash}{01fad1087dc4a720456f487dd93428f7}
-      \strng{authorbibnamehash}{01fad1087dc4a720456f487dd93428f7}
-      \strng{authornamehash}{01fad1087dc4a720456f487dd93428f7}
+      \strng{bibnamehash}{6531644e2fb6c434f7dbbf5553c4d519}
+      \strng{authorbibnamehash}{6531644e2fb6c434f7dbbf5553c4d519}
+      \strng{authornamehash}{6531644e2fb6c434f7dbbf5553c4d519}
       \strng{authorfullhash}{4304ac83f6e033b109740ad551056718}
       \field{sortinit}{N}
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
@@ -6863,108 +6985,104 @@
       \field{pages}{38\bibrangedash 40}
       \range{pages}{3}
     \endentry
-    \entry{Springel2017}{article}{}
+    \entry{Springel2018}{article}{}
       \name{author}{11}{ul=2}{%
         {{un=0,uniquepart=base,hash=d673f4b06bc18145fb87123390b4948f}{%
-           family={Springel},
+           family={{Springel}},
            familyi={S\bibinitperiod},
            given={Volker},
            giveni={V\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=69de3efaeebbc09f97720c1f8f9f75b6}{%
-           family={Pakmor},
+           family={{Pakmor}},
            familyi={P\bibinitperiod},
            given={Rüdiger},
            giveni={R\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=d33cbf265c601867102906996581ef38}{%
-           family={Pillepich},
+           family={{Pillepich}},
            familyi={P\bibinitperiod},
            given={Annalisa},
            giveni={A\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=caa99d0c50cfa159b56dc9db955ca117}{%
-           family={Weinberger},
+           family={{Weinberger}},
            familyi={W\bibinitperiod},
            given={Rainer},
            giveni={R\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=8b9909edb91e754e15f2d489182a87df}{%
-           family={Nelson},
+           family={{Nelson}},
            familyi={N\bibinitperiod},
            given={Dylan},
            giveni={D\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=ea49fbd6c94c7c89f99c3f989cc8b15f}{%
-           family={Hernquist},
+           family={{Hernquist}},
            familyi={H\bibinitperiod},
            given={Lars},
            giveni={L\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=135d434ea2b67c33af17ac769847bc4f}{%
-           family={Vogelsberger},
+           family={{Vogelsberger}},
            familyi={V\bibinitperiod},
            given={Mark},
            giveni={M\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=c91318360a31c3782dec15bb32a9a305}{%
-           family={Genel},
+           family={{Genel}},
            familyi={G\bibinitperiod},
            given={Shy},
            giveni={S\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=f62acde05559146e05e6150742d70731}{%
-           family={Torrey},
+           family={{Torrey}},
            familyi={T\bibinitperiod},
            given={Paul},
            giveni={P\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=f8d123402326022e2d7ff6a46172c40c}{%
-           family={Marinacci},
+           family={{Marinacci}},
            familyi={M\bibinitperiod},
            given={Federico},
            giveni={F\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod},
-           prefixun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press (OUP)}%
+        {{un=0,uniquepart=base,hash=37bfef933d675128c909933d7f961c17}{%
+           family={{Naiman}},
+           familyi={N\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{0c97b30b84a82d7fbf8e7675ca21539c}
-      \strng{fullhash}{603ff7ea5654a6919efbe843fe8433b3}
+      \strng{fullhash}{4b71ffbe96b36f061b13da726ce81261}
       \strng{bibnamehash}{0c97b30b84a82d7fbf8e7675ca21539c}
       \strng{authorbibnamehash}{0c97b30b84a82d7fbf8e7675ca21539c}
       \strng{authornamehash}{0c97b30b84a82d7fbf8e7675ca21539c}
-      \strng{authorfullhash}{603ff7ea5654a6919efbe843fe8433b3}
+      \strng{authorfullhash}{4b71ffbe96b36f061b13da726ce81261}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1365-2966}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
       \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
-      \field{month}{12}
+      \field{month}{3}
       \field{number}{1}
-      \field{title}{First results from the IllustrisTNG simulations: matter and galaxy clustering}
+      \field{title}{{First results from the IllustrisTNG simulations: matter and galaxy clustering}}
       \field{volume}{475}
-      \field{year}{2017}
+      \field{year}{2018}
       \field{pages}{676\bibrangedash 698}
       \range{pages}{23}
       \verb{doi}
       \verb 10.1093/mnras/stx3304
       \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1093/mnras/stx3304
+      \verb{eprint}
+      \verb 1707.03397
       \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1093/mnras/stx3304
-      \endverb
+      \keyw{methods: numerical,galaxy formation,large-scale structure of Universe,Astrophysics - Astrophysics of Galaxies,Astrophysics - Cosmology and Nongalactic Astrophysics}
     \endentry
     \entry{Springel2001}{article}{}
       \name{author}{4}{ul=2}{%
@@ -7010,7 +7128,7 @@
       \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
       \field{month}{12}
       \field{number}{3}
-      \field{title}{Populating a cluster of galaxies - I. Results at [formmu2]z=0}
+      \field{title}{Populating a cluster of galaxies - I. Results at z=0}
       \field{volume}{328}
       \field{year}{2001}
       \field{pages}{726\bibrangedash 750}

@@ -1,17 +1,17 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
 [0] Config.pm:315> INFO - Logfile is 'main.blg'
-[171] biber-MSWIN64:330> INFO - === 
-[220] Biber.pm:415> INFO - Reading 'main.bcf'
-[324] Biber.pm:952> INFO - Found 49 citekeys in bib section 0
-[339] Biber.pm:4334> INFO - Processing section 0
-[363] Biber.pm:4523> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[388] bibtex.pm:1682> INFO - LaTeX decoding ...
-[1025] bibtex.pm:1494> INFO - Found BibTeX data source 'mybib.bib'
-[2309] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[2502] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2502] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2502] Biber.pm:4162> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[2502] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[2652] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[3973] bbl.pm:754> INFO - Output to main.bbl
-[3974] Biber.pm:128> INFO - WARNINGS: 1
+[178] biber-MSWIN64:330> INFO - === 
+[204] Biber.pm:415> INFO - Reading 'main.bcf'
+[448] Biber.pm:952> INFO - Found 50 citekeys in bib section 0
+[469] Biber.pm:4334> INFO - Processing section 0
+[489] Biber.pm:4523> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[531] bibtex.pm:1682> INFO - LaTeX decoding ...
+[1787] bibtex.pm:1494> INFO - Found BibTeX data source 'mybib.bib'
+[3623] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[3966] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3966] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3967] Biber.pm:4162> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[3967] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[4128] bbl.pm:651> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[5847] bbl.pm:754> INFO - Output to main.bbl
+[5847] Biber.pm:128> INFO - WARNINGS: 1

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  5 JUN 2021 09:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.5)  14 JUN 2021 12:18
 entering extended mode
 **./main.tex
 (main.tex
@@ -539,34 +539,34 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip85
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 28.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
 \@quotelevel=\count411
 \@quotereset=\count412
 
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 32.
+(biblatex)                Setting 'uniquename=init' on input line 33.
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count413
@@ -603,8 +603,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
 
 ("C:\Program Files\MiKTeX\tex/latex/graphics\color.sty"
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
@@ -614,7 +614,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 33.
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -628,15 +628,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count419
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
  (sections/titlepage.tex
-<images/ntnu.png, id=171, 538.6524pt x 50.8299pt>
+<images/ntnu.png, id=175, 538.6524pt x 50.8299pt>
 File: images/ntnu.png Graphic file (type png)
 <use images/ntnu.png>
 Package pdftex.def Info: images/ntnu.png  used on input line 17.
@@ -649,186 +649,187 @@ ng>])
 ier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 \newpage
+l.40 \newpage
               [1] (sections/preface.tex) [2] (main.toc [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
  [4]
-(sections/introduction.tex [5]) (sections/theory.tex [6] [7] [8]
-<images/halo_mass_function.png, id=287, 426.393pt x 431.81325pt>
+(sections/introduction.tex [5]) [6] (sections/theory.tex [7] [8]
+<images/halo_mass_function.png, id=307, 426.393pt x 431.81325pt>
 File: images/halo_mass_function.png Graphic file (type png)
 <use images/halo_mass_function.png>
 Package pdftex.def Info: images/halo_mass_function.png  used on input line 45.
 (pdftex.def)             Requested size: 350.99762pt x 355.47282pt.
  [9] [10 <./images/halo_mass_function.png>] [11]
-<images/luminosity_function.png, id=318, 515.67656pt x 609.77812pt>
+<images/luminosity_function.png, id=335, 515.67656pt x 609.77812pt>
 File: images/luminosity_function.png Graphic file (type png)
 <use images/luminosity_function.png>
-Package pdftex.def Info: images/luminosity_function.png  used on input line 72.
+Package pdftex.def Info: images/luminosity_function.png  used on input line 71.
 
 (pdftex.def)             Requested size: 350.99762pt x 415.06233pt.
  [12] [13 <./images/luminosity_function.png>]
-<images/hubble.jpg, id=340, 409.53pt x 337.26pt>
+<images/hubble.jpg, id=357, 409.53pt x 337.26pt>
 File: images/hubble.jpg Graphic file (type jpg)
 <use images/hubble.jpg>
-Package pdftex.def Info: images/hubble.jpg  used on input line 93.
+Package pdftex.def Info: images/hubble.jpg  used on input line 92.
 (pdftex.def)             Requested size: 272.99881pt x 224.83601pt.
 
-[14 <./images/hubble.jpg>] [15]
-<images/rotation_curves.png, id=352, 702.82574pt x 395.076pt>
+[14] [15 <./images/hubble.jpg>] [16]
+<images/rotation_curves.png, id=376, 702.82574pt x 395.076pt>
 File: images/rotation_curves.png Graphic file (type png)
 <use images/rotation_curves.png>
-Package pdftex.def Info: images/rotation_curves.png  used on input line 144.
+Package pdftex.def Info: images/rotation_curves.png  used on input line 143.
 (pdftex.def)             Requested size: 350.99762pt x 197.3024pt.
- [16] [17 <./images/rotation_curves.png>]
+ [17 <./images/rotation_curves.png>]
 [18]
-<images/kappa_rot.png, id=384, 908.64468pt x 1310.64656pt>
+<images/kappa_rot.png, id=403, 889.82437pt x 1276.77pt>
 File: images/kappa_rot.png Graphic file (type png)
 <use images/kappa_rot.png>
-Package pdftex.def Info: images/kappa_rot.png  used on input line 169.
-(pdftex.def)             Requested size: 350.99762pt x 506.29039pt.
+Package pdftex.def Info: images/kappa_rot.png  used on input line 170.
+(pdftex.def)             Requested size: 350.99762pt x 503.62701pt.
 
 
-LaTeX Warning: Float too large for page by 8.5904pt on input line 172.
+LaTeX Warning: Float too large for page by 19.52702pt on input line 173.
 
 [19] [20 <./images/kappa_rot.png>]
-<images/tully_fisher.png, id=403, 410.7345pt x 388.45125pt>
+<images/tully_fisher.png, id=420, 410.7345pt x 388.45125pt>
 File: images/tully_fisher.png Graphic file (type png)
 <use images/tully_fisher.png>
-Package pdftex.def Info: images/tully_fisher.png  used on input line 197.
+Package pdftex.def Info: images/tully_fisher.png  used on input line 198.
 (pdftex.def)             Requested size: 350.99762pt x 331.96329pt.
- [21 <./images/tully_fisher.png>]
-<images/faber_jackson.png, id=416, 423.38174pt x 290.88675pt>
+ [21] [22 <./images/tully_fisher.png>]
+<images/faber_jackson.png, id=442, 423.38174pt x 290.88675pt>
 File: images/faber_jackson.png Graphic file (type png)
 <use images/faber_jackson.png>
-Package pdftex.def Info: images/faber_jackson.png  used on input line 219.
+Package pdftex.def Info: images/faber_jackson.png  used on input line 220.
 (pdftex.def)             Requested size: 350.99762pt x 241.1563pt.
- [22]
+
 [23 <./images/faber_jackson.png>]
-<images/color_bimodality.png, id=436, 522.15076pt x 238.491pt>
+<images/color_bimodality.png, id=455, 522.15076pt x 238.491pt>
 File: images/color_bimodality.png Graphic file (type png)
 <use images/color_bimodality.png>
-Package pdftex.def Info: images/color_bimodality.png  used on input line 237.
+Package pdftex.def Info: images/color_bimodality.png  used on input line 238.
 (pdftex.def)             Requested size: 350.99762pt x 160.32307pt.
-) (sections/method.tex [24 <./images/color_bimodality.png>] [25]
-<images/TNG.png, id=470, 595.9866pt x 628.0263pt>
+) [24 <./images/color_bimodality.png>]
+(sections/method.tex [25]
+<images/TNG.png, id=477, 595.9866pt x 628.0263pt>
 File: images/TNG.png Graphic file (type png)
 <use images/TNG.png>
 Package pdftex.def Info: images/TNG.png  used on input line 16.
 (pdftex.def)             Requested size: 350.99762pt x 369.87108pt.
- [26] [27 <./images/TNG.png>] [28] [29] [30] [31] [32]
-<images/galaxy_size_disk.png, id=548, 587.19376pt x 455.45157pt>
+ [26] [27 <./images/TNG.png>] [28] [29] [30] [31]
+[32]
+<images/galaxy_size_disk.png, id=554, 569.12625pt x 450.18187pt>
 File: images/galaxy_size_disk.png Graphic file (type png)
 <use images/galaxy_size_disk.png>
 Package pdftex.def Info: images/galaxy_size_disk.png  used on input line 142.
-(pdftex.def)             Requested size: 390.0pt x 302.4962pt.
-<images/galaxy_size_big.png, id=549, 570.63188pt x 457.71pt>
+(pdftex.def)             Requested size: 390.0pt x 308.50323pt.
+<images/galaxy_size_big.png, id=555, 579.66562pt x 456.20438pt>
 File: images/galaxy_size_big.png Graphic file (type png)
 <use images/galaxy_size_big.png>
 Package pdftex.def Info: images/galaxy_size_big.png  used on input line 151.
-(pdftex.def)             Requested size: 390.0pt x 312.82408pt.
-
-[33] [34 <./images/galaxy_size_disk.png>] [35 <./images/galaxy_size_big.png>]
+(pdftex.def)             Requested size: 390.0pt x 306.93617pt.
+ [33] [34 <./images/galaxy_size_disk.png>] [35 <./images/galaxy_size_big.png>]
 Overfull \hbox (3.25148pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/12 observed-frame Milky Way-extinction-corrected ap-par-ent mag-ni
 -tudes ([]Bryant
  []
 
-[36] [37] [38] [39]) (sections/results.tex [40]
-<images/HM_fSM.png, id=609, 564.6696pt x 521.5485pt>
+[36] [37] [38] [39]) [40] [41] (sections/results.tex
+<images/HM_fSM.png, id=621, 564.6696pt x 521.5485pt>
 File: images/HM_fSM.png Graphic file (type png)
 <use images/HM_fSM.png>
 Package pdftex.def Info: images/HM_fSM.png  used on input line 10.
 (pdftex.def)             Requested size: 350.99762pt x 324.20029pt.
-<images/shmr.png, id=616, 573.1011pt x 521.5485pt>
+<images/shmr.png, id=628, 573.1011pt x 521.5485pt>
 File: images/shmr.png Graphic file (type png)
 <use images/shmr.png>
 Package pdftex.def Info: images/shmr.png  used on input line 20.
 (pdftex.def)             Requested size: 350.99762pt x 319.42537pt.
- [41] [42 <./images/HM_fSM.png>] [43] [44 <./images/shmr.png>]
-<images/SM_R_tng.png, id=654, 560.3334pt x 519.3804pt>
+ [42] [43 <./images/HM_fSM.png>] [44] [45 <./images/shmr.png>]
+<images/SM_R_tng.png, id=666, 560.3334pt x 519.3804pt>
 File: images/SM_R_tng.png Graphic file (type png)
 <use images/SM_R_tng.png>
 Package pdftex.def Info: images/SM_R_tng.png  used on input line 44.
 (pdftex.def)             Requested size: 350.99762pt x 325.34898pt.
-<images/SM_R.png, id=655, 560.3334pt x 521.5485pt>
+<images/SM_R.png, id=667, 560.3334pt x 521.5485pt>
 File: images/SM_R.png Graphic file (type png)
 <use images/SM_R.png>
 Package pdftex.def Info: images/SM_R.png  used on input line 52.
 (pdftex.def)             Requested size: 350.99762pt x 326.7071pt.
-<images/SM_R_earlies.png, id=656, 3151.27313pt x 1629.83907pt>
+<images/SM_R_earlies.png, id=668, 3151.27313pt x 1629.83907pt>
 File: images/SM_R_earlies.png Graphic file (type png)
 <use images/SM_R_earlies.png>
 Package pdftex.def Info: images/SM_R_earlies.png  used on input line 60.
 (pdftex.def)             Requested size: 390.0pt x 201.6901pt.
-<images/SM_R_lates.png, id=657, 3151.27313pt x 1629.83907pt>
+<images/SM_R_lates.png, id=669, 3151.27313pt x 1629.83907pt>
 File: images/SM_R_lates.png Graphic file (type png)
 <use images/SM_R_lates.png>
 Package pdftex.def Info: images/SM_R_lates.png  used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 201.6901pt.
- [45] [46 <./images/SM_R_tng.png>] [47 <./images/SM_R.png>] [48 <./images/SM_R_
-earlies.png>] [49 <./images/SM_R_lates.png>]
-<images/TFR.png, id=687, 566.5968pt x 521.5485pt>
+ [46] [47 <./images/SM_R_tng.png>] [48 <./images/SM_R.png>] [49 <./images/SM_R_
+earlies.png>] [50 <./images/SM_R_lates.png>]
+<images/TFR.png, id=699, 566.5968pt x 521.5485pt>
 File: images/TFR.png Graphic file (type png)
 <use images/TFR.png>
 Package pdftex.def Info: images/TFR.png  used on input line 80.
 (pdftex.def)             Requested size: 350.99762pt x 323.08614pt.
-
-[50] [51 <./images/TFR.png>]
-<images/VD_particles.png, id=704, 561.0561pt x 526.1256pt>
+[51] [52 <./images/TFR.png>]
+<images/VD_particles.png, id=716, 561.0561pt x 526.1256pt>
 File: images/VD_particles.png Graphic file (type png)
 <use images/VD_particles.png>
 Package pdftex.def Info: images/VD_particles.png  used on input line 92.
 (pdftex.def)             Requested size: 350.99762pt x 329.15683pt.
-<images/FJ.png, id=708, 560.3334pt x 517.935pt>
+<images/FJ.png, id=720, 560.3334pt x 517.935pt>
 File: images/FJ.png Graphic file (type png)
 <use images/FJ.png>
 Package pdftex.def Info: images/FJ.png  used on input line 102.
 (pdftex.def)             Requested size: 350.99762pt x 324.44354pt.
- [52] [53 <./images/VD_particles.png>] [54 <./images/FJ.png>]
-<images/CB.png, id=728, 3208.48688pt x 1639.62563pt>
+ [53] [54 <./images/VD_particles.png>] [55 <./images/FJ.png>]
+<images/CB.png, id=740, 3208.48688pt x 1639.62563pt>
 File: images/CB.png Graphic file (type png)
 <use images/CB.png>
 Package pdftex.def Info: images/CB.png  used on input line 119.
 (pdftex.def)             Requested size: 390.0pt x 199.29848pt.
-<images/CB_PDF.png, id=729, 533.8344pt x 520.5849pt>
+<images/CB_PDF.png, id=741, 533.8344pt x 520.5849pt>
 File: images/CB_PDF.png Graphic file (type png)
 <use images/CB_PDF.png>
 Package pdftex.def Info: images/CB_PDF.png  used on input line 126.
 (pdftex.def)             Requested size: 350.99762pt x 342.2923pt.
-) [55] (sections/discussions.tex [56 <./images/CB.png>] [57 <./images/CB_PDF.pn
-g>] [58] [59] [60]
-Overfull \hbox (21.57211pt too wide) in paragraph at lines 36--37
-\OT1/cmr/m/n/12 clas-si-fi-ca-tion method (us-ing both spe-cific star for-ma-ti
-on rate and rotational-
- []
-
-[61]) [62] [63]
-Overfull \hbox (6.17519pt too wide) in paragraph at lines 66--66
+) [56] (sections/discussions.tex [57 <./images/CB.png>] [58 <./images/CB_PDF.pn
+g>] [59] [60] [61] [62]) [63] [64]
+Overfull \hbox (6.17519pt too wide) in paragraph at lines 72--72
 \OT1/cmr/m/n/12 pp. 763{795. \OT1/cmr/m/sc/12 doi\OT1/cmr/m/n/12 : [][]$\OT1/cm
 tt/m/n/12 10 . 1086 / 376392$[][]\OT1/cmr/m/n/12 . arXiv: [][]$\OT1/cmtt/m/n/12
  astro -[] ph / 0304382$ [astro-ph][][]\OT1/cmr/m/n/12 . 
  []
 
-[64] [65] [66]
-Overfull \hbox (1.77036pt too wide) in paragraph at lines 66--66
+[65]
+Overfull \hbox (1.48494pt too wide) in paragraph at lines 72--72
+\OT1/cmr/m/sc/12 doi\OT1/cmr/m/n/12 : [][]$\OT1/cmtt/m/n/12 10 . 1016 / j . asc
+om . 2015 . 09 . 003$[][]\OT1/cmr/m/n/12 . arXiv: [][]$\OT1/cmtt/m/n/12 1504 . 
+00362$ [astro-ph.CO][][]\OT1/cmr/m/n/12 . 
+ []
+
+[66] [67]
+Overfull \hbox (1.77036pt too wide) in paragraph at lines 72--72
 \OT1/cmr/m/n/12 ies''. In: \OT1/cmr/m/it/12 Monthly No-tices of the Royal As-tr
 o-nom-i-cal So-ci-ety \OT1/cmr/m/n/12 406.2, pp. 1220{
  []
 
-[67] [68] (main.aux)
+[68] [69] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 62EF3D73E0974C5FA039D1D720720F0D;3100.
+(rerunfilecheck)             Checksum: EF51C114591F66B6C58A052BD1555F49;3119.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15309 strings out of 479799
- 274432 string characters out of 2879559
- 1061671 words of memory out of 3000000
- 31856 multiletter control sequences out of 15000+200000
+ 15327 strings out of 479799
+ 274919 string characters out of 2879559
+ 1065641 words of memory out of 3000000
+ 31871 multiletter control sequences out of 15000+200000
  543072 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,75p,2185b,1761s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -847,9 +848,9 @@ s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (69 pages, 13110376 bytes).
+Output written on main.pdf (70 pages, 13075494 bytes).
 PDF statistics:
- 1028 PDF objects out of 1200 (max. 8388607)
- 210 named destinations out of 1000 (max. 500000)
- 452 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1042 PDF objects out of 1200 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 460 words of extra memory for PDF output out of 10000 (max. 10000000)
 
