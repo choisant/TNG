@@ -314,13 +314,13 @@ def R_BH(ax, x0=0, x1=2, y0=(6), y1=(10)):
     ax.minorticks_on()
     ax.legend(fontsize=TEXTSIZE, frameon=False)
 
-def rot_galaxy_map(ax, r_max, label_x, label_y):
+def rot_galaxy_map(ax, r_max, label_x, label_y, textsize=TEXTSIZE):
     ax.set(xlim=(-r_max, r_max), ylim=(-r_max, r_max))
-    ax.set_xlabel(label_x + " [kpc]", fontsize=TEXTSIZE)
-    ax.set_ylabel(label_y + " [kpc]", fontsize=TEXTSIZE)
-    ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=TEXTSIZE, pad=15, length=6, width=3, color='lightgrey')
+    ax.set_xlabel(label_x + " [kpc]", fontsize=textsize)
+    ax.set_ylabel(label_y + " [kpc]", fontsize=textsize)
+    ax.tick_params(which="both", direction="inout", top=True, right=True, labelsize=textsize, pad=15, length=6, width=3, color='lightgrey')
     ax.minorticks_on()
-    ax.legend(fontsize=TEXTSIZE, frameon=True)
+    ax.legend(fontsize=textsize, frameon=True)
 
 def SM_kappa(ax, x0=(9.5), x1=12, y0=(-1), y1=2):
     ax.set(xlim=(x0, x1), ylim=(y0, y1))
